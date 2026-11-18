@@ -1,0 +1,28 @@
+# Native generated masters are retained locally; deployment uses native-size WebP.
+assets/hd-*.png
+assets/hd-athens.webp
+assets/hd-harbor.webp
+assets/hd-forest.webp
+assets/hd-ruins.webp
+assets/hd-castle.webp
+# Superseded original scenery and original sprite sheets remain in local source history.
+assets/route-*.webp
+assets/ground.webp
+assets/distant.webp
+assets/foreground.webp
+assets/giorgos.webp
+assets/thodoris.webp
+assets/p1-motion.webp
+assets/p2-motion.webp
+assets/p1-combat.webp
+assets/p2-combat.webp
+assets/foes.webp
+assets/bosses.webp
+assets/boss-motion.webp
+assets/special-boss.webp
+assets/rivals.webp
+assets/carry-1.webp
+assets/carry-2.webp
+parallax-provenance.json
+character-provenance.json
+cast-provenance.json

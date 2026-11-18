@@ -1,0 +1,427 @@
+[
+  {
+    "key": "floor",
+    "prompt": "Create a production game texture atlas for a premium high definition illustrated side-scrolling action adventure for children in Greece. NOT pixel art, not retro low res. Exceptionally detailed crisp natural material surfaces with cinematic hand-painted animated film quality. One wide rectangular atlas divided into EXACTLY FIVE equal-height HORIZONTAL BANDS stacked vertically, no gaps, no lines, no text or labels. Each band is a continuous horizontally tileable floor texture seen from elevated 3/4 side beat-em-up camera: upper edge farther away, lower edge close. No walls, no objects, no characters, no sky. Row 1 warm Athens honey stone cobbled paving, worn individual small stones, fine cracks and sunlit dust. Row 2 aged seaside wooden dock planks running horizontally with clear grain, nails, damp salt and muted teal reflected light. Row 3 magical forest brown earth trail with fine roots, moss and scattered tiny leaves, clear traversable soil. Row 4 ancient Greek worn limestone flagstones, chipped edges, subtle tiny tufts in cracks. Row 5 medieval dark castle stone floor, subtle violet cool light and amber highlights. Each complete band fills its entire region without shadows from unseen objects or large decorative props. Fine texture not blurry. Wide output ideally 2560x1440 or largest available wide format, 5 consistent equal bands. This is actual visible floor artwork, not a mockup.",
+    "method": "built-in image_gen",
+    "destination": "assets/hd-floor.webp",
+    "sourceFilename": "exec-cea7bb07-fba5-4cb3-9ac4-0ddd7bac3322.png",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "ff21c0c9e9c79d42eb0520e5394e5282fdd9302881fa1052686e7ba3c415924d",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "castle",
+    "prompt": "Production high-resolution panoramic environment plate for a premium illustrated 2.5D children's action game, mysterious whimsical story castle interior, towering gothic arches, stained glass windows, huge old bookshelves, carved columns, iron torch sconces, amber flames. Friendly fantasy adventure atmosphere with violet-blue ambient shadow and warm gold pools, no horror gore. Wide side elevation slight top-down beat-em-up camera. Premium extremely detailed animated film background illustration, sharp stone and book bindings, NO pixel art, NO photorealism. Wall bases end exactly at bottom edge; NO playable floor, added separately. No people no UI no text or panels. Deep archways give believable depth, cathedral-scale but readable. Largest available wide landscape panorama.",
+    "method": "built-in image_gen",
+    "destination": "assets/hd-castle.webp",
+    "sourceFilename": "exec-8fe97a69-2c29-445e-9f6a-2dd2bb5291b5.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "773d59ead6896177127ab3ad629115f23eab7b7e609ef45b3c44e28d183fba58",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": false,
+    "role": "Reference master used to derive clean far plate and transparent near plane"
+  },
+  {
+    "key": "athens",
+    "prompt": "Production high-resolution panoramic environment plate for a premium illustrated 2.5D children's action game, Greek Athens neighborhood at golden hour, charming neoclassical pastel plaster houses, blue shutters, bougainvillea, warm cafe lamps, balconies, long readable street frontage. Wide side elevation with a slight top-down view, beat-em-up camera. Intricate sharp high-definition animated feature film background painting, rich wood grain and plaster, not pixel art, not photorealism. Composition: architecture fills lower 85 percent, skyline in upper 15 percent; building feet exactly at bottom edge. NO pavement or playable floor below building feet, no people, no UI, no words. Depth through overlapping distant rooftops, warm atmospheric hills. Lighting from upper left, natural falloff, no baked lens flares. A coherent wide panorama not divided panels. Make wide landscape largest available resolution.",
+    "method": "built-in image_gen",
+    "destination": "assets/hd-athens.webp",
+    "sourceFilename": "exec-58cdcbf2-dd18-4cd3-8a1e-77fb3f4c32ec.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "66d9b93a0282e56b56c050e927a060845853e4772cf9ad3cb8f844e1389ffee9",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": false,
+    "role": "Reference master used to derive clean far plate and transparent near plane"
+  },
+  {
+    "key": "harbor",
+    "prompt": "Production high-resolution panoramic environment plate for a premium illustrated 2.5D children's action game, magical Greek harbor at blue hour, layered sailboat masts, boat sheds, lanterns, warmly lit weathered waterfront buildings and distant lighthouse. Wide side elevation, slight top-down beat-em-up camera. Crisp highly detailed animated feature film painting with rich materials, not pixel art, not photorealism. Architecture and waterside structures fill lower 80 percent, twilight sky above. Structure feet terminate at bottom edge; NO playable dock floor in image, floor added separately. No people, no UI, no words. Indigo sea mist in distance, amber practical lamps, teal-violet palette. One coherent wide panorama not divided panels. Largest available wide landscape resolution.",
+    "method": "built-in image_gen",
+    "destination": "assets/hd-harbor.webp",
+    "sourceFilename": "exec-c292422c-2121-4369-a246-fa4498d4902a.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "d8172606178dd7d35d7151569cc1aba2a3551a7fc05c4fa58a7ef64823ea3af2",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": false,
+    "role": "Reference master used to derive clean far plate and transparent near plane"
+  },
+  {
+    "key": "ruins",
+    "prompt": "Production high-resolution panoramic environment plate for a premium illustrated 2.5D children's action game, ancient Greek temple ruins with broken Doric columns, a small hillside temple and ancient aqueduct, sun setting behind distant blue mountains, overgrown archaeological stone walls. Wide side elevation with slight top-down beat-em-up camera. Premium sharp animated feature film illustration, intricate weathered limestone and vines, no pixel art, not photorealism. Building and column bases terminate at bottom edge; NO playable floor, will be added separately. Sky top 20 percent. No people no UI no words no panels. Golden shafts and cool violet shadows, layered hills clear behind gaps. Largest available wide landscape panorama.",
+    "method": "built-in image_gen",
+    "destination": "assets/hd-ruins.webp",
+    "sourceFilename": "exec-449b1b81-009b-4996-acbf-8cf404288b46.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "5f48cf12dc00607b5f7dd0c0249d4122c02080d968141916a1c3393072fca3b8",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": false,
+    "role": "Reference master used to derive clean far plate and transparent near plane"
+  },
+  {
+    "key": "forest",
+    "prompt": "Production high-resolution panoramic environment plate for a premium illustrated 2.5D children's action game, enchanted ancient Greek forest, huge expressive gnarled oak trees, layers of cool distant forest, luminous waterfall visible between trunks, scattered tiny teal glowing mushrooms, dappled shafts of warm late afternoon light. Wide side elevation with slight top-down beat-em-up camera. Exceptionally sharp rich animated feature film background painting, no pixel art, no photorealism. Tree bases at bottom edge, foliage and trunks dominate lower 85 percent; no foreground playable ground plane, which will be added separately. No people no UI no words no panels. Spatial clarity, atmospheric depth, magical gentle tone, dark teal forest with warm gold leaves, detailed bark and leaves. Largest available wide landscape.",
+    "method": "built-in image_gen",
+    "destination": "assets/hd-forest.webp",
+    "sourceFilename": "exec-8328530d-3766-4b4e-b9aa-2358a974507a.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "e841e85fe46e00437c401fc506fed11ab1c0ed50f99dd21376bd081c036a465e",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": false,
+    "role": "Reference master used to derive clean far plate and transparent near plane"
+  },
+  {
+    "key": "near-athens",
+    "destination": "assets/hd-near-athens.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated panoramic game environment into its NEAR SCENERY transparent cutout layer for true parallax scrolling. Retain the exact full wide canvas aspect ratio, camera, object positions and scale of the input. Do not move, zoom, redesign or add anything. Keep only the closest architecture / tree trunks and branches / foreground ruined columns and walls. Remove the sky, distant mountains, distant buildings, water, and distant forest visible between near objects, replacing those regions with genuine transparent alpha. Preserve fine roof edges, branches, foliage, arch openings and all the holes between near silhouettes. For the castle, preserve the nearest pillars, shelves, windows and their frames, but make the central distant hall arch opening transparent. Keep the original RGB artwork within retained shapes. Bottom ground-contact edge stays identical. No black matte, no checkerboard drawn into RGB, no text, no added floor. This exact-registered alpha layer will be composited over a clean distant plane; a rectangle containing background is unacceptable.",
+    "sourceFilename": "exec-a7608017-2297-4ab4-8fea-55fed109d776.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "abed4bdd9996178dbc8b3dc4416f9901b50dde57cfc617d496a6352e59ab4481",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "near-forest",
+    "destination": "assets/hd-near-forest.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated panoramic game environment into its NEAR SCENERY transparent cutout layer for true parallax scrolling. Retain the exact full wide canvas aspect ratio, camera, object positions and scale of the input. Do not move, zoom, redesign or add anything. Keep only the closest architecture / tree trunks and branches / foreground ruined columns and walls. Remove the sky, distant mountains, distant buildings, water, and distant forest visible between near objects, replacing those regions with genuine transparent alpha. Preserve fine roof edges, branches, foliage, arch openings and all the holes between near silhouettes. For the castle, preserve the nearest pillars, shelves, windows and their frames, but make the central distant hall arch opening transparent. Keep the original RGB artwork within retained shapes. Bottom ground-contact edge stays identical. No black matte, no checkerboard drawn into RGB, no text, no added floor. This exact-registered alpha layer will be composited over a clean distant plane; a rectangle containing background is unacceptable.",
+    "sourceFilename": "exec-39c085dd-2039-4b34-9109-a7005a848944.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "dbeb47d61fd8135342046eebe42a2dce4c3a0acadd5f9f706acedcc83a77fe99",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "near-harbor",
+    "destination": "assets/hd-near-harbor.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated panoramic game environment into its NEAR SCENERY transparent cutout layer for true parallax scrolling. Retain the exact full wide canvas aspect ratio, camera, object positions and scale of the input. Do not move, zoom, redesign or add anything. Keep only the closest architecture / tree trunks and branches / foreground ruined columns and walls. Remove the sky, distant mountains, distant buildings, water, and distant forest visible between near objects, replacing those regions with genuine transparent alpha. Preserve fine roof edges, branches, foliage, arch openings and all the holes between near silhouettes. For the castle, preserve the nearest pillars, shelves, windows and their frames, but make the central distant hall arch opening transparent. Keep the original RGB artwork within retained shapes. Bottom ground-contact edge stays identical. No black matte, no checkerboard drawn into RGB, no text, no added floor. This exact-registered alpha layer will be composited over a clean distant plane; a rectangle containing background is unacceptable.",
+    "sourceFilename": "exec-b395fec8-066c-436f-a974-9bce75d22f3d.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "48435c586c7bdf3b538bb9e3f9bb44f4b4bd61d4f524974778ad61f09c227adf",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "near-castle",
+    "destination": "assets/hd-near-castle.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated panoramic game environment into its NEAR SCENERY transparent cutout layer for true parallax scrolling. Retain the exact full wide canvas aspect ratio, camera, object positions and scale of the input. Do not move, zoom, redesign or add anything. Keep only the closest architecture / tree trunks and branches / foreground ruined columns and walls. Remove the sky, distant mountains, distant buildings, water, and distant forest visible between near objects, replacing those regions with genuine transparent alpha. Preserve fine roof edges, branches, foliage, arch openings and all the holes between near silhouettes. For the castle, preserve the nearest pillars, shelves, windows and their frames, but make the central distant hall arch opening transparent. Keep the original RGB artwork within retained shapes. Bottom ground-contact edge stays identical. No black matte, no checkerboard drawn into RGB, no text, no added floor. This exact-registered alpha layer will be composited over a clean distant plane; a rectangle containing background is unacceptable.",
+    "sourceFilename": "exec-01de38d0-6782-4c4a-a981-f853ede74844.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "c2468e234c3361d25dfff2938cd94344b7868f630cf9b9a7916428bce719d570",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "near-ruins",
+    "destination": "assets/hd-near-ruins.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated panoramic game environment into its NEAR SCENERY transparent cutout layer for true parallax scrolling. Retain the exact full wide canvas aspect ratio, camera, object positions and scale of the input. Do not move, zoom, redesign or add anything. Keep only the closest architecture / tree trunks and branches / foreground ruined columns and walls. Remove the sky, distant mountains, distant buildings, water, and distant forest visible between near objects, replacing those regions with genuine transparent alpha. Preserve fine roof edges, branches, foliage, arch openings and all the holes between near silhouettes. For the castle, preserve the nearest pillars, shelves, windows and their frames, but make the central distant hall arch opening transparent. Keep the original RGB artwork within retained shapes. Bottom ground-contact edge stays identical. No black matte, no checkerboard drawn into RGB, no text, no added floor. This exact-registered alpha layer will be composited over a clean distant plane; a rectangle containing background is unacceptable.",
+    "sourceFilename": "exec-d70ee0e0-5101-4629-b4e3-997fb910cfb8.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "3605ce34197800182e57699ea606cf39c086afaded08098ef1a050f64877b11e",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "far-athens",
+    "destination": "assets/hd-far-athens.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated game panorama into a CLEAN DISTANT BACKGROUND PLATE for layered parallax. Preserve the same full wide aspect ratio, horizon, palette, weather, light and sharp animated feature film style. Remove ALL close foreground architecture, large near trees, close columns, shelves and walls, and reconstruct a coherent complete distant landscape behind their former silhouettes. For Athens retain distant rooftops, Acropolis and sky; for harbor retain distant sea, mountain coastline and lighthouse; for forest retain distant forest, waterfall, hill temple and sky; for ruins retain distant mountains, lake and temple; for castle show the deep distant vaulted corridor with columns, stained glass and subtle lights, no near pillars or bookshelves. Fill the entire image to all edges with clean plausible distant scenery. No transparent areas. No large close objects. No people or text, no user interface. This plate must not contain a second copy of the near objects that will be composited over it.",
+    "sourceFilename": "exec-8ef0adc4-bfde-4ee1-b682-94e6131708a0.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "c7030f1d62c8a7212b42e8efcde7c346fce2f8fa2285c1c7e30f5116502ddbc4",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "far-harbor",
+    "destination": "assets/hd-far-harbor.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated game panorama into a CLEAN DISTANT BACKGROUND PLATE for layered parallax. Preserve the same full wide aspect ratio, horizon, palette, weather, light and sharp animated feature film style. Remove ALL close foreground architecture, large near trees, close columns, shelves and walls, and reconstruct a coherent complete distant landscape behind their former silhouettes. For Athens retain distant rooftops, Acropolis and sky; for harbor retain distant sea, mountain coastline and lighthouse; for forest retain distant forest, waterfall, hill temple and sky; for ruins retain distant mountains, lake and temple; for castle show the deep distant vaulted corridor with columns, stained glass and subtle lights, no near pillars or bookshelves. Fill the entire image to all edges with clean plausible distant scenery. No transparent areas. No large close objects. No people or text, no user interface. This plate must not contain a second copy of the near objects that will be composited over it.",
+    "sourceFilename": "exec-69bc79a3-57ea-4154-8d6e-3e390fe47c75.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "b585a3fe441f1240f48f58567db56914063b08cbfc00843d20d2de59330df258",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "far-forest",
+    "destination": "assets/hd-far-forest.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated game panorama into a CLEAN DISTANT BACKGROUND PLATE for layered parallax. Preserve the same full wide aspect ratio, horizon, palette, weather, light and sharp animated feature film style. Remove ALL close foreground architecture, large near trees, close columns, shelves and walls, and reconstruct a coherent complete distant landscape behind their former silhouettes. For Athens retain distant rooftops, Acropolis and sky; for harbor retain distant sea, mountain coastline and lighthouse; for forest retain distant forest, waterfall, hill temple and sky; for ruins retain distant mountains, lake and temple; for castle show the deep distant vaulted corridor with columns, stained glass and subtle lights, no near pillars or bookshelves. Fill the entire image to all edges with clean plausible distant scenery. No transparent areas. No large close objects. No people or text, no user interface. This plate must not contain a second copy of the near objects that will be composited over it.",
+    "sourceFilename": "exec-05330484-d2c4-4cbc-af86-a538db8fc421.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "5ba1a86766829bafd6135d27dd7adea3146035d8136e929dd3a2b98f9f164602",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "far-ruins",
+    "destination": "assets/hd-far-ruins.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated game panorama into a CLEAN DISTANT BACKGROUND PLATE for layered parallax. Preserve the same full wide aspect ratio, horizon, palette, weather, light and sharp animated feature film style. Remove ALL close foreground architecture, large near trees, close columns, shelves and walls, and reconstruct a coherent complete distant landscape behind their former silhouettes. For Athens retain distant rooftops, Acropolis and sky; for harbor retain distant sea, mountain coastline and lighthouse; for forest retain distant forest, waterfall, hill temple and sky; for ruins retain distant mountains, lake and temple; for castle show the deep distant vaulted corridor with columns, stained glass and subtle lights, no near pillars or bookshelves. Fill the entire image to all edges with clean plausible distant scenery. No transparent areas. No large close objects. No people or text, no user interface. This plate must not contain a second copy of the near objects that will be composited over it.",
+    "sourceFilename": "exec-d8d51d29-0142-4f44-9568-95581bdeed4f.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "88629f2c964bfdccace5718bd5aa16422eb425105b7a08e53860ad282254cada",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "far-castle",
+    "destination": "assets/hd-far-castle.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact illustrated game panorama into a CLEAN DISTANT BACKGROUND PLATE for layered parallax. Preserve the same full wide aspect ratio, horizon, palette, weather, light and sharp animated feature film style. Remove ALL close foreground architecture, large near trees, close columns, shelves and walls, and reconstruct a coherent complete distant landscape behind their former silhouettes. For Athens retain distant rooftops, Acropolis and sky; for harbor retain distant sea, mountain coastline and lighthouse; for forest retain distant forest, waterfall, hill temple and sky; for ruins retain distant mountains, lake and temple; for castle show the deep distant vaulted corridor with columns, stained glass and subtle lights, no near pillars or bookshelves. Fill the entire image to all edges with clean plausible distant scenery. No transparent areas. No large close objects. No people or text, no user interface. This plate must not contain a second copy of the near objects that will be composited over it.",
+    "sourceFilename": "exec-067d8b0b-4d17-412f-b213-a16d796bba5c.png",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "37ecd9575ffc64cdf78e52e07ab9ace3ee4b402a286c5419f74e18fd3119276c",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "thodoris",
+    "destination": "assets/hd-thodoris.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact 4 columns by 4 rows transparent character sprite sheet into high-definition animated-feature-quality clean illustrated game artwork. Preserve ALL SIXTEEN original poses in exactly the same row-major order, each pose's exact direction, limb gesture, foot support, camera scale, center and relative position within its own square grid cell. Preserve the same boy identity, hair, face, outfit, colors, accessories and shoes. This is a resolution and rendering upgrade of an existing functioning action game, do not invent new poses, do not rearrange, do not duplicate, do not crop off hands or feet. Keep transparent gutters, no dividing lines, no text, no floor or shadows, true transparent background. Replace coarse pixel stair steps with confident clean fine outlines, nuanced cloth folds, articulated fingers, detailed expressive eyes and rich illustrated lighting, NOT pixel art, NOT photorealistic adult. Match charming premium animated adventure for children, keeping recognizable proportions. Output a perfectly square 4x4 atlas at highest available resolution, ideally 2048 by 2048; 16 equal square cells. All source transparency stays transparent, do not paint a black background.",
+    "sourceFilename": "exec-b8c93d1a-f59c-48a2-ad53-ebf0ae1d8938.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "2907ebdc8d92c22cc711a58e585cb2871ff7aab62b5f98f63ab7442801584d46",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "p1-motion",
+    "destination": "assets/hd-p1-motion.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact 4 columns by 4 rows transparent character sprite sheet into high-definition animated-feature-quality clean illustrated game artwork. Preserve ALL SIXTEEN original poses in exactly the same row-major order, each pose's exact direction, limb gesture, foot support, camera scale, center and relative position within its own square grid cell. Preserve the same boy identity, hair, face, outfit, colors, accessories and shoes. This is a resolution and rendering upgrade of an existing functioning action game, do not invent new poses, do not rearrange, do not duplicate, do not crop off hands or feet. Keep transparent gutters, no dividing lines, no text, no floor or shadows, true transparent background. Replace coarse pixel stair steps with confident clean fine outlines, nuanced cloth folds, articulated fingers, detailed expressive eyes and rich illustrated lighting, NOT pixel art, NOT photorealistic adult. Match charming premium animated adventure for children, keeping recognizable proportions. Output a perfectly square 4x4 atlas at highest available resolution, ideally 2048 by 2048; 16 equal square cells. All source transparency stays transparent, do not paint a black background.",
+    "sourceFilename": "exec-77f6ec8b-cfee-4dfb-86a9-4a89270f3395.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "ef320d2808ae748b4e40eaf25ed8a2760cb355f03e40c41cce561829f5b94efe",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "giorgos",
+    "destination": "assets/hd-giorgos.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact 4 columns by 4 rows transparent character sprite sheet into high-definition animated-feature-quality clean illustrated game artwork. Preserve ALL SIXTEEN original poses in exactly the same row-major order, each pose's exact direction, limb gesture, foot support, camera scale, center and relative position within its own square grid cell. Preserve the same boy identity, hair, face, outfit, colors, accessories and shoes. This is a resolution and rendering upgrade of an existing functioning action game, do not invent new poses, do not rearrange, do not duplicate, do not crop off hands or feet. Keep transparent gutters, no dividing lines, no text, no floor or shadows, true transparent background. Replace coarse pixel stair steps with confident clean fine outlines, nuanced cloth folds, articulated fingers, detailed expressive eyes and rich illustrated lighting, NOT pixel art, NOT photorealistic adult. Match charming premium animated adventure for children, keeping recognizable proportions. Output a perfectly square 4x4 atlas at highest available resolution, ideally 2048 by 2048; 16 equal square cells. All source transparency stays transparent, do not paint a black background.",
+    "sourceFilename": "exec-385c91f0-bf6c-4da2-b88a-b43bcb2791c1.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "25427c58a7886a9e7056cc3df9c689897c4d30b46261c95380e7987a63cd2aaf",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "p2-motion",
+    "destination": "assets/hd-p2-motion.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact 4 columns by 4 rows transparent character sprite sheet into high-definition animated-feature-quality clean illustrated game artwork. Preserve ALL SIXTEEN original poses in exactly the same row-major order, each pose's exact direction, limb gesture, foot support, camera scale, center and relative position within its own square grid cell. Preserve the same boy identity, hair, face, outfit, colors, accessories and shoes. This is a resolution and rendering upgrade of an existing functioning action game, do not invent new poses, do not rearrange, do not duplicate, do not crop off hands or feet. Keep transparent gutters, no dividing lines, no text, no floor or shadows, true transparent background. Replace coarse pixel stair steps with confident clean fine outlines, nuanced cloth folds, articulated fingers, detailed expressive eyes and rich illustrated lighting, NOT pixel art, NOT photorealistic adult. Match charming premium animated adventure for children, keeping recognizable proportions. Output a perfectly square 4x4 atlas at highest available resolution, ideally 2048 by 2048; 16 equal square cells. All source transparency stays transparent, do not paint a black background.",
+    "sourceFilename": "exec-903c3a35-dda0-4395-8e09-15831d2dc0d8.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "0390331c3b8322d75177fe2748d8e86d0bae2288bbb8454ffb0a6c30697a886d",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "p2-combat",
+    "destination": "assets/hd-p2-combat.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact 4 columns by 4 rows transparent character sprite sheet into high-definition animated-feature-quality clean illustrated game artwork. Preserve ALL SIXTEEN original poses in exactly the same row-major order, each pose's exact direction, limb gesture, foot support, camera scale, center and relative position within its own square grid cell. Preserve the same boy identity, hair, face, outfit, colors, accessories and shoes. This is a resolution and rendering upgrade of an existing functioning action game, do not invent new poses, do not rearrange, do not duplicate, do not crop off hands or feet. Keep transparent gutters, no dividing lines, no text, no floor or shadows, true transparent background. Replace coarse pixel stair steps with confident clean fine outlines, nuanced cloth folds, articulated fingers, detailed expressive eyes and rich illustrated lighting, NOT pixel art, NOT photorealistic adult. Match charming premium animated adventure for children, keeping recognizable proportions. Output a perfectly square 4x4 atlas at highest available resolution, ideally 2048 by 2048; 16 equal square cells. All source transparency stays transparent, do not paint a black background.",
+    "sourceFilename": "exec-9effbc3e-51ec-4f80-b59d-a48bc05191f5.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "2ae241040a3830213fc4b28e13cdcd42aa73d1cdc00f41df387eaccbd9021273",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "p1-combat",
+    "destination": "assets/hd-p1-combat.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact 4 columns by 4 rows transparent character sprite sheet into high-definition animated-feature-quality clean illustrated game artwork. Preserve ALL SIXTEEN original poses in exactly the same row-major order, each pose's exact direction, limb gesture, foot support, camera scale, center and relative position within its own square grid cell. Preserve the same boy identity, hair, face, outfit, colors, accessories and shoes. This is a resolution and rendering upgrade of an existing functioning action game, do not invent new poses, do not rearrange, do not duplicate, do not crop off hands or feet. Keep transparent gutters, no dividing lines, no text, no floor or shadows, true transparent background. Replace coarse pixel stair steps with confident clean fine outlines, nuanced cloth folds, articulated fingers, detailed expressive eyes and rich illustrated lighting, NOT pixel art, NOT photorealistic adult. Match charming premium animated adventure for children, keeping recognizable proportions. Output a perfectly square 4x4 atlas at highest available resolution, ideally 2048 by 2048; 16 equal square cells. All source transparency stays transparent, do not paint a black background.",
+    "sourceFilename": "exec-3e2b22b5-08e0-421a-bb57-ebe563a8b1cc.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "9176aff54281a40145909b8b759b02b4e13276d967c19c71c234fcd05ae98817",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "bosses",
+    "cols": 5,
+    "rows": 2,
+    "destination": "assets/hd-bosses.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact transparent game sprite atlas into premium high-definition animated film quality illustration, NOT pixel art. Preserve EXACTLY 5 columns and 2 rows, 10 equal SQUARE cells, original aspect ratio 5:2. Every original creature/character and pose must remain in its EXACT original row and column. Preserve identity, outfit, accessories, limb gestures, direction, position within cell and contact baseline. Do not invent, duplicate, omit, merge or rearrange figures. No new rows, no labels, no borders, no black matte, no floor or shadows. Genuine transparent alpha outside each subject. Redraw coarse pixel edges as clean fine outlines with beautiful rich material and expressive face detail, coherent charming children's fantasy action adventure style. Preserve recognizable anatomy and correct numbers of arms/legs. For human children keep the same curly blonde or spiky brown hair and clothing, articulated natural hands. Use the highest available resolution with source aspect ratio kept exact. This is production animation art; the code uses original cell ordering and a fixed camera.",
+    "sourceFilename": "exec-1f9b3c62-de68-40bb-9f75-1b580bf1d77a.png",
+    "nativeSize": [
+      1984,
+      793
+    ],
+    "sha256": "4c554bf46cd636f87884209f38976a2c419c7bba9be5cee70fc84f2acd862b84",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "foes",
+    "cols": 4,
+    "rows": 9,
+    "destination": "assets/hd-foes.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact transparent game sprite atlas into premium high-definition animated film quality illustration, NOT pixel art. Preserve EXACTLY 4 columns and 9 rows, 36 equal SQUARE cells, original aspect ratio 4:9. Every original creature/character and pose must remain in its EXACT original row and column. Preserve identity, outfit, accessories, limb gestures, direction, position within cell and contact baseline. Do not invent, duplicate, omit, merge or rearrange figures. No new rows, no labels, no borders, no black matte, no floor or shadows. Genuine transparent alpha outside each subject. Redraw coarse pixel edges as clean fine outlines with beautiful rich material and expressive face detail, coherent charming children's fantasy action adventure style. Preserve recognizable anatomy and correct numbers of arms/legs. For human children keep the same curly blonde or spiky brown hair and clothing, articulated natural hands. Use the highest available resolution with source aspect ratio kept exact. This is production animation art; the code uses original cell ordering and a fixed camera.",
+    "sourceFilename": "exec-cfa2af38-d8d4-4a90-9423-b2a94e630c81.png",
+    "nativeSize": [
+      836,
+      1881
+    ],
+    "sha256": "f346dc08c63887b2c5e2dacfcdd5ecfbae2fe783c77f23d4d0ec4fa1bf06fa54",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "carry-2",
+    "cols": 4,
+    "rows": 4,
+    "destination": "assets/hd-carry-2.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact transparent game sprite atlas into premium high-definition animated film quality illustration, NOT pixel art. Preserve EXACTLY 4 columns and 4 rows, 16 equal SQUARE cells, original aspect ratio 4:4. Every original creature/character and pose must remain in its EXACT original row and column. Preserve identity, outfit, accessories, limb gestures, direction, position within cell and contact baseline. Do not invent, duplicate, omit, merge or rearrange figures. No new rows, no labels, no borders, no black matte, no floor or shadows. Genuine transparent alpha outside each subject. Redraw coarse pixel edges as clean fine outlines with beautiful rich material and expressive face detail, coherent charming children's fantasy action adventure style. Preserve recognizable anatomy and correct numbers of arms/legs. For human children keep the same curly blonde or spiky brown hair and clothing, articulated natural hands. Use the highest available resolution with source aspect ratio kept exact. This is production animation art; the code uses original cell ordering and a fixed camera.",
+    "sourceFilename": "exec-b185b161-db3a-4ec1-b02b-b9b8567c665a.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "30a21782bc9e279a42f9d27c62152038ee0369704fa94b37751cafc42e2bc2d8",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "special-boss",
+    "cols": 5,
+    "rows": 3,
+    "destination": "assets/hd-special-boss.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact transparent game sprite atlas into premium high-definition animated film quality illustration, NOT pixel art. Preserve EXACTLY 5 columns and 3 rows, 15 equal SQUARE cells, original aspect ratio 5:3. Every original creature/character and pose must remain in its EXACT original row and column. Preserve identity, outfit, accessories, limb gestures, direction, position within cell and contact baseline. Do not invent, duplicate, omit, merge or rearrange figures. No new rows, no labels, no borders, no black matte, no floor or shadows. Genuine transparent alpha outside each subject. Redraw coarse pixel edges as clean fine outlines with beautiful rich material and expressive face detail, coherent charming children's fantasy action adventure style. Preserve recognizable anatomy and correct numbers of arms/legs. For human children keep the same curly blonde or spiky brown hair and clothing, articulated natural hands. Use the highest available resolution with source aspect ratio kept exact. This is production animation art; the code uses original cell ordering and a fixed camera.",
+    "sourceFilename": "exec-213a5212-7bde-4dd3-b3d2-f316573669a1.png",
+    "nativeSize": [
+      1620,
+      971
+    ],
+    "sha256": "1d5f5de54ead95959316883a628120b6c9db71d58f4b6bd40465b58108a23d02",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "rivals",
+    "cols": 5,
+    "rows": 2,
+    "destination": "assets/hd-rivals.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact transparent game sprite atlas into premium high-definition animated film quality illustration, NOT pixel art. Preserve EXACTLY 5 columns and 2 rows, 10 equal SQUARE cells, original aspect ratio 5:2. Every original creature/character and pose must remain in its EXACT original row and column. Preserve identity, outfit, accessories, limb gestures, direction, position within cell and contact baseline. Do not invent, duplicate, omit, merge or rearrange figures. No new rows, no labels, no borders, no black matte, no floor or shadows. Genuine transparent alpha outside each subject. Redraw coarse pixel edges as clean fine outlines with beautiful rich material and expressive face detail, coherent charming children's fantasy action adventure style. Preserve recognizable anatomy and correct numbers of arms/legs. For human children keep the same curly blonde or spiky brown hair and clothing, articulated natural hands. Use the highest available resolution with source aspect ratio kept exact. This is production animation art; the code uses original cell ordering and a fixed camera.",
+    "sourceFilename": "exec-f7b02566-70e8-4454-985f-831e988dbf04.png",
+    "nativeSize": [
+      1984,
+      793
+    ],
+    "sha256": "68cfb2a0e65b694511a86081d13b370d906d02d206a962e95de8b61809f0fe0e",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "carry-1",
+    "cols": 4,
+    "rows": 4,
+    "destination": "assets/hd-carry-1.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact transparent game sprite atlas into premium high-definition animated film quality illustration, NOT pixel art. Preserve EXACTLY 4 columns and 4 rows, 16 equal SQUARE cells, original aspect ratio 4:4. Every original creature/character and pose must remain in its EXACT original row and column. Preserve identity, outfit, accessories, limb gestures, direction, position within cell and contact baseline. Do not invent, duplicate, omit, merge or rearrange figures. No new rows, no labels, no borders, no black matte, no floor or shadows. Genuine transparent alpha outside each subject. Redraw coarse pixel edges as clean fine outlines with beautiful rich material and expressive face detail, coherent charming children's fantasy action adventure style. Preserve recognizable anatomy and correct numbers of arms/legs. For human children keep the same curly blonde or spiky brown hair and clothing, articulated natural hands. Use the highest available resolution with source aspect ratio kept exact. This is production animation art; the code uses original cell ordering and a fixed camera.",
+    "sourceFilename": "exec-a9518109-8b8b-4855-a110-98ce6e5414c2.png",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sha256": "19e2d2d4f0d796ca70be7666bd6d5ac72d6bbb106d959b09001f3627c72e854f",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  },
+  {
+    "key": "boss-motion",
+    "cols": 5,
+    "rows": 2,
+    "destination": "assets/hd-boss-motion.webp",
+    "method": "built-in image_gen",
+    "prompt": "Edit this exact transparent game sprite atlas into premium high-definition animated film quality illustration, NOT pixel art. Preserve EXACTLY 5 columns and 2 rows, 10 equal SQUARE cells, original aspect ratio 5:2. Every original creature/character and pose must remain in its EXACT original row and column. Preserve identity, outfit, accessories, limb gestures, direction, position within cell and contact baseline. Do not invent, duplicate, omit, merge or rearrange figures. No new rows, no labels, no borders, no black matte, no floor or shadows. Genuine transparent alpha outside each subject. Redraw coarse pixel edges as clean fine outlines with beautiful rich material and expressive face detail, coherent charming children's fantasy action adventure style. Preserve recognizable anatomy and correct numbers of arms/legs. For human children keep the same curly blonde or spiky brown hair and clothing, articulated natural hands. Use the highest available resolution with source aspect ratio kept exact. This is production animation art; the code uses original cell ordering and a fixed camera.",
+    "sourceFilename": "exec-c764eb97-aa31-4e5e-aa75-a8d7baa0f70a.png",
+    "nativeSize": [
+      1984,
+      793
+    ],
+    "sha256": "ca5f33d0f927164d7c8d30b2242ed8c5420421b1017462ba47582a10ada72025",
+    "encoding": "WebP quality 94; original generated dimensions and alpha retained",
+    "usedAtRuntime": true
+  }
+]
