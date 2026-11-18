@@ -6,6 +6,24 @@ A buildless, one- or two-player illustrated action adventure through five worlds
 Serve this directory as static files; GitHub Pages publishes `main` directly.
 The original single-file release remains recoverable in Git history.
 
+## Arcade expansion · 2.1
+
+- Choose Giorgos or Thodoris in single player. In co-op, each seat chooses
+  independently, with large portraits, outlined focus and a confirmation flash.
+  Hero appearance and HUD follow the choice; keyboard/controller seats stay fixed.
+- Easy / Normal / Hard are selected before the story. Normal retains the original
+  balance. Difficulty persists across stage transitions and checkpoint retries.
+- Eight extra storybook foes use distinct telegraphed spells, charges, leaps,
+  rings and projectiles. Their defeat counts normally toward clearing encounters.
+- More roadside dressing, carryable/breakable chests and urns, one-time chest
+  rewards, animated fountains, torch flames, local light, birds and fireflies.
+- The title features both heroes. Five layered comic scenes use authored pose
+  changes, comic timing and sound. Scenes advance automatically, with no Continue
+  buttons. A/×, Enter or a tap advances; Start skips the opening story.
+- Native text selection, image dragging and mobile long-press menus are disabled
+  on the game surface. Rotation immediately recomputes the viewport and resets
+  touch input, without layout transitions.
+
 ## HD presentation
 
 - A 1920×1080 drawing buffer, with optional 1440×810 and 960×540 settings.
@@ -64,7 +82,7 @@ and [Android: natural input across form factors](https://developer.android.com/g
 ## Artwork and verification
 
 New raster artwork uses built-in ImageGen, with the exact prompt set in
-`art-provenance.json`. Shadows and effects are 2D/2.5D approximations.
+`art-provenance.json` and `expansion-provenance.json`. Shadows and effects are 2D/2.5D approximations.
 The game rules, five worlds, enemies, boss phases, co-op, pickups and story beats
 are preserved. Automated checks cover menus, both players, combat, pickup/throw,
 all five boss renderers, graphics options, touch magnitude and input release.

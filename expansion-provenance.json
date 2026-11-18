@@ -1,0 +1,172 @@
+[
+  {
+    "key": "castle-unlit",
+    "path": "exec-f3cb7e65-6e8b-4e0b-804c-53542aebb807.png",
+    "prompt": "Edit this exact transparent castle near-layer. Preserve the full wide canvas, exact camera, original RGBA transparency and every pillar, window, shelf and arch silhouette at exactly the same coordinates. ONLY remove the FOUR orange/yellow baked torch FLAMES and their glow on the torch bowls near x109,928,1516,1990 on the2172wide reference. Leave the four metal torch holders completely intact with dark unlit wicks and realistic dark metal bowls. Reconstruct the stone wall behind each removed flame using the adjacent stone texture. Do not remove the torch hardware or alter the general warm ambient grade. No other changes, no rescale, no new lights. Actual moving flames will be rendered in code at these wicks.",
+    "runtime": "assets/castle-unlit.webp",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "sha256": "9398a4f4ebefb55d92a1787cb857a486744b0fbc840aeb5e359efef4e152eb7c",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "title-duo",
+    "path": "exec-7685cf79-19e8-4b1e-8625-fa493b1b0536.png",
+    "prompt": "Create a BRAND NEW premium HD illustrated title-screen background for Little Dragon 96 Yoto Quest using the TWO attached character identity sheets ONLY as identity references, not as layout. Wide cinematic landscape, crisp polished animated-feature adventure illustration, no pixel art. Two distinct young Greek karate heroes stand TOGETHER on the RIGHT half: curly golden-haired Giorgos in white gi, black belt, blue wristbands and brown sandals; spiky brown-haired Thodoris in white gi, blue belt and red sneakers. Both equally prominent with readable faces and natural relaxed heroic poses, looking toward a distant whimsical castle. A small orange Yoto story player and several colorful story cards sit on a low stone ledge beside them. Athens neoclassical neighborhood, blue shutters, bougainvillea, twilight Greek hills and tiny distant harbor, warm lamps and teal-violet sky. LEFT 42 PERCENT is intentionally quiet, dark atmospheric scenery with no faces or important objects, reserved for game title and menu. No text, no logos, no UI. Highest available wide resolution, ideally 2560x1440. Characters do not overlap each other's faces.",
+    "runtime": "assets/title-duo.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "f1d2fec7683ed77c625553b1b0b8b79121a9390e86be62b5394b4300509ed7bc",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-clean-1",
+    "path": "exec-d7522d05-789e-4b5c-93dc-1ff060a7fb36.png",
+    "prompt": "Edit this exact wide illustrated story image into a clean background plate for animation. Preserve exact full16:9 camera, furniture, table/stone ledge, architecture, map, cards, lighting and scene geometry. Remove ALL human and monster characters and reconstruct the room/landscape behind them naturally. Also remove the orange Yoto player if present; keep other static papers/cards, background window and furniture. No new people, no silhouettes, no words. Upgrade coarse pixel stair steps into crisp high-resolution animated-feature painted detail while preserving scene layout, original warm/cool light and child-friendly tone. No crop or zoom. Highest wide resolution available. The removed subjects will return as separate animated cutouts.",
+    "runtime": "assets/cinema-bg-1.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "39e89856392f39bb49f6aa17b2193489823ffd13d6f64443329ab42d09944acc",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-clean-2",
+    "path": "exec-c4e7651e-3cb1-4da4-9637-4ea2fe7ea623.png",
+    "prompt": "Edit this exact wide illustrated story image into a clean background plate for animation. Preserve exact full16:9 camera, furniture, table/stone ledge, architecture, map, cards, lighting and scene geometry. Remove ALL human and monster characters and reconstruct the room/landscape behind them naturally. Also remove the orange Yoto player if present; keep other static papers/cards, background window and furniture. No new people, no silhouettes, no words. Upgrade coarse pixel stair steps into crisp high-resolution animated-feature painted detail while preserving scene layout, original warm/cool light and child-friendly tone. No crop or zoom. Highest wide resolution available. The removed subjects will return as separate animated cutouts.",
+    "runtime": "assets/cinema-bg-2.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "b7c5310768c1b979178bb2cb896f44cdb5794e59c7271b2d7da8860fd53dd068",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-actors-1",
+    "path": "exec-bd86aae0-d380-4475-88ba-0b4d15d98469.png",
+    "prompt": "Create a FOUR-POSE transparent animated foreground atlas for this exact story scene. Exact TWO columns by TWO rows, each cell16:9 landscape, whole atlas16:9 landscape. In EACH CELL preserve the full original scene camera coordinates: reproduce ONLY the human/monster characters and the orange Yoto device if present, at the same positions and scale as in the attached full scene. Remove ALL background, table, architecture, chairs, rugs and landscape to true transparent alpha. Keep any map/card held in a hand attached to that hand. Every cell is a complete full-canvas subject layer that will overlay the same clean background, not a tightly cropped figure. Same identities, outfits and anatomy in all four poses; consistent camera, stable head size and supports. Four genuinely different subtle poses, row-major: Two boys at the table enjoying the Yoto: pose0 looking at the story card, pose1 curly boy points and both blink, pose2 spiky boy lowers the card toward the orange player and turns its knob, pose3 both smile with relaxed hands. Do not add extra people or duplicate bodies within a cell. Keep hands articulated and natural, gestures small enough to preserve contact with the original table/ledge. Fine HD animated-feature illustration, not pixel art. No words, borders, dividing lines, black matte or added floor. Highest wide16:9 resolution available with exact2x2 equal cells.",
+    "runtime": "assets/cinema-actors-1.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "6c4bf89c33911a36993e8f4ab2036cd76ff9de935498a777d008e6f06e99ea3d",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-actors-2",
+    "path": "exec-95bc4a07-a9ed-41b8-b4eb-2e2bf770d70d.png",
+    "prompt": "Create a FOUR-POSE transparent animated foreground atlas for this exact story scene. Exact TWO columns by TWO rows, each cell16:9 landscape, whole atlas16:9 landscape. In EACH CELL preserve the full original scene camera coordinates: reproduce ONLY the human/monster characters and the orange Yoto device if present, at the same positions and scale as in the attached full scene. Remove ALL background, table, architecture, chairs, rugs and landscape to true transparent alpha. Keep any map/card held in a hand attached to that hand. Every cell is a complete full-canvas subject layer that will overlay the same clean background, not a tightly cropped figure. Same identities, outfits and anatomy in all four poses; consistent camera, stable head size and supports. Four genuinely different subtle poses, row-major: Gruffy at the open window stealing the orange Yoto: pose0 hand reaching toward player, pose1 grasping its top, pose2 lifting player slightly, pose3 looking aside mischievously while holding it. Do not add extra people or duplicate bodies within a cell. Keep hands articulated and natural, gestures small enough to preserve contact with the original table/ledge. Fine HD animated-feature illustration, not pixel art. No words, borders, dividing lines, black matte or added floor. Highest wide16:9 resolution available with exact2x2 equal cells.",
+    "runtime": "assets/cinema-actors-2.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "1cd1e576389e7bcc542e4104c014cbc7822e01db25eceb05f0053a3885d9c427",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-clean-3",
+    "path": "exec-d9d91da9-5e57-41fe-8ca9-bdf7455094fb.png",
+    "prompt": "Edit this exact wide illustrated story image into a clean background plate for animation. Preserve exact full16:9 camera, furniture, table/stone ledge, architecture, map, cards, lighting and scene geometry. Remove ALL human and monster characters and reconstruct the room/landscape behind them naturally. Also remove the orange Yoto player if present; keep other static papers/cards, background window and furniture. No new people, no silhouettes, no words. Upgrade coarse pixel stair steps into crisp high-resolution animated-feature painted detail while preserving scene layout, original warm/cool light and child-friendly tone. No crop or zoom. Highest wide resolution available. The removed subjects will return as separate animated cutouts.",
+    "runtime": "assets/cinema-bg-3.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "3421af66d9f176e02d3feba39f0fd5eb1c7f21a74042be354536ef00ae48b109",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-actors-3",
+    "path": "exec-db685d72-cca0-4078-a99a-78b684291f13.png",
+    "prompt": "Precise object removal edit. Keep exact 2x2 four-frame sprite atlas, all four boy poses, his map, every limb, original position and scale, and transparent background. REMOVE the small orange glowing player-shaped outline floating at the right of EACH of the four cells, including ALL its glow. Those four spots must become EMPTY alpha zero. Keep the boy and held map unchanged. No orange player or orange silhouette anywhere. Do not change framing or camera.",
+    "runtime": "assets/cinema-actors-3.webp",
+    "nativeSize": [
+      1671,
+      941
+    ],
+    "sha256": "2f8ae83899d565fe0e2ac479d3805c853e61a4aecb89493a2c56909d69fe848f",
+    "tool": "built-in image_gen",
+    "source": "exec-5ec2bd87-1997-433b-ac13-2610f7c8e158.png"
+  },
+  {
+    "key": "comic-clean-4",
+    "path": "exec-75ec5ab3-8c60-4da2-9c86-3a4a6cee6b6d.png",
+    "prompt": "Edit this exact wide illustrated story image into a clean background plate for animation. Preserve exact full16:9 camera, furniture, table/stone ledge, architecture, map, cards, lighting and scene geometry. Remove ALL human and monster characters and reconstruct the room/landscape behind them naturally. Also remove the orange Yoto player if present; keep other static papers/cards, background window and furniture. No new people, no silhouettes, no words. Upgrade coarse pixel stair steps into crisp high-resolution animated-feature painted detail while preserving scene layout, original warm/cool light and child-friendly tone. No crop or zoom. Highest wide resolution available. The removed subjects will return as separate animated cutouts.",
+    "runtime": "assets/cinema-bg-4.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "e2cc51b413cbb09dcb02ae6a45cc1fe63ce416f1255478f89a76996306785401",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-actors-4",
+    "path": "exec-f4f55546-54e3-47f8-9f11-9933ad5230d8.png",
+    "prompt": "Precise object removal edit. Keep exact 2x2 four-frame sprite atlas and both boys in every pose, same camera, same pixels/scale, genuine transparent background. REMOVE the little orange Yoto radio/player sitting at bottom RIGHT of each of the four cells, erase all four orange players and their glow completely into alpha zero. Keep both boys, their hands/fist-bump, their clothes and faces completely unchanged. Do not replace it with a shadow or outline. The orange player has been stolen in the story and must be absent.",
+    "runtime": "assets/cinema-actors-4.webp",
+    "nativeSize": [
+      1671,
+      941
+    ],
+    "sha256": "856c298e3d008b6dcb20cc9f26b84af9e4ce272fbe0e17514882b64d3ec065b7",
+    "tool": "built-in image_gen",
+    "source": "exec-a93e973c-4889-44dd-afd3-fdc78063ce7b.png"
+  },
+  {
+    "key": "comic-clean-5",
+    "path": "exec-1989f5bf-7d71-4132-9ada-60687f757f12.png",
+    "prompt": "Edit this exact wide illustrated story image into a clean background plate for animation. Preserve exact full16:9 camera, furniture, table/stone ledge, architecture, map, cards, lighting and scene geometry. Remove ALL human and monster characters and reconstruct the room/landscape behind them naturally. Also remove the orange Yoto player if present; keep other static papers/cards, background window and furniture. No new people, no silhouettes, no words. Upgrade coarse pixel stair steps into crisp high-resolution animated-feature painted detail while preserving scene layout, original warm/cool light and child-friendly tone. No crop or zoom. Highest wide resolution available. The removed subjects will return as separate animated cutouts.",
+    "runtime": "assets/cinema-bg-5.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "853b82a9242244df93a5e1f73153edf3ddb25ebab9c9c28f9025e92d6b2a84e2",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "comic-actors-5",
+    "path": "exec-9d23413d-355c-4dd4-88be-929117cd21f9.png",
+    "prompt": "Create a FOUR-POSE transparent animated foreground atlas for this exact story scene. Exact TWO columns by TWO rows, each cell16:9 landscape, whole atlas16:9 landscape. In EACH CELL preserve the full original scene camera coordinates: reproduce ONLY the human/monster characters and the orange Yoto device if present, at the same positions and scale as in the attached full scene. Remove ALL background, table, architecture, chairs, rugs and landscape to true transparent alpha. Keep any map/card held in a hand attached to that hand. Every cell is a complete full-canvas subject layer that will overlay the same clean background, not a tightly cropped figure. Same identities, outfits and anatomy in all four poses; consistent camera, stable head size and supports. Four genuinely different subtle poses, row-major: Ending with both boys and Gruffy sharing stories: pose0 relaxed smiles, pose1 spiky boy shows story card while curly boy gestures, pose2 all three laugh and Gruffy raises one hand, pose3 settle together smiling beside the orange Yoto. Do not add extra people or duplicate bodies within a cell. Keep hands articulated and natural, gestures small enough to preserve contact with the original table/ledge. Fine HD animated-feature illustration, not pixel art. No words, borders, dividing lines, black matte or added floor. Highest wide16:9 resolution available with exact2x2 equal cells.",
+    "runtime": "assets/cinema-actors-5.webp",
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sha256": "f9eb620764f310301e44135d46e8001886f5f92054d89aab49efb2f33d508fd9",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "road-props",
+    "prompt": "Edit target: this exact 4-column 3-row prop atlas. Precise background removal only. Preserve all twelve objects, exact pixel positions, scales, colors, every fine edge, all empty interior gaps. REMOVE the white/grey opaque background COMPLETELY to alpha=0. Output true transparent RGBA cutouts with no background color, no checkerboard, no grey haze, no shadow outside objects. Do not rearrange, redraw or resize. Preserve 4x3 equal cells and original full canvas.",
+    "source": "exec-c6272bd7-1733-4d4e-b9d6-1b8d0a002e6c.png",
+    "runtime": "assets/road-props.webp",
+    "nativeSize": [
+      1448,
+      1086
+    ],
+    "sha256": "08396b76e5f5c9870f35344ac5ebf119558acc43e17973872af4441e04703e5c",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "fairytale-foes",
+    "prompt": "Make a TRANSPARENT STICKER SHEET, PNG RGBA with blank empty alpha zero space between every sticker. No painted background at all, no backdrop colors, no shadows, no gradients behind stickers. Eight friendly fantasy cartoon characters rendered as isolated die-cut stickers in a strict four columns and six rows sprite atlas, twenty-four equal square cells. Row 1: purple witch, grey fairy tale wolf, little brown horned woodland monster with twig, black-robed bald wizard in red shoes with green potion. Row 2: purple evil queen, green bridge troll, rat king, colorful piper. Rows 3 and 4 repeat exactly these eight figures in the same order with one walking step. Rows 5 and 6 repeat exactly these eight figures in the same order in expressive action poses. Full body facing right. Figures opaque, all surrounding space fully transparent. Preserve same body scale for each identity across its three poses. Soles at 94% of each cell. Detailed colorful HD arcade sprite artwork. No text, no grid, no rectangular backplates.",
+    "source": "exec-f9d297a3-a809-4b32-912c-1caff61565af.png",
+    "runtime": "assets/fairytale-foes.webp",
+    "nativeSize": [
+      1024,
+      1536
+    ],
+    "sha256": "2b852f7652219b04d5470bbcaf4255c72fa0df0fb47d650bb4ac6d81a7baed9d",
+    "tool": "built-in image_gen"
+  }
+]

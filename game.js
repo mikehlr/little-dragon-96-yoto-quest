@@ -37,6 +37,8 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const mix = (a, b, t) => a + (b - a) * t;
 const between = (min, max) => mix(min, max, Math.random());
 const currentStage = () => STAGES[game.level];
+const BASE_DIFFICULTY=Object.freeze({enemyHealth:1,bossHealth:1,incoming:1,speed:1,rest:1,tell:1,energy:8,stageHealth:74,gateHeal:9,appleHeal:32});
+const difficultyRules=()=>globalThis.DragonDifficulty?.rules()||BASE_DIFFICULTY;
 
 // Original stage themes. Melody events are [subdivision, scale degree, length].
 const SOUNDTRACK = [
@@ -525,11 +527,12 @@ const arenaX = x => clamp(x, Math.max(game.entry + 18, GATES[game.section] - 370
 
 function specialEnemy(level, x, y, rival = false) {
   const kit = (rival ? RIVAL_KITS : BOSS_KITS)[level];
-  const hp = Math.round(kit.hp * (game.two ? 1.17 : 1));
+  const rules=difficultyRules();
+  const hp = Math.round(kit.hp * (game.two ? 1.17 : 1) * (rival?rules.enemyHealth:rules.bossHealth));
   return {
     type: level, x, y, z: kit.hover || 0, face: -1, hp, maxHp: hp, boss: !rival, rival,
-    kit, size: kit.size, speed: kit.pace, act: 'idle', age: 0, phase: 0, hurt: 0, phaseIndex: 0,
-    phaseAttack: -1, cycle: 0, cooldown: .55, move: null,
+    kit, size: kit.size, speed: kit.pace*rules.speed, act: 'idle', age: 0, phase: 0, hurt: 0, phaseIndex: 0,
+    phaseAttack: -1, cycle: 0, cooldown: .55*rules.rest, move: null,
   };
 }
 
@@ -554,7 +557,8 @@ function targetsFor(move, living, target) {
 function startSpecial(e, living, target) {
   const sequence = e.kit.phases[e.phaseIndex];
   const id = sequence[e.cycle++ % sequence.length];
-  const plan = e.kit.moves[id];
+  const authoredPlan=e.kit.moves[id],rules=difficultyRules();
+  const plan={...authoredPlan,tell:authoredPlan.tell*rules.tell,rest:authoredPlan.rest*rules.rest};
   const direction = target.x < e.x ? -1 : 1;
   const aimY = clamp(target.y, ...DEPTH);
   const spots = plan.form === 'drop' ? targetsFor(plan, living, target) : [{ x: arenaX(target.x), y: aimY }];
@@ -639,7 +643,7 @@ function updateSpecial(e, dt, living) {
   if (e.act === 'recover') {
     if (e.age < e.move.plan.rest) return;
     e.move = null;
-    e.cooldown = e.rival ? .40 : Math.max(.28, .57 - e.phaseIndex * .11);
+    e.cooldown = (e.rival ? .40 : Math.max(.28, .57 - e.phaseIndex * .11))*difficultyRules().rest;
     pose(e, 'idle');
   }
   if (e.act === 'phase') {
@@ -821,7 +825,7 @@ function beginStage(retry = false) {
     combo: null, rescues: new Set(), checkpoint, entry, hazards: [], arenaName: '' });
   game.players.forEach((p, i) => Object.assign(p, {
     x: entry + 81 - i * 29, y: 214 + i * 16, z: 0, vz: 0, face: 1,
-    hp: Math.max(74, p.hp), energy: Math.max(65, p.energy),
+    hp: Math.max(difficultyRules().stageHealth, p.hp), energy: Math.max(65, p.energy),
     act: 'idle', age: 0, phase: 0, stride: 0, inv: 0, carry: null, toss: null, afterLift: null,
     swing: null, spent: false, evade: null, evadeCooldown: 0,
   }));
@@ -830,10 +834,11 @@ function beginStage(retry = false) {
 
 function enemy(type, x, y) {
   const [hp, speed, size, tactic] = FOES[type];
-  const maxHp = Math.round(hp * (game.two ? 1.16 : 1));
-  return { type, x, y, boss: false, speed, size, tactic, hp: maxHp, maxHp,
+  const rules=difficultyRules();
+  const maxHp = Math.round(hp * (game.two ? 1.16 : 1) * rules.enemyHealth);
+  return { type, x, y, boss: false, speed:speed*rules.speed, size, tactic, hp: maxHp, maxHp,
     face: -1, act: 'idle', age: 0, phase: between(0, 2),
-    cooldown: between(.55, .95), fired: false };
+    cooldown: between(.55, .95)*rules.rest, fired: false };
 }
 
 function pose(entity, act) {
@@ -918,7 +923,7 @@ function damage(e, owner, amount, hits, direction, source = 'punch') {
   const dealt = bossDamage(e, amount, direction);
   if (dealt <= 0) return;
   e.hp -= dealt;
-  if (!e.kit && !e.entry) e.x = clamp(e.x + direction * (e.guard ? 5 : 9), game.entry + 22, GATES[game.section] - 19);
+  if ((!e.kit || e.storyFoe) && !e.entry) e.x = clamp(e.x + direction * (e.guard ? 5 : 9), game.entry + 22, GATES[game.section] - 19);
   game.score += dealt * 10;
   if (!game.combo || game.combo.until < game.clock) game.combo = { count: 0, sources: new Set(), until: 0 };
   const chain = game.combo;
@@ -931,7 +936,7 @@ function damage(e, owner, amount, hits, direction, source = 'punch') {
   }
   owner.energy = Math.min(100, owner.energy + 4);
   owner.lastHit = game.clock;
-  if (!e.hp || !e.kit) {
+  if (!e.hp || !e.kit || e.storyFoe) {
     pose(e, e.hp > 0 ? 'hit' : 'fall');
     e.age = 0;
   } else e.hurt = .105;
@@ -946,7 +951,7 @@ function updatePlayer(p, dt) {
   p.phase += dt;
   p.inv = Math.max(0, p.inv - dt);
   p.evadeCooldown = Math.max(0, p.evadeCooldown - dt);
-  p.energy = Math.min(100, p.energy + dt * 8);
+  p.energy = Math.min(100, p.energy + dt * difficultyRules().energy);
   const dx = moveX(p);
   const dy = moveY(p);
   const air = p.z > 0 || p.vz !== 0;
@@ -1032,6 +1037,7 @@ function updatePlayer(p, dt) {
 }
 
 function hitHero(p, sourceX, amount) {
+  amount=Math.max(1,Math.round(amount*difficultyRules().incoming));
   if (!p.hp || p.inv > 0 || (p.act === 'dodge' && p.age < .22)) return;
   const block = p.act === 'block' && (sourceX - p.x) * p.face >= 0;
   const perfect = block && p.age < .17;
@@ -1050,11 +1056,12 @@ function updateEnemy(e, dt, living) {
   e.phase += dt;
   if (!e.hp || !living.length) return;
   if (e.entry) return enterArena(e, dt);
+  if(e.storyFoe&&e.act==='hit'){if(e.age<.25)return;pose(e,'idle');e.move=null;e.cooldown=Math.max(e.cooldown,.35*difficultyRules().rest)}
   if (e.kit) return updateSpecial(e, dt, living);
   e.cooldown -= dt;
   if (e.act === 'hit' && e.age < .25) return;
   if (e.act === 'attack') {
-    const windup = .36;
+    const windup = .36*difficultyRules().tell;
     if (e.age >= windup && !e.fired) {
       e.fired = true;
       for (const p of living) {
@@ -1076,7 +1083,7 @@ function updateEnemy(e, dt, living) {
     if (e.cooldown > 0) return pose(e, 'idle');
     pose(e, 'attack');
     e.fired = false;
-    e.cooldown = between(1.25, 1.7);
+    e.cooldown = between(1.25, 1.7)*difficultyRules().rest;
     return;
   }
   pose(e, 'walk');
@@ -1095,7 +1102,7 @@ function updateGate(living, dt) {
     if (game.section < GATES.length - 1) {
       game.gate = 'open';
       game.timer = 1.1;
-      living.forEach(p => { p.hp = Math.min(100, p.hp + 9); });
+      living.forEach(p => { p.hp = Math.min(100, p.hp + difficultyRules().gateHeal); });
       effect('gate');
     } else {
       game.gate = 'reward';
@@ -1196,7 +1203,7 @@ function nearbyItem(p) {
   let nearest = null;
   let best = 34;
   for (const item of game.items) {
-    if (item.gone || item.flight || item.kind === 'debris' || (item.kind === 'apple' && p.hp >= 100)) continue;
+    if (item.gone || item.decor || item.flight || item.kind === 'debris' || (item.kind === 'apple' && p.hp >= 100)) continue;
     const distance = Math.hypot(item.x - p.x, (item.y - p.y) * 1.45);
     if (distance < best) {
       nearest = item;
@@ -1231,7 +1238,7 @@ function pickupAction(p) {
   if (!item) return;
   game.items = game.items.filter(other => other !== item);
   if (item.kind === 'apple') {
-    p.hp = Math.min(100, p.hp + 32);
+    p.hp = Math.min(100, p.hp + difficultyRules().appleHeal);
     effect('heal', p.id);
     spark(p.x, p.y - 20, '#aaffc8', 12);
   } else if (item.kind === 'card') {
@@ -1543,18 +1550,19 @@ function carryPose(p) {
 }
 
 function drawHeroFrame(p) {
-  const carry = images['carry-' + p.id];
+  const hero = p.hero || p.id;
+  const carry = images['carry-' + hero];
   const frame = carryPose(p);
   if (frame >= 0 && READY(carry)) {
     stamp(carry, frame, 4, HERO_SIZE);
     return;
   }
   if (p.act === 'throw') {
-    stamp(images[p.id === 1 ? 'giorgos' : 'thodoris'], p.age < .19 ? 15 : 7, 4, HERO_SIZE);
+    stamp(images[hero === 1 ? 'giorgos' : 'thodoris'], p.age < .19 ? 15 : 7, 4, HERO_SIZE);
     return;
   }
   if (p.act === 'punch' || p.act === 'kick') {
-    const combat = images['p' + p.id + '-combat'];
+    const combat = images['p' + hero + '-combat'];
     if (READY(combat)) {
       const time = Math.floor(p.age / MOVE_TIME[p.act] * STRIKE_FRAMES.length);
       const frame = STRIKE_FRAMES[Math.min(STRIKE_FRAMES.length - 1, time)];
@@ -1562,8 +1570,8 @@ function drawHeroFrame(p) {
       return;
     }
   }
-  const extra = images['p' + p.id + '-motion'];
-  const normal = images[p.id === 1 ? 'giorgos' : 'thodoris'];
+  const extra = images['p' + hero + '-motion'];
+  const normal = images[hero === 1 ? 'giorgos' : 'thodoris'];
   if (READY(extra)) {
     if (p.act === 'dodge') {
       stamp(extra, p.age < .13 ? 12 : 11, 4, HERO_SIZE);
@@ -1630,7 +1638,7 @@ function drawHero(p) {
   ctx.scale(p.face, 1);
   if (p.inv > 0 && Math.floor(game.clock * 19) % 2) ctx.globalAlpha = .68;
   if (!p.hp) {
-    if (!READY(images['p' + p.id + '-motion'])) ctx.rotate(-1.04 * Math.min(1, p.age * 4));
+    if (!READY(images['p' + (p.hero || p.id) + '-motion'])) ctx.rotate(-1.04 * Math.min(1, p.age * 4));
     ctx.globalAlpha = Math.max(0, 1 - (p.age - .8) * 2);
   }
   const walking = p.act === 'walk';
@@ -1726,7 +1734,7 @@ function drawFoe(e) {
   const y = e.y;
   if (x < -e.size || x > WIDTH + e.size) return;
   const attack = e.act === 'attack';
-  const wind = e.kit ? e.act === 'tell' : attack && e.age < .36;
+  const wind = e.kit ? e.act === 'tell' : attack && e.age < .36*difficultyRules().tell;
   const stride = e.act === 'walk' ? Math.sin(e.phase * 16) : 0;
   const defeat = e.act === 'fall' ? clamp(e.age * 3.4, 0, 1) : 0;
   if (defeat >= 1) return;
@@ -1930,11 +1938,11 @@ function hud() {
     const i = p.id - 1;
     const x = i ? 343 : 8;
     const color = COLORS[i];
-    const portrait = images[i ? 'thodoris' : 'giorgos'];
+    const portrait = images[(p.hero || p.id) === 1 ? 'giorgos' : 'thodoris'];
     pixel(x, 4, 18, 19, color);
     pixel(x + 1, 5, 16, 17, '#322639');
     if (READY(portrait)) { const k=portrait.naturalWidth/448; ctx.drawImage(portrait, 35*k, 7*k, 39*k, 40*k, x + 1, 5, 16, 17); }
-    label(i ? 'P2 ΘΟΔΩΡΗΣ' : 'P1 ΓΙΩΡΓΟΣ', x + 22, 10, 8, color);
+    label('P'+p.id+' '+((p.hero || p.id)===1?'ΓΙΩΡΓΟΣ':'ΘΟΔΩΡΗΣ'), x + 22, 10, 8, color);
     gauge(x + 22, 12, 103, p.hp / 100, color);
     pixel(x + 23, 20, p.energy, 2, i ? '#ff995f' : '#68d4fb');
     if (p.carry?.kind === 'club') {
@@ -1944,7 +1952,7 @@ function hud() {
   label(currentStage().name, WIDTH / 2, 10, 8, '#ffda9d', 'center');
   label((game.district + 1) + '/' + DISTRICTS + '   ·   ' + game.score + (game.cards ? '   ✦ ' + game.cards : ''),
     WIDTH / 2, 21, 8, '#f3dce4', 'center');
-  const boss = game.enemies.find(e => e.kit && e.hp);
+  const boss = game.enemies.find(e => e.kit && e.hp && !e.storyFoe);
   if (boss) {
     pixel(141, 32, 198, 18, '#1a1426ed');
     if (boss.rival) label(boss.kit.name, WIDTH / 2, 41, 9, boss.kit.color, 'center');
@@ -2172,7 +2180,7 @@ function comic(index) {
       'px;--delay:' + (-i * .35) + 's;--duration:' + (4 + i % 6) + 's"></i>';
   }).join('');
   return '<article class="frame comic ' + (game.fx ? 'cinematic' : '') + '" data-scene="' + SCENE_STYLES[index] +
-    '" style="--scene-x:' + x + '%;--scene-y:' + y + '%"><div class="comic-art"><img src="' + ART['comic-' + (index + 1)] +
+    '" style="--scene-x:' + x + '%;--scene-y:' + y + '%"><div class="comic-art"><img src="' + ART['cinema-bg-' + (index + 1)] +
     '" alt="' + description + '"><div class="comic-light" aria-hidden="true"></div><div class="comic-motes" aria-hidden="true">' +
     motes + '</div><div class="comic-wipe" aria-hidden="true"></div></div><div class="comic-copy"><h2>' + headline + '</h2><p>' + dialogue +
     '</p><div class="comic-nav"><span class="muted">' +

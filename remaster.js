@@ -1,6 +1,6 @@
 'use strict';
 // Full-HD presentation. Physics and hit detection remain in the original world units.
-const HD_VERSION='2.0';
+const HD_VERSION='2.1';
 const HD_DEFAULT={resolution:4,display:'hd',lighting:true,fog:true,grain:1,parallax:true,calm:false,contrast:false,musicVolume:65,sfxVolume:80,music:true,sound:true};
 let hdPrefs={...HD_DEFAULT};
 try{Object.assign(hdPrefs,JSON.parse(localStorage.getItem('little-dragon-hd-settings')||'{}'))}catch{}
@@ -13,6 +13,7 @@ let hdTab=0,hdLastPage='home',hdLastInput='keyboard',hdPadLabel='generic',hdSett
 const hdMenuPads=new Map(),hdFrameTimes=[];
 const HD_ART={floor:'assets/hd-floor.webp'};
 for(const scene of ['athens','harbor','forest','ruins','castle'])for(const plane of ['near','far'])HD_ART[scene+'-'+plane]=`assets/hd-${plane}-${scene}.webp`;
+HD_ART['castle-near']='assets/castle-unlit.webp';
 const hdImages={};
 const hdLoadTotal=Object.keys(HD_ART).length+Object.keys(images).length;
 function hdLoadTick(){hdLoadDone++;const el=document.querySelector('#hd-loading');if(el)el.textContent=`ΦΟΡΤΩΣΗ HD · ${Math.round(hdLoadDone/hdLoadTotal*100)}%`}
@@ -133,7 +134,7 @@ const hdSettingDefs=[
 function hdSettingValue(key){if(key==='resolution')return {2:'960 × 540',3:'1440 × 810',4:'1920 × 1080'}[hdPrefs.resolution];if(key==='display')return {hd:'ΚΑΘΑΡΟ HD',pixel:'PIXEL',crt:'CRT'}[hdPrefs.display];if(key==='grain')return ['ΚΛΕΙΣΤΟ','ΔΙΑΚΡΙΤΙΚΟ','ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΟ'][hdPrefs.grain];if(key==='pad')return 'ΠΑΙΚΤΗΣ '+preferredPadPlayer;if(key==='musicVolume'||key==='sfxVolume')return hdPrefs[key]+'%';if(key==='guide')return 'ΠΡΟΒΟΛΗ';if(key==='full')return 'ΑΝΟΙΓΜΑ';return (key in hdPrefs?hdPrefs[key]:game[key])?'ΝΑΙ':'ΟΧΙ'}
 function hdSettings(){return `<div class="console-settings"><header><span class="eyebrow">LITTLE DRAGON · HD</span><h2>ΡΥΘΜΙΣΕΙΣ</h2></header><nav class="settings-tabs" aria-label="Κατηγορίες ρυθμίσεων">${HD_TABS.map((s,i)=>`<button data-go="tab${i}" class="${i===hdTab?'active':''}" aria-pressed="${i===hdTab}">${s}</button>`).join('')}</nav><div class="setting-list">${hdSettingDefs[hdTab].map(([key,label,hint])=>`<button class="setting-row" data-go="hd-${key}" aria-label="${label}: ${hdSettingValue(key)}"><span><b>${label}</b>${hint?`<small>${hint}</small>`:''}</span><strong><i>‹</i> ${hdSettingValue(key)} <i>›</i></strong></button>`).join('')}</div><div id="pad-status" aria-live="polite"></div><button class="back-command" data-go="back">↩ ΕΠΙΣΤΡΟΦΗ</button></div>`}
 function hdHints(){const ps=hdPadLabel==='ps';return `<div class="console-hints" aria-hidden="true"><span><i>✥</i> ΕΠΙΛΟΓΗ</span><span><i>${ps?'×':'A'}</i> ΕΠΙΒΕΒΑΙΩΣΗ</span><span><i>${ps?'○':'B'}</i> ΠΙΣΩ</span>${game.mode==='settings'?'<span><i>LB / RB</i> ΚΑΤΗΓΟΡΙΑ</span>':''}</div>`}
-function hdHome(){return `<div class="title-scene"><span class="edition-mark">THE HIGH DEFINITION ADVENTURE</span><h1 class="logo">LITTLE<br><span>DRAGON</span><em>’96</em></h1><p class="subtitle">YOTO QUEST</p><div class="console-menu" role="group" aria-label="Αρχικό μενού">${[['two','ΠΑΙΞΤΕ ΜΑΖΙ','Δύο παίκτες · μία περιπέτεια'],['one','ΕΝΑΣ ΠΑΙΚΤΗΣ','Η αποστολή του Γιώργου'],['how','ΧΕΙΡΙΣΜΟΣ','Μάθε τις κινήσεις σου'],['settings','ΡΥΘΜΙΣΕΙΣ','Εικόνα · ήχος · χειριστήριο']].map(([key,title,hint],i)=>`<button data-go="${key}" ${i===0?'class="primary"':''} ${!hdLoaded&&i<2?'disabled':''}><span class="menu-arrow">◆</span><span><b>${title}</b><small>${hint}</small></span></button>`).join('')}</div><span class="title-note">5 ΚΟΣΜΟΙ · 2 ΗΡΩΕΣ · ΟΛΕΣ ΟΙ ΙΣΤΟΡΙΕΣ</span>${!hdLoaded?`<span id="hd-loading" role="status">ΦΟΡΤΩΣΗ HD · ${Math.round(hdLoadDone/hdLoadTotal*100)}%</span>`:''}</div>`}
+function hdHome(){return `<div class="title-scene"><span class="edition-mark">THE HIGH DEFINITION ADVENTURE</span><h1 class="logo">LITTLE<br><span>DRAGON</span><em>’96</em></h1><p class="subtitle">YOTO QUEST</p><div class="console-menu" role="group" aria-label="Αρχικό μενού">${[['two','ΠΑΙΞΤΕ ΜΑΖΙ','Δύο παίκτες · μία περιπέτεια'],['one','ΕΝΑΣ ΠΑΙΚΤΗΣ','Διάλεξε τον ήρωά σου'],['how','ΧΕΙΡΙΣΜΟΣ','Μάθε τις κινήσεις σου'],['settings','ΡΥΘΜΙΣΕΙΣ','Εικόνα · ήχος · χειριστήριο']].map(([key,title,hint],i)=>`<button data-go="${key}" ${i===0?'class="primary"':''} ${!hdLoaded&&i<2?'disabled':''}><span class="menu-arrow">◆</span><span><b>${title}</b><small>${hint}</small></span></button>`).join('')}</div><span class="title-note">5 ΚΟΣΜΟΙ · 2 ΗΡΩΕΣ · ΟΛΕΣ ΟΙ ΙΣΤΟΡΙΕΣ</span>${!hdLoaded?`<span id="hd-loading" role="status">ΦΟΡΤΩΣΗ HD · ${Math.round(hdLoadDone/hdLoadTotal*100)}%</span>`:''}</div>`}
 function hdGuide(){return `<div class="console-guide"><span class="eyebrow">ΠΑΙΞΕ ΜΕ ΤΟΝ ΤΡΟΠΟ ΣΟΥ</span><h2>ΧΕΙΡΙΣΜΟΣ</h2><div class="guide-grid"><div class="controller-diagram" aria-hidden="true"><div class="pad-wing left"></div><div class="pad-wing right"></div><b class="pad-cross">✥</b><span class="pad-stick">●</span><div class="pad-face"><i>Y / △</i><i>X / □</i><i>B / ○</i><i>A / ×</i></div></div><div class="guide-lines"><p><b>ΜΟΧΛΟΣ / ΣΤΑΥΡΟΣ</b>Κίνηση · επιλογή μενού</p><p><b>A / ×</b>Άλμα · επιβεβαίωση</p><p><b>X / □ · B / ○</b>Γροθιά · κλωτσιά</p><p><b>Y / △ · R1 / RB</b>Ενέργεια · σήκωμα / ρίψη</p><p><b>L1 / LB · L3 / R3</b>Άμυνα · αποφυγή</p><p><b>OPTIONS / MENU</b>Παύση · συνέχεια</p></div></div><p class="keyboard-guide">ΠΛΗΚΤΡΟΛΟΓΙΟ · P1: βελάκια, J/K/L, Space, H/U/I<br>P2: WASD, F/G/R, T, Y/E/Q · Enter: επιλογή · Esc: πίσω</p><div id="pad-status" aria-live="polite"></div><button class="back-command primary" data-go="back">↩ ΕΠΙΣΤΡΟΦΗ</button></div>`}
 const hdBaseShow=show;
 show=function(page){
@@ -209,8 +210,8 @@ pollPads=function(time){
   const dx=Number(buttons[15]||(pad.axes[0]||0)>.38)-Number(buttons[14]||(pad.axes[0]||0)<-.38),dy=Number(buttons[13]||(pad.axes[1]||0)>.38)-Number(buttons[12]||(pad.axes[1]||0)<-.38),dir=dx+':'+dy;
   if(edge(1)||edge(8))hdBack();
   else if(game.mode==='settings'&&(edge(4)||edge(5))){hdTab=(hdTab+(edge(5)?1:3))%4;show('settings');hdFocus('tab'+hdTab)}
-  else if(edge(0)){const b=document.activeElement;if(panel.contains(b)&&b.matches('button'))b.click();else panel.querySelector('button')?.click()}
-  else if(edge(9)){if(game.mode==='pause')show('play');else if(['stage','clear','lose','intro','ending'].includes(game.mode))panel.querySelector('button.primary')?.click();else panel.querySelector('button')?.focus({preventScroll:true})}
+  else if(edge(0)){if(game.mode==='intro'||game.mode==='ending')go('arcadeAdvance');else{const b=document.activeElement;if(panel.contains(b)&&b.matches('button'))b.click();else panel.querySelector('button')?.click()}}
+  else if(edge(9)){if(game.mode==='intro')go('skipIntro');else if(game.mode==='ending')go('arcadeAdvance');else if(game.mode==='pause')show('play');else if(['difficulty','characters'].includes(game.mode)){const b=document.activeElement;panel.contains(b)&&b.matches('button')?b.click():panel.querySelector('button.primary')?.click()}else if(['stage','clear','lose'].includes(game.mode))panel.querySelector('button.primary')?.click();else panel.querySelector('button')?.focus({preventScroll:true})}
   else if((dx||dy)&&(s.dir!==dir||time>=s.at)){hdMove(dx,dx?0:dy);s.at=time+(s.dir===dir?150:320)}
   s.buttons=buttons;s.dir=dir;hdMenuPads.set(pad.index,s);
  }
@@ -220,7 +221,7 @@ addEventListener('keydown',e=>{
  if(game.mode==='play')return;
  if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Enter',' ','Escape','Home','End'].includes(e.key)){
   e.preventDefault();e.stopImmediatePropagation();hdLastInput='keyboard';if(e.repeat&&['Enter',' ','Escape'].includes(e.key))return;
-  if(e.key==='Escape')hdBack();else if(e.key==='Enter'||e.key===' ')document.activeElement?.matches('button')?document.activeElement.click():panel.querySelector('button')?.click();
+  if(e.key==='Escape')hdBack();else if(e.key==='Enter'||e.key===' '){if(game.mode==='intro'||game.mode==='ending')go('arcadeAdvance');else document.activeElement?.matches('button')?document.activeElement.click():panel.querySelector('button')?.click()}
   else if(e.key==='Home'||e.key==='End'){const b=[...panel.querySelectorAll('button')];b[e.key==='Home'?0:b.length-1]?.focus()}
   else hdMove(e.key==='ArrowLeft'?-1:e.key==='ArrowRight'?1:0,e.key==='ArrowUp'?-1:e.key==='ArrowDown'?1:0);
  }

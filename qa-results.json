@@ -1,102 +1,586 @@
 {
-  "report.json": {
-    "checks": [
-      "Virtual standard gamepad: D-pad, A, B, RB tabs, left/right value adjustment, menu return",
-      "Full HD backing buffer, five stage compositions, saved visual preferences",
-      "Nested guide/settings/pause return without lost origin",
-      "HD / Pixel / CRT selectable via settings, real low-resolution world buffer and CRT mask, HUD remains separate",
-      {
-        "mobile": {
-          "width": 844,
-          "height": 390
-        },
-        "analog": {
-          "slow": {
-            "distance": 9.935425369978915,
-            "magnitude": 0.18076109936575052
+  "version": "2.1",
+  "reports": {
+    "dragon-hd-evidence/report.json": {
+      "checks": [
+        "Virtual standard gamepad: D-pad, A, B, RB tabs, left/right value adjustment, menu return",
+        "Full HD backing buffer, five stage compositions, saved visual preferences",
+        "Nested guide/settings/pause return without lost origin",
+        "HD / Pixel / CRT selectable via settings, real low-resolution world buffer and CRT mask, HUD remains separate",
+        {
+          "mobile": {
+            "width": 844,
+            "height": 390
           },
-          "fast": {
-            "distance": 46.57173107822402,
-            "magnitude": 0.9471458773784356
-          }
-        },
-        "targets": 5,
-        "multiTouch": true,
-        "cancel": true,
-        "pausedInputsClear": true
-      },
-      {
-        "mobile": {
-          "width": 390,
-          "height": 844
-        },
-        "analog": {
-          "slow": {
-            "distance": 9.929026427061302,
-            "magnitude": 0.18076109936575052
+          "analog": {
+            "slow": {
+              "distance": 9.570685623678685,
+              "magnitude": 0.18076109936575052
+            },
+            "fast": {
+              "distance": 46.582907399577095,
+              "magnitude": 0.9471458773784356
+            }
           },
-          "fast": {
-            "distance": 46.53820211416479,
-            "magnitude": 0.9471458773784356
-          }
+          "targets": 5,
+          "multiTouch": true,
+          "cancel": true,
+          "pausedInputsClear": true
         },
-        "targets": 5,
-        "multiTouch": true,
-        "cancel": true,
-        "pausedInputsClear": true
-      }
-    ],
-    "errors": [],
-    "screens": [
-      "home-desktop",
-      "settings-desktop",
-      "stage-0",
-      "stage-1",
-      "stage-2",
-      "stage-3",
-      "stage-4",
-      "filter-pixel",
-      "filter-crt",
-      "filter-hd",
-      "home-844",
-      "mobile-play-844",
-      "settings-844",
-      "home-390",
-      "mobile-play-390",
-      "settings-390"
-    ],
-    "performance": [
-      {
-        "p95": 2.699999988079071,
-        "samples": 100
-      }
-    ],
-    "pass": true
+        {
+          "mobile": {
+            "width": 390,
+            "height": 844
+          },
+          "analog": {
+            "slow": {
+              "distance": 9.933292389006326,
+              "magnitude": 0.18076109936575052
+            },
+            "fast": {
+              "distance": 46.560554756870886,
+              "magnitude": 0.9471458773784356
+            }
+          },
+          "targets": 5,
+          "multiTouch": true,
+          "cancel": true,
+          "pausedInputsClear": true
+        }
+      ],
+      "errors": [],
+      "screens": [
+        "home-desktop",
+        "settings-desktop",
+        "stage-0",
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "filter-pixel",
+        "filter-crt",
+        "filter-hd",
+        "home-844",
+        "mobile-play-844",
+        "settings-844",
+        "home-390",
+        "mobile-play-390",
+        "settings-390"
+      ],
+      "performance": [
+        {
+          "p95": 1.300000011920929,
+          "samples": 100
+        }
+      ],
+      "pass": true
+    },
+    "dragon-hd-evidence/actions-report.json": {
+      "pass": true,
+      "checks": [
+        "Both players move independently through actual keyboard controls",
+        "Authored attack still damages the nearby enemy",
+        "Pickup and throw remain reachable",
+        "Energy action remains functional",
+        "All five boss renderers survive ordinary movement and combat",
+        "Calm settings return to live gameplay"
+      ],
+      "errors": []
+    },
+    "dragon-expansion-evidence/report.json": {
+      "checks": [
+        "Three real start-menu difficulties: health, damage, speed, tell timing ordered; Normal preserves original values; authored kits stay immutable",
+        "Arcade selection for both seats, confirmation flash, back/reselect, actual reversed hero identities",
+        "All eight new archetypes enter tell/attack/recover and can be defeated as ordinary foes",
+        "New chest pickup/throw works; breaking spawns one open chest and one reward",
+        "Five stage-side prop sets and actual time-varying torch geometry",
+        "Difficulty survives retry and next stage",
+        "Character/difficulty choices and comic controls accessible at portrait and landscape mobile sizes"
+      ],
+      "errors": [],
+      "balance": [
+        {
+          "difficulty": "easy",
+          "foe": 24,
+          "boss": 159,
+          "speed": 36,
+          "incoming": 6,
+          "tell": 0.9125,
+          "rules": {
+            "enemyHealth": 0.7,
+            "bossHealth": 0.78,
+            "incoming": 0.6,
+            "speed": 0.9,
+            "rest": 1.25,
+            "tell": 1.25,
+            "energy": 10,
+            "stageHealth": 100,
+            "gateHeal": 16,
+            "appleHeal": 44
+          },
+          "immutable": true
+        },
+        {
+          "difficulty": "normal",
+          "foe": 34,
+          "boss": 204,
+          "speed": 40,
+          "incoming": 10,
+          "tell": 0.73,
+          "rules": {
+            "enemyHealth": 1,
+            "bossHealth": 1,
+            "incoming": 1,
+            "speed": 1,
+            "rest": 1,
+            "tell": 1,
+            "energy": 8,
+            "stageHealth": 74,
+            "gateHeal": 9,
+            "appleHeal": 32
+          },
+          "immutable": true
+        },
+        {
+          "difficulty": "hard",
+          "foe": 43,
+          "boss": 245,
+          "speed": 43.2,
+          "incoming": 14,
+          "tell": 0.6424,
+          "rules": {
+            "enemyHealth": 1.25,
+            "bossHealth": 1.2,
+            "incoming": 1.35,
+            "speed": 1.08,
+            "rest": 0.88,
+            "tell": 0.88,
+            "energy": 7,
+            "stageHealth": 60,
+            "gateHeal": 5,
+            "appleHeal": 24
+          },
+          "immutable": true
+        }
+      ],
+      "pass": true
+    },
+    "dragon-expansion-evidence/arcade-ui-report.json": {
+      "pass": true,
+      "checks": [
+        "Virtual gamepad operates both character seats, flash, difficulty, A story advance and Start intro skip; duplicate heroes supported",
+        "Comic automatically advances on its own timed cue",
+        "Mouse drag cannot select game text; native selection, context menu and image drag gestures prevented",
+        "Mobile tap advances story; rotation resets held joystick, immediately updates fixed viewport, keeps 16:9 and has no layout transitions"
+      ],
+      "errors": []
+    },
+    "dragon-expansion-evidence/campaign-report.json": {
+      "pass": true,
+      "description": "Diagnostic state-machine traversal with injected damage after valid entry; not a manual full-campaign playthrough",
+      "arenas": 480,
+      "bosses": 30,
+      "results": [
+        {
+          "difficulty": "easy",
+          "two": false,
+          "level": 0,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": false,
+          "level": 1,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            15,
+            18
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": false,
+          "level": 2,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            17,
+            19
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": false,
+          "level": 3,
+          "arenas": 16,
+          "newFoes": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": false,
+          "level": 4,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            14,
+            15,
+            16,
+            19
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": true,
+          "level": 0,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": true,
+          "level": 1,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            15,
+            18
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": true,
+          "level": 2,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            17,
+            19
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": true,
+          "level": 3,
+          "arenas": 16,
+          "newFoes": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "difficulty": "easy",
+          "two": true,
+          "level": 4,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            14,
+            15,
+            16,
+            19
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": false,
+          "level": 0,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": false,
+          "level": 1,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            15,
+            18
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": false,
+          "level": 2,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            17,
+            19
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": false,
+          "level": 3,
+          "arenas": 16,
+          "newFoes": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": false,
+          "level": 4,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            14,
+            15,
+            16,
+            19
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": true,
+          "level": 0,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": true,
+          "level": 1,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            15,
+            18
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": true,
+          "level": 2,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            17,
+            19
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": true,
+          "level": 3,
+          "arenas": 16,
+          "newFoes": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "difficulty": "normal",
+          "two": true,
+          "level": 4,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            14,
+            15,
+            16,
+            19
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": false,
+          "level": 0,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": false,
+          "level": 1,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            15,
+            18
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": false,
+          "level": 2,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            17,
+            19
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": false,
+          "level": 3,
+          "arenas": 16,
+          "newFoes": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": false,
+          "level": 4,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            14,
+            15,
+            16,
+            19
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": true,
+          "level": 0,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": true,
+          "level": 1,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            15,
+            18
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": true,
+          "level": 2,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            13,
+            14,
+            17,
+            19
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": true,
+          "level": 3,
+          "arenas": 16,
+          "newFoes": [
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "two": true,
+          "level": 4,
+          "arenas": 16,
+          "newFoes": [
+            12,
+            14,
+            15,
+            16,
+            19
+          ]
+        }
+      ],
+      "errors": []
+    }
   },
-  "actions-report.json": {
-    "pass": true,
-    "checks": [
-      "Both players move independently through actual keyboard controls",
-      "Authored attack still damages the nearby enemy",
-      "Pickup and throw remain reachable",
-      "Energy action remains functional",
-      "All five boss renderers survive ordinary movement and combat",
-      "Calm settings return to live gameplay"
-    ],
-    "errors": []
-  },
-  "build": {
-    "version": "2.0",
-    "title": "Little Dragon 96 HD Edition",
+  "runtime": {
+    "version": "2.1",
+    "title": "Little Dragon 96 HD Arcade Expansion",
     "files": {
       ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "assets.js": "d2ca3ffec008ac161f005b5b01c1618dfa23ab8b1469c5e6493b71ec374dab7f",
-      "assets/comic-1.webp": "a0b628ddc5a2e84062db57072b0c25814d95ba3a5671654bb134594868230ce7",
-      "assets/comic-2.webp": "9a3b0608aac1b0d99cfcd6777eebfebcf8443977a4a2ecd1e0f546b2090b0aa1",
-      "assets/comic-3.webp": "06654f982fb2e47b4b71ba97587cd67e68ce8c518353035dc022017c6bf798c6",
-      "assets/comic-4.webp": "7e4958e0afecc37cf85a487c3260d169001b46b3fd860d0c23264c26503657b8",
-      "assets/comic-5.webp": "98405f03503c0eb81babbb41ad5cf4d0002b29e1f18cb9a1795c67662c3ed8de",
-      "assets/cover.webp": "180f88770fbd8ed85d0129ec7db5bb2aeee2f638f5fbea3c48ef9ee8c8db8006",
+      "assets.js": "b84e52ef903f217058c57ab21a11a8c7921d73158ece706e996e590e1bd21a37",
+      "assets/castle-unlit.webp": "9398a4f4ebefb55d92a1787cb857a486744b0fbc840aeb5e359efef4e152eb7c",
+      "assets/cinema-actors-1.webp": "6c4bf89c33911a36993e8f4ab2036cd76ff9de935498a777d008e6f06e99ea3d",
+      "assets/cinema-actors-2.webp": "1cd1e576389e7bcc542e4104c014cbc7822e01db25eceb05f0053a3885d9c427",
+      "assets/cinema-actors-3.webp": "2f8ae83899d565fe0e2ac479d3805c853e61a4aecb89493a2c56909d69fe848f",
+      "assets/cinema-actors-4.webp": "856c298e3d008b6dcb20cc9f26b84af9e4ce272fbe0e17514882b64d3ec065b7",
+      "assets/cinema-actors-5.webp": "f9eb620764f310301e44135d46e8001886f5f92054d89aab49efb2f33d508fd9",
+      "assets/cinema-bg-1.webp": "39e89856392f39bb49f6aa17b2193489823ffd13d6f64443329ab42d09944acc",
+      "assets/cinema-bg-2.webp": "b7c5310768c1b979178bb2cb896f44cdb5794e59c7271b2d7da8860fd53dd068",
+      "assets/cinema-bg-3.webp": "3421af66d9f176e02d3feba39f0fd5eb1c7f21a74042be354536ef00ae48b109",
+      "assets/cinema-bg-4.webp": "e2cc51b413cbb09dcb02ae6a45cc1fe63ce416f1255478f89a76996306785401",
+      "assets/cinema-bg-5.webp": "853b82a9242244df93a5e1f73153edf3ddb25ebab9c9c28f9025e92d6b2a84e2",
+      "assets/fairytale-foes.webp": "2b852f7652219b04d5470bbcaf4255c72fa0df0fb47d650bb4ac6d81a7baed9d",
       "assets/hd-boss-motion.webp": "ca5f33d0f927164d7c8d30b2242ed8c5420421b1017462ba47582a10ada72025",
       "assets/hd-bosses.webp": "4c554bf46cd636f87884209f38976a2c419c7bba9be5cee70fc84f2acd862b84",
       "assets/hd-carry-1.webp": "19e2d2d4f0d796ca70be7666bd6d5ac72d6bbb106d959b09001f3627c72e854f",
@@ -110,7 +594,6 @@
       "assets/hd-foes.webp": "f346dc08c63887b2c5e2dacfcdd5ecfbae2fe783c77f23d4d0ec4fa1bf06fa54",
       "assets/hd-giorgos.webp": "25427c58a7886a9e7056cc3df9c689897c4d30b46261c95380e7987a63cd2aaf",
       "assets/hd-near-athens.webp": "abed4bdd9996178dbc8b3dc4416f9901b50dde57cfc617d496a6352e59ab4481",
-      "assets/hd-near-castle.webp": "c2468e234c3361d25dfff2938cd94344b7868f630cf9b9a7916428bce719d570",
       "assets/hd-near-forest.webp": "dbeb47d61fd8135342046eebe42a2dce4c3a0acadd5f9f706acedcc83a77fe99",
       "assets/hd-near-harbor.webp": "48435c586c7bdf3b538bb9e3f9bb44f4b4bd61d4f524974778ad61f09c227adf",
       "assets/hd-near-ruins.webp": "3605ce34197800182e57699ea606cf39c086afaded08098ef1a050f64877b11e",
@@ -122,19 +605,27 @@
       "assets/hd-special-boss.webp": "1d5f5de54ead95959316883a628120b6c9db71d58f4b6bd40465b58108a23d02",
       "assets/hd-thodoris.webp": "2907ebdc8d92c22cc711a58e585cb2871ff7aab62b5f98f63ab7442801584d46",
       "assets/items.webp": "132518565392dd71b74364989bf7b4894cc29f5989126cd201742ed5da8282ff",
+      "assets/road-props.webp": "08396b76e5f5c9870f35344ac5ebf119558acc43e17973872af4441e04703e5c",
+      "assets/title-duo.webp": "f1d2fec7683ed77c625553b1b0b8b79121a9390e86be62b5394b4300509ed7bc",
+      "character-select.css": "38478d99287f25024f907a39cabc5a357f5255844ca11b69118140c1fbfe16ac",
+      "character-select.js": "59827aa829812e2d11ac944c6112b0911afe1310b70517c34f7dc30a2a01b4cf",
+      "difficulty.js": "aec4b38912a1f29da6d5d909db6e3eef45f658350819c55ad8f9405b321ef43b",
+      "expansion-meta.js": "601d09314a0ead4d902b9bce650eceddc319731224eb84e51a1a31604bff13b9",
+      "expansion.js": "5df576501ee4309924746ee700bc849628958d87a4b8fc23ed3d766a64bde6de",
+      "game-surface.js": "f85995246c6993c65f01d160bf60324ad38ffb887da53269dc3fcc908d2b4fde",
       "game.css": "a78845c93c231357fc6df111bf59d95d0a22a393d1827f840280f96316da6aca",
-      "game.js": "c53f65b41f82cf2be9a0b6206d19b797449c79ec446c1356d6ea3d93c5883b2c",
-      "index.html": "ab797231395d60f2995b5c2dd8a89d25224a60bf7b1a6d6dba86247976c0dce6",
-      "remaster.css": "3395e10913264a98d299bba987dd3462a047f2eb7fead006d8a4d7833eab1bba",
-      "remaster.js": "ac463dfc0a0739738323639bcc7be7d5c6f469bbbdbf85b540317c02d154a6dd",
+      "game.js": "0b0b865548b78a03209f4dcba120aab8696b6ad6cb0e08e25ed30ba8bb79802f",
+      "index.html": "cefb4acd67199f5f8e0a28722ed798dcdb2624a766f4be66c3faea40aae11717",
+      "remaster.css": "d8aab53099ddd976f5695803268efa4c212c4b393d039a775aa2838c5d4f70b3",
+      "remaster.js": "0172767f2be5c0ea4f54f5ab84d9b9d82cf88b876b52225fd1a1cdaa0f6c3704",
       "sprite-camera.js": "7438e0384247ce4e32220205fa1aecb183b685ec9ce807fa71522c72c8d2d54e",
       "touch-controls.js": "24e364dbca6f7c2deb6d195b6803331fb350c533f61b1359548b677b8751acfe"
     },
-    "runtimeImageCount": 31
+    "runtimeImageCount": 38
   },
   "limits": [
-    "Virtual standard controller and emulated multi-touch; no physical device certification.",
-    "Targeted gameplay regression and all five compositions; no claim of a fresh full campaign completion."
+    "Virtual standard controller and emulated mobile multi-touch; no physical device certification.",
+    "480-arena diagnostic progression injects damage after valid entry; it is not a manual campaign playthrough."
   ],
-  "formattingNote": "Text files normalized to LF for identical GitHub/local runtime bytes; syntax rechecked."
+  "formattingNote": "UTF-8 LF runtime files, identical local and GitHub bytes."
 }
