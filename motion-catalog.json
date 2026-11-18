@@ -1,0 +1,72 @@
+{
+  "version": "2.2",
+  "stories": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "foes": [
+    0,
+    3,
+    6,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "authoredStoryFrames": 12,
+  "authoredFoeFrames": 16,
+  "walkFrames": 8,
+  "sourceCamera": "Fixed per atlas, registered from idle only; never normalize individual pose heights",
+  "towns": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "doors": [
+    0,
+    4
+  ],
+  "vendors": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "civilians": [
+    0,
+    1
+  ],
+  "activeStoryFrames": [
+    10,
+    12,
+    12,
+    12,
+    12
+  ],
+  "vendorAtlas": {
+    "columns": 6,
+    "rows": 4
+  },
+  "civilianAtlas": {
+    "columns": 5,
+    "rows": 4,
+    "framesPerIdentity": 10
+  }
+}

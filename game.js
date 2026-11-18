@@ -522,8 +522,8 @@ const RIVAL_KITS = [
 ];
 
 const PHASE_MARKS = [.70, .36];
-const arenaLimit = () => GATES[game.section] - 20;
-const arenaX = x => clamp(x, Math.max(game.entry + 18, GATES[game.section] - 370), arenaLimit());
+const arenaLimit = () => Number.isFinite(game.arenaCamera) && ['fight','reward'].includes(game.gate) ? game.arenaCamera + WIDTH - 22 : GATES[game.section] - 20;
+const arenaX = x => clamp(x, Number.isFinite(game.arenaCamera) && ['fight','reward'].includes(game.gate) ? game.arenaCamera + 22 : Math.max(game.entry + 18, GATES[game.section] - 370), arenaLimit());
 
 function specialEnemy(level, x, y, rival = false) {
   const kit = (rival ? RIVAL_KITS : BOSS_KITS)[level];
@@ -727,6 +727,7 @@ function queueEntrance(e, side, delay, goalX, wait = false) {
 }
 
 function startEncounter() {
+  game.arenaCamera = game.camera;
   const gate = GATES[game.section];
   game.shots = [];
   game.hazards = [];
@@ -818,7 +819,7 @@ function start(two) {
 function beginStage(retry = false) {
   const checkpoint = retry && game.checkpoint ? game.checkpoint : { district: 0, score: game.score, cards: 0 };
   const entry = checkpoint.district * DISTRICT_LENGTH;
-  Object.assign(game, { camera: entry, section: checkpoint.district * 4, gate: 'travel', timer: 0,
+  Object.assign(game, { camera: entry, arenaCamera: null, section: checkpoint.district * 4, gate: 'travel', timer: 0,
     reward: null, enemies: [], particles: [], shots: [], shake: 0, freeze: 0,
     items: stageItems(game.level).filter(item => item.x >= entry),
     score: checkpoint.score, cards: checkpoint.cards, district: checkpoint.district, districtTitle: 2.2,
@@ -852,10 +853,8 @@ const isHeld = (player, action) => keys.has(player.id + ':' + action) || padHeld
 const moveX = p => p.id===1 && globalThis.DragonTouch?.active ? DragonTouch.x : Number(isHeld(p, 'right')) - Number(isHeld(p, 'left'));
 const moveY = p => p.id===1 && globalThis.DragonTouch?.active ? DragonTouch.y : Number(isHeld(p, 'down')) - Number(isHeld(p, 'up'));
 function playerLimits(p) {
-  const stop = game.gate === 'fight' ? GATES[game.section] - 30 : WORLD - 31;
-  const partner = game.players.find(other => other !== p && other.hp > 0);
-  const min = partner ? Math.max(game.entry + 22, partner.x - 322) : game.entry + 22;
-  return [min, Math.max(min, partner ? Math.min(stop, partner.x + 322) : stop)];
+  // A locked encounter is one full screen. No separate wall inside the image.
+  return [Math.max(game.entry + 22, game.camera + 22), Math.min(WORLD - 22, game.camera + WIDTH - 22)];
 }
 
 function action(p, name) {
@@ -923,7 +922,7 @@ function damage(e, owner, amount, hits, direction, source = 'punch') {
   const dealt = bossDamage(e, amount, direction);
   if (dealt <= 0) return;
   e.hp -= dealt;
-  if ((!e.kit || e.storyFoe) && !e.entry) e.x = clamp(e.x + direction * (e.guard ? 5 : 9), game.entry + 22, GATES[game.section] - 19);
+  if ((!e.kit || e.storyFoe) && !e.entry) e.x = arenaX(e.x + direction * (e.guard ? 5 : 9));
   game.score += dealt * 10;
   if (!game.combo || game.combo.until < game.clock) game.combo = { count: 0, sources: new Set(), until: 0 };
   const chain = game.combo;
@@ -1089,7 +1088,7 @@ function updateEnemy(e, dt, living) {
   pose(e, 'walk');
   const speed = e.speed * (e.tactic === 'rush' && Math.abs(dx) > 130 ? 1.16 : 1);
   const arc = e.tactic === 'flank' && Math.abs(dx) > 56 ? Math.sin(e.phase * 4) * 17 : 0;
-  e.x = clamp(e.x + clamp(dx - e.face * 9, -speed * dt, speed * dt), 22, GATES[game.section] - 19);
+  e.x = arenaX(e.x + clamp(dx - e.face * 9, -speed * dt, speed * dt));
   e.y = clamp(e.y + clamp(dy + arc, -speed * .66 * dt, speed * .66 * dt), ...DEPTH);
 }
 
@@ -1169,10 +1168,15 @@ function update(dt) {
     game.districtTitle = 2.2;
     game.checkpoint = { district, score: game.score, cards: game.cards };
   }
-  const aim = mix(left, right, .6) - WIDTH * .41;
-  const low = clamp(right - WIDTH + 47, 0, WORLD - WIDTH);
-  const high = Math.min(WORLD - WIDTH, Math.max(low, left - 38));
-  game.camera = clamp(mix(game.camera, aim, Math.min(1, dt * 5)), low, high);
+  if (['fight','reward'].includes(game.gate) && Number.isFinite(game.arenaCamera)) {
+    game.camera = game.arenaCamera;
+  } else {
+    // One-sided arcade window: advance when the leader pushes the window,
+    // retain the trailing co-op player, and never drift backwards.
+    const aim = Math.max(game.camera, right - WIDTH * .58);
+    const high = Math.max(game.camera, Math.min(WORLD - WIDTH, left - 22));
+    game.camera = clamp(mix(game.camera, aim, 1-Math.exp(-dt*8)), game.camera, high);
+  }
 }
 
 const ITEM = {

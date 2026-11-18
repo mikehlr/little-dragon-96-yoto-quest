@@ -1,0 +1,72 @@
+[
+  {
+    "key": "living-garage",
+    "transparent": true,
+    "prompt": "Background extraction ONLY for this game prop atlas. Preserve exact canvas size, exact prop silhouettes, colors and positions, every prop unchanged. Remove ALL pale grey/white backdrop, including haze, rectangular shadows and noise BETWEEN and OUTSIDE props. Every background pixel must be fully transparent alpha zero. Preserve all opaque material INSIDE each actual object. Keep gaps in awnings, frames, chair/bench legs and doorway arch interior fully transparent. Keep the dark workshop interior of the garage opaque if present. This is a production cutout atlas, not objects photographed on a white backdrop. Do not rearrange cells or add any element.",
+    "path": "exec-64129c56-0e6c-443d-9fab-b1eb8c13edb3.png",
+    "creationPrompt": "Use case: stylized-concept. Game building prop atlas, exactly TWO columns ONE row of equal square cells, true transparent background outside objects. Cell0 a small Greek neighborhood workshop GARAGE FACADE, viewed straight on with slight visible right wall depth: warm worn plaster, blue trim, terracotta roof eave. Large completely OPEN rectangular doorway from 24% to 76% cell width and 28% to 94% height, deep dark workshop interior and stone threshold clearly visible, NO door panel, NO people or vehicle. Door frame intact, subtle shelves far inside. Cell1 the standalone closed blue-grey CORRUGATED ROLLING SHUTTER door panel for that opening, straight on, opaque corrugated metal rectangle with small handle and worn scratches, no wall/frame, true transparent outside its own silhouette. Full uncut facade and panel in safe margins, same hand-painted colorful HD arcade Greek style as Little Dragon. No labels or lettering. Exact TWO square cells side by side.",
+    "runtime": "assets/living-garage.webp",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "sha256": "e90f6869e93d7de54d385f9f3d0dff9d5f6d306cd375dc917dc224c8ed0e8e67",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "living-gate",
+    "transparent": true,
+    "prompt": "Background extraction ONLY for this game prop atlas. Preserve exact canvas size, exact prop silhouettes, colors and positions, every prop unchanged. Remove ALL pale grey/white backdrop, including haze, rectangular shadows and noise BETWEEN and OUTSIDE props. Every background pixel must be fully transparent alpha zero. Preserve all opaque material INSIDE each actual object. Keep gaps in awnings, frames, chair/bench legs and doorway arch interior fully transparent. Keep the dark workshop interior of the garage opaque if present. This is a production cutout atlas, not objects photographed on a white backdrop. Do not rearrange cells or add any element.",
+    "path": "exec-631faf35-e434-4f68-bd5c-82e231585774.png",
+    "creationPrompt": "Use case: stylized-concept. Two-column one-row game prop atlas with true transparency. Exactly TWO equal square cells. Cell0 a freestanding fairytale stone doorway with ivy, worn purple-blue stone arch, FULLY OPEN dark empty doorway, visible threshold. Front-facing 3/4 slight right depth, opening centered between 25% and 75% width and 24% and 94% height. No leaf/panel in opening, no people. Cell1 the matching standalone wooden and iron door panel, closed, front facing, no wall or frame, isolated transparent outside. Whole silhouettes safe inside each square. Detailed high-resolution hand-painted whimsical Greek fantasy arcade style. No text. Usable as separate frame and moving door sprite, not a rectangular background crop.",
+    "runtime": "assets/living-gate.webp",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "sha256": "1115b18e9ddef490f17514a0cc7b56db05b96bfcb5c50df08389d6e18fb6f5e2",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "market-stalls",
+    "transparent": true,
+    "prompt": "Background extraction ONLY for this game prop atlas. Preserve exact canvas size, exact prop silhouettes, colors and positions, every prop unchanged. Remove ALL pale grey/white backdrop, including haze, rectangular shadows and noise BETWEEN and OUTSIDE props. Every background pixel must be fully transparent alpha zero. Preserve all opaque material INSIDE each actual object. Keep gaps in awnings, frames, chair/bench legs and doorway arch interior fully transparent. Keep the dark workshop interior of the garage opaque if present. This is a production cutout atlas, not objects photographed on a white backdrop. Do not rearrange cells or add any element.",
+    "path": "exec-e58f20c7-c772-4d35-85f7-986c4b6f06b9.png",
+    "creationPrompt": "Use case: stylized-concept. Four-column two-row atlas, EIGHT equal square cells of independent street props. True transparent background, no baked world, no rectangle. Oblique belt-scroll Greek fantasy arcade camera, colorful detailed painted materials. Cell0 Greek fruit seller's wooden counter with crates of apples and blue striped awning, NO person, standing gap behind counter; cell1 fishmonger's counter with fish on ice and beige awning, NO person; cell2 forest potion merchant table with tiny bottles and leafy canopy, NO person; cell3 castle book stall with stack of worn books and purple canopy, NO person. Cell4 low wooden park bench; cell5 terracotta planter with flowers; cell6 stack of two wooden crates with rope; cell7 small low stone drinking trough. No text. Every full prop fits its own square, same physical camera, transparent margins. Vendor characters will be layered separately BEHIND the counter.",
+    "runtime": "assets/market-stalls.webp",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "sha256": "518e37f6f669330f30e06f441360744a445476633cdc048f79aa2167ed807f10",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "vendor-motion",
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. Production NPC animation atlas, exactly FOUR columns and SIX rows, 24 equal square cells, true transparent background. Six consecutive poses for each of FOUR friendly adult vendors, ordered by ROWS PER PERSON: first six reading-order cells Greek middle-aged fruit seller man wearing beige shirt and blue apron, next six Greek woman fishmonger with red headscarf and teal apron, next six elderly forest potion seller in green cloak, last six castle librarian woman with glasses and purple apron. Each identity's six poses form a coherent occupation-specific cycle: planted idle, reaches toward goods, hand extends to offer, retracts, friendly greeting wave, rest. Waist-up to knees or full body uniformly for all, identical camera, foot support at 94% cell height, no counter painted in. Face 3/4 toward camera and right. Keep head size, clothes, identity and hand anatomy fixed across each cycle. No words, no props in empty hands except tiny appropriate offering held consistently, no backdrop or ground shadow. High quality refined hand-painted HD arcade, friendly Greek storybook world.",
+    "path": "exec-3a585bb9-69b0-4159-b5b9-3468cb85af45.png",
+    "runtime": "assets/vendor-motion.webp",
+    "nativeSize": [
+      1145,
+      1374
+    ],
+    "sha256": "1595e4f32c715cf5cc5913eaa2806e40220ae6c2bbe49668ce90ab591b9459f6",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "civilian-motion",
+    "prompt": "Use case: stylized-concept. REPLACE the reference walking sheet with a corrected game sprite atlas on TRUE alpha-zero transparent background. No white/checkerboard background or gridlines. EXACTLY FIVE columns and FOUR rows: twenty equal square cells. First TWO rows are ONLY the same man in cap, cream shirt, brown trousers and basket, last TWO rows ONLY the same woman in red cardigan, blue dress and shopping bag. Each person's TEN cells in reading order: (0) dedicated planted relaxed STANDING IDLE with both feet under hips; (1) LEFT leg forward contact/right behind; (2) left support/down; (3) RIGHT foot swinging past left planted foot; (4) right leg advancing low/no marching knee; (5) RIGHT leg forward contact/left behind; (6) right support/down; (7) LEFT foot swinging past right planted foot; (8) left leg advancing low; (9) idle greeting wave. The SECOND half stride must change which anatomical leg leads; NEVER duplicate frames1..4 into5..8. Arms naturally counter-swing except the hand holding bag/basket, which maintains grip. Knees lift only a few inches, no high-knee marching. Body and head stay the exact same scale and clothing in all cells, soles at 94% baseline, full silhouette inside each cell with margins. Clean smooth adult walking with eight real distinct successive poses. Colorful hand-painted refined arcade HD artwork. Twenty cells only, each identity exactly ten cells. Important: idle and wave are true stable standing poses.",
+    "path": "exec-738caa56-2b6a-4fbd-b3d1-ac98c00cc1e6.png",
+    "cols": 5,
+    "rows": 4,
+    "framesPerIdentity": 10,
+    "runtime": "assets/civilian-motion.webp",
+    "nativeSize": [
+      1402,
+      1122
+    ],
+    "sha256": "83c68423e3359702d0100e383f2e9ca2ab745291f42c87e474ec301533f2fd55",
+    "tool": "built-in image_gen"
+  }
+]

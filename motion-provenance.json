@@ -1,0 +1,554 @@
+[
+  {
+    "key": "story-motion-1",
+    "runtime": "assets/story-motion-1.webp",
+    "source": "exec-31167ab8-c8ed-47ba-9c61-44147b187cf5.png",
+    "prompt": "Use case: illustration-story. Produce a NEW coherent animation sprite atlas based on the reference's identities, outfits and camera composition. EXACTLY TWO columns and SIX rows, 12 frames read left-to-right top-to-bottom. Every cell is a full 16:9 film composition; the whole atlas has 16:27 aspect ratio, tall canvas. Genuine transparent background, empty alpha zero outside characters and held props. No environment, no typography, no dividers. Each next cell is a small correctly drawn inbetween of ONE CONTINUOUS action, not twelve unrelated poses. Preserve the reference characters' relative positions and anatomical sizes; fixed camera for all 12 frames. Keep head size and exposure constant; no per-frame zoom. Draw every hand and arm completely, maintain contact points, leave a 3% safe margin at cell boundaries. Bright refined hand-painted 1996 Japanese arcade animation, detailed clean opaque silhouettes. ACTION: Two boys at their table: curly blond boy in white karate gi at left leans forward, gently points toward the story card, blinks and smiles; spiky brown-haired boy at right in blue varsity jacket smoothly turns the orange Yoto knob with right hand while holding the card with left. A subtle continuous action with small adjacent hand movements. Yoto remains supported at the same tabletop baseline in every cell. IMPORTANT: one complete cast in each of exactly twelve equal 16:9 cells. Maximize native resolution.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1080,
+      1457
+    ],
+    "sha256": "1b188fc5cb1eaf1248b9edd03cd8157b2a2d7bbfe63ad39003b9c7a2a1c5b83f",
+    "authoredFrames": 12,
+    "columns": 2,
+    "rows": 6,
+    "cellAspect": 2.2237474262182566,
+    "activeFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "sourceRows": [
+      0,
+      255,
+      514,
+      771,
+      1028,
+      1283,
+      1457
+    ],
+    "supportTranslationOnly": [
+      3,
+      -2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rejectedFrames": [
+      10,
+      11
+    ],
+    "review": "Last two poses rejected for compressed anatomy; selected poses keep one uniform pixel scale and supported tabletop baseline."
+  },
+  {
+    "key": "story-motion-2",
+    "runtime": "assets/story-motion-2.webp",
+    "source": "exec-b1aa52e7-b6b7-4c78-b72a-02a5ea506e80.png",
+    "prompt": "Background removal ONLY. Preserve this exact TWO-column SIX-row twelve-frame animation atlas, exact canvas size and exact figure/card/player positions in all twelve cells. Keep the friendly furry horned creature and the orange Yoto fully opaque with clean hair edges. Remove the entire white/grey backdrop, haze and shadows outside the figures COMPLETELY to alpha=0, including every gap between hand, arm, fur and orange player. No checkerboard or background color. Do not redraw or rearrange, do not change expression, frame positions or camera. True transparent game sprite atlas.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1078,
+      1459
+    ],
+    "sha256": "6bb9b532a323c0b7b1ad83d982459270f24c67e29a302124d82da960c900018c",
+    "authoredFrames": 12,
+    "columns": 2,
+    "rows": 6,
+    "cellAspect": 2.2165867032213846,
+    "creationPrompt": "Use case: illustration-story. Produce a NEW coherent animation sprite atlas based on the reference's identities, outfits and camera composition. EXACTLY TWO columns and SIX rows, 12 frames read left-to-right top-to-bottom. Every cell is a full 16:9 film composition; the whole atlas has 16:27 aspect ratio, tall canvas. Genuine transparent background, empty alpha zero outside characters and held props. No environment, no typography, no dividers. Each next cell is a small correctly drawn inbetween of ONE CONTINUOUS action, not twelve unrelated poses. Preserve the reference characters' relative positions and anatomical sizes; fixed camera for all 12 frames. Keep head size and exposure constant; no per-frame zoom. Draw every hand and arm completely, maintain contact points, leave a 3% safe margin at cell boundaries. Bright refined hand-painted 1996 Japanese arcade animation, detailed clean opaque silhouettes. ACTION: The large friendly brown horned furry creature leans through the window, reaches down, slowly closes fingers around the orange Yoto, then smoothly lifts it 10 percent of the cell height toward his chest, looking sideways with a cheeky smile. Frames form ONE forward reach-grasp-lift action, not repeated independent poses. Keep hand contact and one Yoto only. Supporting lower furry arm stays on the same windowsill level. IMPORTANT: one complete cast in each of exactly twelve equal 16:9 cells. Maximize native resolution."
+  },
+  {
+    "key": "story-motion-5",
+    "runtime": "assets/story-motion-5.webp",
+    "source": "exec-a0e221e4-7b3a-46a2-9429-fdfc1c5334b4.png",
+    "prompt": "Use case: illustration-story. Produce a NEW coherent animation sprite atlas based on the reference's identities, outfits and camera composition. EXACTLY TWO columns and SIX rows, 12 frames read left-to-right top-to-bottom. Every cell is a full 16:9 film composition; the whole atlas has 16:27 aspect ratio, tall canvas. Genuine transparent background, empty alpha zero outside characters and held props. No environment, no typography, no dividers. Each next cell is a small correctly drawn inbetween of ONE CONTINUOUS action, not twelve unrelated poses. Preserve the reference characters' relative positions and anatomical sizes; fixed camera for all 12 frames. Keep head size and exposure constant; no per-frame zoom. Draw every hand and arm completely, maintain contact points, leave a 3% safe margin at cell boundaries. Bright refined hand-painted 1996 Japanese arcade animation, detailed clean opaque silhouettes. ACTION: The two boys and brown furry horned creature sit together around their orange Yoto, sharing a laugh. Smooth small head and shoulder motions, one gentle wave from the creature, the brown-haired boy shows a story card. Last pose returns close to the first to close a natural loop. Maintain the Yoto fixed on the ground center in every cell. IMPORTANT: one complete cast in each of exactly twelve equal 16:9 cells. Maximize native resolution.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1080,
+      1457
+    ],
+    "sha256": "e7ea7b3731d98f2d2c1a7e1bbb9e7ff36b0a8b24dba5ad607b9cb50b44e8d334",
+    "authoredFrames": 12,
+    "columns": 2,
+    "rows": 6,
+    "cellAspect": 2.2237474262182566
+  },
+  {
+    "key": "floor-variants-4",
+    "runtime": "assets/floor-variants-4.webp",
+    "source": "exec-8efe9e55-069e-4694-a7a6-ed09158b2c08.png",
+    "prompt": "Use case: stylized-concept. High-resolution arcade ground texture atlas. Exactly THREE horizontal texture strips stacked vertically with no gap, each band the same width and height. Whole canvas aspect ratio EIGHT to THREE, so each individual strip is EIGHT to ONE. Image should be as large as possible. Surface: cool blue violet castle flagstones, worn engraved joints and subtle mineral texture. This is floor only, no horizon, no buildings, no characters, no props, no cast shadows, no text or frame. Oblique overhead belt-scroll game floor viewed from above and front, top of each strip a little more distant than bottom. Three related but DISTINCT believable material layouts, same exposure and palette, detailed painted HD realism. Make the left and right ends of EACH strip edge-compatible for tiling. All surface details remain flat and shallow, no big boulders. Human feet in this game are about 1/20 of the strip height so stones must have believable small scale. No obvious repeating central ornament. Flat neutral scene lighting so runtime lights can act on it.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      2048,
+      768
+    ],
+    "sha256": "ea0e9268b5d1dbba4b17000607abb5b786b6fd8661314127595ef3adbffb0c8c",
+    "authoredFloorVariants": 3
+  },
+  {
+    "key": "story-motion-3",
+    "runtime": "assets/story-motion-3.webp",
+    "source": "exec-13abb199-b4de-4366-b246-c8145bfd2154.png",
+    "prompt": "Use case: illustration-story. Produce a NEW coherent animation sprite atlas based on the reference's identities, outfits and camera composition. EXACTLY TWO columns and SIX rows, 12 frames read left-to-right top-to-bottom. Every cell is a full 16:9 film composition; the whole atlas has 16:27 aspect ratio, tall canvas. Genuine transparent background, empty alpha zero outside characters and held props. No environment, no typography, no dividers. Each next cell is a small correctly drawn inbetween of ONE CONTINUOUS action, not twelve unrelated poses. Preserve the reference characters' relative positions and anatomical sizes; fixed camera for all 12 frames. Keep head size and exposure constant; no per-frame zoom. Draw every hand and arm completely, maintain contact points, leave a 3% safe margin at cell boundaries. Bright refined hand-painted 1996 Japanese arcade animation, detailed clean opaque silhouettes. ACTION: Curly blond boy in white gi and black belt holds his map in left hand. He smoothly looks up from the map, turns head toward the castle at right and extends right index finger to point, then lowers his hand and settles determined. No orange Yoto, no ghost silhouette, no glowing empty player outline. IMPORTANT: one complete cast in each of exactly twelve equal 16:9 cells. Maximize native resolution.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1079,
+      1457
+    ],
+    "sha256": "2d178963c876a5f6e47612c970953ea8acddd28786b703d023c9216669c338b6",
+    "authoredFrames": 12,
+    "columns": 2,
+    "rows": 6,
+    "cellAspect": 2.22168840082361
+  },
+  {
+    "key": "floor-variants-0",
+    "runtime": "assets/floor-variants-0.webp",
+    "source": "exec-636a8263-5515-4ffe-976a-88b4b5a9cfb7.png",
+    "prompt": "Use case: stylized-concept. High-resolution arcade ground texture atlas. Exactly THREE horizontal texture strips stacked vertically with no gap, each band the same width and height. Whole canvas aspect ratio EIGHT to THREE, so each individual strip is EIGHT to ONE. Image should be as large as possible. Surface: warm beige grey Greek neighborhood cobblestones and worn stone pavers, tiny weeds, subtle repairs. This is floor only, no horizon, no buildings, no characters, no props, no cast shadows, no text or frame. Oblique overhead belt-scroll game floor viewed from above and front, top of each strip a little more distant than bottom. Three related but DISTINCT believable material layouts, same exposure and palette, detailed painted HD realism. Make the left and right ends of EACH strip edge-compatible for tiling. All surface details remain flat and shallow, no big boulders. Human feet in this game are about 1/20 of the strip height so stones must have believable small scale. No obvious repeating central ornament. Flat neutral scene lighting so runtime lights can act on it.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      2048,
+      768
+    ],
+    "sha256": "2f18343cb830083495af561020832475419963b6e4357f1bdbf80ac5f8778a1d",
+    "authoredFloorVariants": 3
+  },
+  {
+    "key": "floor-variants-3",
+    "runtime": "assets/floor-variants-3.webp",
+    "source": "exec-69cf823a-8138-4843-a368-7487f0439d1f.png",
+    "prompt": "Use case: stylized-concept. High-resolution arcade ground texture atlas. Exactly THREE horizontal texture strips stacked vertically with no gap, each band the same width and height. Whole canvas aspect ratio EIGHT to THREE, so each individual strip is EIGHT to ONE. Image should be as large as possible. Surface: warm pale ancient Greek marble paving, broken thin tesserae accents and worn cracks. This is floor only, no horizon, no buildings, no characters, no props, no cast shadows, no text or frame. Oblique overhead belt-scroll game floor viewed from above and front, top of each strip a little more distant than bottom. Three related but DISTINCT believable material layouts, same exposure and palette, detailed painted HD realism. Make the left and right ends of EACH strip edge-compatible for tiling. All surface details remain flat and shallow, no big boulders. Human feet in this game are about 1/20 of the strip height so stones must have believable small scale. No obvious repeating central ornament. Flat neutral scene lighting so runtime lights can act on it.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      2048,
+      768
+    ],
+    "sha256": "0a1f03444e97568b5797d69c0c76b5eff316d2e1b09560716f7fe022cecfd6d1",
+    "authoredFloorVariants": 3
+  },
+  {
+    "key": "story-motion-4",
+    "runtime": "assets/story-motion-4.webp",
+    "source": "exec-1d1a3915-c5da-4493-b853-2606b2cea228.png",
+    "prompt": "Use case: illustration-story. Produce a NEW coherent animation sprite atlas based on the reference's identities, outfits and camera composition. EXACTLY TWO columns and SIX rows, 12 frames read left-to-right top-to-bottom. Every cell is a full 16:9 film composition; the whole atlas has 16:27 aspect ratio, tall canvas. Genuine transparent background, empty alpha zero outside characters and held props. No environment, no typography, no dividers. Each next cell is a small correctly drawn inbetween of ONE CONTINUOUS action, not twelve unrelated poses. Preserve the reference characters' relative positions and anatomical sizes; fixed camera for all 12 frames. Keep head size and exposure constant; no per-frame zoom. Draw every hand and arm completely, maintain contact points, leave a 3% safe margin at cell boundaries. Bright refined hand-painted 1996 Japanese arcade animation, detailed clean opaque silhouettes. ACTION: Both boys kneel facing each other: slowly raise fists, extend arms, touch knuckles at the exact center, short cheerful reaction, retract arms and return to resting pose. Curly blond boy left black belt; spiky brown-haired boy right blue belt. NO orange Yoto anywhere, it has been stolen. Their knees stay fixed at the same ground baseline. IMPORTANT: one complete cast in each of exactly twelve equal 16:9 cells. Maximize native resolution.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1080,
+      1457
+    ],
+    "sha256": "594b3bb05fd3173f93124a1f32cc34e67d2907f3acce7e1b629f7d5858085d12",
+    "authoredFrames": 12,
+    "columns": 2,
+    "rows": 6,
+    "cellAspect": 2.2237474262182566
+  },
+  {
+    "key": "floor-variants-2",
+    "runtime": "assets/floor-variants-2.webp",
+    "source": "exec-a98b0982-b5b2-4005-8947-f945f11a505d.png",
+    "prompt": "Use case: stylized-concept. High-resolution arcade ground texture atlas. Exactly THREE horizontal texture strips stacked vertically with no gap, each band the same width and height. Whole canvas aspect ratio EIGHT to THREE, so each individual strip is EIGHT to ONE. Image should be as large as possible. Surface: dark warm forest earth, sparse flattened leaves, moss and tiny shallow roots. This is floor only, no horizon, no buildings, no characters, no props, no cast shadows, no text or frame. Oblique overhead belt-scroll game floor viewed from above and front, top of each strip a little more distant than bottom. Three related but DISTINCT believable material layouts, same exposure and palette, detailed painted HD realism. Make the left and right ends of EACH strip edge-compatible for tiling. All surface details remain flat and shallow, no big boulders. Human feet in this game are about 1/20 of the strip height so stones must have believable small scale. No obvious repeating central ornament. Flat neutral scene lighting so runtime lights can act on it.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      2048,
+      768
+    ],
+    "sha256": "403d2c5ae4fd3d978f8810321e23dd49eaeda3c622255912d840488d5b1c77a0",
+    "authoredFloorVariants": 3
+  },
+  {
+    "key": "floor-variants-1",
+    "runtime": "assets/floor-variants-1.webp",
+    "source": "exec-5b2c284c-5e12-4df6-a30e-b2a178467ead.png",
+    "prompt": "Use case: stylized-concept. High-resolution arcade ground texture atlas. Exactly THREE horizontal texture strips stacked vertically with no gap, each band the same width and height. Whole canvas aspect ratio EIGHT to THREE, so each individual strip is EIGHT to ONE. Image should be as large as possible. Surface: cool damp harbour stone paving with occasional weathered timber repair, salt stains and small cracks. This is floor only, no horizon, no buildings, no characters, no props, no cast shadows, no text or frame. Oblique overhead belt-scroll game floor viewed from above and front, top of each strip a little more distant than bottom. Three related but DISTINCT believable material layouts, same exposure and palette, detailed painted HD realism. Make the left and right ends of EACH strip edge-compatible for tiling. All surface details remain flat and shallow, no big boulders. Human feet in this game are about 1/20 of the strip height so stones must have believable small scale. No obvious repeating central ornament. Flat neutral scene lighting so runtime lights can act on it.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      2048,
+      768
+    ],
+    "sha256": "319aefe19adf0673495b047abe1914e08dc0e6d87298c690626942a9cc30132f",
+    "authoredFloorVariants": 3
+  },
+  {
+    "key": "foe-motion-19",
+    "runtime": "assets/foe-motion-19.webp",
+    "source": "exec-90c40680-acf7-474b-924a-b3feed93134a.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the colorful feather-hat piper with flute, identity number 8 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1261,
+      1247
+    ],
+    "sha256": "53d88d12003134415e2fa5ca60f9ada24c4a8fcb3d3794d8f04ad49b5ea0017b",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.951923,
+      "center": 0.542857,
+      "scale": 1.02147,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-0",
+    "runtime": "assets/foe-motion-0.webp",
+    "source": "exec-c02350e4-e0b0-4dbd-8b44-27a658e59c69.png",
+    "prompt": "Use case: stylized-concept. NEW 4-column 4-row sixteen-frame sprite atlas of ONLY the red-capped mushroom sprite with white spots, tan face, brown boots, identity index 1 in the reference's first three rows. Preserve the design. TRUE transparent background, no backdrop colors or shadow or text. Fixed camera, facing RIGHT 3/4 view, same anatomical scale, feet at 93% cell height, full silhouette inside each square. Cell0 planted idle; cells1..8 eight consecutive complete walk-cycle frames: LEFT contact/down/passing/up, RIGHT contact/down/passing/up, opposite arm and leg on same side, one supporting foot, natural flexion. Cells9..13 a continuous anticipation/windup/strike/follow-through/recovery action. Cell14 hurt recoil, cell15 defeated side-fall. Clean detailed colorful HD arcade hand-painted art, no scale drift, correct continuity across frame8 to frame1. Exactly sixteen equal square cells in four columns and four rows.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1263,
+      1246
+    ],
+    "sha256": "f2d989d1710797794dd5bb87ec8a856c30e1d0e54dec8d1406243000fa2de28d",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.942308,
+      "center": 0.5,
+      "scale": 0.868084,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-18",
+    "runtime": "assets/foe-motion-18.webp",
+    "source": "exec-4c481c33-7ef0-4f06-a99f-ea272b4847b2.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the rat king in red cape and crown holding scepter, identity number 7 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1263,
+      1246
+    ],
+    "sha256": "a7f2ea2b71b5a60a38827e58febd8f5e80a72e851d1b7573625913745c1103a0",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.923077,
+      "center": 0.471519,
+      "scale": 1.051115,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-17",
+    "runtime": "assets/foe-motion-17.webp",
+    "source": "exec-a7a6be66-e50b-49cf-9c68-9f3e442c96ed.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the green hulking bridge troll with mossy shoulders, identity number 6 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1261,
+      1247
+    ],
+    "sha256": "19372dac5997860f3cb87ed0bef06362d88571b4fddeb83b20e6b6282d9f3595",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.919872,
+      "center": 0.488889,
+      "scale": 0.956944,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-3",
+    "runtime": "assets/foe-motion-3.webp",
+    "source": "exec-3a45a95e-2f9e-479c-af1c-12a17d657668.png",
+    "prompt": "Use case: stylized-concept. NEW 4-column 4-row sixteen-frame sprite atlas of ONLY the green pirate turtle with tricorne and red bandana, identity index 4 in the reference's first three rows. Preserve the design. TRUE transparent background, no backdrop colors or shadow or text. Fixed camera, facing RIGHT 3/4 view, same anatomical scale, feet at 93% cell height, full silhouette inside each square. Cell0 planted idle; cells1..8 eight consecutive complete walk-cycle frames: LEFT contact/down/passing/up, RIGHT contact/down/passing/up, opposite arm and leg on same side, one supporting foot, natural flexion. Cells9..13 a continuous anticipation/windup/strike/follow-through/recovery action. Cell14 hurt recoil, cell15 defeated side-fall. Clean detailed colorful HD arcade hand-painted art, no scale drift, correct continuity across frame8 to frame1. Exactly sixteen equal square cells in four columns and four rows.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1265,
+      1243
+    ],
+    "sha256": "964af8695f1b39034dfaad8c807cca8a2f9a0d195937af69abd56e1a0588bcee",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.935691,
+      "center": 0.466772,
+      "scale": 0.893965,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-14",
+    "runtime": "assets/foe-motion-14.webp",
+    "source": "exec-b383b693-3c54-4b62-89b0-eb166bd8ecfb.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the little brown horned woodland creature with twig and leafy collar, identity number 3 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "sha256": "f9dfad94816d09d596e083ec02cbb0a67bb51b815109857da0aa8ff9baf2e975",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.945312,
+      "center": 0.523438,
+      "scale": 1.004464,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "ground-details",
+    "runtime": "assets/ground-details.webp",
+    "source": "exec-e0a7136f-5708-4728-bce3-cf09369a8a06.png",
+    "prompt": "Use case: stylized-concept. Production prop sprite atlas for a Greek fantasy arcade beat-em-up. Exactly FOUR columns by FOUR rows, sixteen equal square cells, isolated objects on genuinely transparent alpha zero. No white background or baked floor rectangles. Oblique overhead ground-plane view, same camera as a side-scrolling beat em up. Row1: round old iron drain grate; rectangular street drain; irregular worn cobblestone repair patch with soft broken edges; a few scattered plane-tree leaves. Row2: small coil of ship rope lying flat; torn fishing net and two shells lying flat; shallow blue-grey puddle with broken irregular silhouette; wet timber repair planks lying flat. Row3: moss patch and tiny stones; three fern clumps lying along ground; exposed root cluster with leaf litter; broken terracotta shards. Row4: cracked pale marble medallion lying flat; ancient tesserae mosaic fragment with ragged edges; purple castle runner fabric with worn ragged ends lying flat; broken old stone pavers with a few weeds. All top surfaces coplanar with game ground, NO floating upright signs, no tall obstacles, no rectangular backplates. Detailed hand-painted material realism, soft contact darkening only inside asset boundary. Safe transparent margins in each cell.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1269,
+      1240
+    ],
+    "sha256": "ea6a8d1aa29658a24f248d0b45783dd9635ff4133eaa61638a057421dc80264b"
+  },
+  {
+    "key": "foe-motion-6",
+    "runtime": "assets/foe-motion-6.webp",
+    "source": "exec-ccf994a1-2adf-495a-87a6-5560644a590c.png",
+    "prompt": "Use case: stylized-concept. NEW 4-column 4-row sixteen-frame sprite atlas of ONLY the little purple dragon with orange wing membranes, identity index 7 in the reference's first three rows. Preserve the design. TRUE transparent background, no backdrop colors or shadow or text. Fixed camera, facing RIGHT 3/4 view, same anatomical scale, feet at 93% cell height, full silhouette inside each square. Cell0 planted idle; cells1..8 eight consecutive complete walk-cycle frames: LEFT contact/down/passing/up, RIGHT contact/down/passing/up, opposite arm and leg on same side, one supporting foot, natural flexion. Cells9..13 a continuous anticipation/windup/strike/follow-through/recovery action. Cell14 hurt recoil, cell15 defeated side-fall. Clean detailed colorful HD arcade hand-painted art, no scale drift, correct continuity across frame8 to frame1. Exactly sixteen equal square cells in four columns and four rows.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1262,
+      1246
+    ],
+    "sha256": "a57c5353c7ee786a5303bc3f636de9008a54110a1207702a99e5062c3c9f72a3",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.865385,
+      "center": 0.526899,
+      "scale": 0.953571,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-12",
+    "runtime": "assets/foe-motion-12.webp",
+    "source": "exec-59cd0d6e-9429-423a-afd1-252a96a3cf03.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the purple-robed witch with tall purple hat and magic staff, identity number 1 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "sha256": "33c5abdaca2981cace2d7f66a4d46624fbbe1eb9b8105f5f4db0879f2aca69bf",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.960938,
+      "center": 0.52474,
+      "scale": 0.940678,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-13",
+    "runtime": "assets/foe-motion-13.webp",
+    "source": "exec-bb08a6df-aae1-4cbe-8a06-7e196b676f4f.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the grey fairy tale wolf with shaggy chest fur, identity number 2 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "sha256": "636adebd80dcb3a52292fae2c8a843cbcfa831ce83cfeadbab91d3af4ae86b8d",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.9375,
+      "center": 0.5,
+      "scale": 0.855204,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "bonus-props",
+    "runtime": "assets/bonus-props.webp",
+    "source": "exec-c70cfb34-9f30-4cb9-a26b-3d082945666b.png",
+    "prompt": "Use case: stylized-concept. A production four-column by two-row atlas of EIGHT props for a colorful Greek fantasy arcade game, 8 equal square cells, each isolated on true transparent background with generous margins, fixed oblique side-view camera. Reading order: (0) closed little wooden barrel with iron hoops, (1) broken version of the same barrel with scattered staves but SAME scale and baseline, (2) glossy red apple with leaf, (3) small friendly gold clockwork beetle treasure with tiny wings, (4) old rolled parchment scroll tied with blue ribbon, (5) small blue glass energy flask with cork, (6) round Greek shield leaning upright, (7) loose cluster of old golden coins on ground. No text, no backdrop, no white rectangle. High quality detailed painted arcade HD props matching whimsical Greek fairytale world. Cell0 and1 must have same footprint and material. No characters.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "sha256": "6eb48ce7292567ce47c3a0ee871927a8c76026ccb90c3830f82e0689c79597cf"
+  },
+  {
+    "key": "foe-motion-11",
+    "runtime": "assets/foe-motion-11.webp",
+    "source": "exec-eb769670-9b3e-452b-8049-6b8164c76db5.png",
+    "prompt": "Use case: stylized-concept. NEW 4-column 4-row sixteen-frame sprite atlas of ONLY the yellow stone golem with mossy shoulders, identity index 12 in the reference's first three rows. Preserve the design. TRUE transparent background, no backdrop colors or shadow or text. Fixed camera, facing RIGHT 3/4 view, same anatomical scale, feet at 93% cell height, full silhouette inside each square. Cell0 planted idle; cells1..8 eight consecutive complete walk-cycle frames: LEFT contact/down/passing/up, RIGHT contact/down/passing/up, opposite arm and leg on same side, one supporting foot, natural flexion. Cells9..13 a continuous anticipation/windup/strike/follow-through/recovery action. Cell14 hurt recoil, cell15 defeated side-fall. Clean detailed colorful HD arcade hand-painted art, no scale drift, correct continuity across frame8 to frame1. Exactly sixteen equal square cells in four columns and four rows.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1261,
+      1247
+    ],
+    "sha256": "02f0d46e4b098114edcd3f6c87dd4ee08af0c022deda51625951b48b8a9e8651",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.929487,
+      "center": 0.526984,
+      "scale": 0.881809,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-15",
+    "runtime": "assets/foe-motion-15.webp",
+    "source": "exec-ccbc4e6a-6084-489c-811b-1ec643e2532a.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the bald comic wizard in black robe and red shoes carrying green potion, identity number 4 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "sha256": "00b16922c25c63cbde0183fe2e48dd86f3a8edd4d54023b0f09e2c20b4fb7732",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.957031,
+      "center": 0.501302,
+      "scale": 0.969957,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  },
+  {
+    "key": "foe-motion-16",
+    "runtime": "assets/foe-motion-16.webp",
+    "source": "exec-c5bfb90f-21a3-46ac-b602-b38a01159dd7.png",
+    "prompt": "Use case: stylized-concept. NEW coherent 4-column by 4-row animation atlas, sixteen equal SQUARE cells, true transparent background alpha zero. Animate ONLY the evil queen in purple robes, crown, white fur collar, identity number 5 of the reference's FIRST TWO ROWS. No other characters. Detailed hand-painted HD arcade sprite art, identical identity, fixed camera and body scale in all cells, facing RIGHT in 3/4 side view, feet baseline at 93% cell height, entire silhouette inside with safe margins. Cell0 planted idle. Cells1 through8: EIGHT consecutive frames of a complete grounded walking cycle: LEFT contact, down, passing, up, RIGHT contact, down, passing, up; arm swing opposite the same-side leg. One foot supports weight at all times, knees bend naturally, no two feet advancing together. Cell9 attack anticipation, cell10 preparation, cell11 action extension, cell12 follow-through, cell13 recovery. Cell14 recoil, cell15 defeated side-fall. Staff/flute/potion stays in correct hands. Never change head size or figure proportions. No painted backplate, ground, shadow, text or grid.",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1261,
+      1247
+    ],
+    "sha256": "a642d687d53cb59c6b182e7ee8e89edbe6ba7134067b7bf1420565fca97b70bc",
+    "authoredFrames": 16,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "registration": {
+      "anchor": 0.951923,
+      "center": 0.48254,
+      "scale": 1.021907,
+      "registration": "One idle calibration for every pose; fixed anatomical scale"
+    }
+  }
+]

@@ -1,6 +1,6 @@
 'use strict';
 // Full-HD presentation. Physics and hit detection remain in the original world units.
-const HD_VERSION='2.1';
+const HD_VERSION='2.2';
 const HD_DEFAULT={resolution:4,display:'hd',lighting:true,fog:true,grain:1,parallax:true,calm:false,contrast:false,musicVolume:65,sfxVolume:80,music:true,sound:true};
 let hdPrefs={...HD_DEFAULT};
 try{Object.assign(hdPrefs,JSON.parse(localStorage.getItem('little-dragon-hd-settings')||'{}'))}catch{}
@@ -15,9 +15,17 @@ const HD_ART={floor:'assets/hd-floor.webp'};
 for(const scene of ['athens','harbor','forest','ruins','castle'])for(const plane of ['near','far'])HD_ART[scene+'-'+plane]=`assets/hd-${plane}-${scene}.webp`;
 HD_ART['castle-near']='assets/castle-unlit.webp';
 const hdImages={};
-const hdLoadTotal=Object.keys(HD_ART).length+Object.keys(images).length;
+const hdImageURLs=new Map(Object.values(images).map(im=>[im.src,im]));
+for(const [key,url] of Object.entries(HD_ART)){const absolute=new URL(url,document.baseURI).href;let im=hdImageURLs.get(absolute);if(!im){im=new Image();im.src=url;hdImageURLs.set(absolute,im)}hdImages[key]=im}
+const hdLoadImages=[...hdImageURLs.values()];
+const hdLoadTotal=hdLoadImages.length;
 function hdLoadTick(){hdLoadDone++;const el=document.querySelector('#hd-loading');if(el)el.textContent=`ΦΟΡΤΩΣΗ HD · ${Math.round(hdLoadDone/hdLoadTotal*100)}%`}
-const hdAssetReady=Promise.all([...Object.entries(HD_ART).map(async([key,url])=>{const im=new Image();im.src=url;await im.decode();hdImages[key]=im;hdLoadTick()}),...Object.values(images).map(im=>im.decode().then(hdLoadTick))]);
+const hdDecodeRetries=new Map();
+async function hdDecodeImage(im){for(let attempt=0;attempt<3;attempt++){try{await im.decode();return}catch(error){if(attempt===2)throw new Error('HD image could not decode: '+im.src,{cause:error});const src=im.src;hdDecodeRetries.set(src,attempt+1);await new Promise(resolve=>setTimeout(resolve,80*(attempt+1)));im.removeAttribute('src');im.src=src;await Promise.resolve()}}}
+// Bound simultaneous native decoding and share duplicate source URLs. A failed
+// decode retries the actual image, rather than leaving the title at 99% forever.
+let hdNextImage=0;
+const hdAssetReady=Promise.all(Array.from({length:4},async()=>{while(hdNextImage<hdLoadImages.length){const im=hdLoadImages[hdNextImage++];await hdDecodeImage(im);hdLoadTick()}}));
 const hdProfiles=[
  {sky:['#243d70','#c9878c','#ffd7a2'],hill:'#666887',mist:'232,174,141',light:'255,209,141',fog:.10},
  {sky:['#101d43','#3f5a7c','#83abb4'],hill:'#31455f',mist:'125,179,192',light:'255,205,128',fog:.28},

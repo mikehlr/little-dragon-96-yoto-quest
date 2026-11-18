@@ -6,6 +6,31 @@ A buildless, one- or two-player illustrated action adventure through five worlds
 Serve this directory as static files; GitHub Pages publishes `main` directly.
 The original single-file release remains recoverable in Git history.
 
+## Living Arcade · 2.2
+
+- Cinematics now use 10–12 coherent authored neighboring poses per scene,
+  with registered source rows, stable anatomical scale and direct opaque drawing.
+  Two compressed poses were rejected from the first scene. No whole-body fades
+  are used to hide pose changes. Timed reading, tap/A/Enter and Start skip remain.
+- Encounters lock the camera. Each player can use the full visible width,
+  without the previous 322-unit co-op tether or an interior glowing barrier.
+  Forward-only window scrolling resumes when the fight clears.
+- Twelve enemy identities now have eight distance-driven walk frames plus
+  distinct anticipation, strike, recovery, hurt and fall artwork.
+- Fifteen new floor variations, sixteen ground-detail silhouettes, bonus barrels,
+  energy flasks, coins and occasional escaping golden beetles enrich the routes.
+- Garages roll their shutters upwards; stone gates swing a connected door in
+  perspective. Enemies wait for clearance and cross the actual threshold into
+  the street before fighting. Doors close after passage.
+- Fruit, fish, potion and book stalls have animated vendors, local conversations,
+  short nonmodal greetings and evolving chapter clues. Talk with the contextual
+  pickup button (U / E / RB, or ΜΙΛΑ on touch). Optional gifts commit once after
+  the offering action. Props occupy different walking depths, with local
+  footprints and room to go around. Pedestrians yield with a dedicated idle.
+- [Motion Review](motion-review.html) independently seeks the production story,
+  enemy, floor, door, vendor and pedestrian renderers. See [research](RESEARCH-2.2.md)
+  for the arcade camera and staging sources used in this update.
+
 ## Arcade expansion · 2.1
 
 - Choose Giorgos or Thodoris in single player. In co-op, each seat chooses
@@ -82,7 +107,8 @@ and [Android: natural input across form factors](https://developer.android.com/g
 ## Artwork and verification
 
 New raster artwork uses built-in ImageGen, with the exact prompt set in
-`art-provenance.json` and `expansion-provenance.json`. Shadows and effects are 2D/2.5D approximations.
+`art-provenance.json`, `expansion-provenance.json`, `motion-provenance.json` and
+`town-provenance.json`. Shadows and effects are 2D/2.5D approximations.
 The game rules, five worlds, enemies, boss phases, co-op, pickups and story beats
 are preserved. Automated checks cover menus, both players, combat, pickup/throw,
 all five boss renderers, graphics options, touch magnitude and input release.
