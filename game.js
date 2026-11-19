@@ -1676,7 +1676,7 @@ function drawHero(p) {
   }
   if (game.two) label('P' + p.id, x, y + 8, 6, color, 'center');
   if (!held && !p.z && (nearbyItem(p) || rescueTarget(p)))
-    label(p.id === 1 ? 'U / R1' : 'E / R1', x, y - HERO_SIZE * .94, 7, '#ffe6ae', 'center');
+    label(hdLastInput==='pad'?'Y / △':mobileMatch.matches?'ΧΡΗΣΗ':p.id===1?'U':'E', x, y - HERO_SIZE * .94, 7, '#ffe6ae', 'center');
 }
 
 function heldPropPose(p, club) {
@@ -2212,7 +2212,7 @@ function show(page) {
     return;
   }
   const stage = currentStage();
-  const number = (game.level + 1) + ' / ' + STAGES.length;
+  const number = ((globalThis.DragonCampaign?.order.indexOf(game.level)??game.level) + 1) + ' / ' + STAGES.length;
   switch (page) {
     case 'home':
       panel.innerHTML = '<h1 class="logo">LITTLE<br>DRAGON ’96</h1><p class="subtitle">YOTO QUEST</p>' +

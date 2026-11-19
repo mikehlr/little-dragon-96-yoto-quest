@@ -1,0 +1,479 @@
+{
+  "version": "2.7",
+  "assets": [
+    {
+      "key": "cage-components",
+      "alpha": true,
+      "refs": [
+        "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/title-duo.webp"
+      ],
+      "prompt": "Use case stylized concept. HD painted arcade production prop components. EXACT TWO columns ONE row, two equal square cells, true alpha-zero background. Cell0 COMPLETE portable iron rescue cage BODY, front doorway OPEN and empty, metal roof and back/sides, all four grounded feet at94percent floor line. NO front door drawn anywhere, no people. Dark empty interior back wall is allowed. Front opening should span x20..80percent, y22..88percent of cell. Cell1 ONLY the isolated matching front BARRED DOOR, straight frontal camera, same metal and latch, rigid rectangular perimeter, vertical iron bars and bottom rail, no surrounding cage body. All HOLES BETWEEN BARS must be true alpha ZERO, NOT dark painted fill. Matching panel fits x20..80percent/y22..88percent, complete hinges at left. Fixed camera, generous margins, no text, gridlines, floor plane, backdrop or shadows. Designed for native moving gate in front of a separately rendered person.",
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-8ba9367c-ceb4-46c5-af91-b02db023276f.png"
+    },
+    {
+      "key": "chapter-end-actors-0",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production cinematic character animation atlas EXACT4 columns x2 rows EIGHT equal cells, TRUE ALPHA ZERO. Use reference identities: Giorgos curly blond hair white gi black belt brown sandals; Thodoris swept blond hair white gi blue belt red shoes. The two heroes stand close together studying a blue delivery manifest and little brass compass. Giorgos holds the paper, Thodoris gently points toward the ferry then lowers his hand. A quiet loop of reading, pointing, exchanging a glance, returning to reading. Each cell contains the COMPLETE SAME GROUP at SAME positions and anatomical/head scale, support line94percent,6percent margins. Eight actual neighboring poses across ONE continuous small gesture-and-return loop in row-major order, not eight unrelated illustrations. Fixed mild front three-quarter camera, hands/eyes and shoulders change subtly while planted bodies remain coherent. Every row exactly4 group poses. No scenery, floor, shadows, backdrop, labels, outlines or source grid. Full heads and feet visible, no duplicated extra figures.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-770b9bc3-ec07-41cf-b8d5-aff4c341ddd3.png",
+      "originalPath": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-2cb58907-d13c-4e05-9598-2b1c7757b0c6.png",
+      "editPrompt": "Edit target is this exact eight-pose character atlas. Remove ALL light grey/white matte, haze, halos and floor shadows around and BETWEEN the figures, including between arms and torsos and legs. True alpha zero everywhere outside the natural hair/clothing/paper/compass silhouettes. Preserve exactly FOUR columns by TWO rows, all EIGHT complete pose groups, native camera and anatomical scale and positions, identities, colors, props and expressions. Do not add anything, no outlines, no extra glow or floor. Keep fine hair and fingertips intact. This is transparent production sprite cleanup only."
+    },
+    {
+      "key": "chapter-end-actors-1",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production cinematic character animation atlas EXACT4 columns x2 rows EIGHT equal cells, TRUE ALPHA ZERO. Use reference identities: Giorgos curly blond hair white gi black belt brown sandals; Thodoris swept blond hair white gi blue belt red shoes. Two heroes on a boat deck, Giorgos holds a little compass and Thodoris a green leaf-shaped token. They look toward the new forest, point together softly, lower hands and exchange a hopeful glance. Each cell contains the COMPLETE SAME GROUP at SAME positions and anatomical/head scale, support line94percent,6percent margins. Eight actual neighboring poses across ONE continuous small gesture-and-return loop in row-major order, not eight unrelated illustrations. Fixed mild front three-quarter camera, hands/eyes and shoulders change subtly while planted bodies remain coherent. Every row exactly4 group poses. No scenery, floor, shadows, backdrop, labels, outlines or source grid. Full heads and feet visible, no duplicated extra figures.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-a3f69b63-3d18-41f2-a6e4-77476df3953d.png"
+    },
+    {
+      "key": "chapter-end-actors-2",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production cinematic character animation atlas EXACT4 columns x2 rows EIGHT equal cells, TRUE ALPHA ZERO. Use reference identities: Giorgos curly blond hair white gi black belt brown sandals; Thodoris swept blond hair white gi blue belt red shoes. Two standing heroes inspect a small gold sun lens granted by the grove. Giorgos raises the lens a little to catch the light, Thodoris points gently toward the ruins and nods, both lower hands and return to looking at lens. Each cell contains the COMPLETE SAME GROUP at SAME positions and anatomical/head scale, support line94percent,6percent margins. Eight actual neighboring poses across ONE continuous small gesture-and-return loop in row-major order, not eight unrelated illustrations. Fixed mild front three-quarter camera, hands/eyes and shoulders change subtly while planted bodies remain coherent. Every row exactly4 group poses. No scenery, floor, shadows, backdrop, labels, outlines or source grid. Full heads and feet visible, no duplicated extra figures.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-51278a5c-d1cf-4857-bb52-cdc130f7297f.png",
+      "originalPath": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-763f43bd-eeb5-4ee8-905f-c3e0bc6807e5.png",
+      "editPrompt": "Edit target is this exact eight-pose character atlas. Remove ALL light grey/white matte, haze, halos and floor shadows around and BETWEEN the figures, including between arms and torsos and legs. True alpha zero everywhere outside the natural hair/clothing/paper/compass silhouettes. Preserve exactly FOUR columns by TWO rows, all EIGHT complete pose groups, native camera and anatomical scale and positions, identities, colors, props and expressions. Do not add anything, no outlines, no extra glow or floor. Keep fine hair and fingertips intact. This is transparent production sprite cleanup only."
+    },
+    {
+      "key": "chapter-end-actors-3",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production cinematic character animation atlas EXACT4 columns x2 rows EIGHT equal cells, TRUE ALPHA ZERO. Use reference identities: Giorgos curly blond hair white gi black belt brown sandals; Thodoris swept blond hair white gi blue belt red shoes. Two standing heroes hold a parchment map of a mountain pass and little amber sun amulet. Giorgos traces the path with a finger, Thodoris holds the amulet steadily; subtle glance toward snowy horizon, return to map. Each cell contains the COMPLETE SAME GROUP at SAME positions and anatomical/head scale, support line94percent,6percent margins. Eight actual neighboring poses across ONE continuous small gesture-and-return loop in row-major order, not eight unrelated illustrations. Fixed mild front three-quarter camera, hands/eyes and shoulders change subtly while planted bodies remain coherent. Every row exactly4 group poses. No scenery, floor, shadows, backdrop, labels, outlines or source grid. Full heads and feet visible, no duplicated extra figures.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-44bb1899-e323-43b6-bde8-86174c5a0891.png"
+    },
+    {
+      "key": "chapter-end-actors-4",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production cinematic character animation atlas EXACT4 columns x2 rows EIGHT equal cells, TRUE ALPHA ZERO. Use reference identities: Giorgos curly blond hair white gi black belt brown sandals; Thodoris swept blond hair white gi blue belt red shoes. Two heroes and friendly Gruffy sit together on the floor around the orange audio player. Gruffy is a round shaggy warm-brown furry monster with two curved horns, purple stripes and gentle big eyes, same reference identity. Giorgos inserts a story card, Thodoris turns a top knob, Gruffy leans in listening, they share a smile and return to a relaxed listening pose. The orange player is drawn ONCE between them in every frame. Each cell contains the COMPLETE SAME GROUP at SAME positions and anatomical/head scale, support line94percent,6percent margins. Eight actual neighboring poses across ONE continuous small gesture-and-return loop in row-major order, not eight unrelated illustrations. Fixed mild front three-quarter camera, hands/eyes and shoulders change subtly while planted bodies remain coherent. Every row exactly4 group poses. No scenery, floor, shadows, backdrop, labels, outlines or source grid. Full heads and feet visible, no duplicated extra figures.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp",
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\cinema-actors-5.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-ac9e31e5-0e8d-42b9-a9bb-3bbe5c45b2c1.png"
+    },
+    {
+      "key": "chapter-end-actors-5",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production cinematic character animation atlas EXACT4 columns x2 rows EIGHT equal cells, TRUE ALPHA ZERO. Use reference identities: Giorgos curly blond hair white gi black belt brown sandals; Thodoris swept blond hair white gi blue belt red shoes. Two standing heroes safely sheltered after snow crossing, same original gi clothing. A glowing amber amulet keeps them warm. They hold it between them, Thodoris points to castle, Giorgos nods and lowers amulet, return to initial pose. No scarves or costume changes. Each cell contains the COMPLETE SAME GROUP at SAME positions and anatomical/head scale, support line94percent,6percent margins. Eight actual neighboring poses across ONE continuous small gesture-and-return loop in row-major order, not eight unrelated illustrations. Fixed mild front three-quarter camera, hands/eyes and shoulders change subtly while planted bodies remain coherent. Every row exactly4 group poses. No scenery, floor, shadows, backdrop, labels, outlines or source grid. Full heads and feet visible, no duplicated extra figures.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-5ca9cb12-8fe3-46d8-ba7f-90e03ff8c842.png"
+    },
+    {
+      "key": "chapter-end-bg-0",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. WIDE16:9 cinematic story background, opaque complete illustration. Twilight departure at a small Greek quay: little ferry waiting to carry the heroes from neighborhood into harbor; warm town windows and newly lit street lanterns behind, the sea and mooring ropes visible. New cinematic angle from low dock level, clear central foreground space for two standing figures. NO people, characters, text, UI, speech bubbles or labels. Preserve generous headroom; this is an ORIGINAL illustration, not a reused gameplay street. Reference supplies art style only.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-b94a35e9-7c84-400f-8856-80da91ecb150.png"
+    },
+    {
+      "key": "chapter-end-bg-1",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. WIDE16:9 cinematic story background, opaque complete illustration. A small fishing-boat deck reaches a mossy shore at dawn, mysterious huge woodland trees and fireflies beyond the landing, a distant lighthouse behind. Low deck viewpoint, rope railing to left, clear central foreground space. NO people, characters, text, UI, speech bubbles or labels. Preserve generous headroom; this is an ORIGINAL illustration, not a reused gameplay street. Reference supplies art style only.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-b759963c-9ccc-4c9a-b539-2a2a2a34f6e1.png"
+    },
+    {
+      "key": "chapter-end-bg-2",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. WIDE16:9 cinematic story background, opaque complete illustration. A newly grown living vine bridge leaves an enchanted grove and reaches ancient Greek ruins across a waterfall. Golden evening shafts, carved stone sun emblem in distance, spacious clear central foreground at bridge entry. New angle not used by gameplay. NO people, characters, text, UI, speech bubbles or labels. Preserve generous headroom; this is an ORIGINAL illustration, not a reused gameplay street. Reference supplies art style only.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-313e9606-370a-4205-a469-21555c0e5821.png"
+    },
+    {
+      "key": "chapter-end-bg-3",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. WIDE16:9 cinematic story background, opaque complete illustration. High Greek temple balcony opening toward a dramatic distant frozen mountain pass. Pale blue evening sky, inscribed stone parapet, snow peaks, first stars, ancient lens mount at left, clear central foreground space. No castle interior. NO people, characters, text, UI, speech bubbles or labels. Preserve generous headroom; this is an ORIGINAL illustration, not a reused gameplay street. Reference supplies art style only.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-6b8603a9-3a29-4540-a3b0-e6c815b41480.png"
+    },
+    {
+      "key": "chapter-end-bg-4",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. WIDE16:9 cinematic story background, opaque complete illustration. A private ROUND READING ROOM inside a fairy-tale castle, newly lit lanterns, curved bookcases, colorful story cards displayed neatly, welcoming cushions and warm fireplace at side. New intimate cinematic angle, clear broad center floor space for two seated heroes and Gruffy. No people or orange audio player baked in background. NO people, characters, text, UI, speech bubbles or labels. Preserve generous headroom; this is an ORIGINAL illustration, not a reused gameplay street. Reference supplies art style only.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-1606f32b-03ae-494c-a474-4f9453a9204e.png"
+    },
+    {
+      "key": "chapter-end-bg-5",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. WIDE16:9 cinematic story background, opaque complete illustration. After a snowstorm, sheltered summit lookout above clouds faces the warmly lit distant castle bridge. Wooden refuge railing at left, blue snow-covered rocks, starry clear sky, warm amber rescue brazier at side, clear central foreground space. NO people, characters, text, UI, speech bubbles or labels. Preserve generous headroom; this is an ORIGINAL illustration, not a reused gameplay street. Reference supplies art style only.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-0727102b-37d4-4c18-acf4-e608117ca075.png"
+    },
+    {
+      "key": "director-life-5",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production character atlas EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. Use reference identity: small pale-blue ice golem with amber eyes and snow tufts. SAME anatomy/head size in all cells. Face RIGHT, planted soles94percent,6percent margins. ROW1: exactly4 consecutive neighboring poses shoveling snow with a small wooden snow shovel; no pile baked into sprite. ROW2: notices someone still holding shovel; lowers shovel still held; empty hands after release NO shovel on floor; ready idle. ROW3: grips imaginary overhead rope with hands (no rope drawn), feet tucked; releases grip airborne preparing knees; extends feet to land; crouched landing. ROW4: rises standing; crouches inside imaginary cargo (NO box drawn); hops forward; lands standing ready. Four figures per row, not five. No ground objects, floor, shadow, glow, text or source grid.",
+      "alpha": true,
+      "refs": [
+        "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-dc95d593-31d9-4e0c-8084-f967896d477b.png"
+      ],
+      "refKey": "foe-motion-20",
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-e780a098-a95a-4967-82c1-1f8ff54a36de.png"
+    },
+    {
+      "key": "director-props-5",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production prop atlas EXACT4 columns x2 rows EIGHT equal square cells, TRUE ALPHA ZERO. Snowy mountain rescue theme. Native mild front-three-quarter camera; full support feet94percent;5percent margins. Cell0 CLOSED blue ice-storage wooden chest with snow on lid;1 SAME chest OPEN, same footprint/camera;2 complete small covered mountain SLED with runners, cabin CLOSED;3 SAME sled cabin OPEN revealing dark EMPTY cargo compartment;4 one isolated matching timber sled runner;5 small low snow pile with wooden bucket;6 small wooden snow shovel lying on side;7 complete grounded mountain timber rescue gantry with rope hook at top center, snow on crossbeam, two complete supports with stone feet. NO rope itself drawn, people, wheels, floor rectangles, glows, shadows or source labels.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-f09ea780-3de5-4a7f-af8b-a7d1c8105638.png",
+      "originalPath": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-3d66ba8a-0275-442a-bae1-d4a2243fe7c3.png",
+      "editPrompt": "Background removal ONLY. Preserve EXACT atlas dimensions, cell grid, every complete object/character and all native positions unchanged. Remove ENTIRE white/grey background, cloudy mattes, halos, floor rectangles and cast shadows to true alpha ZERO. Preserve all object anatomy, feet, hues and pose sizes, do not redesign or move objects. All empty gaps including inside cage bars must be transparent. No luminous haze around silhouettes. Clean antialiased cutout edges, isolated native sprites."
+    },
+    {
+      "key": "floor-variants-5",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Square texture atlas with ONE column and THREE equal HORIZONTAL rows. Each row is one different ultrawide snowy mountain path pavement texture, low front 2.5D street camera: small remote stone/pine-plank details along top edge, larger sharper flagstones toward bottom, snow packed in worn joints, scattered boot scuffs, ice only in side cracks, subtle frost reflections. Three independently varied continuous walking surfaces, not identical copy. No horizon, walls, vertical props, stairs, people, symbols or text; no huge repeated tile seams. Native HD detail suitable for full-HD scrolling floor. Opaque texture.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-b666b569-ea73-4d27-a29d-7a80d39f857a.png"
+    },
+    {
+      "key": "foe-motion-20",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production character animation atlas EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. A new small rounded ICE GOLEM, translucent pale blue stone chunks, moss replaced by snow tufts, warm amber eyes, dark teal stone boots and short chunky arms; friendly storybook guardian. Full body facing RIGHT, fixed camera, SAME head/anatomical size and exposure in all cells. Soles at94percent support plane,6percent margins. ROW1 exactly4 successive walking poses: left heel contact, left down/right lift, right passing, right swing. ROW2 exactly4 more: right heel contact, right down/left lift, left passing, left swing back into first pose. Clear left/right opposite leg support, free arms counter-swing; narrow upright gait. ROW3 exactly4: ready idle, prepares a harmless magical snow gust, releases snow gust with open hands, recovers. ROW4 exactly4: guards, reacts surprised, stumbles sitting, gets up. NO projectile, snow cloud, scenery, shadows, floor, text or grid; runtime adds effects. Do not repeat leading leg in both halves.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-dc95d593-31d9-4e0c-8084-f967896d477b.png"
+    },
+    {
+      "key": "foe-motion-21",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production character animation atlas EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. A new small white snowy OWL SORCERER, navy-blue hooded cape, gold button, large expressive amber eyes, two feathered arms and complete tiny brown boots; gentle mischievous expression. Full body facing RIGHT, fixed camera, SAME head/anatomical size and exposure in all cells. Soles at94percent support plane,6percent margins. ROW1 exactly4 successive walking poses: left heel contact, left down/right lift, right passing, right swing. ROW2 exactly4 more: right heel contact, right down/left lift, left passing, left swing back into first pose. Clear left/right opposite leg support, free arms counter-swing; narrow upright gait. ROW3 exactly4: ready idle, prepares a harmless magical snow gust, releases snow gust with open hands, recovers. ROW4 exactly4: guards, reacts surprised, stumbles sitting, gets up. NO projectile, snow cloud, scenery, shadows, floor, text or grid; runtime adds effects. Do not repeat leading leg in both halves.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-89edf497-4853-4cb3-8e82-a71bbeae3ab7.png"
+    },
+    {
+      "key": "foe-motion-22",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a red pirate CRAB with navy waistcoat, two expressive front claws as arms and two sturdy walking hind legs, dark boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-c2a0de24-ca20-40f5-9efc-9d6aae52a251.png"
+    },
+    {
+      "key": "foe-motion-23",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a purple OCTOPUS deckhand, striped sailor shirt, two main arm tentacles and two main walking tentacles, remaining short tentacles tucked neatly at belt. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-164b28fb-3083-46ce-bea1-bdf0bbfb99cf.png"
+    },
+    {
+      "key": "foe-motion-24",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a white SEAGULL lookout with yellow beak, blue sailor cap, feathered arms and two brown boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-dd398309-60f7-431e-bda7-4daa9309cea3.png"
+    },
+    {
+      "key": "foe-motion-25",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a green FISH sailor with orange fins, striped vest, two arms and two red boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-c8a0ce7b-6b55-4e11-8fcf-1fef4565310e.png"
+    },
+    {
+      "key": "foe-motion-26",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a clever red FOX messenger in a cream waistcoat, brown satchel fixed at back, two arms and two walking feet. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-f6031a40-5e4a-462f-8aed-f1f478fcba2a.png"
+    },
+    {
+      "key": "foe-motion-27",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a round HEDGEHOG night watchman with teal coat, compact brown back spines, two arms and two grounded boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-04746e2d-74ed-4e9a-82fa-9f5b3e454644.png"
+    },
+    {
+      "key": "foe-motion-28",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a cheerful ACORN guardian, oak acorn shell hat, leafy brown tunic, two short arms and two boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-ae2fda8c-9ef2-404b-a448-4d0117a18fff.png"
+    },
+    {
+      "key": "foe-motion-29",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a small MOSSY TREE sapling guardian, bark face, leafy crown, branch arms and two rooted walking feet. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-d9a2cf1a-92fd-4f53-b90f-4fc76a6c0f15.png"
+    },
+    {
+      "key": "foe-motion-30",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a shiny copper BEETLE courier, rounded shell backpack, two front arms and two sturdy boots, remaining small legs folded at sides. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-2da5d821-5c09-45ca-86ea-2bdf910548dd.png"
+    },
+    {
+      "key": "foe-motion-31",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a rounded grey STONE GARGOYLE with little folded wings, expressive face, two stone arms and two grounded feet. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-135c0e5a-3884-464e-98b7-0c8817b3c2b1.png"
+    },
+    {
+      "key": "foe-motion-32",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive an ancient Greek BRONZE AUTOMATON, turquoise patina, warm amber eyes, meander chest bands, two arms and two metal boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-fe889096-4c83-40cf-bfd5-2b386c5a6b68.png"
+    },
+    {
+      "key": "foe-motion-33",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a blue HARPY wind runner, adult storybook creature with swept feathers, feathered forearms, two leather boots, small folded back wings. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-8b85c19b-06a5-48b1-a24e-662004dd576c.png"
+    },
+    {
+      "key": "foe-motion-34",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a golden SCARAB keeper with blue ceremonial sash and tiny round mask, two arms and two boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-4b3ab367-d126-4cd9-a4db-de854ea3b963.png"
+    },
+    {
+      "key": "foe-motion-35",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive an ANIMATED PURPLE BOOK creature, friendly expressive face on cover, paper forearms, two tiny brown walking boots, pages shut except mild edge ruffle. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-6c133c78-588b-4ab4-b769-d986f595fc65.png"
+    },
+    {
+      "key": "foe-motion-36",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a small WAX CANDLE goblin with cream wax face, teal vest, tiny amber flame on top, two arms and two wax boots, no glow outside silhouette. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-7fe9cb16-8fc7-4516-9afe-daf4b655fda1.png"
+    },
+    {
+      "key": "foe-motion-37",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive an adult purple JESTER goblin, gold bell hat tips and diamond-pattern tunic, expressive long nose, two arms and two navy boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-cbcd4ade-8c40-40e0-9e3e-95631933a676.png"
+    },
+    {
+      "key": "foe-motion-38",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a brass CLOCKWORK MOUSE with teal waistcoat and winding key on back, two forearms and two boots, small curved tail. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-980b71f4-0e74-4243-81b1-1ff64512588a.png"
+    },
+    {
+      "key": "foe-motion-39",
+      "prompt": "Use case stylized concept. Rich clean HD hand-painted family arcade fantasy animation atlas, EXACT4 columns x4 rows SIXTEEN equal square cells, TRUE ALPHA ZERO. One distinctive a white SNOW HARE guide with blue waistcoat, long upright ears, amber goggles on forehead, two arms and two sturdy brown boots. Full body facing RIGHT, fixed anatomical/head size, fixed camera and exposure across all16 poses, support line94percent, generous6percent margins. ROW1 exactly4 neighboring walk phases: LEFT heel contact/right toe behind; left planted/right lifts; right leg passes under pelvis; right leg swings forward. ROW2 exactly4 continuation phases: RIGHT heel contact/left toe behind; right planted/left lifts; left leg passes; left swings forward into first pose. Opposite arm and leg coordination; narrow upright stance, one foot bears weight. The two halves must use opposite leading legs. ROW3 exactly4: relaxed idle, anticipates a playful magical gesture, extends arms for gesture, recovers. ROW4 exactly4: guards with arms, reacts surprised, safely stumbles sitting, rises. Entire identity, complete ears/wings/feet in every cell, no disconnected limbs. No projectile, magical cloud, weapons, scenery, floor, shadows, halo, text, grid or colored matte. Match reference art style only; do not copy its identity.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\foe-motion-11.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-4515fdc9-a64f-489e-a845-979736cb2958.png"
+    },
+    {
+      "key": "frost-boss",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production boss animation atlas EXACT4 columns x4 rows SIXTEEN equal square cells. TRUE ALPHA ZERO. One imposing but friendly MYTHICAL CRYSTAL IBEX GUARDIAN, pale blue shaggy fur, curved crystalline golden horns, four? NO: TWO sturdy hind legs/hooves, upright humanoid goat body with TWO forearms, teal ceremonial sash, amber eyes. Full body facing RIGHT, consistent anatomical/head size and camera, soles94percent,6percent margins. First8 cells one complete alternating upright walking cycle with opposite arm/leg phases (four poses each leg lead). Cell8 idle;9 draws hands inward;10 opens hands for a magical gust;11 recovers;12 guards;13 surprised;14 sits down safely;15 rises. No magical cloud/projectile, shadows, floor, text, source borders or backdrop.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-38b058d2-f2dc-4d8a-a766-de705e3f6ebb.png",
+      "originalPath": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-c4f97e03-758c-4e81-9587-aec15363c467.png",
+      "editPrompt": "Background removal ONLY. Preserve EXACT atlas dimensions, cell grid, every complete object/character and all native positions unchanged. Remove ENTIRE white/grey background, cloudy mattes, halos, floor rectangles and cast shadows to true alpha ZERO. Preserve all object anatomy, feet, hues and pose sizes, do not redesign or move objects. All empty gaps including inside cage bars must be transparent. No luminous haze around silhouettes. Clean antialiased cutout edges, isolated native sprites."
+    },
+    {
+      "key": "frost-far",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. ULTRAWIDE 3:1 seamless distant parallax plate for a NEW snowy Greek mythical mountain pass. Layered blue mountains, distant aqueduct across a deep valley, snow-capped pines, a tiny distant castle on the right horizon, lavender dawn sky, pale moon, no nearby buildings. Low game camera looking toward landscape, horizon at60percent image height. NO people, monsters, ground props or walkable pavement. Opaque full scene. Distinct from forest, harbor and castle interiors.",
+      "alpha": false,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-1782c60d-b72d-427a-9288-b75163913b30.png"
+    },
+    {
+      "key": "frost-near",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. ULTRAWIDE 3:1 foreground architecture parallax layer, TRUE ALPHA ZERO clear sky and gaps. NEW snowy mountain pass. Left third a complete weathered alpine stone refuge with a timber door and warm amber lantern; right third ice-coated ancient stone arch and snow-laden pine rooted on solid rock; middle third spacious open gap looking through to distant mountains. Every hut wall, arch base and pine root rests on the SAME lower support line at98percent image height. NO walkable foreground floor, people, crates, city buildings, cars, roads or garage shutters. No cloudy alpha matte or rectangular scenery background. Match low front three-quarter camera of the arcade game.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\hd-near-forest.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-44a24b6f-815f-4b8c-aaaa-a262d7f2ac44.png",
+      "originalPath": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-6331fe3b-9cb7-4042-8681-0cca36724839.png",
+      "editPrompt": "Background removal ONLY. Preserve the complete foreground snowy refuge, stone arch, snowy pine, all feet/roots and native canvas positions unchanged. REMOVE the distant blue mountain landscape visible in the central gap. Every sky/gap behind foreground structures must be true alpha ZERO, including the ENTIRE center opening. No distant mountains, scenery backplate, white matte, floor or shadows. Do not add or redesign objects."
+    },
+    {
+      "key": "ground-transition-0",
+      "prompt": "Use case stylized concept. ULTRAWIDE3:1 native HD intermediate parallax ground-transition layer for a low 2.5D arcade camera. Rich detailed painted style matching reference. TRUE ALPHA ZERO background above and in gaps. Greek neighborhood street edge: worn limestone foundation courses, low blue-painted garden edging, shallow curb ramps, restrained weeds between stones and rooted climbing-flower bases. NO doors, benches, pots or full-height houses. All structures LOW: major silhouettes confined to LOWER45percent of canvas, upper55percent transparent. Support line at94percent canvas height; irregular soft foliage/earth apron extends only to98percent, then fully transparent lower edge. Every object has complete feet/support, coherent mild front-three-quarter perspective. This layer blends architecture into the walkable pavement; broad open walk-through areas, never a solid barrier across road. Seamless left/right modular edges with no hard rectangular matte, no distant background/sky, people, text or cast shadows. Different coherent foreground composition, not scattered isolated icons.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\hd-near-forest.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-fda055b2-8a4b-4779-af7d-3a89631fc5aa.png"
+    },
+    {
+      "key": "ground-transition-1",
+      "prompt": "Use case stylized concept. ULTRAWIDE3:1 native HD intermediate parallax ground-transition layer for a low 2.5D arcade camera. Rich detailed painted style matching reference. TRUE ALPHA ZERO background above and in gaps. Greek harbor quay edge: weathered timber coping, low nautical bollards, neatly attached rope coils, stone mooring edge, small net bundles, barnacle-stained quay foundations. NO modern garage, road car, benches or floating props. All structures LOW: major silhouettes confined to LOWER45percent of canvas, upper55percent transparent. Support line at94percent canvas height; irregular soft foliage/earth apron extends only to98percent, then fully transparent lower edge. Every object has complete feet/support, coherent mild front-three-quarter perspective. This layer blends architecture into the walkable pavement; broad open walk-through areas, never a solid barrier across road. Seamless left/right modular edges with no hard rectangular matte, no distant background/sky, people, text or cast shadows. Different coherent foreground composition, not scattered isolated icons.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\hd-near-forest.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-02afe75a-0043-42b8-b78e-497516193a77.png"
+    },
+    {
+      "key": "ground-transition-2",
+      "prompt": "Use case stylized concept. ULTRAWIDE3:1 native HD intermediate parallax ground-transition layer for a low 2.5D arcade camera. Rich detailed painted style matching reference. TRUE ALPHA ZERO background above and in gaps. enchanted woodland path edge: gnarled grounded tree roots, low moss banks, fallen branches embedded in earth, ferns and tiny clustered mushrooms, roots taper naturally into path. NO city curb, masonry wall or pots. All structures LOW: major silhouettes confined to LOWER45percent of canvas, upper55percent transparent. Support line at94percent canvas height; irregular soft foliage/earth apron extends only to98percent, then fully transparent lower edge. Every object has complete feet/support, coherent mild front-three-quarter perspective. This layer blends architecture into the walkable pavement; broad open walk-through areas, never a solid barrier across road. Seamless left/right modular edges with no hard rectangular matte, no distant background/sky, people, text or cast shadows. Different coherent foreground composition, not scattered isolated icons.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\hd-near-forest.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-89ba2b56-7068-486b-8233-6340c2c26098.png"
+    },
+    {
+      "key": "ground-transition-3",
+      "prompt": "Use case stylized concept. ULTRAWIDE3:1 native HD intermediate parallax ground-transition layer for a low 2.5D arcade camera. Rich detailed painted style matching reference. TRUE ALPHA ZERO background above and in gaps. ancient Greek ruin path edge: complete low stone plinth foundations, worn mosaic borders, small grounded fragments and grass, shallow broad stepped aprons with walk-through gaps. NO Victorian lamps, modern curb or houses. All structures LOW: major silhouettes confined to LOWER45percent of canvas, upper55percent transparent. Support line at94percent canvas height; irregular soft foliage/earth apron extends only to98percent, then fully transparent lower edge. Every object has complete feet/support, coherent mild front-three-quarter perspective. This layer blends architecture into the walkable pavement; broad open walk-through areas, never a solid barrier across road. Seamless left/right modular edges with no hard rectangular matte, no distant background/sky, people, text or cast shadows. Different coherent foreground composition, not scattered isolated icons.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\hd-near-forest.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-98d1dcab-813e-44d8-9c15-c3d611f89b02.png"
+    },
+    {
+      "key": "ground-transition-4",
+      "prompt": "Use case stylized concept. ULTRAWIDE3:1 native HD intermediate parallax ground-transition layer for a low 2.5D arcade camera. Rich detailed painted style matching reference. TRUE ALPHA ZERO background above and in gaps. castle library floor edge: low bookcase foundation molding, carved stone skirting, grounded little book stacks at far corners, restrained rug fringe and brass floor-edge trim. NO outdoor plants, city lamps or snow. All structures LOW: major silhouettes confined to LOWER45percent of canvas, upper55percent transparent. Support line at94percent canvas height; irregular soft foliage/earth apron extends only to98percent, then fully transparent lower edge. Every object has complete feet/support, coherent mild front-three-quarter perspective. This layer blends architecture into the walkable pavement; broad open walk-through areas, never a solid barrier across road. Seamless left/right modular edges with no hard rectangular matte, no distant background/sky, people, text or cast shadows. Different coherent foreground composition, not scattered isolated icons.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\hd-near-forest.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-7dc9fce6-8064-45a4-9551-1fb3fff301f4.png"
+    },
+    {
+      "key": "ground-transition-5",
+      "prompt": "Use case stylized concept. ULTRAWIDE3:1 native HD intermediate parallax ground-transition layer for a low 2.5D arcade camera. Rich detailed painted style matching reference. TRUE ALPHA ZERO background above and in gaps. snowy mountain pass path edge: grounded snow banks, low ice-capped boulders, timber retaining sleepers, shallow rescue trail ramps, tiny hardy pine tufts embedded in snow. NO Greek city houses, flowerpots, cars or lamps. All structures LOW: major silhouettes confined to LOWER45percent of canvas, upper55percent transparent. Support line at94percent canvas height; irregular soft foliage/earth apron extends only to98percent, then fully transparent lower edge. Every object has complete feet/support, coherent mild front-three-quarter perspective. This layer blends architecture into the walkable pavement; broad open walk-through areas, never a solid barrier across road. Seamless left/right modular edges with no hard rectangular matte, no distant background/sky, people, text or cast shadows. Different coherent foreground composition, not scattered isolated icons.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\hd-near-forest.webp"
+      ],
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-d6a61ccb-e703-47c4-9857-ffb5b222579b.png"
+    },
+    {
+      "key": "harbor-berth",
+      "alpha": true,
+      "prompt": "Use case stylized game production prop. Richly painted HD family arcade Greek seaside fantasy, warm evening light. ONE wide transparent native prop sprite of a small INSET BOAT BERTH, seen from mild side-front three-quarter camera consistent with side-scrolling beat-em-up street. No boat or people. A dark teal water pocket with gentle reflections fills middle central x12..88percent y38..83percent. Pale worn stone quay borders behind and on sides, mooring ropes, tiny seaweed, two short bollards. Foreground low stone retaining edge only at left x0..32percent and right x68..100percent, at y78..94percent, leaving middle open for a gangplank to extend toward foreground. Outer edge irregular naturally chipped native stone. Shape a very shallow oval rectangle seen in perspective, whole complete sprite aspect THREE to ONE wide. No flat ground plane outside the berth, no background walls or scenery, no boat, no letters. True alpha zero outside the entire compact water and stone silhouette. Generous margins. This will anchor a separately animated small harbor launch with hull at waterline; physically coherent water contact and foreground quay rim.",
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-a5c07884-1460-4980-b08e-58f644bc7899.png"
+    },
+    {
+      "key": "harbor-launch",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production boat component atlas EXACT2 columns x2 rows FOUR equal square cells, TRUE ALPHA ZERO. Cell0 complete SMALL weathered Greek wooden fishing launch, blue and white hull, red trim, cabin hatch CLOSED, front bow faces LEFT. Cell1 exact SAME moored launch, same size/camera/hull position, cabin side hatch OPEN with dark EMPTY human-sized doorway toward right half of boat. NO people inside. Hull and cabin intact; NO wheels, horse or land vehicle. Cell2 one isolated complete wooden gangplank, straight long horizontal board with cleats and rope side edges, seen mild three-quarter top. Cell3 one isolated matching weathered red/cream lifering. Hull bottom on90percent support plane, all parts fit with6percent margins. No ocean rectangle, sky, cast shadow, text or grid. Runtime supplies water and moving gangplank; do NOT bake gangplank into boat.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-8a33e854-c555-4201-b71a-bb55171d9dc1.png"
+    },
+    {
+      "key": "story-props",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production quest-object atlas EXACT4 columns x4 rows SIXTEEN equal square cells. TRUE ALPHA ZERO. Full isolated objects, consistent mild front-three-quarter camera, support line94percent cellheight, clear5percent margins. Exactly four objects in every row. Cells row-major: 0: blue wooden parcel with a simple brass lightning emblem; 1: low amber power pedestal with socket; 2: weathered city fuse box with OPEN lid and unlit bulbs; 3: same fuse box powered with restrained amber bulbs, same size/camera; 4: coiled nautical rope bundle; 5: complete dock winch with handle and two grounded supports; 6: portable small empty iron cage, CLOSED barred front door; 7: SAME cage OPEN front door, identical camera/size; 8: woodland mushroom-shaped lantern beacon, unlit center; 9: small copper watering vessel; 10: ancient golden sun lens in a complete support frame; 11: small Greek stone mirror pedestal with bronze round reflector; 12: orange rounded story audio player with two top knobs and speaker holes, same identity as title reference; 13: closed red storybook with brass corner fittings; 14: small complete stone brazier with three support feet, empty bowl; 15: one blue ice crystal on a complete little stone pedestal. All descriptions must be literally visible. No figures, text, floor plane, cast shadows, scene mattes or glows outside actual object. Cage0/1-style states here are cells6/7: same frame and footprint, only hinged door changes.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-65e20a55-92f4-4797-a80f-5b51ab8aafcd.png",
+      "originalPath": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-ee42e599-4a66-41bd-9c19-5348c13e1493.png",
+      "editPrompt": "Background removal ONLY. Preserve EXACT atlas dimensions, cell grid, every complete object/character and all native positions unchanged. Remove ENTIRE white/grey background, cloudy mattes, halos, floor rectangles and cast shadows to true alpha ZERO. Preserve all object anatomy, feet, hues and pose sizes, do not redesign or move objects. All empty gaps including inside cage bars must be transparent. No luminous haze around silhouettes. Clean antialiased cutout edges, isolated native sprites."
+    },
+    {
+      "key": "world-entrances",
+      "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production prop atlas EXACT4 columns x3 rows, TWELVE equal square cells, TRUE ALPHA ZERO. Fixed frontal three-quarter camera with very mild visible side surfaces. For architectural facades cells0,2,4,6,8: central doorway opening should span x30..70percent and y28..91percent; support feet on95percent floor plane. Facades fit with5percent margins. For matching panel cells1,3,5,7,9: isolated complete door ONLY, straight frontal view, native panel fills center x30..70percent/y28..91percent, NO frame/wall. Panels are separate native moving components. EXACT numbered cells row-major: 0: open Greek dock warehouse facade with rope coils, nets and wooden beams, DARK EMPTY central doorway, absolutely NO metal garage shutter; 1: one isolated matching vertical WOODEN plank door panel for dock warehouse; 2: open enormous rooted hollow-tree shelter, moss and vines, DARK EMPTY central doorway; 3: one isolated matching arched woven vine-and-wood door panel; 4: open ancient Greek stone crypt portico with weathered columns and dark central doorway; 5: one isolated matching bronze door panel with Greek meander bands; 6: open castle library arch, purple banners, dark central doorway and complete stone support feet; 7: one isolated matching arched dark oak door panel with brass crescent fittings; 8: open snowy mountain refuge, warm lantern and complete stone feet, dark central doorway; 9: one isolated matching carved red-timber refuge door panel; 10: one complete snow-dusted timber resting bench with all four feet; 11: one complete mountain rescue brazier on three grounded stone feet, EMPTY unlit bowl. No people, labels, source grid lines, floor rectangles or cast shadows.",
+      "alpha": true,
+      "refs": [
+        "C:\\Codex\\adventure-skill\\work\\github\\little-dragon-96-yoto-quest\\assets\\title-duo.webp"
+      ],
+      "refKey": null,
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-51778a23-7829-4352-a990-ad62e3bdc417.png"
+    }
+  ]
+}

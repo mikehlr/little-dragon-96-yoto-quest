@@ -1,0 +1,1 @@
+Object.assign(DRAGON_LOCALES,CAMPAIGN_TEXTS);

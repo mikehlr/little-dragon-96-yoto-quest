@@ -1,3 +1,14 @@
+# Little Dragon 96 · Six Connected Chapters 2.7
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.7
+
+Six story-connected stages, forty enemy identities, an additional grounded parallax layer in every region, distinct regional entrances and transport, varied contextual objectives and six individual end cutscenes. The new Frozen Pass comes between the Ruins and Castle. Story and Practice retain one/two players, unique hero selection, three difficulties and Greek/English/Ukrainian throughout.
+
+Use the four arcade actions: attack (hold for charged special), jump (attack in air for kick), guard/dodge and context. Context handles mission interaction, pickup and throw. Optional shoulders or the mobile analog stick's outer range run. New content adds no extra mandatory action buttons.
+
+The extra art pack is streamed one region at a time. Serve this directory as static files; GitHub Pages publishes main. See [implementation and testing](RESEARCH-2.7.md), [new asset provenance](campaign-provenance.json), [production review](motion-review.html) and [scoped QA](qa-results.json).
+
+Previous release notes follow.
 # Little Dragon 96 · Story & Practice 2.6
 
 Play at https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.6

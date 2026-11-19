@@ -1,6 +1,6 @@
 'use strict';
 // Full-HD presentation. Physics and hit detection remain in the original world units.
-const HD_VERSION='2.6';
+const HD_VERSION='2.7';
 const HD_DEFAULT={resolution:4,display:'hd',lighting:true,fog:true,grain:1,parallax:true,calm:false,contrast:false,musicVolume:65,sfxVolume:80,music:true,sound:true};
 let hdPrefs={...HD_DEFAULT};
 try{Object.assign(hdPrefs,JSON.parse(localStorage.getItem('little-dragon-hd-settings')||'{}'))}catch{}
@@ -218,8 +218,8 @@ pollPads=function(time){
   const dx=Number(buttons[15]||(pad.axes[0]||0)>.38)-Number(buttons[14]||(pad.axes[0]||0)<-.38),dy=Number(buttons[13]||(pad.axes[1]||0)>.38)-Number(buttons[12]||(pad.axes[1]||0)<-.38),dir=dx+':'+dy;
   if(edge(1)||edge(8))hdBack();
   else if(game.mode==='settings'&&(edge(4)||edge(5))){hdTab=(hdTab+(edge(5)?1:3))%4;show('settings');hdFocus('tab'+hdTab)}
-  else if(edge(0)){if(game.mode==='intro'||game.mode==='ending')go('arcadeAdvance');else{const b=document.activeElement;if(panel.contains(b)&&b.matches('button'))b.click();else panel.querySelector('button')?.click()}}
-  else if(edge(9)){if(game.mode==='intro')go('skipIntro');else if(game.mode==='ending')go('arcadeAdvance');else if(game.mode==='pause')show('play');else if(['difficulty','characters'].includes(game.mode)){const b=document.activeElement;panel.contains(b)&&b.matches('button')?b.click():panel.querySelector('button.primary')?.click()}else if(['stage','clear','lose'].includes(game.mode))panel.querySelector('button.primary')?.click();else panel.querySelector('button')?.focus({preventScroll:true})}
+  else if(edge(0)){if(['intro','ending','chapter-end'].includes(game.mode))go('arcadeAdvance');else{const b=document.activeElement;if(panel.contains(b)&&b.matches('button'))b.click();else panel.querySelector('button')?.click()}}
+  else if(edge(9)){if(game.mode==='chapter-end')go('chapter-skip');else if(game.mode==='intro')go('skipIntro');else if(game.mode==='ending')go('arcadeAdvance');else if(game.mode==='pause')show('play');else if(['difficulty','characters'].includes(game.mode)){const b=document.activeElement;panel.contains(b)&&b.matches('button')?b.click():panel.querySelector('button.primary')?.click()}else if(['stage','clear','lose'].includes(game.mode))panel.querySelector('button.primary')?.click();else panel.querySelector('button')?.focus({preventScroll:true})}
   else if((dx||dy)&&(s.dir!==dir||time>=s.at)){hdMove(dx,dx?0:dy);s.at=time+(s.dir===dir?150:320)}
   s.buttons=buttons;s.dir=dir;hdMenuPads.set(pad.index,s);
  }
@@ -229,7 +229,7 @@ addEventListener('keydown',e=>{
  if(game.mode==='play')return;
  if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Enter',' ','Escape','Home','End'].includes(e.key)){
   e.preventDefault();e.stopImmediatePropagation();hdLastInput='keyboard';if(e.repeat&&['Enter',' ','Escape'].includes(e.key))return;
-  if(e.key==='Escape')hdBack();else if(e.key==='Enter'||e.key===' '){if(game.mode==='intro'||game.mode==='ending')go('arcadeAdvance');else document.activeElement?.matches('button')?document.activeElement.click():panel.querySelector('button')?.click()}
+  if(e.key==='Escape')hdBack();else if(e.key==='Enter'||e.key===' '){if(game.mode==='chapter-end'&&document.activeElement?.dataset.go==='chapter-skip')go('chapter-skip');else if(['intro','ending','chapter-end'].includes(game.mode))go('arcadeAdvance');else document.activeElement?.matches('button')?document.activeElement.click():panel.querySelector('button')?.click()}
   else if(e.key==='Home'||e.key==='End'){const b=[...panel.querySelectorAll('button')];b[e.key==='Home'?0:b.length-1]?.focus()}
   else hdMove(e.key==='ArrowLeft'?-1:e.key==='ArrowRight'?1:0,e.key==='ArrowUp'?-1:e.key==='ArrowDown'?1:0);
  }

@@ -52,7 +52,7 @@ startEncounter=function(){
  if(!directorSeen.has(scene.kind)){directorSeen.add(scene.kind);townSpeech={name:STAGES[game.level].name,text:DIRECTOR_CAPTIONS[game.level][scene.kind],until:game.clock+5.2}}
  releaseDirectorWave(encounterDirector,0);
 };
-function dropDirectorTool(scene){if(scene.toolDropped)return;scene.toolDropped=true;const size=[14,16,13,11,13][scene.level],p=scene.actor;game.items.push({kind:'directorTool',decor:true,x:p.x+p.face*12,y:p.y+2,z:12,vz:0,vx:p.face*13,spin:0,size,scene});effect('pickup');directorEvent('tool-release',{kind:scene.kind})}
+function dropDirectorTool(scene){if(scene.toolDropped)return;scene.toolDropped=true;const size=[14,16,13,11,13,16][scene.level],p=scene.actor;game.items.push({kind:'directorTool',decor:true,x:p.x+p.face*12,y:p.y+2,z:12,vz:0,vx:p.face*13,spin:0,size,scene});effect('pickup');directorEvent('tool-release',{kind:scene.kind})}
 function finishDirectorEntry(e,r){e.z=0;e.reinforcement=false;e.entry=null;e.directorLife=null;e.cooldown=Math.max(e.cooldown,.75*difficultyRules().rest);pose(e,'idle');r.scene.phase='engaged';if(r.mode==='vehicle'){r.scene.vehicle.depart=true;r.scene.vehicle.departAge=0}directorEvent('arrival-complete',{kind:r.mode})}
 const directorEnter=enterArena;
 enterArena=function(e,dt){
@@ -64,7 +64,7 @@ enterArena=function(e,dt){
  if(r.mode==='work'){if(t>=.40)dropDirectorTool(s);r.exposed=true;if(t>=.72)finishDirectorEntry(e,r);return}
  if(r.mode==='rope'){
   if(t<.58){e.z=195;r.exposed=false;return}
-  const pm=directorPropMeta(s.level,7),beam=s.gantry.y-148*pm.anchor+148*[.18,.30,.18,.27,.25][s.level],startZ=Math.max(45,e.y-beam-directorHeight(e)*.95-4),fall=t-.58;e.z=Math.max(0,startZ-58*fall-105*fall*fall);r.exposed=e.z<50;
+  const pm=directorPropMeta(s.level,7),beam=s.gantry.y-148*pm.anchor+148*[.18,.30,.18,.27,.25,.22][s.level],startZ=Math.max(45,e.y-beam-directorHeight(e)*.95-4),fall=t-.58;e.z=Math.max(0,startZ-58*fall-105*fall*fall);r.exposed=e.z<50;
   if(!e.z){r.landedAt??=t;if(t-r.landedAt<.25){if(!r.landingEffect){r.landingEffect=true;impact(e.x,e.y,'landing',e.face,1.1);effect('land')}return}finishDirectorEntry(e,r)}return;
  }
  if(r.mode==='cover'){
@@ -72,8 +72,8 @@ enterArena=function(e,dt){
  }
  if(r.mode==='vehicle'){
   const v=s.vehicle,p=clamp(t/1.55,0,1),before=v.x;v.x=mix(v.from,v.target,1-Math.pow(1-p,3));v.stride+=Math.abs(v.x-before);e.x=v.x+17;
-  const m=globalThis.DRAGON_DIRECTOR_META?.cargo?.[s.level]||{top:.28,height:.43},pm=directorPropMeta(s.level,3),apertureY=v.y-140*pm.anchor+140*m.top,headY=directorMeta(s.level).headY||.25;
-  const rideY=apertureY+140*m.height*.48+directorHeight(e)*(directorMeta(s.level).anchor-headY);e.y=rideY;e.z=0;r.rideY=rideY;
+  const vh=directorVehicleHeight(s.level),m=globalThis.DRAGON_DIRECTOR_META?.cargo?.[s.level]||{top:.28,height:.43},pm=directorPropMeta(s.level,3),apertureY=v.y-vh*pm.anchor+vh*m.top,headY=directorMeta(s.level).headY||.25;
+  const rideY=apertureY+vh*m.height*.48+directorHeight(e)*(directorMeta(s.level).anchor-headY);e.y=rideY;e.z=0;r.rideY=rideY;
   if(t<1.75){r.exposed=false;r.vehiclePhase='ride';return}
   const hop=clamp((t-1.75)/.74,0,1);r.vehiclePhase='hop';r.progress=hop;r.exposed=hop>.2;e.x=mix(v.target+17,v.target-35,hop);e.y=mix(rideY,s.lane+7,hop);e.z=Math.sin(hop*Math.PI)*21;if(hop>=1)finishDirectorEntry(e,r);
  }
@@ -81,12 +81,12 @@ enterArena=function(e,dt){
 const directorCanHit=canHitEnemy;
 canHitEnemy=function(e,z){if(e.entry?.released===false||e.entry?.mode&&e.entry.exposed===false)return false;return directorCanHit(e,z)};
 function directorFrame(e){const r=e.entry;if(!r?.mode)return null;const t=r.time||0;if(r.mode==='work')return t<.20?4:t<.40?5:t<.57?6:7;if(r.mode==='rope')return t<.58?-1:e.z>70?8:e.z>28?9:e.z>0?10:(t-(r.landedAt||t))<.14?11:12;return (r.progress||0)<.18?13:(r.progress||0)<.78?14:15}
-function cargoBox(v){const m=globalThis.DRAGON_DIRECTOR_META?.cargo?.[v.scene.level]||{left:.34,top:.28,width:.53,height:.43},p=directorPropMeta(v.scene.level,3);return {x:v.x-game.camera-140*p.center+140*m.left,y:v.y-140*p.anchor+140*m.top,w:140*m.width,h:140*m.height}}
+function cargoBox(v){const m=globalThis.DRAGON_DIRECTOR_META?.cargo?.[v.scene.level]||{left:.34,top:.28,width:.53,height:.43},p=directorPropMeta(v.scene.level,3);return {x:v.x-game.camera-140*p.center+140*m.left,y:v.y-directorVehicleHeight(v.scene.level)*p.anchor+directorVehicleHeight(v.scene.level)*m.top,w:140*m.width,h:directorVehicleHeight(v.scene.level)*m.height}}
 const directorDrawFoe=drawFoe;
 drawFoe=function(e){
  if(!e.hp)return directorDrawFoe(e);const r=e.entry;if(!r?.mode)return directorDrawFoe(e);if(!r.started){if(r.mode==='work'){shadow(e.x-game.camera,e.y,11,.28);directorLife(e,[0,1,2,3,2,1][Math.floor(e.taskAge*5)%6])}return}if(r.mode==='vehicle'&&r.vehiclePhase==='ride')return;
  const frame=directorFrame(e);if(frame<0)return;ctx.save();
- if(r.mode==='rope'){const gantry=r.scene.gantry,pm=directorPropMeta(game.level,7),beam=gantry.y-148*pm.anchor+148*[.18,.30,.18,.27,.25][game.level];ctx.beginPath();ctx.rect(0,beam+4,WIDTH,HEIGHT-beam);ctx.clip()}
+ if(r.mode==='rope'){const gantry=r.scene.gantry,pm=directorPropMeta(game.level,7),beam=gantry.y-148*pm.anchor+148*[.18,.30,.18,.27,.25,.22][game.level];ctx.beginPath();ctx.rect(0,beam+4,WIDTH,HEIGHT-beam);ctx.clip()}
  if(r.mode==='cover'&&(r.progress||0)<.4){const c=r.scene.cover;ctx.beginPath();ctx.rect(c.x-game.camera-48,c.y-90,96,95);ctx.clip()}
  if(r.mode==='vehicle'&&r.progress<.32){const box=cargoBox(r.scene.vehicle);ctx.beginPath();ctx.rect(box.x,box.y,box.w,box.h);ctx.clip()}
  shadow(e.x-game.camera,e.y,10,.35);directorLife(e,frame);ctx.restore();
@@ -98,13 +98,13 @@ drawItem=function(i){
  if(i.kind==='directorStation'){directorProp(5,s.level,x,i.y,43);return}
  if(i.kind==='directorTool'){shadow(x,i.y,6,.18);ctx.save();ctx.translate(x,i.y-i.z);if(i.z)ctx.rotate(i.spin);directorProp(6,s.level,0,0,i.size);ctx.restore();return}
  if(i.kind==='directorGantry'){
-  directorProp(7,s.level,x,i.y,148);const r=s.actor.entry,pm=directorPropMeta(s.level,7),from=i.y-148*pm.anchor+148*[.18,.30,.18,.27,.25][s.level];
-  if(r?.mode==='rope'&&r.started&&r.time>=.58&&s.actor.z>70){const m=directorMeta(s.level),g=[[.25,.46],[.42,.32],[.42,.22],[.30,.13],[.42,.18]][s.level],im=images['director-life-'+s.level],h=directorHeight(s.actor),w=h*im.naturalWidth/im.naturalHeight;s.ropeEnd={x:s.actor.x+s.actor.face*(g[0]-m.center)*w,y:s.actor.y-s.actor.z+h*(g[1]-m.anchor)}}
+  directorProp(7,s.level,x,i.y,148);const r=s.actor.entry,pm=directorPropMeta(s.level,7),from=i.y-148*pm.anchor+148*[.18,.30,.18,.27,.25,.22][s.level];
+  if(r?.mode==='rope'&&r.started&&r.time>=.58&&s.actor.z>70){const m=directorMeta(s.level),g=[[.25,.46],[.42,.32],[.42,.22],[.30,.13],[.42,.18],[.35,.20]][s.level],im=images['director-life-'+s.level],h=directorHeight(s.actor),w=h*im.naturalWidth/im.naturalHeight;s.ropeEnd={x:s.actor.x+s.actor.face*(g[0]-m.center)*w,y:s.actor.y-s.actor.z+h*(g[1]-m.anchor)}}
   if(s.ropeEnd){const attached=r?.mode==='rope'&&s.actor.z>70,tipX=s.ropeEnd.x-game.camera+(attached?0:Math.sin(game.clock*2.2)*1.5);ctx.strokeStyle=s.level===2?'#577945':'#a58a62';ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(x,from);ctx.lineTo(tipX,Math.max(from,s.ropeEnd.y));ctx.stroke()}return;
  }
  if(i.kind==='directorCover'){
-  if(!i.open)return directorProp(0,s.level,x,i.y,[60,63,66,66,70][s.level]);
-  const w=[60,63,66,66,70][s.level],pm=directorPropMeta(s.level,1),cut=globalThis.DRAGON_DIRECTOR_META?.lidCut?.[s.level]||.40,top=i.y-w*pm.anchor;
+  if(!i.open)return directorProp(0,s.level,x,i.y,[60,63,66,66,70,70][s.level]);
+  const w=[60,63,66,66,70,70][s.level],pm=directorPropMeta(s.level,1),cut=globalThis.DRAGON_DIRECTOR_META?.lidCut?.[s.level]||.40,top=i.y-w*pm.anchor;
   ctx.save();ctx.beginPath();ctx.rect(x-w,top+w*cut,w*2,w*(1-cut)+3);ctx.clip();directorProp(1,s.level,x,i.y,w);ctx.restore();
   // The detached lid is a source component with its own physical arc, never a background rectangle.
   {const im=images['director-props-'+s.level],sw=im.naturalWidth/4,sh=im.naturalHeight/2,p0=directorPropMeta(s.level,0),u=clamp((i.lidTime||0)/.85,0,1);ctx.save();ctx.translate(x-u*38,mix(i.y-w*p0.anchor,i.y+4-w*cut,u)-Math.sin(u*Math.PI)*30);ctx.rotate(-u*.8);ctx.drawImage(im,0,0,sw,sh*cut,-w*p0.center,0,w,w*cut);ctx.restore()}return;
@@ -149,3 +149,5 @@ breakItem=function(i){if(i.kind!=='directorCover')return directorBreak(i);i.hp=0
 const directorHud=hud;
 hud=function(){directorHud();const d=encounterDirector;if(!d||game.mode!=='play'||game.gate!=='fight'||game.enemies.some(e=>e.boss))return;if(!townSpeech){pixel(WIDTH-73,37,66,12,'#101a2bdb');label('ΚΥΜΑ '+(d.wave+1)+' / '+d.groups.length,WIDTH-11,46,7,'#ffdf9b','right')}const r=d.scene.actor?.entry;if(r?.mode==='rope'&&r.started&&r.time<.58){ctx.save();ctx.strokeStyle='#f5d590';ctx.lineWidth=.8;ctx.beginPath();ctx.ellipse(r.scene.anchor-game.camera,r.scene.lane,14,4,0,0,Math.PI*2);ctx.stroke();label('!',r.scene.anchor-game.camera,r.scene.lane-7,12,'#ffe3a6','center');ctx.restore()}};
 globalThis.DragonDirector={version:'2.5',plan:DIRECTOR_PLAN,scenes:()=>directorScenes,current:()=>encounterDirector,events:directorEvents,populate:populateDirector,life:directorLife,frame:directorFrame};
+
+function directorVehicleHeight(level){const im=level===1?images['harbor-launch']:images['director-props-'+level];return READY(im)?140*im.naturalHeight/im.naturalWidth*(level===1?1:2):140}

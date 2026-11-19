@@ -35,7 +35,7 @@ function languageScreen(){return `<div class="card language-screen"><h2>ΔΙΑΛ
 const languageShow=show;
 show=function(page){languageShow(page);if(page==='languages'){panel.innerHTML=languageScreen();hdFocus('language-'+language)}applyLanguage()};
 const languageGo=go;
-go=function(name){if(name==='languages'){languageOrigin=game.mode;show('languages');return}if(name.startsWith('language-')){setLanguage(name.slice(9));show(languageOrigin);return}languageGo(name)};
+go=function(name){if(name==='languages'){languageOrigin=game.mode;show('languages');return}if(name.startsWith('language-')){setLanguage(name.slice(9));show(languageOrigin);return}return languageGo(name)};
 const languageAdjust=hdAdjust;
 hdAdjust=function(name,delta=1){if(name==='hd-language'){const index=LANGUAGES.findIndex(l=>l.id===language);setLanguage(LANGUAGES[(index+delta+LANGUAGES.length)%LANGUAGES.length].id);show('settings');hdFocus(name);return}languageAdjust(name,delta)};
 const languageBack=hdBack;

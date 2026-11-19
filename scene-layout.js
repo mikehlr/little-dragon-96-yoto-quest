@@ -36,7 +36,7 @@ drawItem=function(i){
  if(!i.kind?.startsWith('layout'))return layoutDrawItem(i);const x=i.x-game.camera;if(x<-120||x>WIDTH+120)return;
  if(i.kind==='layoutFurniture'){const m=furnitureMeta(i.frame);shadow(x,i.y,i.blockW*.9,.24);layoutSprite(images['street-furniture'],i.frame,4,2,x,i.y,i.w,m);return}
  if(i.kind==='layoutSupply'){layoutSprite(images['market-stalls'],i.frame,4,2,x,i.y,i.w,{anchor:.95,center:.5});return}
- if(i.frame===5){const im=images['grounded-street-lamp'],h=i.h,w=h*im.naturalWidth/im.naturalHeight;shadow(x,i.y,6,.28);ctx.drawImage(im,x-w/2,i.y-h*.992,w,h);if(hdPrefs.lighting){ctx.save();ctx.globalCompositeOperation='screen';hdGlow(x,i.y-h*.77,18,25,'255,207,135',.20);hdGlow(x,i.y+1,29,6,'255,207,135',.09);ctx.restore()}return}
+ if(i.frame===5){const im=images['grounded-street-lamp'],h=i.h,w=h*im.naturalWidth/im.naturalHeight;shadow(x,i.y,6,.28);ctx.drawImage(im,x-w/2,i.y-h*.992,w,h);if(hdPrefs.lighting){const strength=globalThis.DragonCampaign?.lightStrength()??1;ctx.save();ctx.globalCompositeOperation='screen';hdGlow(x,i.y-h*.77,18,25,'255,207,135',.20*strength);hdGlow(x,i.y+1,29,6,'255,207,135',.09*strength);ctx.restore()}return}
  const m=globalThis.DRAGON_EXPANSION_META?.props?.[i.frame]||{anchor:.95,center:.5};shadow(x,i.y,i.w*.30,.20);layoutSprite(images['road-props'],i.frame,4,3,x,i.y,i.w,m);if(i.frame===8)layoutWater(x,i.y,i.w);if(i.frame===10&&hdPrefs.lighting)hdGlow(x,i.y-i.w*.25,13,7,'93,231,211',.15);
 };
 globalThis.DragonLayout={objects:()=>layoutObjects,benchFrames:LAYOUT_BENCH,compose:composeStreet};

@@ -113,7 +113,7 @@ drawItem=function(i){
  if(i.kind==='townWalker'&&i.active&&i.crowdSheet!==undefined){const frame=i.identity*10+(i.walking?1+Math.floor(i.stride/6)%8:0);shadow(i.x-game.camera,i.y,11,.3);ctx.save();ctx.translate(i.x-game.camera,i.y);ctx.scale(i.direction,1);townCell(images['crowd-variety-'+i.crowdSheet],frame,5,4,0,0,78,78,.98);ctx.restore();return}familyDrawItem(i);
 };
 const familyPopulate=populateTown;
-populateTown=function(level){familyPopulate(level);const sheets=[[0,0],[0,2],[1,1],[1,2],[2,2]][level];for(const [index,w]of townWalkers.entries()){w.crowdSheet=sheets[index%2];w.identity=index%2;w.wait=1+index*.7}for(let d=0;d<4;d++){const w={kind:'townWalker',decor:true,x:d*DISTRICT_LENGTH+1050,y:216+d%2*23,identity:(d+1)%2,crowdSheet:sheets[(d+1)%2],stride:0,direction:d%2?1:-1,active:false,wait:4+d,age:0};townWalkers.push(w);game.items.push(w)}};
+populateTown=function(level){familyPopulate(level);const sheets=[[0,0],[0,2],[1,1],[1,2],[2,2],[1,2]][level];for(const [index,w]of townWalkers.entries()){w.crowdSheet=sheets[index%2];w.identity=index%2;w.wait=1+index*.7}for(let d=0;d<4;d++){const w={kind:'townWalker',decor:true,x:d*DISTRICT_LENGTH+1050,y:216+d%2*23,identity:(d+1)%2,crowdSheet:sheets[(d+1)%2],stride:0,direction:d%2?1:-1,active:false,wait:4+d,age:0};townWalkers.push(w);game.items.push(w)}};
 const familyRoadSprite=roadSprite;
 roadSprite=function(frame,x,y,w,h){if(frame!==5)return familyRoadSprite(frame,x,y,w,h);const im=images['grounded-street-lamp'];if(!READY(im))return;const width=h*im.naturalWidth/im.naturalHeight;ctx.drawImage(im,x-width/2,y-h*.992,width,h)};
 
