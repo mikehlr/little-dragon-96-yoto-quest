@@ -1,10 +1,28 @@
-# Little Dragon ’96 · Yoto Quest — Family Arcade 2.3
+# Little Dragon ’96 · Yoto Quest — Arcade Action 2.4
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/
 
 A buildless, one- or two-player illustrated action adventure through five worlds.
 Serve this directory as static files; GitHub Pages publishes `main` directly.
 The original single-file release remains recoverable in Git history.
+
+## Arcade Action · 2.4
+
+- Jump then press attack for an air kick, with eight new authored frames per
+  hero. Gravity, movement and landing remain continuous; each target is hit once.
+- Co-op players choose different heroes. The selected P1 hero is visibly locked
+  for P2 and rejected by the selection handler.
+- Large graphic command plaques cover home, settings, guide, challenge, pause,
+  stage, retry and clear screens. All retain keyboard and controller operation.
+- A new iPhone Home Screen icon and standalone manifest. The game surface owns
+  touch gestures; analog reversal changes facing instantly, without squeezing
+  the character through intermediate horizontal scales.
+- Greek / English / Ukrainian throughout menus, cutscenes, NPC speech, HUD,
+  move names and item notices. Greek is default and the selected language is
+  remembered. The globe button opens the language panel; it is also in settings.
+- [Motion Review](motion-review.html) includes both new aerial clips.
+  [Implementation references](RESEARCH-2.4.md) explain the input/icon/localization
+  decisions and test limits; `arcade24-provenance.json` records the new art.
 
 ## Family Arcade · 2.3
 
@@ -134,7 +152,7 @@ and [Android: natural input across form factors](https://developer.android.com/g
 
 New raster artwork uses built-in ImageGen, with the exact prompt set in
 `art-provenance.json`, `expansion-provenance.json`, `motion-provenance.json` and
-`town-provenance.json` and `family-provenance.json`. Shadows and effects are 2D/2.5D approximations.
+`town-provenance.json`, `family-provenance.json` and `arcade24-provenance.json`. Shadows and effects are 2D/2.5D approximations.
 The game rules, five worlds, enemies, boss phases, co-op, pickups and story beats
 are preserved. Automated checks cover menus, both players, combat, pickup/throw,
 all five boss renderers, graphics options, touch magnitude and input release.

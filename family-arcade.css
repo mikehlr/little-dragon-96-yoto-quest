@@ -7,7 +7,7 @@
 .comic-copy h2{font-size:clamp(16px,2vw,25px);margin:0 0 8px;color:#ffdea0}
 .comic-copy p{font-size:clamp(13px,1.4vw,18px);line-height:1.55;min-height:3.1em;margin:0;font-family:"Trebuchet MS",sans-serif;color:#f0eee4}
 .arcade-story-hint{position:relative;inset:auto;margin:10px 0 0;font-size:9px;color:#bdd0e1;display:flex;justify-content:space-between}
-.arcade-story-hint[data-typing]::after{content:'A / ΑΓΓΙΓΜΑ · ΟΛΟ ΤΟ ΚΕΙΜΕΝΟ';color:#ffdfa0}
+.arcade-story-hint[data-typing]::after{content:var(--story-reveal-hint,'A / ΑΓΓΙΓΜΑ · ΟΛΟ ΤΟ ΚΕΙΜΕΝΟ');color:#ffdfa0}
 .arcade-story-hint[data-typing]{font-size:0}.arcade-story-hint[data-typing] span{font-size:9px}
 #touch .touch-cluster{width:195px;height:180px}
 #touch .action-disc{width:58px;height:58px}

@@ -1,0 +1,84 @@
+[
+  {
+    "key": "air-kick-1",
+    "hero": 1,
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hero-actions-1.webp"
+    ],
+    "prompt": "Use case: stylized-concept. NEW production airborne jumping-kick sprite atlas for the reference arcade karate child hero, identity reference only. Exactly FOUR columns by TWO rows, eight equal SQUARE cells. One continuous right-facing flying side-kick action. Giorgos: curly blond hair, white gi, BLACK belt, blue wristbands, BLACK strapped sandals. Preserve exact reference facial identity, head size, body proportions, clothing and footwear; constant orthographic side/three-quarter camera and anatomical scale across all eight cells, full body and hands entirely inside cells with 6 percent clear margins. Every pose is AIRBORNE, not standing on one supporting foot. Frame 0 knees tuck in midair, 1 torso leans slightly back and right knee chambers, 2 kick leg begins extension, 3 fully extended forward side kick with sole pointing right and rear leg tucked underneath, 4 extended kick follow-through, 5 begins retracting forward leg, 6 both knees return underneath body, 7 aerial ready-to-land pose with feet lowered. Arms form a coherent balancing guard and hands remain naturally attached; no horizontal cutout rotation, no duplicated legs, no extra limbs, no changing head size. Runtime controls world height, so keep torso/pelvis near same reference center of each cell. True transparent alpha-zero background, no shadow, no ground, no text, no grid, no energy, no borders. Detailed clean high-resolution painted arcade art matching the identity reference. Not a walking or grounded kick atlas.",
+    "path": "exec-db1866de-6265-4723-8ee0-a764c57d31fa.png",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "runtime": [
+      "assets/air-kick-1.webp"
+    ],
+    "hashes": {
+      "assets/air-kick-1.webp": "c59ecff3e01a4fc8d1d8fb7a40f956f6394be4388a3e99603412d6156678c1fb"
+    }
+  },
+  {
+    "key": "air-kick-2",
+    "hero": 2,
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hero-actions-2.webp"
+    ],
+    "prompt": "Use case: stylized-concept. NEW production airborne jumping-kick sprite atlas for the reference arcade karate child hero, identity reference only. Exactly FOUR columns by TWO rows, eight equal SQUARE cells. One continuous right-facing flying side-kick action. Thodoris: spiky light brown hair, white gi, BLUE belt, blue wristbands, RED sneakers. Preserve exact reference facial identity, head size, body proportions, clothing and footwear; constant orthographic side/three-quarter camera and anatomical scale across all eight cells, full body and hands entirely inside cells with 6 percent clear margins. Every pose is AIRBORNE, not standing on one supporting foot. Frame 0 knees tuck in midair, 1 torso leans slightly back and right knee chambers, 2 kick leg begins extension, 3 fully extended forward side kick with sole pointing right and rear leg tucked underneath, 4 extended kick follow-through, 5 begins retracting forward leg, 6 both knees return underneath body, 7 aerial ready-to-land pose with feet lowered. Arms form a coherent balancing guard and hands remain naturally attached; no horizontal cutout rotation, no duplicated legs, no extra limbs, no changing head size. Runtime controls world height, so keep torso/pelvis near same reference center of each cell. True transparent alpha-zero background, no shadow, no ground, no text, no grid, no energy, no borders. Detailed clean high-resolution painted arcade art matching the identity reference. Not a walking or grounded kick atlas.",
+    "path": "exec-7f12ca03-ae62-40a5-b8bb-8766221fa70b.png",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "runtime": [
+      "assets/air-kick-2.webp"
+    ],
+    "hashes": {
+      "assets/air-kick-2.webp": "5fc2e67e13d440d85d5a38ba144640cc2548cba53141a7aa7d16c21a0bda4db6"
+    }
+  },
+  {
+    "key": "app-icon",
+    "prompt": "Use case: stylized-concept. A finished SQUARE iPhone home-screen game app icon, opaque full bleed, 1024x1024. Two joyful young karate adventure heroes from the references shoulder-to-shoulder: curly blond Giorgos with black belt and spiky light brown-haired Thodoris with blue belt, expressive large clear faces, recognizable gi collars and wristbands. A small glowing orange smiling square story-player device at the lower center, warm gold magical sparkle. Close-up heroic composition, both faces prominent and readable at 60 pixels. Deep midnight blue backdrop with a subtle golden dragon emblem and amber rim lighting, richly rendered hand-painted premium arcade illustration, cohesive with references. Safe icon composition: all important faces and device within center 78%, no elements touching edges, iOS supplies corner rounding. No letters, title, words, borders, UI, grid, transparent background or multiple icon variants. One polished icon.",
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hero-actions-1.webp",
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hero-actions-2.webp"
+    ],
+    "path": "exec-2b1d95a5-e6af-438d-b56f-779ebd7b87a9.png",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "runtime": [
+      "assets/app-icon-32.png",
+      "assets/app-icon-180.png",
+      "assets/app-icon-192.png",
+      "assets/app-icon-512.png"
+    ],
+    "hashes": {
+      "assets/app-icon-32.png": "a48b9791a66cd59d8bc47e3bde043b6185a3bcf310ea082d0110a68471253957",
+      "assets/app-icon-180.png": "6cf994813ae67124c6e9f9bb61a4876c27247c745594d566cacfa2b76af96c8e",
+      "assets/app-icon-192.png": "ae49206a4f14b1d583eb4baded591fd1cbb6213be51462356cafbbf0b7e076b4",
+      "assets/app-icon-512.png": "8ed498757d21f7c18dd32cd695f20bd82019334705ff39b0bc00a0498d1dd0ee"
+    }
+  },
+  {
+    "key": "arcade-button-skin",
+    "prompt": "Use case: ui-mockup. A production game UI sprite atlas with exactly ONE column and FOUR equal-height rows. Every row contains the SAME wide horizontal arcade command plaque with identical shape and alignment, width to height ratio SIX to ONE. Four states: row0 normal deep midnight navy enamel, row1 SELECTED luminous amber-gold enamel edge with bright ivory bevel and navy interior, row2 PRESSED warm bronze darker inset, row3 DISABLED desaturated steel slate. Stylized illustrated 1990s premium arcade fantasy karate adventure, tasteful hand painted brushed metal, thick sculpted chamfered corners, chunky brass gold edge rails, a few small engraved lightning/dragon-scale accents at far ends only. Large empty center suitable for runtime Greek text. STATE GEOMETRY IDENTICAL across rows, no shape/camera changes, no perspective tilt. No text, numbers, icons, logos, badges or menu mockup. Transparent background outside each plaque, no cast shadow, no glow spilling into neighboring rows, leave 4% margins within each row. Wide landscape 1536 by 1024 overall atlas (four 1536 by 256 strips), each command plaque fills width and most of strip height. Crisp actual game UI assets, not flat website buttons.",
+    "path": "exec-96388f7b-a9b7-412b-8f5e-00c0d2b1fbff.png",
+    "tool": "built-in image_gen",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "runtime": [
+      "assets/arcade-button-skin.webp"
+    ],
+    "hashes": {
+      "assets/arcade-button-skin.webp": "69c984f90a404409c29a679cde3874b6a73d046589fbe6f4453552d1915bc0e0"
+    }
+  }
+]
