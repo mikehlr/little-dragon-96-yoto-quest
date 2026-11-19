@@ -1,4 +1,11 @@
-# Little Dragon 96 · Living Encounters 2.5
+# Little Dragon 96 · Story & Practice 2.6
+
+Play at https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.6
+
+Choose Story Mode or Practice before choosing one/two players, characters and difficulty. Practice offers all five stages, a full-stage fresh replay, and stage selection from pause/completion without advancing the campaign. Both heroes use eight distance-driven carried-walk poses, with a single authored club owner and prop support behind their actual palms.
+
+Story intros, progression and final ending remain intact. Mobile menus were checked with Chrome and WebKit emulation; no physical-device certification. See carry-provenance.json for native ImageGen prompts and sources, and qa-results.json for scoped current checks and runtime hashes.
+
 
 Play at https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.5
 

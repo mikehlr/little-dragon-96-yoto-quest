@@ -1647,9 +1647,9 @@ function drawHero(p) {
     if (!READY(images['p' + (p.hero || p.id) + '-motion'])) ctx.rotate(-1.04 * Math.min(1, p.age * 4));
     ctx.globalAlpha = Math.max(0, 1 - (p.age - .8) * 2);
   }
-  const walking = p.act === 'walk' && !p.running;
+  const walking = p.act === 'walk' && !p.running && !globalThis.DragonCarry?.uses(p);
   if (walking) ctx.translate(0, -Math.abs(Math.sin(p.stride / 30 * Math.PI)) * 1.45);
-  if (p.act === 'idle') ctx.translate(0, -Math.round((Math.sin(p.phase * 3.8) + 1) / 2));
+  if (p.act === 'idle' && !globalThis.DragonCarry?.uses(p)) ctx.translate(0, -Math.round((Math.sin(p.phase * 3.8) + 1) / 2));
   drawHeroFrame(p);
   if (game.fx) strikeTrail(p);
   const held = p.carry || p.toss || (p.act === 'punch' && p.age < .25 ? p.swing : null);

@@ -71,5 +71,7 @@ const ART = {
   "director-props-3": "assets/director-props-3.webp",
   "director-life-4": "assets/director-life-4.webp",
   "director-props-4": "assets/director-props-4.webp",
-  "street-furniture": "assets/street-furniture.webp"
+  "street-furniture": "assets/street-furniture.webp",
+  "carry-walk-1": "assets/carry-walk-1.webp",
+  "carry-walk-2": "assets/carry-walk-2.webp"
 };

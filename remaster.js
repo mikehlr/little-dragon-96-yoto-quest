@@ -1,6 +1,6 @@
 'use strict';
 // Full-HD presentation. Physics and hit detection remain in the original world units.
-const HD_VERSION='2.5';
+const HD_VERSION='2.6';
 const HD_DEFAULT={resolution:4,display:'hd',lighting:true,fog:true,grain:1,parallax:true,calm:false,contrast:false,musicVolume:65,sfxVolume:80,music:true,sound:true};
 let hdPrefs={...HD_DEFAULT};
 try{Object.assign(hdPrefs,JSON.parse(localStorage.getItem('little-dragon-hd-settings')||'{}'))}catch{}

@@ -1,0 +1,25 @@
+{
+  "version": "2.6",
+  "assets": [
+    {
+      "key": "carry-walk-1",
+      "hero": 1,
+      "refs": [
+        "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hd-p1-motion.webp",
+        "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/items.webp"
+      ],
+      "prompt": "Use case stylized concept. Production transparent game WALK-CARRY animation atlas, EXACT4 columns x4 rows, SIXTEEN equal square cells. Identity reference1: Giorgos, blond CURLY hair, white gi BLACK belt, dark brown strapped sandals. Reference2 supplies wooden club shape only (sprite at bottom-left); NO other objects. Same full-body size and FIXED head size, exposure and camera in every cell, full silhouette with6percent margins, standing soles at94percent cellheight. Face RIGHT, mild three-quarter side view. A proper narrow upright walk, NOT crouched or running. Row1+row2 together are ONE8-pose complete alternating walk loop WHILE CARRYING THE SAME SMALL WOODEN CLUB by handle in RIGHT hand near hip: row1col1 LEFT heel forward/right toe behind; row1col2 left foot planted/right foot lifts; row1col3 right foot passes under pelvis; row1col4 right leg swings forward; row2col1 RIGHT heel forward/left toe behind; row2col2 right foot planted/left foot lifts; row2col3 left foot passes under pelvis; row2col4 left leg swings forward into first pose. The free left arm counter-swings with the right leg; club hand is stable with small natural supported motion. The club itself is drawn ONCE and held tightly, angled diagonally forward/up matching reference, no detached fingers. Row3+row4 exactly REPEAT THE SAME8 leg phases in same order, but NO CLUB and NO OBJECT: both forearms cradle an imaginary small box in front of waist, hands extended PALMS UP near normalized cell position x72percent/y55percent. DO NOT draw box or barrel. Two-hand carry remains stable while shoulders/pelvis counterrotate subtly. Keep all support contacts physically coherent; one foot bears weight, other passes. Closed natural loop last→first, no duplicate lead-leg half cycles. Head/chest size remains fixed, never fit every pose independently. TRUE ALPHA ZERO transparent background, NO shadow, floor, halo, colored haze, gridlines, text or scenery. Clean detailed colorful HD arcade art matching existing hero; all4 rows MUST each contain exactly4 complete figures.",
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-68321372-9a5a-4498-84d2-4b7269dea223.png"
+    },
+    {
+      "key": "carry-walk-2",
+      "hero": 2,
+      "refs": [
+        "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hd-p2-motion.webp",
+        "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/items.webp"
+      ],
+      "prompt": "Use case stylized concept. Production transparent game WALK-CARRY animation atlas, EXACT4 columns x4 rows, SIXTEEN equal square cells. Identity reference1: Thodoris, blond SWEPT spiky hair, white gi BLUE belt, red sneakers. Reference2 supplies wooden club shape only (sprite at bottom-left); NO other objects. Same full-body size and FIXED head size, exposure and camera in every cell, full silhouette with6percent margins, standing soles at94percent cellheight. Face RIGHT, mild three-quarter side view. A proper narrow upright walk, NOT crouched or running. Row1+row2 together are ONE8-pose complete alternating walk loop WHILE CARRYING THE SAME SMALL WOODEN CLUB by handle in RIGHT hand near hip: row1col1 LEFT heel forward/right toe behind; row1col2 left foot planted/right foot lifts; row1col3 right foot passes under pelvis; row1col4 right leg swings forward; row2col1 RIGHT heel forward/left toe behind; row2col2 right foot planted/left foot lifts; row2col3 left foot passes under pelvis; row2col4 left leg swings forward into first pose. The free left arm counter-swings with the right leg; club hand is stable with small natural supported motion. The club itself is drawn ONCE and held tightly, angled diagonally forward/up matching reference, no detached fingers. Row3+row4 exactly REPEAT THE SAME8 leg phases in same order, but NO CLUB and NO OBJECT: both forearms cradle an imaginary small box in front of waist, hands extended PALMS UP near normalized cell position x72percent/y55percent. DO NOT draw box or barrel. Two-hand carry remains stable while shoulders/pelvis counterrotate subtly. Keep all support contacts physically coherent; one foot bears weight, other passes. Closed natural loop last→first, no duplicate lead-leg half cycles. Head/chest size remains fixed, never fit every pose independently. TRUE ALPHA ZERO transparent background, NO shadow, floor, halo, colored haze, gridlines, text or scenery. Clean detailed colorful HD arcade art matching existing hero; all4 rows MUST each contain exactly4 complete figures.",
+      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-e49ac001-1537-46d2-96b6-35172ca66073.png"
+    }
+  ]
+}
