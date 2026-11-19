@@ -57,4 +57,4 @@ drawStory=function(){const target=panel.querySelector('.story-canvas');if(!targe
  if(!hdPrefs.calm&&storyTime>.68&&storyTime<1.18){const words=['ΚΛΙΚ!','ΧΡΑΠ!','ΩΧ!','ΠΑΜΕ!','ΧΑ ΧΑ!'],u=clamp((storyTime-.68)/.18,0,1),scale=.8+.2*Math.sin(u*Math.PI/2);g.save();g.translate(w*.79,h*.21);g.rotate(-.08);g.scale(scale,scale);g.font='900 64px Trebuchet MS';g.textAlign='center';g.lineWidth=9;g.strokeStyle='#18213d';g.strokeText(words[index],0,0);g.fillStyle='#ffe0a1';g.fillText(words[index],0,0);g.restore();if(!storySound){effect(index===1?'throw':index===2?'warning':index===4?'reward':'pickup');storySound=true}}
 };
 const motionReady=hdAssetReady.then(()=>{prepareFloorTiles();document.documentElement.dataset.motionReady='true'});
-globalThis.DragonMotion={version:'2.4',ready:motionReady,foeFrame:foeMotionFrame,storySample:storyMotionSample,ground:GROUND_DETAILS};
+globalThis.DragonMotion={version:'2.5',ready:motionReady,foeFrame:foeMotionFrame,storySample:storyMotionSample,ground:GROUND_DETAILS};

@@ -1,4 +1,11 @@
-# Little Dragon ’96 · Yoto Quest — Arcade Action 2.4
+# Little Dragon 96 · Living Encounters 2.5
+
+Play at https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.5
+
+Five authored enemy arrival methods in every world, working enemies who visibly react, staggered cohorts and recovery beats. New furniture keeps native proportions and is composed into appropriate street, dock, forest, ruin and castle pockets. Greek is the default; English and Ukrainian remain available throughout.
+
+See [2.5 research and implementation](RESEARCH-2.5.md), [asset provenance](director-provenance.json), [production review](motion-review.html) and [verification](qa-results.json).
+
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/
 

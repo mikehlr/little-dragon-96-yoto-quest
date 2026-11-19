@@ -60,5 +60,16 @@ const ART = {
   "hero-actions-2": "assets/hero-actions-2.webp",
   "air-kick-1": "assets/air-kick-1.webp",
   "air-kick-2": "assets/air-kick-2.webp",
-  "arcade-button-skin": "assets/arcade-button-skin.webp"
+  "arcade-button-skin": "assets/arcade-button-skin.webp",
+  "director-life-0": "assets/director-life-0.webp",
+  "director-props-0": "assets/director-props-0.webp",
+  "director-life-1": "assets/director-life-1.webp",
+  "director-props-1": "assets/director-props-1.webp",
+  "director-life-2": "assets/director-life-2.webp",
+  "director-props-2": "assets/director-props-2.webp",
+  "director-life-3": "assets/director-life-3.webp",
+  "director-props-3": "assets/director-props-3.webp",
+  "director-life-4": "assets/director-life-4.webp",
+  "director-props-4": "assets/director-props-4.webp",
+  "street-furniture": "assets/street-furniture.webp"
 };
