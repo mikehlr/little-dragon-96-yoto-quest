@@ -1,5 +1,5 @@
 {
-  "version": "2.2",
+  "version": "2.3",
   "reports": {
     "dragon-hd-evidence/report.json": {
       "checks": [
@@ -14,15 +14,15 @@
           },
           "analog": {
             "slow": {
-              "distance": 9.662403805496837,
+              "distance": 9.698664482029614,
               "magnitude": 0.18076109936575052
             },
             "fast": {
-              "distance": 45.37586469344606,
+              "distance": 47.164076109936644,
               "magnitude": 0.9471458773784356
             }
           },
-          "targets": 5,
+          "targets": 4,
           "multiTouch": true,
           "cancel": true,
           "pausedInputsClear": true
@@ -34,15 +34,15 @@
           },
           "analog": {
             "slow": {
-              "distance": 9.709329386892193,
+              "distance": 10.00154778012687,
               "magnitude": 0.18076109936575052
             },
             "fast": {
-              "distance": 47.186428752642655,
+              "distance": 47.119370824524225,
               "magnitude": 0.9471458773784356
             }
           },
-          "targets": 5,
+          "targets": 4,
           "multiTouch": true,
           "cancel": true,
           "pausedInputsClear": true
@@ -69,7 +69,7 @@
       ],
       "performance": [
         {
-          "p95": 1.5999999642372131,
+          "p95": 1.3999999999068677,
           "samples": 100
         }
       ],
@@ -514,8 +514,8 @@
       "injected": true,
       "retried": true,
       "sameCastle": true,
-      "loaded": 61,
-      "total": 61,
+      "loaded": 68,
+      "total": 68,
       "allReady": true,
       "errors": []
     },
@@ -531,15 +531,2146 @@
       ],
       "errors": [],
       "pass": true
+    },
+    "dragon-family-evidence/report.json": {
+      "checks": [
+        "Framed story progressively reveals text: first Enter reveals, second advances; new panel resets; skip starts selected hero",
+        "True running uses all eight authored frames, exceeds walking speed by 40%, and respects selected character rather than seat",
+        "3 lives: death decrements once, drops from above, one nearby shock hit, protected landing, final game over and 3-life retry",
+        "An exhausted co-op player stays out across stage transitions while the partner continues",
+        "Max-health upgrades cap at 160; health pickups and extra lives apply once and consume only their item",
+        "Hold attack launches gold projectile for Giorgos and radial multi-pulse spinning kick for Thodoris; independent meter cost, cooldown, insufficient-energy rejection and no hold spam",
+        "Pause/resume neutralizes held special charge until release",
+        "All five stages have eight scheduled walkers, varied occupation sheets and four local vendors; world compositions captured",
+        "Contact, finish, wood, stone, landing, wind and guard effects render and expire; calm uses reduced non-flashing effects",
+        "Virtual standard pad: X attack, A jump, B guard, shoulders run; four-action mapping preserved alongside menu support",
+        "Mobile: four large controls, analog outer-ring run and cancel, immediate rotation with no overflow, touch reveals framed story"
+      ],
+      "errors": [],
+      "pass": true
+    },
+    "dragon-family-evidence/impact-report.json": {
+      "checks": [
+        "A missed attack creates no impact effect",
+        "Real keyboard strike creates one contact star, local light and dispersing sparks, then expires",
+        "The same hit set cannot spawn duplicate effects; effects-off suppresses new effects",
+        "Crates/barrels shed warm splinters; pots/amphorae/urns shed stone-colored fragments and dust",
+        "Both heroes use all 16 source cells at one fixed anatomical camera; per-pose height fitting canary rejected",
+        "Normal-time recording includes both heroes running, turning, stopping and casting, plus actual hit and material break sequences"
+      ],
+      "errors": [],
+      "audit": [
+        {
+          "hero": 1,
+          "frames": 16,
+          "fixed": true,
+          "badHeightFitRejected": true,
+          "distinct": 16
+        },
+        {
+          "hero": 2,
+          "frames": 16,
+          "fixed": true,
+          "badHeightFitRejected": true,
+          "distinct": 16
+        }
+      ],
+      "pass": true
+    },
+    "dragon-family-evidence/visibility-report.json": {
+      "pass": true,
+      "samples": 172,
+      "minimumVisibility": 0.9816449814126395,
+      "clippedLegCanary": {
+        "good": [
+          0.9939251420732902,
+          0.9998123592694521,
+          0.9956212370005474
+        ],
+        "bad": [
+          0.9939251420732902,
+          0.9998123592694521,
+          0.0630815544608648
+        ],
+        "rejected": true
+      },
+      "results": [
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9982363315696648,
+            0.9996872654490868,
+            0.9965790914066777
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9937291789143641,
+            0.9998749061796347,
+            0.99480021893815
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9959571457448959,
+            0.9997358341038172,
+            0.9927319922128488
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9963614311704063,
+            0.9992735437854973,
+            0.9892277741726152
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9971825316965184,
+            0.9992128050380478,
+            0.9932157394843962
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9957737975447776,
+            0.9998032012595119,
+            0.9949118046132972
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9956976029502151,
+            0.9992537313432835,
+            0.9941273628188658
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9952878508502356,
+            0.9995251017639077,
+            0.9937603229950449
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.9955480178079288,
+            0.998943715104874,
+            0.9902335456475584
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.994064023743905,
+            0.9990191640259545,
+            0.9923566878980892
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9978991596638656,
+            0.9996510085851888,
+            0.9978269206186885
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9970588235294118,
+            0.9994415747591792,
+            0.9878563211044357
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9955965611239254,
+            0.9993613397672438,
+            0.995847750865052
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9949674984273432,
+            0.999787113255748,
+            0.9949826989619377
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9983274095755802,
+            0.9993669105233539,
+            0.9966617984560818
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9968638929542128,
+            0.9993669105233539,
+            0.9878990194032965
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 8,
+          "face": -1,
+          "visible": [
+            0.9964955679241394,
+            0.9992759394685395,
+            0.9937888198757764
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 0,
+          "frame": 8,
+          "face": 1,
+          "visible": [
+            0.997320140177283,
+            0.9994207515748317,
+            0.9875776397515528
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9961176951369023,
+            0.9972564192754133,
+            0.9947953298635532
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9963220269718022,
+            0.9975376389475166,
+            0.9952173301448868
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9944706123284865,
+            0.9958368026644463,
+            0.9958322808790099
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9946754044644686,
+            0.9984041076880378,
+            0.997726698661278
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9942457870941225,
+            0.9982360826924433,
+            0.9965786901270772
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9960953555281545,
+            0.9977421858463276,
+            0.9972303681981102
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9906347554630593,
+            0.9969690249131367,
+            0.9973074851911685
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.99105098855359,
+            0.998817180453907,
+            0.9992819960509782
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.9940978077571669,
+            0.9977389207114863,
+            0.9963394793926247
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9947301854974705,
+            0.9977389207114863,
+            0.9964750542299349
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9936410256410256,
+            0.9973480354525787,
+            0.9968217645563183
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9952820512820513,
+            0.9974178239933003,
+            0.9944063056191202
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9960776218001651,
+            0.9981292870505093,
+            0.994566657831964
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9960776218001651,
+            0.9979214300561214,
+            0.9961569043201697
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9940828402366864,
+            0.9971738807080173,
+            0.9966592427616926
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9949281487743026,
+            0.99776885319054,
+            0.9974016332590943
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 8,
+          "face": -1,
+          "visible": [
+            0.9961832061068703,
+            0.9973690145080057,
+            0.995345744680851
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 0,
+          "id": 1,
+          "frame": 8,
+          "face": 1,
+          "visible": [
+            0.9925784563189143,
+            0.9970683304517778,
+            0.9973404255319149
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9965837919908901,
+            0.9992323439099283,
+            0.9996502273522211
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9977225279939267,
+            0.9978676219720232,
+            0.9993004547044421
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9936046511627907,
+            0.9996657474722153,
+            0.9991638795986622
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9959302325581395,
+            0.9979109217013453,
+            0.9993311036789297
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9938128383604021,
+            0.9995732696082615,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9963263727764888,
+            0.9979516941196552,
+            0.9998072474942175
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9920124683421001,
+            0.999635003193722,
+            0.9997709573980761
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9951295538671342,
+            0.9979012683639018,
+            0.9988547869903802
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.994241461477363,
+            0.9992991063606098,
+            0.9996318114874816
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9966243050039714,
+            0.9981601541966006,
+            0.9992636229749632
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9948295672156262,
+            0.99900149775337,
+            0.9985057280425037
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9969360398314822,
+            0.9980029955067399,
+            0.999169848912502
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.994431643625192,
+            0.9992983687072443,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9951996927803379,
+            0.9979828100333274,
+            0.999802371541502
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9932526294899782,
+            0.9994860373479527,
+            0.9997521685254027
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9956340543758683,
+            0.9980298098338187,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 8,
+          "face": -1,
+          "visible": [
+            0.9970935865142414,
+            0.9994866968945162,
+            0.9994736842105263
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 0,
+          "frame": 8,
+          "face": 1,
+          "visible": [
+            0.9937996512303817,
+            0.9979467875780649,
+            0.9991228070175439
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9993889398105713,
+            0.9952532819105541,
+            0.999594430174395
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.997250229147571,
+            0.9918415782837647,
+            0.999594430174395
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9975694971897311,
+            0.9958050758582115,
+            0.9991149323555443
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9968099650615221,
+            0.996504229881843,
+            0.9988620558856999
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9975661697596593,
+            0.996742671009772,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9963492546394889,
+            0.9964324492011788,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9980395113859146,
+            0.9972389150560338,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9986427386517871,
+            0.9961019977261654,
+            0.9998092331171309
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.9986223786927905,
+            0.9972624168947986,
+            0.9997035719579073
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9981631715903873,
+            0.9964020336331638,
+            0.999258929894768
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.99894641782059,
+            0.9958576817811968,
+            0.9992169146436961
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9977423239012643,
+            0.9943782824173386,
+            0.9994778749510508
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9990859232175503,
+            0.9961538461538462,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9972577696526508,
+            0.9964678178963893,
+            0.9996916910744567
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9986244841815681,
+            0.9968989844173967,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9972489683631361,
+            0.9976742383130475,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 8,
+          "face": -1,
+          "visible": [
+            0.9978444957659738,
+            0.997588230565158,
+            0.9997314715359829
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 1,
+          "id": 1,
+          "frame": 8,
+          "face": 1,
+          "visible": [
+            0.998306389530408,
+            0.9962215612187475,
+            0.9989258861439313
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9978038067349927,
+            0.9948123694670888,
+            0.9988853503184714
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9965836993655441,
+            0.9954187158930136,
+            0.9996815286624203
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9944233206590621,
+            0.9959885386819485,
+            0.9975735517136791
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9974651457541192,
+            0.9952881248010188,
+            0.9971185926599939
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9962933545141647,
+            0.994093787803316,
+            0.998876404494382
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9960285941223193,
+            0.9941649469864086,
+            0.9979133226324237
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9932833893050891,
+            0.9942524554383412,
+            0.9994669509594882
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.997933350555412,
+            0.9946162240814842,
+            0.9987562189054726
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.9968553459119497,
+            0.9950393039761887,
+            0.9985309240487733
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9981656184486373,
+            0.9949629855758223,
+            0.9983840164536506
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9972144846796658,
+            0.995660807531073,
+            0.9989462592202318
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9979741706761205,
+            0.9953662842012356,
+            0.9983441216317929
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.997969027671998,
+            0.9949449895926257,
+            0.9993556701030928
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9977151561309977,
+            0.9940529289325007,
+            0.9996778350515464
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9948480164863472,
+            0.9950433705080545,
+            1
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9976816074188563,
+            0.9961367446606896,
+            0.9995869475423379
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 8,
+          "face": -1,
+          "visible": [
+            0.9976501305483029,
+            0.9945244524452446,
+            0.9985298921920941
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 0,
+          "frame": 8,
+          "face": 1,
+          "visible": [
+            0.9981723237597911,
+            0.9948244824482448,
+            0.9978765109441359
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9944706123284865,
+            0.9976249045720587,
+            0.9991852696757373
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9944706123284865,
+            0.9976249045720587,
+            0.9982075932866221
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9951787866613098,
+            0.9979535671441677,
+            0.9990644212777332
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9979911611088791,
+            0.9980241337943688,
+            0.9981288425554664
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.992564308681672,
+            0.9973666390790761,
+            0.9993662864385298
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9931672025723473,
+            0.9975923557294409,
+            0.9995247148288974
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9938875305623472,
+            0.9984827916633394,
+            0.9993735317149569
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9916462917685411,
+            0.9981633793819372,
+            0.9984338292873923
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.9946358572312771,
+            0.9976415094339622,
+            0.9988579586009992
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9938106044976274,
+            0.9982704402515723,
+            0.9985724482512491
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9972155926809865,
+            0.9977632086386425,
+            0.9986801583809943
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.997016706443914,
+            0.9973775549556498,
+            0.9995600527936648
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9908368967623702,
+            0.9971291123525761,
+            0.9998516540572615
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9955202606393809,
+            0.9968963376784605,
+            0.9992582702863076
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9940960912052117,
+            0.9977009671793245,
+            0.9991865950870343
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9961319218241043,
+            0.9978595211669573,
+            0.9985358711566618
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 8,
+          "face": -1,
+          "visible": [
+            0.9933427476296147,
+            0.9983579638752053,
+            0.9980946797596365
+          ]
+        },
+        {
+          "type": "npc",
+          "sheet": 2,
+          "id": 1,
+          "frame": 8,
+          "face": 1,
+          "visible": [
+            0.9897115190639499,
+            0.9980295566502463,
+            0.9979481166642239
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9959758551307847,
+            0.9970629827042314,
+            0.9985778138967899
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9953722334004024,
+            0.997824431632764,
+            0.9961397805770013
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9933891582194799,
+            0.9975811584977721,
+            1
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9933891582194799,
+            0.9971992361553151,
+            0.9979697721633205
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9927985597119424,
+            0.997143877186719,
+            0.9989258861439313
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9943988797759552,
+            0.9973818874211591,
+            0.9991407089151451
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9977192618702053,
+            0.998385050178798,
+            0.9993270524899058
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9950238440804479,
+            0.9976929288268543,
+            0.9991027366532077
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.9921135646687698,
+            0.9978977649922549,
+            0.9977194982896237
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9944794952681388,
+            0.9972339013055986,
+            0.9951132106206223
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9961464354527938,
+            0.995813594800044,
+            1
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9961464354527938,
+            0.9961441004737248,
+            0.9982259018332348
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9927855711422846,
+            0.998109640831758,
+            0.9998138842359948
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9965931863727455,
+            0.9977945809703844,
+            0.999069421179974
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9995771670190274,
+            0.9979268957992362,
+            0.9997969543147208
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "run",
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9951374207188161,
+            0.9967266775777414,
+            0.9989847715736041
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9931800467653936,
+            0.9972810024825629,
+            0.9976876830584246
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9912314886983632,
+            0.9966899160657288,
+            0.9978418375211963
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9934261407579273,
+            0.9969641772920461,
+            0.9981908638625057
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9905259087393659,
+            0.9985832827362882,
+            0.9978893411729233
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9953667953667954,
+            0.9978333874986459,
+            0.9970111016225448
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9944015444015444,
+            0.9983750406239844,
+            0.9972957586108739
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9954590325765055,
+            0.9976931949250288,
+            0.9980105158448203
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9954590325765055,
+            0.9970640662682185,
+            0.9965894557339775
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.992357661444402,
+            0.9975484733675062,
+            0.9980665653915205
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9936950706916317,
+            0.9985513706262537,
+            0.9973760530313492
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9915352058484033,
+            0.9977044162658505,
+            0.9976110174255199
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9849942285494421,
+            0.9960647135986008,
+            0.9981731309724564
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9922510654784967,
+            0.9969856819894499,
+            0.9980785067252265
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9903138318481208,
+            0.9975239530627624,
+            0.9982157562448531
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9941679626749611,
+            0.9971092077087794,
+            0.9982108450316542
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 1,
+          "mode": "special",
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.98950233281493,
+            0.9967880085653105,
+            0.9977979631158822
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9952392287550583,
+            0.9963055525372161,
+            0.9985551452881682
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9900023803856225,
+            0.9964142127567097,
+            0.997431369401188
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.996822033898305,
+            0.9973152795611065,
+            0.9994080505130228
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9904661016949152,
+            0.9967316446830863,
+            0.9990134175217048
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9978561219628395,
+            0.9972067039106145,
+            0.9984270546598506
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9916626965221534,
+            0.9961904761904762,
+            0.9990169091624066
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9982947624847747,
+            0.9971699274024856,
+            0.9995856639734825
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9924482338611449,
+            0.9965538461538461,
+            0.9987569919204475
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.9960956564177648,
+            0.9966493731085171,
+            0.9988483685220729
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.990971205466081,
+            0.9976221357544315,
+            0.9973128598848369
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.994421906693712,
+            0.9972204404532821,
+            0.998771196854264
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9908722109533469,
+            0.9985033140902287,
+            0.9982796755959695
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9962302085951245,
+            0.9967895709699387,
+            0.999259368982373
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9899472229203318,
+            0.9973732853390408,
+            0.9970374759294919
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9982767109798129,
+            0.9952746603662138,
+            1
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "run",
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9953225012309207,
+            0.996219728292971,
+            0.9997747747747747
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 0,
+          "face": -1,
+          "visible": [
+            0.9912195121951219,
+            0.9974414485337532,
+            0.9977544910179641
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 0,
+          "face": 1,
+          "visible": [
+            0.9875640087783467,
+            0.9972446368825034,
+            0.9979038778260219
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 1,
+          "face": -1,
+          "visible": [
+            0.9822200864968765,
+            0.996763416162038,
+            0.9993646759847522
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 1,
+          "face": 1,
+          "visible": [
+            0.9913503123498318,
+            0.9978074754646064,
+            1
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 2,
+          "face": -1,
+          "visible": [
+            0.9844302901627743,
+            0.9963409563409563,
+            0.999702469503124
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 2,
+          "face": 1,
+          "visible": [
+            0.9974050483604624,
+            0.9966735966735967,
+            0.999702469503124
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 3,
+          "face": -1,
+          "visible": [
+            0.9861011262880421,
+            0.9978395061728395,
+            0.9994488839900799
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 3,
+          "face": 1,
+          "visible": [
+            0.9877785765636233,
+            0.9975308641975309,
+            0.9986222099751998
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 4,
+          "face": -1,
+          "visible": [
+            0.991321118611379,
+            0.9969454392247735,
+            1
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 4,
+          "face": 1,
+          "visible": [
+            0.9869816779170685,
+            0.9967347798609648,
+            0.9997302400863232
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 5,
+          "face": -1,
+          "visible": [
+            0.9918970448045757,
+            0.9986419194205522,
+            0.9987515605493134
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 5,
+          "face": 1,
+          "visible": [
+            0.9911820781696854,
+            0.9983023992756903,
+            0.9994649545211343
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 6,
+          "face": -1,
+          "visible": [
+            0.9907045009784736,
+            0.9969237780562835,
+            0.999664485824526
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 6,
+          "face": 1,
+          "visible": [
+            0.9889921722113503,
+            0.9972655804944742,
+            0.9989934574735783
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 7,
+          "face": -1,
+          "visible": [
+            0.9816449814126395,
+            0.9976489028213166,
+            0.9978804578211107
+          ]
+        },
+        {
+          "type": "hero",
+          "hero": 2,
+          "mode": "special",
+          "frame": 7,
+          "face": 1,
+          "visible": [
+            0.9881505576208178,
+            0.9963054187192119,
+            0.9974565493853328
+          ]
+        }
+      ],
+      "errors": []
     }
   },
   "runtime": {
-    "version": "2.2",
-    "title": "Little Dragon 96 Living Arcade",
+    "version": "2.3",
+    "title": "Little Dragon 96 Family Arcade",
     "files": {
       ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "arcade-motion.js": "71ebc0aadf3ebb21cc38bf92a24b258f31b5a9cafb122e07ccff8f433ae4fc96",
-      "assets.js": "bf7975f1e76efdb50e0f54dc73a58201091ecf72e3a700177467763606adc294",
+      "arcade-motion.js": "0dfa9cacdcc9e64308cb056995b9a64e62f3050f4887807aa6a915f6245100ab",
+      "assets.js": "c6c72b863f008143c811ac1b3c208cfc8d9f72c880f943a2bdc964fea4d643a7",
+      "assets/arcade-powerups.webp": "71550d2c5f0577c7bd1a7b00bc52359c05f77715a0354aa2f541024038868bd5",
       "assets/bonus-props.webp": "6eb48ce7292567ce47c3a0ee871927a8c76026ccb90c3830f82e0689c79597cf",
       "assets/castle-unlit.webp": "9398a4f4ebefb55d92a1787cb857a486744b0fbc840aeb5e359efef4e152eb7c",
       "assets/cinema-bg-1.webp": "39e89856392f39bb49f6aa17b2193489823ffd13d6f64443329ab42d09944acc",
@@ -548,6 +2679,9 @@
       "assets/cinema-bg-4.webp": "e2cc51b413cbb09dcb02ae6a45cc1fe63ce416f1255478f89a76996306785401",
       "assets/cinema-bg-5.webp": "853b82a9242244df93a5e1f73153edf3ddb25ebab9c9c28f9025e92d6b2a84e2",
       "assets/civilian-motion.webp": "83c68423e3359702d0100e383f2e9ca2ab745291f42c87e474ec301533f2fd55",
+      "assets/crowd-variety-0.webp": "06e110a5a7376667a0db2e9a8df679c9603fe091d32b871e7f55c2d83a57f599",
+      "assets/crowd-variety-1.webp": "2c61af2804fcfb9dc8683e91c720daa455ca0c68882ea52b5a8e169295290a15",
+      "assets/crowd-variety-2.webp": "fe520db10bed43e26a50564c0ac0994a754f2d3eeebf4add6225f9a1fb4716d6",
       "assets/fairytale-foes.webp": "2b852f7652219b04d5470bbcaf4255c72fa0df0fb47d650bb4ac6d81a7baed9d",
       "assets/floor-variants-0.webp": "2f18343cb830083495af561020832475419963b6e4357f1bdbf80ac5f8778a1d",
       "assets/floor-variants-1.webp": "319aefe19adf0673495b047abe1914e08dc0e6d87298c690626942a9cc30132f",
@@ -567,6 +2701,7 @@
       "assets/foe-motion-3.webp": "964af8695f1b39034dfaad8c807cca8a2f9a0d195937af69abd56e1a0588bcee",
       "assets/foe-motion-6.webp": "a57c5353c7ee786a5303bc3f636de9008a54110a1207702a99e5062c3c9f72a3",
       "assets/ground-details.webp": "ea6a8d1aa29658a24f248d0b45783dd9635ff4133eaa61638a057421dc80264b",
+      "assets/grounded-street-lamp.webp": "2efca62d8eaec040e9e43b6e87936d8d8e6a0607220a5f6cf6deda0d303cc5ee",
       "assets/hd-boss-motion.webp": "ca5f33d0f927164d7c8d30b2242ed8c5420421b1017462ba47582a10ada72025",
       "assets/hd-bosses.webp": "4c554bf46cd636f87884209f38976a2c419c7bba9be5cee70fc84f2acd862b84",
       "assets/hd-carry-1.webp": "19e2d2d4f0d796ca70be7666bd6d5ac72d6bbb106d959b09001f3627c72e854f",
@@ -590,6 +2725,8 @@
       "assets/hd-rivals.webp": "68cfb2a0e65b694511a86081d13b370d906d02d206a962e95de8b61809f0fe0e",
       "assets/hd-special-boss.webp": "1d5f5de54ead95959316883a628120b6c9db71d58f4b6bd40465b58108a23d02",
       "assets/hd-thodoris.webp": "2907ebdc8d92c22cc711a58e585cb2871ff7aab62b5f98f63ab7442801584d46",
+      "assets/hero-actions-1.webp": "b5eefd95dd9f88b4ae9d93d24acba7bc0afe8ed2f2c4f124b6841d4ccdcf8dc7",
+      "assets/hero-actions-2.webp": "7770715ccf92f476d23327ba18faad535efba3e9393e131571465b059f90ff68",
       "assets/items.webp": "132518565392dd71b74364989bf7b4894cc29f5989126cd201742ed5da8282ff",
       "assets/living-garage.webp": "e90f6869e93d7de54d385f9f3d0dff9d5f6d306cd375dc917dc224c8ed0e8e67",
       "assets/living-gate.webp": "1115b18e9ddef490f17514a0cc7b56db05b96bfcb5c50df08389d6e18fb6f5e2",
@@ -606,31 +2743,36 @@
       "character-select.js": "59827aa829812e2d11ac944c6112b0911afe1310b70517c34f7dc30a2a01b4cf",
       "difficulty.js": "aec4b38912a1f29da6d5d909db6e3eef45f658350819c55ad8f9405b321ef43b",
       "expansion-meta.js": "601d09314a0ead4d902b9bce650eceddc319731224eb84e51a1a31604bff13b9",
-      "expansion.js": "5df576501ee4309924746ee700bc849628958d87a4b8fc23ed3d766a64bde6de",
+      "expansion.js": "4974253e0f8a0e7eb863bc67b0962ddd47f7885112cc30414435b1c0cdbf4f71",
+      "family-arcade.css": "24602e6b91318b864921c244066f241e93f2943e6fc27bfa7ba738b9758bb9f7",
+      "family-arcade.js": "d8d224b2c9063dcc9f748c4e4d3cf51e2ce5286a9da25f0d49609898bcc4105b",
       "game-surface.js": "f85995246c6993c65f01d160bf60324ad38ffb887da53269dc3fcc908d2b4fde",
       "game.css": "a78845c93c231357fc6df111bf59d95d0a22a393d1827f840280f96316da6aca",
-      "game.js": "a14987243bfdb15b779e3cbf1d82fcbdf518eb902f6927b29c047531fa02e2be",
-      "index.html": "34a4d1f11c33366dfcd388230e33350503e303061c82782ff08590b71ff5032b",
-      "living-world.js": "6217e39449f2ba3bbbbac6c44a8ffd94136353943f8fbfdba4600e275bf11354",
-      "motion-catalog.json": "d09f495c178ec430031ef4fca5dc21b24e61cadf356e4d71c6f61c9f459e447b",
+      "game.js": "dfbf8f383460aae640cf41dfd97bc0ac5a82f99a1a55233548211238f5b433f5",
+      "index.html": "b69b807d255276017b443d343d4db5ea2e63dcf12425028a76760c3f84795316",
+      "living-world.js": "f8cd2f369a8b60e576dbc71c6a9504d9e980d5a10072c2065a96e1b47aeed6ca",
+      "motion-catalog.json": "ba9b4031e8138b5e388a62cc3b113ee748d67bb54c3bf80191f64195d00d73ed",
       "motion-meta.js": "972a502978acd65bad12dcbcce2a5f41f78b48a165a8984a28b9d63aa3ab7d55",
-      "motion-review.html": "c870a8a5b50712f82f04d6bd01d02546185bb84c9af76c3ce3bee26d5a808bc6",
-      "motion-review.js": "6e0c61bdef206687ae64c048a0aad0b023e94d8ab8f7b5759615361688f7bbf8",
+      "motion-review.html": "68e7166825c20beaba1ec32f0fba4909ee345758c1062561123e74cc17305664",
+      "motion-review.js": "28ea82496ed0d13b96b216e2a23bbe516d63fe16b4fa977b9df018095296b75f",
       "remaster.css": "d8aab53099ddd976f5695803268efa4c212c4b393d039a775aa2838c5d4f70b3",
-      "remaster.js": "8a1ce6ccc015f95729864a178397d436a2074f15fbfa8ebdf21eb844bc3276b7",
+      "remaster.js": "defe09dc1fa67b2b5c57e593714ff9ee2a3f5b08ccf7d43007fc0d5c87db8922",
       "sprite-camera.js": "7438e0384247ce4e32220205fa1aecb183b685ec9ce807fa71522c72c8d2d54e",
-      "touch-controls.js": "24e364dbca6f7c2deb6d195b6803331fb350c533f61b1359548b677b8751acfe",
+      "touch-controls.js": "dcd7ca4b5723937c997e9783fbc7eb0531e1e056a98b71695487fe8568ad275d",
       "town-meta.js": "092a3c12383fb25a9f2ebc89d1239ef5ee8771b9a16b1eae77f5d650d8dd1a29"
     },
-    "runtimeImageCount": 62
+    "runtimeImageCount": 69
   },
   "limits": [
-    "Chrome virtual controller and emulated touch; no physical-device certification.",
-    "Campaign traversal injects damage after valid entry: 480 arenas / 30 three-phase bosses; not a manual full-campaign completion."
+    "Chrome virtual standard gamepads and emulated multitouch; no physical-device certification.",
+    "Campaign traversal injects damage after valid entry: 480 arenas / 30 three-phase bosses, not a manual campaign completion.",
+    "Composed head/torso/leg visibility audit isolates subjects at a clear walking depth with post effects disabled; intentional stall/door occlusion has separate gameplay captures."
   ],
   "visualReview": [
-    "Inspected the composed garage opening, threshold crossing, connected gate swing and vendor/counter support.",
-    "Rejected compressed first-scene poses 10 and 11; registered source-row cuts avoid neighboring-frame fragments.",
-    "Reviewed production motion captures and native sheets; source camera uses fixed scale with contact translation only."
+    "Inspected all seven new native ImageGen assets and composed worlds/mobile framed story.",
+    "Reviewed sequential captures from the production-time recording for running, alternating stride contacts, turns and planted stops. Fixed per-atlas scale, no pose-wise height normalization.",
+    "Inspected actual contact flash and material break captures; missed attacks produce no contact effect.",
+    "172 composed hero/NPC pose and facing samples pass head/torso/leg visibility. Deliberately clipped legs and per-pose size changes are rejected.",
+    "New pedestal registration uses the actual source support at 99.2%, not the requested nominal anchor."
   ]
 }

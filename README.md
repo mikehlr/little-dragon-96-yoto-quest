@@ -1,10 +1,36 @@
-# Little Dragon ’96 · Yoto Quest — HD Edition
+# Little Dragon ’96 · Yoto Quest — Family Arcade 2.3
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/
 
 A buildless, one- or two-player illustrated action adventure through five worlds.
 Serve this directory as static files; GitHub Pages publishes `main` directly.
 The original single-file release remains recoverable in Git history.
+
+## Family Arcade · 2.3
+
+- Three lives per player, a protected drop-in respawn and a single landing shock
+  that hits nearby enemies. Co-op continues while one player has attempts left.
+- Visible health gems, food, maximum-health hearts and extra-life charms.
+  Upgrades persist between stages; a checkpoint retry restores three lives.
+- Four face buttons: **X attack, A jump, B guard, Y context**. Hold X for a
+  ready special; direction + B dodges. Optional LB/RB run. Giorgos has a golden
+  dragon wave; Thodoris has a spinning wind kick. Both use independent energy
+  and cooldowns. Running uses new eight-pose artwork for each hero.
+- Keyboard P1: arrows, J attack/hold special, Space jump, K guard, U context,
+  left Shift run. P2: WASD, F attack, T jump, G guard, E context, right Shift run.
+- Mobile: four large action discs and a floating analog stick. Drag beyond the
+  stick ring to run; multitouch supports moving and acting together. Pause,
+  cancellation and rotation release held actions.
+- Framed animated intro/outro, progressively revealed text and reading time
+  after completion. A/Enter/touch reveals first, advances second; Start skips.
+- Six new pedestrian identities, eight scheduled walkers in every stage,
+  local vendors, connected street-lamp artwork and better facade registration.
+- Local hit flashes, finishing bursts, guard sparks, material debris, dust,
+  landing rings and special trails. Calm mode reduces the effect intensity.
+- Independent [Motion Review](motion-review.html) includes heroes, all six new
+  NPC identities, rewards and impact effects using the production renderer.
+  See [design references](RESEARCH-2.3.md), `family-provenance.json` and
+  `qa-results.json` for source prompts and verification scope.
 
 ## Living Arcade · 2.2
 
@@ -24,7 +50,7 @@ The original single-file release remains recoverable in Git history.
   the street before fighting. Doors close after passage.
 - Fruit, fish, potion and book stalls have animated vendors, local conversations,
   short nonmodal greetings and evolving chapter clues. Talk with the contextual
-  pickup button (U / E / RB, or ΜΙΛΑ on touch). Optional gifts commit once after
+  pickup button (U / E / Y, or ΜΙΛΑ on touch). Optional gifts commit once after
   the offering action. Props occupy different walking depths, with local
   footprints and room to go around. Pedestrians yield with a dedicated idle.
 - [Motion Review](motion-review.html) independently seeks the production story,
@@ -108,7 +134,7 @@ and [Android: natural input across form factors](https://developer.android.com/g
 
 New raster artwork uses built-in ImageGen, with the exact prompt set in
 `art-provenance.json`, `expansion-provenance.json`, `motion-provenance.json` and
-`town-provenance.json`. Shadows and effects are 2D/2.5D approximations.
+`town-provenance.json` and `family-provenance.json`. Shadows and effects are 2D/2.5D approximations.
 The game rules, five worlds, enemies, boss phases, co-op, pickups and story beats
 are preserved. Automated checks cover menus, both players, combat, pickup/throw,
 all five boss renderers, graphics options, touch magnitude and input release.

@@ -51,4 +51,11 @@ const ART = {
   "market-stalls": "assets/market-stalls.webp",
   "vendor-motion": "assets/vendor-motion.webp",
   "civilian-motion": "assets/civilian-motion.webp"
-};
+,
+"arcade-powerups":"assets/arcade-powerups.webp",
+"crowd-variety-0":"assets/crowd-variety-0.webp",
+"crowd-variety-1":"assets/crowd-variety-1.webp",
+"crowd-variety-2":"assets/crowd-variety-2.webp",
+"grounded-street-lamp":"assets/grounded-street-lamp.webp",
+"hero-actions-1":"assets/hero-actions-1.webp",
+"hero-actions-2":"assets/hero-actions-2.webp"};

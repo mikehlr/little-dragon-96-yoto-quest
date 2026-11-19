@@ -807,7 +807,7 @@ const game = {
 };
 
 function player(id) {
-  return { id, x: 0, y: 0, hp: 100, energy: 76, z: 0, vz: 0, face: 1,
+  return { id, x: 0, y: 0, hp: 100, maxHp: 100, lives: 3, energy: 65, z: 0, vz: 0, face: 1,
     act: 'idle', age: 0, phase: 0, stride: 0, hit: new Set(), inv: 0, fired: false };
 }
 
@@ -826,7 +826,7 @@ function beginStage(retry = false) {
     combo: null, rescues: new Set(), checkpoint, entry, hazards: [], arenaName: '' });
   game.players.forEach((p, i) => Object.assign(p, {
     x: entry + 81 - i * 29, y: 214 + i * 16, z: 0, vz: 0, face: 1,
-    hp: Math.max(difficultyRules().stageHealth, p.hp), energy: Math.max(65, p.energy),
+    hp: Math.max(difficultyRules().stageHealth, p.hp), energy: p.energy,
     act: 'idle', age: 0, phase: 0, stride: 0, inv: 0, carry: null, toss: null, afterLift: null,
     swing: null, spent: false, evade: null, evadeCooldown: 0,
   }));
@@ -864,11 +864,11 @@ function action(p, name) {
   const direction = aim?.x || dx;
   if (p.act === 'lift' && ['pickup', 'punch', 'kick', 'jump', 'special', 'dodge'].includes(name)) {
     p.afterLift = name;
-    if (direction) p.face = direction;
+    if (direction) p.face = Math.sign(direction);
     return;
   }
   if (name === 'pickup' || (name === 'punch' && p.carry?.hp)) {
-    if (direction && !MOVE_TIME[p.act]) p.face = direction;
+    if (direction && !MOVE_TIME[p.act]) p.face = Math.sign(direction);
     pickupAction(p);
     return;
   }
@@ -899,7 +899,7 @@ function action(p, name) {
     p.energy -= 22;
     if (p.carry?.hp) dropCarried(p);
   }
-  if (direction) p.face = direction;
+  if (direction) p.face = Math.sign(direction);
   pose(p, name);
   p.hit = new Set();
   p.fired = false;
@@ -931,9 +931,9 @@ function damage(e, owner, amount, hits, direction, source = 'punch') {
   chain.sources.add(source);
   if (chain.count % 4 === 0 && chain.sources.size > 1) {
     game.score += 250 * chain.sources.size;
-    owner.energy = Math.min(100, owner.energy + 12);
+    owner.energy = Math.min(100, owner.energy + 4);
   }
-  owner.energy = Math.min(100, owner.energy + 4);
+  owner.energy = Math.min(100, owner.energy + 1);
   owner.lastHit = game.clock;
   if (!e.hp || !e.kit || e.storyFoe) {
     pose(e, e.hp > 0 ? 'hit' : 'fall');
@@ -950,7 +950,7 @@ function updatePlayer(p, dt) {
   p.phase += dt;
   p.inv = Math.max(0, p.inv - dt);
   p.evadeCooldown = Math.max(0, p.evadeCooldown - dt);
-  p.energy = Math.min(100, p.energy + dt * difficultyRules().energy);
+  p.energy = Math.min(100, p.energy + dt * difficultyRules().energy * .375);
   const dx = moveX(p);
   const dy = moveY(p);
   const air = p.z > 0 || p.vz !== 0;
@@ -967,14 +967,14 @@ function updatePlayer(p, dt) {
     return;
   }
   const aim = dx || padAim.get(p.id)?.x;
-  if (aim && !MOVE_TIME[p.act]) p.face = aim;
+  if (aim && !MOVE_TIME[p.act]) p.face = Math.sign(aim);
   const block = isHeld(p, 'block') && !air && !MOVE_TIME[p.act];
   if (block) pose(p, 'block');
   if ((dx || dy) && (!MOVE_TIME[p.act] || air) && !block && p.act !== 'hit') {
     const length = Math.max(1, Math.hypot(dx, dy));
     const load = p.carry?.hp ? .88 : 1;
-    const x = clamp(p.x + dx / length * (air ? 105 : 118) * load * dt, ...playerLimits(p));
-    const y = clamp(p.y + dy / length * 76 * load * dt, ...DEPTH);
+    const x = clamp(p.x + dx / length * (air ? 105 : p.running ? 178 : 118) * load * dt, ...playerLimits(p));
+    const y = clamp(p.y + dy / length * (p.running ? 105 : 76) * load * dt, ...DEPTH);
     if (!air) {
       const traveled = Math.hypot(x - p.x, y - p.y);
       if (traveled > .01) {
@@ -1041,7 +1041,7 @@ function hitHero(p, sourceX, amount) {
   const block = p.act === 'block' && (sourceX - p.x) * p.face >= 0;
   const perfect = block && p.age < .17;
   p.hp = Math.max(0, p.hp - (perfect ? 0 : block ? Math.max(1, Math.round(amount * .15)) : amount));
-  if (perfect) p.energy = Math.min(100, p.energy + 14);
+  if (perfect) p.energy = Math.min(100, p.energy + 5);
   p.inv = .68;
   if (!block || !p.hp) pose(p, p.hp ? 'hit' : 'fall');
   if (p.toss || !p.hp) dropCarried(p);
@@ -1095,13 +1095,15 @@ function updateEnemy(e, dt, living) {
 function updateGate(living, dt) {
   game.timer = Math.max(0, game.timer - dt);
   const limit = GATES[game.section];
-  if (game.gate === 'travel' && living.some(p => p.x >= limit - 155)) startEncounter();
+  const visibleDoor=globalThis.DragonTown?.doors().find(d=>d.section===game.section);
+  const entranceVisible=!visibleDoor||visibleDoor.x+visibleDoor.w/2+7<=game.camera+WIDTH;
+  if (game.gate === 'travel' && entranceVisible && living.some(p => p.x >= limit - 155)) startEncounter();
   if (game.gate === 'fight' && game.enemies.length && game.enemies.every(e => !e.hp)) {
     game.hazards = [];
     if (game.section < GATES.length - 1) {
       game.gate = 'open';
       game.timer = 1.1;
-      living.forEach(p => { p.hp = Math.min(100, p.hp + difficultyRules().gateHeal); });
+      living.forEach(p => { p.hp = Math.min(p.maxHp || 100, p.hp + difficultyRules().gateHeal); });
       effect('gate');
     } else {
       game.gate = 'reward';
@@ -1132,7 +1134,7 @@ function update(dt) {
   if (game.freeze) return;
 
   const living = game.players.filter(p => p.hp > 0);
-  if (!living.length) return show('lose');
+  if (!living.length) { if(game.players.some(p=>p.respawnWait>0)) return; return show('lose'); }
   for (const p of game.players) {
     if (p.hp) updatePlayer(p, dt);
     else p.age += dt;
@@ -1144,7 +1146,7 @@ function update(dt) {
     for (const e of game.enemies) {
       if (canHitEnemy(e, shot.elevation) && Math.abs(e.x - shot.x) < e.size * .35 + 9 &&
           Math.abs(e.y - shot.depth) < 24 && shot.y > e.y - (e.z || 0) - e.size - 13)
-        damage(e, shot.owner, 33, shot.hits, shot.direction, 'energyHit');
+        damage(e, shot.owner, shot.damage || 33, shot.hits, shot.direction, 'energyHit');
     }
     hitItems(shot.owner, shot.hits, shot.x, shot.depth, 12, 30, shot.direction);
   }
@@ -1207,7 +1209,7 @@ function nearbyItem(p) {
   let nearest = null;
   let best = 34;
   for (const item of game.items) {
-    if (item.gone || item.decor || item.flight || item.kind === 'debris' || (item.kind === 'apple' && p.hp >= 100)) continue;
+    if (item.gone || item.decor || item.flight || item.kind === 'debris' || (item.kind==='lifeCharm'&&p.lives>=5) || (item.kind==='maxHeart'&&p.maxHp>=160&&p.hp>=p.maxHp) || (['apple','healthGem','bread','fruitPlate'].includes(item.kind) && p.hp >= (p.maxHp || 100))) continue;
     const distance = Math.hypot(item.x - p.x, (item.y - p.y) * 1.45);
     if (distance < best) {
       nearest = item;
@@ -1242,7 +1244,7 @@ function pickupAction(p) {
   if (!item) return;
   game.items = game.items.filter(other => other !== item);
   if (item.kind === 'apple') {
-    p.hp = Math.min(100, p.hp + difficultyRules().appleHeal);
+    p.hp = Math.min(p.maxHp || 100, p.hp + difficultyRules().appleHeal);
     effect('heal', p.id);
     spark(p.x, p.y - 20, '#aaffc8', 12);
   } else if (item.kind === 'card') {
@@ -1645,7 +1647,7 @@ function drawHero(p) {
     if (!READY(images['p' + (p.hero || p.id) + '-motion'])) ctx.rotate(-1.04 * Math.min(1, p.age * 4));
     ctx.globalAlpha = Math.max(0, 1 - (p.age - .8) * 2);
   }
-  const walking = p.act === 'walk';
+  const walking = p.act === 'walk' && !p.running;
   if (walking) ctx.translate(0, -Math.abs(Math.sin(p.stride / 30 * Math.PI)) * 1.45);
   if (p.act === 'idle') ctx.translate(0, -Math.round((Math.sin(p.phase * 3.8) + 1) / 2));
   drawHeroFrame(p);
@@ -1654,7 +1656,7 @@ function drawHero(p) {
   if (held) drawCarried(p, held);
   ctx.restore();
   if (!p.hp) {
-    if (game.two && !game.rescues.has(districtIndex(p.x))) label('ΒΟΗΘΕΙΑ', x, p.y - 12, 7, '#b4ffdf', 'center');
+    if (p.respawnWait>0) label('ΕΠΙΣΤΡΟΦΗ…', x, p.y - 12, 7, '#b4ffdf', 'center');
     return;
   }
   const color = COLORS[p.id - 1];
@@ -1947,7 +1949,7 @@ function hud() {
     pixel(x + 1, 5, 16, 17, '#322639');
     if (READY(portrait)) { const k=portrait.naturalWidth/448; ctx.drawImage(portrait, 35*k, 7*k, 39*k, 40*k, x + 1, 5, 16, 17); }
     label('P'+p.id+' '+((p.hero || p.id)===1?'ΓΙΩΡΓΟΣ':'ΘΟΔΩΡΗΣ'), x + 22, 10, 8, color);
-    gauge(x + 22, 12, 103, p.hp / 100, color);
+    gauge(x + 22, 12, 103, p.hp / (p.maxHp || 100), color);
     pixel(x + 23, 20, p.energy, 2, i ? '#ff995f' : '#68d4fb');
     if (p.carry?.kind === 'club') {
       for (let use = 0; use < p.carry.uses; use++) pixel(x + 112 + use * 4, 23, 3, 2, '#ffc17b');
@@ -2020,7 +2022,7 @@ function draw() {
 const padHeld = new Set();
 const padAim = new Map();
 const padStates = new Map();
-const PAD_ACTIONS = [[0, 'jump'], [1, 'kick'], [2, 'punch'], [3, 'special'], [5, 'pickup'], [10, 'dodge'], [11, 'dodge']];
+const PAD_ACTIONS = [[0, 'jump'], [1, 'guard'], [2, 'attack'], [3, 'pickup']];
 let preferredPadPlayer = 1;
 
 function readPads() {
@@ -2115,7 +2117,9 @@ function pollPads(time) {
         const rx = pad.axes[2] || 0;
         const ry = pad.axes[3] || 0;
         padAim.set(p.id, { x: Math.abs(rx) > .43 ? Math.sign(rx) : 0, y: Math.abs(ry) > .43 ? Math.sign(ry) : 0 });
-        if (buttons[4] || buttons[6] || buttons[7]) padHeld.add(p.id + ':block');
+        if (buttons[1]) padHeld.add(p.id + ':block');
+        if (buttons[2]) padHeld.add(p.id + ':attack');
+        if (buttons[4] || buttons[5] || buttons[6] || buttons[7]) padHeld.add(p.id + ':run');
         for (const [index, name] of PAD_ACTIONS) {
           if (pressed(index)) action(p, name);
         }

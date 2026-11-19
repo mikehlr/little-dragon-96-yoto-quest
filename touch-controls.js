@@ -12,16 +12,17 @@ const touchIcon={
 };
 function touchGlyph(key){return `<svg viewBox="0 0 28 28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${touchIcon[key]}</svg>`}
 touch.replaceChildren();
-touch.innerHTML=`<div id="stick-zone" aria-label="Περιοχή αναλογικού μοχλού"><div id="stick-base"><span class="stick-rings"></span><span id="stick-knob"></span></div><span class="stick-caption">ΚΙΝΗΣΗ</span></div><div class="touch-cluster">${[['attack','Επίθεση: πάτημα γροθιά, κράτημα συνδυασμοί'],['jump','Άλμα'],['block','Κράτημα για άμυνα'],['special','Ενεργειακή επίθεση'],['dodge','Αποφυγή'],['pickup','Σήκωσε, πέτα ή βοήθησε']].map(([key,label])=>`<button class="action-disc ${key}" data-touch="${key}" aria-label="${label}">${touchGlyph(key)}<small>${({attack:'ΕΠΙΘΕΣΗ',jump:'ΑΛΜΑ',block:'ΑΜΥΝΑ',special:'ΕΝΕΡΓΕΙΑ',dodge:'ΑΠΟΦΥΓΗ',pickup:'ΣΗΚΩΣΕ'})[key]}</small></button>`).join('')}</div><div class="touch-onboarding" hidden>Σύρε αριστερά για κίνηση · κράτησε Επίθεση για combo</div>`;
+touch.innerHTML=`<div id="stick-zone" aria-label="Περιοχή αναλογικού μοχλού"><div id="stick-base"><span class="stick-rings"></span><span id="stick-knob"></span></div><span class="stick-caption">ΚΙΝΗΣΗ</span></div><div class="touch-cluster">${[['attack','Επίθεση: πάτημα για χτύπημα, κράτημα για ειδική κίνηση'],['jump','Άλμα'],['block','Κράτημα για άμυνα'],['pickup','Σήκωσε, πέτα ή βοήθησε']].map(([key,label])=>`<button class="action-disc ${key}" data-touch="${key}" aria-label="${label}">${touchGlyph(key)}<small>${({attack:'ΕΠΙΘΕΣΗ',jump:'ΑΛΜΑ',block:'ΑΜΥΝΑ',special:'ΕΝΕΡΓΕΙΑ',dodge:'ΑΠΟΦΥΓΗ',pickup:'ΣΗΚΩΣΕ'})[key]}</small></button>`).join('')}</div><div class="touch-onboarding" hidden>Σύρε για κίνηση · πέρα από τον κύκλο για τρέξιμο · κράτα Επίθεση για special</div>`;
 const stickZone=document.querySelector('#stick-zone'),stickBase=document.querySelector('#stick-base'),stickKnob=document.querySelector('#stick-knob');
 let stickOrigin=null,attackPointer=null,attackTime=0,attackCombo=0,touchQueued=null;
 function updateStick(e){
  if(e.pointerId!==DragonTouch.pointer||!stickOrigin)return;
  const dx=e.clientX-stickOrigin.x,dy=e.clientY-stickOrigin.y,r=43,dist=Math.hypot(dx,dy),unit=dist?Math.min(dist,r)/dist:0,magnitude=clamp((Math.min(dist/r,1)-.12)/.88,0,1);
  DragonTouch.x=dist?dx/dist*magnitude:0;DragonTouch.y=dist?dy/dist*magnitude:0;
+ if(dist>60)keys.add('1:run');else if(dist<50)keys.delete('1:run');stickBase.classList.toggle('running',keys.has('1:run'));
  stickKnob.style.transform=`translate(${dx*unit}px,${dy*unit}px)`;
 }
-function resetTouch(){DragonTouch.active=false;DragonTouch.pointer=null;DragonTouch.x=DragonTouch.y=0;stickOrigin=null;stickKnob.style.transform='translate(0,0)';stickBase.style.transform='';stickBase.classList.remove('engaged');attackPointer=null;attackTime=0;touchQueued=null;keys.delete('1:block');touch.querySelectorAll('.pressed').forEach(el=>el.classList.remove('pressed'))}
+function resetTouch(){DragonTouch.active=false;DragonTouch.pointer=null;DragonTouch.x=DragonTouch.y=0;stickOrigin=null;stickKnob.style.transform='translate(0,0)';stickBase.style.transform='';stickBase.classList.remove('engaged');attackPointer=null;attackTime=0;touchQueued=null;keys.delete('1:block');keys.delete('1:attack');keys.delete('1:run');stickBase.classList.remove('running');touch.querySelectorAll('.pressed').forEach(el=>el.classList.remove('pressed'))}
 stickZone.addEventListener('pointerdown',e=>{
  if(game.mode!=='play'||DragonTouch.pointer!==null||e.pointerType==='mouse')return;
  e.preventDefault();unlockSound();stickZone.setPointerCapture(e.pointerId);
@@ -29,28 +30,28 @@ stickZone.addEventListener('pointerdown',e=>{
  DragonTouch.active=true;DragonTouch.pointer=e.pointerId;stickBase.style.transform=`translate(${stickOrigin.x-(z.left+z.width/2)}px,${stickOrigin.y-(z.top+z.height/2)}px)`;stickBase.classList.add('engaged');updateStick(e);
 },{passive:false});
 stickZone.addEventListener('pointermove',e=>{if(e.pointerId===DragonTouch.pointer){e.preventDefault();updateStick(e)}},{passive:false});
-for(const event of ['pointerup','pointercancel','lostpointercapture'])stickZone.addEventListener(event,e=>{if(e.pointerId===DragonTouch.pointer){DragonTouch.active=false;DragonTouch.pointer=null;DragonTouch.x=DragonTouch.y=0;stickOrigin=null;stickKnob.style.transform='';stickBase.style.transform='';stickBase.classList.remove('engaged')}});
+for(const event of ['pointerup','pointercancel','lostpointercapture'])stickZone.addEventListener(event,e=>{if(e.pointerId===DragonTouch.pointer){DragonTouch.active=false;DragonTouch.pointer=null;DragonTouch.x=DragonTouch.y=0;stickOrigin=null;stickKnob.style.transform='';stickBase.style.transform='';stickBase.classList.remove('engaged','running');keys.delete('1:run')}});
 for(const b of touch.querySelectorAll('[data-touch]')){
  b.addEventListener('pointerdown',e=>{
   if(game.mode!=='play'||b.disabled)return;e.preventDefault();unlockSound();b.setPointerCapture(e.pointerId);b.classList.add('pressed');
   const p=game.players[0],key=b.dataset.touch;if(!p)return;
-  if(key==='block')keys.add('1:block');
-  else if(key==='attack'){attackPointer=e.pointerId;attackTime=0;attackCombo=1;action(p,'punch')}
+  if(key==='block'){keys.add('1:block');action(p,'guard')}
+  else if(key==='attack'){attackPointer=e.pointerId;press('1:attack')}
   else if(MOVE_TIME[p.act]&&p.act!=='lift')touchQueued={action:key,ttl:.24};
   else action(p,key);
   if(hdPrefs.haptics!==false&&navigator.vibrate)navigator.vibrate(8);
  },{passive:false});
- const release=e=>{b.classList.remove('pressed');if(e.type==='pointercancel')touchQueued=null;if(b.dataset.touch==='block')keys.delete('1:block');if(e.pointerId===attackPointer)attackPointer=null};
+ const release=e=>{b.classList.remove('pressed');if(e.type==='pointercancel')touchQueued=null;if(b.dataset.touch==='block')keys.delete('1:block');if(e.pointerId===attackPointer){attackPointer=null;keys.delete('1:attack')}};
  for(const event of ['pointerup','pointercancel','lostpointercapture'])b.addEventListener(event,release);
- b.addEventListener('click',e=>{if(e.detail===0&&game.mode==='play'){const p=game.players[0];if(p)action(p,b.dataset.touch==='attack'?'punch':b.dataset.touch)}});
+ b.addEventListener('click',e=>{if(e.detail===0&&game.mode==='play'){const p=game.players[0];if(p)action(p,b.dataset.touch==='attack'?'attack':b.dataset.touch)}});
 }
 const hdTouchUpdate=update;
 update=function(dt){
  hdTouchUpdate(dt);
  if(game.mode!=='play'){resetTouch();return}
  if(touchQueued){touchQueued.ttl-=dt;const p=game.players[0];if(touchQueued.ttl<=0)touchQueued=null;else if(p&&!MOVE_TIME[p.act]){const next=touchQueued.action;touchQueued=null;action(p,next)}}
- if(attackPointer!==null){attackTime+=dt;const p=game.players[0];if(p&&attackTime>.34&&!MOVE_TIME[p.act]){action(p,attackCombo%3===2?'kick':'punch');attackCombo++;attackTime=0}}
- if(mobileMatch.matches){const p=game.players[0],button=touch.querySelector('.pickup');if(p){const available=!!(p.carry||nearbyItem(p)||rescueTarget(p));button.hidden=!available;button.querySelector('small').textContent=p.carry?'ΠΕΤΑΞΕ':rescueTarget(p)?'ΒΟΗΘΗΣΕ':'ΣΗΚΩΣΕ';button.setAttribute('aria-label',p.carry?'Πέταξε αντικείμενο':rescueTarget(p)?'Βοήθησε τον δεύτερο παίκτη':'Σήκωσε αντικείμενο');touch.querySelector('.special').disabled=p.energy<22}}
+ touch.querySelector('.attack').classList.toggle('charging',!!game.players[0]?.charge&&!game.players[0]?.chargeSpent);
+ if(mobileMatch.matches){const p=game.players[0],button=touch.querySelector('.pickup');if(p){const available=!!(p.carry||nearbyItem(p)||rescueTarget(p));button.hidden=false;button.querySelector('small').textContent=p.carry?'ΠΕΤΑΞΕ':rescueTarget(p)?'ΒΟΗΘΗΣΕ':'ΣΗΚΩΣΕ';button.setAttribute('aria-label',p.carry?'Πέταξε αντικείμενο':rescueTarget(p)?'Βοήθησε τον δεύτερο παίκτη':'Σήκωσε αντικείμενο');button.disabled=!available}}
 };
 const hdTouchShow=show;
 show=function(page){resetTouch();hdTouchShow(page);document.documentElement.classList.toggle('touch-game',mobileMatch.matches&&page==='play');if(page==='play'&&mobileMatch.matches){const onboarding=touch.querySelector('.touch-onboarding');let seen=false;try{seen=localStorage.getItem('dragon-touch-intro')==='1';localStorage.setItem('dragon-touch-intro','1')}catch{}onboarding.hidden=seen;if(!seen)setTimeout(()=>onboarding.hidden=true,6500)}};

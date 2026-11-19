@@ -1,5 +1,5 @@
 {
-  "version": "2.2",
+  "version": "2.3",
   "stories": [
     1,
     2,
@@ -68,5 +68,38 @@
     "columns": 5,
     "rows": 4,
     "framesPerIdentity": 10
-  }
+  },
+  "heroes": [
+    1,
+    2
+  ],
+  "crowds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "powerups": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "effects": [
+    "contact",
+    "finish",
+    "wood",
+    "stone",
+    "landing",
+    "wind",
+    "guard"
+  ],
+  "heroRunFrames": 8,
+  "heroSpecialFrames": 8
 }

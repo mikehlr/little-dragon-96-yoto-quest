@@ -1,0 +1,187 @@
+[
+  {
+    "key": "arcade-powerups",
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. A game pickup atlas of EIGHT independent objects in exactly FOUR columns and TWO rows, eight square cells, TRUE alpha-zero transparent background. Objects centered with transparent margins and contact base at90% cell height, detailed colorful hand-painted Greek fantasy arcade style. Reading order: (0) a small bright ruby-red heart-shaped LIFE GEM surrounded by a tasteful golden metal frame, (1) larger green heart-shaped HEALTH UPGRADE amulet with bronze laurel frame, (2) warm baked bread loaf with cloth napkin, (3) plate with a large glossy red apple and two grapes, (4) small deep BLUE magic energy potion flask with cork and subtle gold fittings, (5) gold wing-shaped EXTRA LIFE charm with tiny red ruby at center, (6) gold dragon-shaped energy medallion, (7) cyan wind-spiral shaped energy medallion. No text, no numbers, no ground rectangle, no backdrop, no checkerboard. Each object complete and only in its own cell. Distinct silhouettes and colors make health, max-health and extra-life rewards distinguishable.",
+    "path": "exec-879eb401-7faa-4261-ac2e-d1b9a9658e55.png",
+    "asset": "assets/arcade-powerups.webp",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "sha256": "71550d2c5f0577c7bd1a7b00bc52359c05f77715a0354aa2f541024038868bd5",
+    "delivery": "Native-resolution WebP quality 94, no upscaling or source-row resampling",
+    "columns": 4,
+    "rows": 2
+  },
+  {
+    "key": "crowd-variety-0",
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/civilian-motion.webp"
+    ],
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. New production NPC animation atlas for Greece harbour and neighborhood, matching reference art quality and perspective but NEW identities: two local Greek adults: a cheerful older FISHERMAN with grey beard, navy cap and yellow rain jacket carrying a coiled rope; and a woman BAKER with dark braid, white blouse and burgundy apron carrying a basket of bread. Exactly FIVE columns and FOUR rows, twenty equal square cells, genuine alpha-zero transparency, no checkerboard, shadows, words or gridlines. FIRST TWO ROWS: first identity only, ten cells. LAST TWO ROWS: second identity only, ten cells. Ten cells per identity in reading order: 0 planted natural standing idle; 1 LEFT foot forward contact/right behind; 2 left weight-bearing down; 3 RIGHT foot passes the planted left foot; 4 right foot moves forward low; 5 RIGHT foot forward contact/left behind; 6 right support/down; 7 LEFT foot passes planted right foot; 8 left foot advances low; 9 standing friendly wave. Never copy first half-stride into second. Labeling is not drawn. One supporting foot, low knee movement, genuine opposite leg leads in the second half. Hands preserve grip on held objects while free arm counter-swings; no high-knee marching. Full body faces RIGHT in 3/4 side view, consistent head size and body scale, soles at94% of cell height. Adult proportions clearly distinct from child heroes. Clean opaque figures with safe transparent margins, friendly detailed hand-painted arcade HD.",
+    "path": "exec-1cf57f4c-c007-42f9-836f-604d5cde9581.png",
+    "asset": "assets/crowd-variety-0.webp",
+    "dimensions": [
+      1402,
+      1122
+    ],
+    "sha256": "06e110a5a7376667a0db2e9a8df679c9603fe091d32b871e7f55c2d83a57f599",
+    "delivery": "Native-resolution WebP quality 94, no upscaling or source-row resampling",
+    "columns": 5,
+    "rows": 4,
+    "identities": 2,
+    "framesPerIdentity": 10,
+    "fixedCamera": {
+      "height": 78,
+      "anchor": 0.98
+    }
+  },
+  {
+    "key": "crowd-variety-1",
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/civilian-motion.webp"
+    ],
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. New production NPC animation atlas for magical forest and ancient ruins, matching reference art quality and perspective but NEW identities: two fantasy forest residents: a young adult ELF SCOUT with green tunic, leaf cap and small satchel; and an elderly GARDENER with straw hat, earth-brown vest and a basket of herbs. Exactly FIVE columns and FOUR rows, twenty equal square cells, genuine alpha-zero transparency, no checkerboard, shadows, words or gridlines. FIRST TWO ROWS: first identity only, ten cells. LAST TWO ROWS: second identity only, ten cells. Ten cells per identity in reading order: 0 planted natural standing idle; 1 LEFT foot forward contact/right behind; 2 left weight-bearing down; 3 RIGHT foot passes the planted left foot; 4 right foot moves forward low; 5 RIGHT foot forward contact/left behind; 6 right support/down; 7 LEFT foot passes planted right foot; 8 left foot advances low; 9 standing friendly wave. Never copy first half-stride into second. Labeling is not drawn. One supporting foot, low knee movement, genuine opposite leg leads in the second half. Hands preserve grip on held objects while free arm counter-swings; no high-knee marching. Full body faces RIGHT in 3/4 side view, consistent head size and body scale, soles at94% of cell height. Adult proportions clearly distinct from child heroes. Clean opaque figures with safe transparent margins, friendly detailed hand-painted arcade HD.",
+    "path": "exec-94669948-55b5-4183-8616-f4618ed0f98c.png",
+    "asset": "assets/crowd-variety-1.webp",
+    "dimensions": [
+      1402,
+      1122
+    ],
+    "sha256": "2c61af2804fcfb9dc8683e91c720daa455ca0c68882ea52b5a8e169295290a15",
+    "delivery": "Native-resolution WebP quality 94, no upscaling or source-row resampling",
+    "columns": 5,
+    "rows": 4,
+    "identities": 2,
+    "framesPerIdentity": 10,
+    "fixedCamera": {
+      "height": 78,
+      "anchor": 0.98
+    }
+  },
+  {
+    "key": "crowd-variety-2",
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/civilian-motion.webp"
+    ],
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. New production NPC animation atlas for castle and ancient Greek ruins, matching reference art quality and perspective but NEW identities: two castle residents: an adult friendly GUARD wearing blue-and-bronze Greek fantasy armor, helmet and a red sash, no weapon raised; and a young adult woman MAGIC APPRENTICE wearing a violet cloak, teal dress and carrying a small closed book. Exactly FIVE columns and FOUR rows, twenty equal square cells, genuine alpha-zero transparency, no checkerboard, shadows, words or gridlines. FIRST TWO ROWS: first identity only, ten cells. LAST TWO ROWS: second identity only, ten cells. Ten cells per identity in reading order: 0 planted natural standing idle; 1 LEFT foot forward contact/right behind; 2 left weight-bearing down; 3 RIGHT foot passes the planted left foot; 4 right foot moves forward low; 5 RIGHT foot forward contact/left behind; 6 right support/down; 7 LEFT foot passes planted right foot; 8 left foot advances low; 9 standing friendly wave. Never copy first half-stride into second. Labeling is not drawn. One supporting foot, low knee movement, genuine opposite leg leads in the second half. Hands preserve grip on held objects while free arm counter-swings; no high-knee marching. Full body faces RIGHT in 3/4 side view, consistent head size and body scale, soles at94% of cell height. Adult proportions clearly distinct from child heroes. Clean opaque figures with safe transparent margins, friendly detailed hand-painted arcade HD.",
+    "path": "exec-5319be18-7e87-4b35-bf47-d7131dde16bc.png",
+    "asset": "assets/crowd-variety-2.webp",
+    "dimensions": [
+      1402,
+      1122
+    ],
+    "sha256": "fe520db10bed43e26a50564c0ac0994a754f2d3eeebf4add6225f9a1fb4716d6",
+    "delivery": "Native-resolution WebP quality 94, no upscaling or source-row resampling",
+    "columns": 5,
+    "rows": 4,
+    "identities": 2,
+    "framesPerIdentity": 10,
+    "fixedCamera": {
+      "height": 78,
+      "anchor": 0.98
+    }
+  },
+  {
+    "key": "grounded-street-lamp",
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. One isolated full freestanding Greek old street lamp on TRUE transparent alpha-zero background. Elegant dark cast iron post, warm amber glass lantern at top, full sturdy three-tier stone and iron base FLAT on the ground at94% of image height. No cut off top or bottom, generous margins all sides. NO ground plane, no external cast shadow, no white/grey rectangle or mist. The entire lamp is ONE connected object, including finial and base. Oblique side-view Greek neighborhood arcade camera, detailed refined hand-painted realistic materials. Match colorful Greek fairytale game world. Tall portrait aspect ratio, maximum detail. No baked glow halo outside lantern; runtime light will be drawn separately.",
+    "path": "exec-6d32f37b-171a-4358-8c7f-272b22ae5139.png",
+    "asset": "assets/grounded-street-lamp.webp",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "sha256": "2efca62d8eaec040e9e43b6e87936d8d8e6a0607220a5f6cf6deda0d303cc5ee",
+    "delivery": "Native-resolution WebP quality 94, no upscaling or source-row resampling",
+    "supportAnchor": 0.992
+  },
+  {
+    "key": "hero-actions-1",
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hd-giorgos.webp"
+    ],
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. Production HD arcade character animation atlas, exactly FOUR columns and FOUR rows, sixteen equal square cells, TRUE transparent alpha-zero background. Reference is identity and costume only. Animate only the curly blond young karate hero Giorgos, white gi, BLACK belt, blue wristbands and BLACK SANDALS. Keep exact face, head/body proportions, exposure, clothes and footwear unchanged in every pose; fixed side camera, full body inside each square with margins, floor/feet support at 94% of cell height. Cells 0..7 EIGHT successive true RUNNING frames, facing RIGHT 3/4 view: left push-off, left flight, right contact, right compression, right push-off, right flight, LEFT contact, left compression. Contralateral arm swing; actual two alternating half-strides, not the same leading leg repeated. Slight forward lean, bent elbows, natural running form. Cells8..15 one continuous special action: planted feet, gathering energy at the chest, hands draw back, both palms thrust FORWARD, follow-through, recoil, arms retract, planted ready. No energy effects baked in; runtime will add a gold dragon wave. No letters, no gridlines, no ground shadow or backplate. Detailed clean colorful hand-painted arcade art matching the reference.",
+    "path": "exec-403679d6-d0ac-40ce-bb5f-b46e66148a70.png",
+    "asset": "assets/hero-actions-1.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "b5eefd95dd9f88b4ae9d93d24acba7bc0afe8ed2f2c4f124b6841d4ccdcf8dc7",
+    "delivery": "Native-resolution WebP quality 94, no upscaling or source-row resampling",
+    "columns": 4,
+    "rows": 4,
+    "runFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "specialFrames": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "fixedCamera": {
+      "height": 64,
+      "anchor": 0.968
+    }
+  },
+  {
+    "key": "hero-actions-2",
+    "refs": [
+      "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/hd-thodoris.webp"
+    ],
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. Production HD arcade character animation atlas, exactly FOUR columns and FOUR rows, sixteen equal square cells, TRUE transparent alpha-zero background. Reference is identity and costume only. Animate only the spiky brown-haired young karate hero Thodoris, white gi, BLUE belt, blue wristbands and RED SNEAKERS. Keep exact face, head/body proportions, exposure, clothes and footwear unchanged in every pose; fixed side camera, full body inside each square with margins, floor/feet support at 94% of cell height. Cells 0..7 EIGHT successive true RUNNING frames, facing RIGHT 3/4 view: left push-off, left flight, right contact, right compression, right push-off, right flight, LEFT contact, left compression. Contralateral arm swing; actual two alternating half-strides, not the same leading leg repeated. Slight forward lean, bent elbows, natural running form. Cells8..15 one continuous special action: begin crouched, pivot and sweep a circular spinning kick, side view to three-quarter rear view to rear view to opposite side then return to front ready; a genuine eight-pose whirl kick around the vertical axis, not a rotated flat cutout. Keep body center and head size stable, one planted pivot foot or a brief supported hop, land on the same floor baseline. No energy effects baked in; runtime adds blue wind arcs. No letters, no gridlines, no ground shadow or backplate. Detailed clean colorful hand-painted arcade art matching the reference.",
+    "path": "exec-82f4f03d-b03c-4461-8282-e955bc5cc3bc.png",
+    "asset": "assets/hero-actions-2.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "7770715ccf92f476d23327ba18faad535efba3e9393e131571465b059f90ff68",
+    "delivery": "Native-resolution WebP quality 94, no upscaling or source-row resampling",
+    "columns": 4,
+    "rows": 4,
+    "runFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "specialFrames": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "fixedCamera": {
+      "height": 65,
+      "anchor": 0.952
+    }
+  }
+]
