@@ -1762,7 +1762,7 @@ function drawFoe(e) {
   ctx.translate(x + (attack && !wind ? e.face * 3 : 0), y - Math.abs(stride) * (e.boss ? 1.5 : 2.8) - lift);
   // The atlas for bosses faces left. Regular monsters and heroes face right.
   ctx.scale(e.face * (e.kit ? -1 : 1), 1);
-  ctx.rotate(stride * .054 - defeat * 1.27 + (wind && !e.kit ? -.16 : 0));
+  ctx.rotate(stride * .054 - (e.koRotation || defeat * 1.27) + (wind && !e.kit ? -.16 : 0));
   if ((e.act === 'hit' && e.age < .09) || e.hurt > 0) ctx.filter = 'brightness(1.7)';
   if (defeat) ctx.globalAlpha = 1 - defeat;
   let frame = e.type;

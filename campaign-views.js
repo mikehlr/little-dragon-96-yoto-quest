@@ -49,7 +49,7 @@ Object.assign(DragonCampaign,{lightStrength:chapterLightStrength});
 
 function drawChapterBerth(i,front){const im=images['harbor-berth'];if(!READY(im))return;const w=185,h=w*im.naturalHeight/im.naturalWidth,x=i.x-game.camera-w/2,y=207-h*.92,cut=.68,sy=front?im.naturalHeight*cut:0,sh=im.naturalHeight*(front?1-cut:cut);ctx.drawImage(im,0,sy,im.naturalWidth,sh,x,y+(front?h*cut:0),w,h*(front?1-cut:cut));}
 
-function drawChapterGangplank(i){const x=i.x-game.camera;
+function drawChapterGangplank(i){if(!READY(images['harbor-launch']))return;const x=i.x-game.camera;
   const r=i.scene.actor.entry,depart=i.depart?clamp((i.departAge||0)/.7,0,1):0;
   if(i.scene.boardLowered||r?.mode==='vehicle'&&r.time>1.35||i.depart&&depart<1){const p=cargoBox(i),from={x:x+17,y:p.y+p.h},to={x:x-35,y:232},angle=Math.atan2(to.y-from.y,to.x-from.x),length=Math.hypot(to.x-from.x,to.y-from.y),im=images['harbor-launch'];ctx.save();ctx.translate(from.x,from.y);ctx.rotate(angle+(i.scene.boardLowered?0:1-clamp(((r?.time||0)-1.35)/.4,0,1))*1.3-depart*1.3);const sw=im.naturalWidth/2,sh=im.naturalHeight/2,m=DRAGON_CAMPAIGN_META.plank;ctx.drawImage(im,m.x*sw,sh+m.y*sh,m.w*sw,m.h*sh,0,-length*m.h*sh/(m.w*sw)/2,length,length*m.h*sh/(m.w*sw));ctx.restore()}
 }

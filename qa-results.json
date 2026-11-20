@@ -1,7 +1,7 @@
 {
-  "version": "2.12",
+  "version": "2.13",
   "runtime": {
-    "version": "2.12",
+    "version": "2.13",
     "title": "Little Dragon 96 Arcade Brawler",
     "files": {
       ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -157,12 +157,12 @@
       "brawler-shops.js": "b337ac0cba6dff057cb5921a7e29045f82a56b3225c01f461cb71d6f37e7bd0a",
       "campaign-config.js": "f2203905a649bb3fccebff8d732514adac66e8ff8e49c7fc47b47c2e224a8280",
       "campaign-data.js": "e8b85860256efce7df8e2d75c5f5a515e42395190a525087421bbc488c730ab7",
-      "campaign-flow.js": "12f7cac9c21658b4f39dac402161b9264f4188157d9edef2de313d2bdef90fe0",
+      "campaign-flow.js": "3ff88e26423381f0f9bc5d7d0c34329e7d0e28196110193a5eed62acef7d6579",
       "campaign-loader.js": "00ee51a8aa42f734eecc21c289daa72e7e7b807ad4547dacf3aec05838a09217",
       "campaign-locales.js": "8aec25e97d061c9d269952ffda0b64c6b481f580d3fa02428c38858d52e2d94c",
       "campaign-meta.js": "45a61bb2ad5d843fa6b8d331b1363eea49e4a3ccf2c297e17f9ccb56e3eb7e33",
       "campaign-scenes.js": "db6832f504b0d1057fe14e4e7be33d3bf17dbfd3f3471feb96794b96005ac667",
-      "campaign-views.js": "0b701df431046d84fffb1bdd10502e2172a1fc9006f5f4e3f5376eecd54cf9f6",
+      "campaign-views.js": "7eb381020addaa0f8bdca05c3a87652d5521853e06973652aee420cc86a034cf",
       "campaign.css": "212514b36d74f3d35dde080445a92a8be1cb0bc3422bdce32878968c7a239edc",
       "carry-meta.js": "fbbe7a38a64a52d034837f71f93d630324fea4ca5670e585cae2abdbea1ba51c",
       "carry-motion.js": "59d79e3ef9c581f43170d1f17cfea83abd151f8b18d7bf834e32ebc62cde177e",
@@ -172,6 +172,7 @@
       "director-meta.js": "af43ef519ef0690b415827bc328bedbff0b0a0b19eb6ad70f63d890ebd40cb52",
       "dynamic-weather.js": "85523ca23a3cb5f8d0d421613ec4900785f5e61793330cf9df1aa78a45ab3c66",
       "encounter-director.js": "0d1d3fc4fe865b399c8cff117525afb26b689aacb8a03fcba11c03f357d628bb",
+      "enemy-reactions.js": "03bfe87b15d95cadeb600c4adc1a47e0e950c506662e03664762117643b83bcb",
       "environment-audio.js": "569863afb1f42bccbb325d67f8e34a12b096e77872a55985c4f8e8c3b70597ce",
       "expansion-meta.js": "601d09314a0ead4d902b9bce650eceddc319731224eb84e51a1a31604bff13b9",
       "expansion.js": "4974253e0f8a0e7eb863bc67b0962ddd47f7885112cc30414435b1c0cdbf4f71",
@@ -179,24 +180,24 @@
       "family-arcade.js": "d6d98db03db48b42e8ef068fdd1baf1416a5e76fdc1f052defba6f09a4eef261",
       "game-surface.js": "f85995246c6993c65f01d160bf60324ad38ffb887da53269dc3fcc908d2b4fde",
       "game.css": "a78845c93c231357fc6df111bf59d95d0a22a393d1827f840280f96316da6aca",
-      "game.js": "b4195ef54b307e8f046e6a1e244073bf1ce9647a3e9a5bab5d33a2ae7f75ceff",
+      "game.js": "01a4b1ca0e1f337ecc99e738b3530afdf99895bcf0f27e77c8f4c97f850947de",
       "handheld.css": "4ca4337cabe54dc47175db15962df6054806213a38d5a02d954b363005ffeeeb",
-      "index.html": "125eba755128ed6bc1946df55a743adbcc91d235a6a41cf04208cbad35878e83",
+      "index.html": "230d34499888a2426492e289e7a0bea2cf3168c65e66d51b3ee629fa252a2a10",
       "living-world.js": "2dac416a126e991b2dad1936cbc289fb851fff146d7775299930f1a28bd40ee3",
       "locales.js": "c28af8f9104e98ce1d6dd2a9c6ef65eea632835ccec8b113a7e8403713989b58",
       "localization.js": "a58d6f20dc0a8f2c05e6412086ef541b91beaf9d0f3c65942b169a7f59dc4160",
       "manifest-en.webmanifest": "a41e5d1b1781e092cba6ad1f4dc08c279220512f5352365b17239056e3d36c9d",
       "manifest-uk.webmanifest": "838ae58dea8fb3ade46c3e3a2aba62c9b27ea0306801786ff8342d7a6bdfb8bb",
       "manifest.webmanifest": "d062f7ea643fd3ea840f90d657bb58a158937401c9fc87823aed503ef7e4b049",
-      "motion-catalog.json": "f2d26f4cc7d8c7b383a7b8a527770a49fe658750d5543c85b7d795e052312d21",
+      "motion-catalog.json": "2bdb6d7ed4d46cc50c7b57815689a44313e439cf6caadd5fd58880c2cf122291",
       "motion-meta.js": "972a502978acd65bad12dcbcce2a5f41f78b48a165a8984a28b9d63aa3ab7d55",
-      "motion-review.html": "c948d39131ea2905d1c04a683492fd0e2563104e9fb3846d5842ddde70db896a",
-      "motion-review.js": "0cbb975d94e26f99c3bc0649815b0ed841e17ba6e664ebc1303acde71f33cbe6",
+      "motion-review.html": "08d40a52e4466635d92adadf8171613fd7f3686b68e34a0063b234029ca185f3",
+      "motion-review.js": "808c5d9b11638d76f1a50dcb7df59a98a9e8344adf4ec0e3b3d00918a6df4021",
       "play-modes.css": "90c31487aad4e55b56bab9a5156fd734bab8daf3982261aa30b7e7b22f92eaa9",
       "play-modes.js": "d2ae4e762e0eebd191e96026e797672f35258be81badd2d5875b0e727ac22952",
       "regional-weather.js": "8bbc1d10fba0f3b5b6760dcbc693adfe287bb4c3778d9f738b6edcdd8f48f2d5",
       "remaster.css": "d8aab53099ddd976f5695803268efa4c212c4b393d039a775aa2838c5d4f70b3",
-      "remaster.js": "6d06ea7e3be7c0a553564bb85cefeb7d98047e9c19ad923f0383bf96a1d5e37f",
+      "remaster.js": "c1df0880e04096e984ee2cd858f489edbe72ea8cd04e2e7f5868bb9dc75a4419",
       "scene-layout.js": "5cfd792a9c326fd0c30566c8de3df53b6de4c3331d54c275e9da2c5b73970a70",
       "sprite-camera.js": "7438e0384247ce4e32220205fa1aecb183b685ec9ce807fa71522c72c8d2d54e",
       "touch-controls.js": "dcd7ca4b5723937c997e9783fbc7eb0531e1e056a98b71695487fe8568ad275d",
@@ -206,328 +207,2390 @@
     "runtimeImageCount": 138
   },
   "reports": {
-    "effects": {
+    "reactions": {
       "pass": true,
+      "liveCases": 246,
+      "rows": [
+        {
+          "type": 0,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 0,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 0,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 0,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 0,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 0,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 1,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 1,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 1,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 1,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 1,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 1,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 2,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 2,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 2,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 2,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 2,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 2,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 3,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 3,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 3,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 3,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 3,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 3,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 4,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 4,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 4,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 4,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 4,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 4,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 5,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 5,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 5,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 5,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 5,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 5,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 6,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 6,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 6,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 6,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 6,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 6,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 7,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 7,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 7,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 7,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 7,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 7,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 8,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 8,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 8,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 8,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 8,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 8,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 9,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 9,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 9,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 9,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 9,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 9,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 10,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 10,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 10,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 10,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 10,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 10,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 11,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 11,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 11,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 11,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 11,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 11,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 12,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 12,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 12,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 12,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 12,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 12,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 13,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 13,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 13,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 13,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 13,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 13,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 14,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 14,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 14,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 14,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 14,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 14,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 15,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 15,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 15,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 15,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 15,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 15,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 16,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 16,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 16,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 16,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 16,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 16,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 17,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 17,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 17,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 17,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 17,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 17,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 18,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 18,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 18,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 18,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 18,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 18,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 19,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 19,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 19,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 19,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 19,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 19,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 20,
+          "source": "punch",
+          "displacement": 6.255861227288136,
+          "height": 0
+        },
+        {
+          "type": 20,
+          "source": "kick",
+          "displacement": 33.06752585659484,
+          "height": 8.156531114927981
+        },
+        {
+          "type": 20,
+          "source": "club",
+          "displacement": 43.732750624918026,
+          "height": 14.549660006870369
+        },
+        {
+          "type": 20,
+          "source": "energyHit",
+          "displacement": 49.25387911384337,
+          "height": 19.024014777885743
+        },
+        {
+          "type": 20,
+          "source": "throwHit",
+          "displacement": 47.688424711079165,
+          "height": 16.70809033191457
+        },
+        {
+          "type": 20,
+          "source": "slam",
+          "displacement": 58.43425103787496,
+          "height": 25.463496679262327
+        },
+        {
+          "type": 21,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 7
+        },
+        {
+          "type": 21,
+          "source": "kick",
+          "displacement": 53.4457902883197,
+          "height": 17.841600000000007
+        },
+        {
+          "type": 21,
+          "source": "club",
+          "displacement": 70.09812881935392,
+          "height": 27.12480000000001
+        },
+        {
+          "type": 21,
+          "source": "energyHit",
+          "displacement": 78.48025550256676,
+          "height": 33.70976000000001
+        },
+        {
+          "type": 21,
+          "source": "throwHit",
+          "displacement": 76.39955340329789,
+          "height": 30.291520000000016
+        },
+        {
+          "type": 21,
+          "source": "slam",
+          "displacement": 92.51624660489676,
+          "height": 43.24192000000002
+        },
+        {
+          "type": 22,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 22,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 22,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 22,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 22,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 22,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 23,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 23,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 23,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 23,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 23,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 23,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 24,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 7
+        },
+        {
+          "type": 24,
+          "source": "kick",
+          "displacement": 53.4457902883197,
+          "height": 17.841600000000007
+        },
+        {
+          "type": 24,
+          "source": "club",
+          "displacement": 70.09812881935392,
+          "height": 27.12480000000001
+        },
+        {
+          "type": 24,
+          "source": "energyHit",
+          "displacement": 78.48025550256676,
+          "height": 33.70976000000001
+        },
+        {
+          "type": 24,
+          "source": "throwHit",
+          "displacement": 76.39955340329789,
+          "height": 30.291520000000016
+        },
+        {
+          "type": 24,
+          "source": "slam",
+          "displacement": 92.51624660489676,
+          "height": 43.24192000000002
+        },
+        {
+          "type": 25,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 25,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 25,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 25,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 25,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 25,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 26,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 26,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 26,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 26,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 26,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 26,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 27,
+          "source": "punch",
+          "displacement": 2.377636940981972,
+          "height": 0
+        },
+        {
+          "type": 27,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 27,
+          "source": "club",
+          "displacement": 21.4479899686159,
+          "height": 3.4841599999999997
+        },
+        {
+          "type": 27,
+          "source": "energyHit",
+          "displacement": 24.74281013576848,
+          "height": 4.518719999999998
+        },
+        {
+          "type": 27,
+          "source": "throwHit",
+          "displacement": 23.932350742074362,
+          "height": 3.9715199999999995
+        },
+        {
+          "type": 27,
+          "source": "slam",
+          "displacement": 29.520740253231054,
+          "height": 5.990399999999998
+        },
+        {
+          "type": 28,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 28,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 28,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 28,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 28,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 28,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 29,
+          "source": "punch",
+          "displacement": 6.255861227288136,
+          "height": 0
+        },
+        {
+          "type": 29,
+          "source": "kick",
+          "displacement": 33.06752585659484,
+          "height": 8.156531114927981
+        },
+        {
+          "type": 29,
+          "source": "club",
+          "displacement": 43.732750624918026,
+          "height": 14.549660006870369
+        },
+        {
+          "type": 29,
+          "source": "energyHit",
+          "displacement": 49.25387911384337,
+          "height": 19.024014777885743
+        },
+        {
+          "type": 29,
+          "source": "throwHit",
+          "displacement": 47.688424711079165,
+          "height": 16.70809033191457
+        },
+        {
+          "type": 29,
+          "source": "slam",
+          "displacement": 58.43425103787496,
+          "height": 25.463496679262327
+        },
+        {
+          "type": 30,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 30,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 30,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 30,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 30,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 30,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 31,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 31,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 31,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 31,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 31,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 31,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 32,
+          "source": "punch",
+          "displacement": 1.5339593167625765,
+          "height": 0
+        },
+        {
+          "type": 32,
+          "source": "kick",
+          "displacement": 33.06752585659484,
+          "height": 8.156531114927981
+        },
+        {
+          "type": 32,
+          "source": "club",
+          "displacement": 13.008868290016096,
+          "height": 2.304494550979027
+        },
+        {
+          "type": 32,
+          "source": "energyHit",
+          "displacement": 14.907579045084702,
+          "height": 2.986997268904005
+        },
+        {
+          "type": 32,
+          "source": "throwHit",
+          "displacement": 14.343840550006803,
+          "height": 2.6451471225231016
+        },
+        {
+          "type": 32,
+          "source": "slam",
+          "displacement": 17.950289735587717,
+          "height": 3.9501058684071584
+        },
+        {
+          "type": 33,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 7
+        },
+        {
+          "type": 33,
+          "source": "kick",
+          "displacement": 53.4457902883197,
+          "height": 17.841600000000007
+        },
+        {
+          "type": 33,
+          "source": "club",
+          "displacement": 70.09812881935392,
+          "height": 27.12480000000001
+        },
+        {
+          "type": 33,
+          "source": "energyHit",
+          "displacement": 78.48025550256676,
+          "height": 33.70976000000001
+        },
+        {
+          "type": 33,
+          "source": "throwHit",
+          "displacement": 76.39955340329789,
+          "height": 30.291520000000016
+        },
+        {
+          "type": 33,
+          "source": "slam",
+          "displacement": 92.51624660489676,
+          "height": 43.24192000000002
+        },
+        {
+          "type": 34,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 34,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 34,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 34,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 34,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 34,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 35,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 35,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 35,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 35,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 35,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 35,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 36,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 36,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 36,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 36,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 36,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 36,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 37,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 37,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 37,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 37,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 37,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 37,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 38,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 38,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 38,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 38,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 38,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 38,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 39,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 39,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 39,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 39,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 39,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 39,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        },
+        {
+          "type": 40,
+          "source": "punch",
+          "displacement": 9.696584902296593,
+          "height": 0
+        },
+        {
+          "type": 40,
+          "source": "kick",
+          "displacement": 53.815086366197136,
+          "height": 12.441600000000001
+        },
+        {
+          "type": 40,
+          "source": "club",
+          "displacement": 70.36052415138556,
+          "height": 22.28480000000001
+        },
+        {
+          "type": 40,
+          "source": "energyHit",
+          "displacement": 78.68615297235448,
+          "height": 29.189760000000017
+        },
+        {
+          "type": 40,
+          "source": "throwHit",
+          "displacement": 76.63876770736647,
+          "height": 25.611520000000016
+        },
+        {
+          "type": 40,
+          "source": "slam",
+          "displacement": 92.67773187061687,
+          "height": 39.121920000000024
+        }
+      ],
+      "deaths": [
+        {
+          "type": 0,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 1,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 2,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 3,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 4,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 5,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 6,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 7,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 8,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 9,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 10,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 11,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 12,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 13,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 14,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 15,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 16,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 17,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 18,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 19,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 20,
+          "maxHeight": 30.688292015114836,
+          "end": 1.629708963361371,
+          "blinkAt": 0.9097089633613712,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 21,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 22,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 23,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 24,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 25,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 26,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 27,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 28,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 29,
+          "maxHeight": 30.688292015114836,
+          "end": 1.629708963361371,
+          "blinkAt": 0.9097089633613712,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 30,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 31,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 32,
+          "maxHeight": 30.688292015114836,
+          "end": 1.629708963361371,
+          "blinkAt": 0.9097089633613712,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 33,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 34,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 35,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 36,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 37,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 38,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 39,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        },
+        {
+          "type": 40,
+          "maxHeight": 47.17952000000003,
+          "end": 1.8109302325581396,
+          "blinkAt": 1.0909302325581396,
+          "states": [
+            true,
+            false
+          ]
+        }
+      ],
+      "edge": {
+        "edge": 421.5200000000008,
+        "guardedSpeed": 39.9,
+        "kickSpeed": 205
+      },
+      "lifecycle": {
+        "pauseFrozen": true,
+        "orphanRetained": true,
+        "rosterRestored": true,
+        "calmFades": true,
+        "poolCleared": true,
+        "retryCleared": true
+      },
+      "errors": [],
+      "scope": "Production damage and reaction physics: 41 types x six hit sources, all 41 KO blink/cleanup states; native render captures; boundary, shield and pause/orphan pool lifecycle. Bosses and campaign checked separately."
+    },
+    "bosses": {
+      "pass": true,
+      "cases": 36,
       "rows": [
         {
           "level": 0,
-          "material": "wood",
-          "fragments": 12,
-          "loot": 1,
-          "lamps": 20,
-          "blockers": [],
-          "lifetime": {
-            "settled": true,
-            "remaining": 0,
-            "blink": true
-          }
+          "difficulty": "easy",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 599,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 0,
+          "difficulty": "easy",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 599,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 0,
+          "difficulty": "normal",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 533,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 0,
+          "difficulty": "normal",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 533,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 0,
+          "difficulty": "hard",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 503,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 0,
+          "difficulty": "hard",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 503,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
         },
         {
           "level": 1,
-          "material": "wood",
-          "fragments": 12,
-          "loot": 1,
-          "lamps": 0,
-          "blockers": [],
-          "lifetime": {
-            "settled": true,
-            "remaining": 0,
-            "blink": true
-          }
+          "difficulty": "easy",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 615,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 1,
+          "difficulty": "easy",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 615,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 1,
+          "difficulty": "normal",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 550,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 1,
+          "difficulty": "normal",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 550,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 1,
+          "difficulty": "hard",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 519,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 1,
+          "difficulty": "hard",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 519,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
         },
         {
           "level": 2,
-          "material": "wood",
-          "fragments": 12,
-          "loot": 1,
-          "lamps": 0,
-          "blockers": [],
-          "lifetime": {
-            "settled": true,
-            "remaining": 0,
-            "blink": true
-          }
+          "difficulty": "easy",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 662,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5158515812496285
+        },
+        {
+          "level": 2,
+          "difficulty": "easy",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 662,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5158515812496285
+        },
+        {
+          "level": 2,
+          "difficulty": "normal",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 592,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5158515812496285
+        },
+        {
+          "level": 2,
+          "difficulty": "normal",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 592,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5158515812496285
+        },
+        {
+          "level": 2,
+          "difficulty": "hard",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 558,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5158515812496285
+        },
+        {
+          "level": 2,
+          "difficulty": "hard",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 558,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5158515812496285
         },
         {
           "level": 3,
-          "material": "stone",
-          "fragments": 12,
-          "loot": 1,
-          "lamps": 0,
-          "blockers": [],
-          "lifetime": {
-            "settled": true,
-            "remaining": 0,
-            "blink": true
-          }
+          "difficulty": "easy",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 673,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
         },
         {
-          "level": 4,
-          "material": "wood",
-          "fragments": 12,
-          "loot": 1,
-          "lamps": 0,
-          "blockers": [],
-          "lifetime": {
-            "settled": true,
-            "remaining": 0,
-            "blink": true
-          }
+          "level": 3,
+          "difficulty": "easy",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 673,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 3,
+          "difficulty": "normal",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 597,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 3,
+          "difficulty": "normal",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 597,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 3,
+          "difficulty": "hard",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 560,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 3,
+          "difficulty": "hard",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 560,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
         },
         {
           "level": 5,
-          "material": "ice",
-          "fragments": 12,
-          "loot": 1,
-          "lamps": 0,
-          "blockers": [],
-          "lifetime": {
-            "settled": true,
-            "remaining": 0,
-            "blink": true
-          }
-        }
-      ],
-      "bomb": {
-        "bomber": true,
-        "target": 250,
-        "grounded": true,
-        "fuse": 2.2
-      },
-      "reflect": {
-        "heroHp": 100,
-        "enemyHp": 68,
-        "remainingBombs": 0
-      },
-      "errors": [],
-      "scope": "Actual break/loot/physics/cleanup in six regions; native composed captures; bomber cast, fixed aim, fuse and reflected friendly damage. Lamp blockers reported for layout review, not silently ignored."
-    },
-    "bomber": {
-      "pass": true,
-      "rows": [
-        {
-          "engine": "chrome",
-          "cases": [
-            {
-              "difficulty": "easy",
-              "two": false,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 3
-            },
-            {
-              "difficulty": "easy",
-              "two": true,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 3
-            },
-            {
-              "difficulty": "normal",
-              "two": false,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 7
-            },
-            {
-              "difficulty": "normal",
-              "two": true,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 7
-            },
-            {
-              "difficulty": "hard",
-              "two": false,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 14
-            },
-            {
-              "difficulty": "hard",
-              "two": true,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 14
-            }
+          "difficulty": "easy",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
           ],
-          "jumpAvoids": true,
-          "campaignFactory": true,
-          "profileCount": 21
+          "ticks": 708,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5174099041530309
         },
         {
-          "engine": "chrome",
-          "air": {
-            "hero": 1,
-            "kind": "glassJar",
-            "queued": true,
-            "thrown": true
-          }
-        },
-        {
-          "engine": "chrome",
-          "air": {
-            "hero": 1,
-            "kind": "powderBarrel",
-            "queued": true,
-            "thrown": true
-          }
-        },
-        {
-          "engine": "chrome",
-          "air": {
-            "hero": 2,
-            "kind": "glassJar",
-            "queued": true,
-            "thrown": true
-          }
-        },
-        {
-          "engine": "chrome",
-          "air": {
-            "hero": 2,
-            "kind": "powderBarrel",
-            "queued": true,
-            "thrown": true
-          }
-        },
-        {
-          "engine": "webkit",
-          "cases": [
-            {
-              "difficulty": "easy",
-              "two": false,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 3
-            },
-            {
-              "difficulty": "easy",
-              "two": true,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 3
-            },
-            {
-              "difficulty": "normal",
-              "two": false,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 7
-            },
-            {
-              "difficulty": "normal",
-              "two": true,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 7
-            },
-            {
-              "difficulty": "hard",
-              "two": false,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 14
-            },
-            {
-              "difficulty": "hard",
-              "two": true,
-              "states": [
-                "walk",
-                "idle",
-                "tell",
-                "attack"
-              ],
-              "damage": 14
-            }
+          "level": 5,
+          "difficulty": "easy",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
           ],
-          "jumpAvoids": true,
-          "campaignFactory": true,
-          "profileCount": 21
+          "ticks": 708,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5174099041530309
         },
         {
-          "engine": "webkit",
-          "air": {
-            "hero": 1,
-            "kind": "glassJar",
-            "queued": true,
-            "thrown": true
-          }
+          "level": 5,
+          "difficulty": "normal",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 622,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5174099041530309
         },
         {
-          "engine": "webkit",
-          "air": {
-            "hero": 1,
-            "kind": "powderBarrel",
-            "queued": true,
-            "thrown": true
-          }
+          "level": 5,
+          "difficulty": "normal",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 622,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5174099041530309
         },
         {
-          "engine": "webkit",
-          "air": {
-            "hero": 2,
-            "kind": "glassJar",
-            "queued": true,
-            "thrown": true
-          }
+          "level": 5,
+          "difficulty": "hard",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 581,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5174099041530309
         },
         {
-          "engine": "webkit",
-          "air": {
-            "hero": 2,
-            "kind": "powderBarrel",
-            "queued": true,
-            "thrown": true
-          }
+          "level": 5,
+          "difficulty": "hard",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 581,
+          "exitAge": 0.8480000000000006,
+          "blinkAt": 0.5174099041530309
+        },
+        {
+          "level": 4,
+          "difficulty": "easy",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 611,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 4,
+          "difficulty": "easy",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 611,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 4,
+          "difficulty": "normal",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 546,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 4,
+          "difficulty": "normal",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 546,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 4,
+          "difficulty": "hard",
+          "two": false,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 514,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
+        },
+        {
+          "level": 4,
+          "difficulty": "hard",
+          "two": true,
+          "phases": [
+            0,
+            1,
+            2
+          ],
+          "ticks": 514,
+          "exitAge": 0.8000000000000006,
+          "blinkAt": 0.4653488372093023
         }
       ],
       "errors": [],
-      "scope": "Production bomber AI/tell/release, all difficulties/player counts, one blast hit, jump avoidance, actual campaign factory; native hand poses; both heroes aerial release of new props; Chrome/WebKit desktop/portrait and real renderer destruction preview."
+      "scope": "Production boss AI, all three phases and six regions/difficulties/seats; legal-entry injected heavy damage, real KO progression and earliest reward pickup. Not a human campaign playthrough."
     },
     "campaign": {
       "pass": true,
@@ -5146,695 +7209,6 @@
       "errors": [],
       "scope": "Diagnostic traversal using legal-entry injected damage; actual contextual use/pickup and objective timers; not a human full campaign playthrough"
     },
-    "holds": {
-      "pass": true,
-      "captures": 94,
-      "checks": [
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "punch",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "punch",
-          "age": 0.2
-        },
-        {
-          "hero": 1,
-          "kind": "club",
-          "act": "punch",
-          "age": 0.29
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "throw",
-          "age": 0.07
-        },
-        {
-          "hero": 1,
-          "kind": "regionCrate",
-          "act": "throw",
-          "age": 0.1
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "throw",
-          "age": 0.07
-        },
-        {
-          "hero": 1,
-          "kind": "glassJar",
-          "act": "throw",
-          "age": 0.1
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "throw",
-          "age": 0.07
-        },
-        {
-          "hero": 1,
-          "kind": "powderBarrel",
-          "act": "throw",
-          "age": 0.1
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "punch",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "punch",
-          "age": 0.2
-        },
-        {
-          "hero": 2,
-          "kind": "club",
-          "act": "punch",
-          "age": 0.29
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "throw",
-          "age": 0.07
-        },
-        {
-          "hero": 2,
-          "kind": "regionCrate",
-          "act": "throw",
-          "age": 0.1
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "throw",
-          "age": 0.07
-        },
-        {
-          "hero": 2,
-          "kind": "glassJar",
-          "act": "throw",
-          "age": 0.1
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "idle",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "walk",
-          "age": 0
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "lift",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "lift",
-          "age": 0.14
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "jump",
-          "age": 0.15
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "block",
-          "age": 0.2
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "hit",
-          "age": 0.1
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "land",
-          "age": 0.06
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "throw",
-          "age": 0.07
-        },
-        {
-          "hero": 2,
-          "kind": "powderBarrel",
-          "act": "throw",
-          "age": 0.1
-        },
-        {
-          "hero": 1,
-          "nativeLevel": 0,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 1,
-          "nativeLevel": 1,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 1,
-          "nativeLevel": 2,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 1,
-          "nativeLevel": 3,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 1,
-          "nativeLevel": 4,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 1,
-          "nativeLevel": 5,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 2,
-          "nativeLevel": 0,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 2,
-          "nativeLevel": 1,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 2,
-          "nativeLevel": 2,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 2,
-          "nativeLevel": 3,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 2,
-          "nativeLevel": 4,
-          "kind": "regionCrate",
-          "act": "walk"
-        },
-        {
-          "hero": 2,
-          "nativeLevel": 5,
-          "kind": "regionCrate",
-          "act": "walk"
-        }
-      ],
-      "rules": {
-        "heldAttackAlwaysUsesObject": true,
-        "weaponRenderOwners": 1
-      },
-      "errors": [],
-      "scope": "Native source hand registration with composed inspection for both heroes; each body uses its fixed source camera"
-    },
-    "lights": {
-      "pass": true,
-      "lamps": [
-        {
-          "x": 360,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 805,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 1190,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 1480,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 1780,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 2260,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 2675,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 3090,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 3425,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 3680,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 4160,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 4575,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 4990,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 5310,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 5580,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 6060,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 6505,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 6890,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 7180,
-          "y": 198,
-          "h": 96
-        },
-        {
-          "x": 7480,
-          "y": 198,
-          "h": 96
-        }
-      ],
-      "extras": {
-        "coverCleared": true,
-        "cap": 140,
-        "fragmentsCleared": true,
-        "pauseFrozen": true
-      },
-      "errors": [],
-      "scope": "Twenty grounded native lamp posts; five night camera compositions and bulb-to-light registration; actual stage front-occluder clearance is asserted in effects report. Residue cleanup, fragment cap and paused simulation checked."
-    },
     "gameplay": {
       "pass": true,
       "worlds": [
@@ -5984,7 +7358,7 @@
             ],
             [
               319,
-              211,
+              212,
               "walk"
             ],
             [
@@ -6326,7 +7700,7 @@
             ],
             [
               319,
-              236,
+              238,
               "walk"
             ],
             [
@@ -6458,17 +7832,17 @@
             ],
             [
               346,
-              228,
+              222,
               "tell"
             ],
             [
               346,
-              228,
+              222,
               "tell"
             ],
             [
               346,
-              228,
+              222,
               "attack"
             ]
           ]
@@ -6560,17 +7934,17 @@
             ],
             [
               333,
-              222,
+              215,
               "tell"
             ],
             [
               333,
-              222,
+              215,
               "tell"
             ],
             [
               333,
-              222,
+              215,
               "tell"
             ]
           ]
@@ -6734,9 +8108,379 @@
       "errors": [],
       "scope": "Deterministic combat signatures, tactical damage, air input/physics, curated world structure; campaign completion is checked separately"
     },
+    "render": {
+      "pass": true,
+      "rows": [
+        {
+          "engine": "chrome",
+          "level": 0,
+          "boss": false,
+          "type": 26,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 0,
+          "boss": true,
+          "type": 26,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 1,
+          "boss": false,
+          "type": 22,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 1,
+          "boss": true,
+          "type": 22,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 2,
+          "boss": false,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 2,
+          "boss": true,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 3,
+          "boss": false,
+          "type": 29,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 3,
+          "boss": true,
+          "type": 29,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 5,
+          "boss": false,
+          "type": 20,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 5,
+          "boss": true,
+          "type": 20,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 4,
+          "boss": false,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "chrome",
+          "level": 4,
+          "boss": true,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 0,
+          "boss": false,
+          "type": 26,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 0,
+          "boss": true,
+          "type": 26,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 1,
+          "boss": false,
+          "type": 22,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 1,
+          "boss": true,
+          "type": 22,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 2,
+          "boss": false,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 2,
+          "boss": true,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 3,
+          "boss": false,
+          "type": 29,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 3,
+          "boss": true,
+          "type": 29,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 5,
+          "boss": false,
+          "type": 20,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 5,
+          "boss": true,
+          "type": 20,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 4,
+          "boss": false,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        },
+        {
+          "engine": "webkit",
+          "level": 4,
+          "boss": true,
+          "type": 21,
+          "on": 1,
+          "off": 0,
+          "done": 0
+        }
+      ],
+      "errors": [],
+      "scope": "Actual drawImage visibility toggles for native ordinary and boss KO renderers in all six loaded regions; composed ground captures, stage-pack changes, Chrome/WebKit desktop/portrait and all six production reaction previews. Emulation is not physical device certification."
+    },
+    "live": {
+      "pass": true,
+      "samples": [
+        {
+          "x": 188.70000000000002,
+          "z": 0,
+          "age": 0,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 220.86130879313208,
+          "z": 17.175734099999858,
+          "age": 0.13959999999999856,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 236.67812656395816,
+          "z": 24.58096869999998,
+          "age": 0.2463999999999996,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 249.03690084130332,
+          "z": 27.020431699999996,
+          "age": 0.37129999999999924,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 256.98216563788793,
+          "z": 22.791956000000095,
+          "age": 0.49549999999999816,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 261.5590507322981,
+          "z": 13.780777100000174,
+          "age": 0.6029999999999981,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 265.11138477832736,
+          "z": 0,
+          "age": 0.7280999999999984,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 267.14236745699475,
+          "z": 0,
+          "age": 0.8357999999999992,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 268.7056621721465,
+          "z": 0,
+          "age": 0.9599999999999982,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 269.6055391077281,
+          "z": 0,
+          "age": 1.0673999999999997,
+          "visible": false,
+          "done": false
+        },
+        {
+          "x": 270.30568957988265,
+          "z": 0,
+          "age": 1.192699999999999,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 270.7551730260996,
+          "z": 0,
+          "age": 1.3172999999999995,
+          "visible": false,
+          "done": false
+        },
+        {
+          "x": 271.04713401569603,
+          "z": 0,
+          "age": 1.442599999999999,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 271.2346972428946,
+          "z": 0,
+          "age": 1.5673,
+          "visible": true,
+          "done": false
+        },
+        {
+          "x": 271.29384700740474,
+          "z": 0,
+          "age": 1.6214000000000004,
+          "visible": false,
+          "done": true
+        },
+        {
+          "x": 271.29384700740474,
+          "z": 0,
+          "age": 1.6214000000000004,
+          "visible": false,
+          "done": true
+        },
+        {
+          "x": 271.29384700740474,
+          "z": 0,
+          "age": 1.6214000000000004,
+          "visible": false,
+          "done": true
+        },
+        {
+          "x": 271.29384700740474,
+          "z": 0,
+          "age": 1.6214000000000004,
+          "visible": false,
+          "done": true
+        },
+        {
+          "x": 271.29384700740474,
+          "z": 0,
+          "age": 1.6214000000000004,
+          "visible": false,
+          "done": true
+        }
+      ],
+      "result": {
+        "hp": 100,
+        "lives": 3,
+        "pool": 0,
+        "weapon": "club",
+        "gate": "travel"
+      },
+      "errors": [],
+      "scope": "Real keyboard pickup and held-club attack, normal-time launched KO with visible blink states and cleanup; short production clip, not a full human playthrough."
+    },
     "static": {
       "pass": true,
-      "parsedScripts": 45,
+      "parsedScripts": 46,
       "baseImages": 75,
       "streamedImages": 50,
       "reviewFoes": 41,
@@ -6749,18 +8493,18 @@
     }
   },
   "baseline": {
-    "version": "2.11",
-    "commit": "ca79d9ec670f0e51acae5556a3be16fc4e36b782",
-    "scope": "Accepted six-region campaign, weather/audio and handheld portrait. Current evidence covers destruction, native carries, bomber behavior, lighting, full campaign traversal and core combat regressions."
+    "version": "2.12",
+    "commit": "6d4b7c0ed7e8b0b7bced96cfd47f1163f701e989",
+    "scope": "Accepted six-region game, material destruction, bomb goblin, weather/audio and portrait handheld. Current checks exercise enemy reaction physics, all defeat renderers, wave/corpse lifecycle, boss phases/victory, campaign traversal and actual keyboard combat."
   },
   "limits": [
-    "Campaign traversal uses legal-entry injected damage and is not a full human playthrough.",
-    "Browser touch rendering does not certify physical iPhone/gamepad behavior.",
-    "Enemy 40 derives from the accepted wax-goblin atlas with new role/accessories/registered throw behavior; a newly generated atlas is not claimed."
+    "Campaign and boss diagnostics inject legal damage with invulnerable heroes; they are not a full human playthrough.",
+    "Browser emulation does not certify physical phone/gamepad behavior.",
+    "Existing native actor art is reused with fixed scale and original camera; no new painted animation atlas is claimed."
   ],
   "visualReview": [
-    "Inspected material fragments, glass shatter, fireworks burst and the bomb ground marker.",
-    "Inspected goblin windup/extended-palm release/recovery and new carried props in native body poses.",
-    "Inspected clear grounded lamps and night camera compositions."
+    "Inspected native hit/launch, landed and boss fall captures with fixed body scale and ground shadows.",
+    "Exercised actual renderer on/off/finished states for ordinary foes and bosses in all six streamed regions.",
+    "Captured a real keyboard held-club attack and normal-time launch, blink and removal."
   ]
 }

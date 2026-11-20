@@ -1,3 +1,13 @@
+# Little Dragon 96 · Arcade Reactions 2.13
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.13
+
+Enemies stagger, launch and land according to hit strength and weight. Clubs, thrown objects, energy and explosions deliver stronger knockback; shields and bosses resist appropriately. Defeated actors settle, blink and disappear, remaining visible across ordinary wave changes without delaying the fight. Calm mode fades their final poses.
+
+See [2.13 behavior and validation](RELEASE-2.13.md), [production reaction previews](motion-review.html) and [scoped QA](qa-results.json). Material destruction, bomb counterplay, clear streetlights, weather/audio, handheld portrait and the six-region campaign remain.
+
+Previous releases follow.
+
 # Little Dragon 96 · Arcade Destruction 2.12
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.12
