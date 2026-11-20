@@ -15,10 +15,11 @@ drawHeroFrame=function(p){if(!registeredCarry(p))return registeredBody(p);const 
 drawCarried=function(p,i){if(registeredCarry(p))return;return registeredProp(p,i)};
 function drawRegisteredClub(p){const frame=carryPose(p),g=airGrip(p,frame),hero=p.hero||p.id,front=frame===4?(hero===1?[.63,.83]:[.64,.85]):[5,6].includes(frame)?(hero===1?[.665,.55]:[.64,.52]):null;if(front){g.x+=(front[0]-AIR_HANDS[hero][frame][0])*g.size;g.y+=(front[1]-AIR_HANDS[hero][frame][1])*g.size}let angle=frame===8?1.10:-.6;if(frame===10)angle=-1.7+p.age*.8;else if(frame===11)angle=mix(.25,1.25,clamp((p.age-.15)/.10,0,1));else if(frame===12)angle=1.5;else if(frame===4)angle=-.2;else if(frame===14)angle=-1.0;else if(frame===15)angle=.5;
  const im=images.items,cell=im.naturalWidth/5,size=36;ctx.save();ctx.translate(g.x,g.y);ctx.rotate(angle);ctx.drawImage(im,0,cell,cell,cell,-size*.225,-size*.685,size,size);ctx.restore()}
-function drawRegisteredLoad(p,i){const hero=p.hero||p.id,walk=DragonCarry.uses(p),frame=walk?carryWalkFrame(p):carryPose(p),im=images[walk?'carry-walk-'+hero:'carry-'+hero];let size,anchor,center,hand,box;
- if(walk){const m=DRAGON_CARRY_META[hero];size=m.height;anchor=m.anchor;center=m.center;const v=LOAD_HANDS[hero][frame-8];hand=[v.x,v.y];box=v.box}
+function drawRegisteredLoad(p,i,rig=null){const hero=p.hero||p.id,walk=DragonCarry.uses(p),frame=rig?rig.frame:walk?carryWalkFrame(p):carryPose(p),im=rig?rig.image:images[walk?'carry-walk-'+hero:'carry-'+hero];let size,anchor,center,hand,box;
+ if(rig){size=rig.height;anchor=rig.anchor;center=.5;hand=rig.hand;box=rig.box}
+ else if(walk){const m=DRAGON_CARRY_META[hero];size=m.height;anchor=m.anchor;center=m.center;const v=LOAD_HANDS[hero][frame-8];hand=[v.x,v.y];box=v.box}
  else{const m=DRAGON_SPRITE_CAMERA['carry-'+hero];size=HERO_SIZE*m.scale;anchor=m.anchor;center=.5;hand=AIR_HANDS[hero][frame];box=[Math.max(0,hand[0]-.13),hand[1]-.06,.26,.12]}
- if(!hand)return;const x=(hand[0]-center)*size,y=(hand[1]-anchor)*size,forward=frame===7&&!walk?10:2,root=y+(walk?7:9);
+ if(!hand)return;const x=(hand[0]-center)*size,y=(hand[1]-anchor)*size,forward=frame===7&&!walk&&!rig?10:2,root=y+(walk&&!rig?7:9);
  ctx.save();ctx.translate(x+forward,root);if(i.kind==='regionCrate')directorProp(0,i.nativeLevel,0,0,29);else if(i.kind==='bonusBarrel')bonusSprite(0,0,0,29);else if(i.kind==='glassJar')drawGlassJar({x:game.camera,y:0,held:true});else if(i.kind==='powderBarrel')drawPowderBarrel({x:game.camera,y:0,held:true});else if(i.kind==='storyChest'||i.kind==='storyUrn')roadSprite(i.kind==='storyChest'?0:2,0,0,29,29);else stamp(images.items,ITEM[i.kind].sprite,5,29);ctx.restore();
  const sw=im.naturalWidth/4,sh=im.naturalHeight/4,[bx,by,bw,bh]=box;ctx.drawImage(im,(frame%4+bx)*sw,(Math.floor(frame/4)+by)*sh,bw*sw,bh*sh,(bx-center)*size,(by-anchor)*size,bw*size,bh*size);
 }

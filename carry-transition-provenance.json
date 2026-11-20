@@ -1,0 +1,39 @@
+{
+  "version": "2.15",
+  "tool": "Built-in image_gen",
+  "transparentBackground": true,
+  "conversion": "RGBA PNG to lossless WebP only; alpha preserved. No per-cell fitting or image manipulation.",
+  "runtimeUse": "Each row provides a planted carry idle, weight transfer, passing pose and outgoing contact. Reverse the selected bridge after completing the currently active half-step. Club is painted once; loads use measured palm attachment and source finger restoration.",
+  "assets": [
+    {
+      "hero": 1,
+      "file": "assets/carry-bridge-1.webp",
+      "references": [
+        "assets/hd-carry-1.webp",
+        "assets/carry-walk-1.webp"
+      ],
+      "prompt": "Production animation sprite sheet, FOUR columns by FOUR rows, 16 equally sized square cells, transparent alpha background. GIORGOS, curly blond hair, BLACK belt, brown strapped sandals. Reference 1 is the approved idle/carry pose atlas. Reference 2 is the approved walking atlas. Create a NEW transition atlas, not replacements for these references. Preserve EXACT identity, age, face, hair, clothing, colors, head/body proportions, view (faces RIGHT), and fixed full-body camera. Each character is entirely inside its cell; soles at 95% cell height for planted foot, head top at 5%; no scale changes across frames, no floors/shadows, no writing or grid. This sheet is for very short start/stop walking motion WHILE CARRYING. Each row is FOUR chronological, distinct intermediate drawings progressing at 20%,40%,60%,80% between the specified endpoints. Do not simply repeat endpoints. Feet take a small controlled weight-transfer step, knees straighten from carry-ready; shoulders turn gently, hands and held object shift smoothly with wrists. One foot stays planted, no crouch-walk, no stretched limbs.\nROW 1: CLUB transition from reference1 frame8 (third row first column, both feet planted club-ready upright idle, club in front fist pointing diagonally forward/down) toward reference2 frame0 (first row first column, left foot forward, right trailing, club held low and angled forward/up). Include exactly ONE wooden club in the hand, matching reference2 club. Intermediate forearm and club angle must progressively rotate.\nROW 2: CLUB transition from same idle toward reference2 frame4 (second row first column, opposite leg forward). FOUR new matching intermediates. Same single club.\nROW 3: LOAD transition from reference1 frame6 (second row third column, low two-handed carry stance, two feet planted) toward reference2 frame8 (third row first column, two palms cradling an imaginary small box, one foot forward). Hands rise/extend and knees straighten incrementally. Do NOT draw the carried box; leave the hands empty in stable supported cradling gesture for runtime attachment.\nROW 4: LOAD same idle to reference2 frame12 (fourth row first column, opposite foot forward), four intermediates, no box. Every row must contain exactly four fully visible distinct figures on the same fixed camera and common sole support. Render polished detailed arcade sprite artwork consistent with the supplied sources. True transparency, preserve sharp detailed face, no red fringes or colored background residue.",
+      "camera": {
+        "height": 62.11758790546936,
+        "anchor": 0.975,
+        "center": 0.5
+      },
+      "authoredCells": 16
+    },
+    {
+      "hero": 2,
+      "file": "assets/carry-bridge-2.webp",
+      "references": [
+        "assets/hd-carry-2.webp",
+        "assets/carry-walk-2.webp"
+      ],
+      "prompt": "Production animation sprite sheet, FOUR columns by FOUR rows, 16 equally sized square cells, transparent alpha background. THODORIS, swept spiky blond hair, BLUE belt, red sneakers. Reference 1 is the approved idle/carry pose atlas. Reference 2 is the approved walking atlas. Create a NEW transition atlas, not replacements for these references. Preserve EXACT identity, age, face, hair, clothing, colors, head/body proportions, view (faces RIGHT), and fixed full-body camera. Each character is entirely inside its cell; soles at 95% cell height for planted foot, head top at 5%; no scale changes across frames, no floors/shadows, no writing or grid. This sheet is for very short start/stop walking motion WHILE CARRYING. Each row is FOUR chronological, distinct intermediate drawings progressing at 20%,40%,60%,80% between the specified endpoints. Do not simply repeat endpoints. Feet take a small controlled weight-transfer step, knees straighten from carry-ready; shoulders turn gently, hands and held object shift smoothly with wrists. One foot stays planted, no crouch-walk, no stretched limbs.\nROW 1: CLUB transition from reference1 frame8 (third row first column, both feet planted club-ready upright idle, club in front fist pointing diagonally forward/down) toward reference2 frame0 (first row first column, left foot forward, right trailing, club held low and angled forward/up). Include exactly ONE wooden club in the hand, matching reference2 club. Intermediate forearm and club angle must progressively rotate.\nROW 2: CLUB transition from same idle toward reference2 frame4 (second row first column, opposite leg forward). FOUR new matching intermediates. Same single club.\nROW 3: LOAD transition from reference1 frame6 (second row third column, low two-handed carry stance, two feet planted) toward reference2 frame8 (third row first column, two palms cradling an imaginary small box, one foot forward). Hands rise/extend and knees straighten incrementally. Do NOT draw the carried box; leave the hands empty in stable supported cradling gesture for runtime attachment.\nROW 4: LOAD same idle to reference2 frame12 (fourth row first column, opposite foot forward), four intermediates, no box. Every row must contain exactly four fully visible distinct figures on the same fixed camera and common sole support. Render polished detailed arcade sprite artwork consistent with the supplied sources. True transparency, preserve sharp detailed face, no red fringes or colored background residue.",
+      "camera": {
+        "height": 59.575396683673475,
+        "anchor": 0.975,
+        "center": 0.5
+      },
+      "authoredCells": 16
+    }
+  ]
+}

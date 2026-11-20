@@ -1,3 +1,13 @@
+# Little Dragon 96 · Carry Transitions 2.15
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.15
+
+Both heroes now transfer weight into walking and settle their current step back into planted held-object idle. New authored bridge poses connect clubs and carried loads to the existing walking cycle. Rapid reversals retain pose progress; attacks, jumps and heading remain immediate.
+
+See [behavior and validation](RELEASE-2.15.md), [start/stop previews](motion-review.html), and [new native art / final prompts](carry-transition-provenance.json).
+
+Previous releases follow.
+
 # Little Dragon 96 · Carry Idle & Difficulty 2.14
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.14
