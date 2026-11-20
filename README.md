@@ -1,3 +1,15 @@
+# Little Dragon 96 · Dragon Pocket 2.11
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.11
+
+Weather now has a quiet stereo soundscape that evolves with the chapter: harbor rain/sea/thunder, woodland rustle, dusty gusts, castle fire and icy wind. Impacts briefly duck ambience, with its own translated volume setting. Existing music/action audio remains.
+
+Portrait touch mode becomes a Dragon Pocket handheld with a bezel, molded shell, speaker grille and raised controls. The gameplay image is 30% taller than before, with intentional vertical stretching. Landscape returns immediately to 16:9.
+
+See [2.11 details and scoped checks](RELEASE-2.11.md), [production weather preview](motion-review.html) and [QA](qa-results.json). Six regions, weather, boss waves, all three languages and Story/Practice/co-op remain.
+
+Previous releases follow.
+
 # Little Dragon 96 · Regional Atmosphere 2.10
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.10

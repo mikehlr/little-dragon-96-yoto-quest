@@ -1,0 +1,31 @@
+/* Portrait has a purpose-built console shell. Geometry never animates on rotation. */
+#handheld-hardware{display:none;pointer-events:none;user-select:none}
+@media(pointer:coarse){#game-shell{width:100vw;height:100dvh}}
+@media(pointer:coarse) and (orientation:portrait){
+ :root{--handheld-top:clamp(64px,10dvh,110px);--handheld-height:73.125vw;--handheld-deck:calc(var(--handheld-top) + var(--handheld-height) + clamp(24px,calc((100dvh - var(--handheld-top) - var(--handheld-height) - 210px - var(--safe-bottom)) * .55),120px))}
+ #game-shell{background:radial-gradient(ellipse at 14% 16%,#48616f55,transparent 48%),repeating-linear-gradient(96deg,#192a3c 0px,#192a3c 2px,#1b2c3e 3px,#1b2c3e 5px)!important;box-shadow:inset 3px 0 4px #8298ac45,inset -4px 0 6px #0009}
+ #handheld-hardware{display:block;position:absolute;inset:0;z-index:0;border:2px solid #68809155;border-radius:23px 23px 46px 23px;overflow:hidden}
+ .handheld-brand{position:absolute;top:calc(var(--handheld-top) - 43px);left:24px;font:italic 900 18px 'Trebuchet MS',sans-serif;letter-spacing:.10em;color:#dfc393;text-shadow:0 2px 1px #0008}
+ .handheld-brand small{display:block;font-size:8px;font-style:normal;letter-spacing:.32em;color:#97b2c3;margin-top:3px}
+ .handheld-bezel{position:absolute;left:3px;right:3px;top:calc(var(--handheld-top) - 9px);height:calc(var(--handheld-height) + 18px);border:5px solid #080f1c;border-radius:13px;box-shadow:0 4px 10px #000b,inset 0 0 0 2px #647c8c,0 -1px 0 #91a6b8}
+ .handheld-power{position:absolute;left:25px;bottom:max(31px,calc(var(--safe-bottom) + 15px));font-size:8px;letter-spacing:.22em;color:#acc7d6}
+ .handheld-power::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:#79e6bc;box-shadow:0 0 8px #6de3b9;margin-right:9px}
+ .handheld-speaker{position:absolute;right:29px;bottom:max(25px,calc(var(--safe-bottom) + 12px));width:90px;height:35px;transform:rotate(-18deg);background:repeating-linear-gradient(90deg,transparent 0 7px,#080f1b 7px 11px,#617b8b66 12px 13px,transparent 14px 17px);border-radius:9px}
+ .handheld-deck-ring{position:absolute;top:calc(var(--handheld-deck) + 28px);left:calc(min(46vw,310px) / 2 - 69px);width:138px;height:138px;border-radius:50%;box-shadow:inset 0 4px 12px #0008,0 1px 0 #88a7ba55;background:radial-gradient(circle,#162435,#24394c 65%,#0d1926)}
+ #game,.touch-game #game{position:absolute;z-index:1;left:8px;top:var(--handheld-top);width:calc(100vw - 16px);height:var(--handheld-height);margin:0!important;align-self:auto;object-fit:fill;border-radius:3px;transition:none!important;animation:none!important}
+ #touch{z-index:3;transition:none!important}
+ #stick-zone{left:0;right:auto;top:var(--handheld-deck);bottom:auto;width:min(46vw,310px);height:190px}
+ #stick-base{background:radial-gradient(circle,#253d51,#0d1a2b 70%);box-shadow:inset 0 3px 7px #000c,0 1px 1px #8da6b67a;border-color:#607e9299}
+ #stick-knob{background:radial-gradient(circle at 36% 28%,#6b879a,#2b435a 55%,#132339);box-shadow:0 6px 7px #0008,inset 0 1px 2px #9cb5c7}
+ .stick-caption{bottom:0;color:#90aebf;letter-spacing:.18em}
+ .touch-cluster{top:calc(var(--handheld-deck) + 5px);bottom:auto!important;right:14px;left:auto;width:180px;height:180px;transform:none!important}
+ #touch .action-disc{border:2px solid #1b2838;background:radial-gradient(circle at 35% 25%,#c0a27e,#735944 65%,#352d2d);box-shadow:0 5px 0 #080f1c,0 7px 8px #0008,inset 0 1px 2px #f5ddba77;color:#fff0d5}
+ #touch .action-disc.attack{width:72px;height:72px;right:58px;bottom:0;background:radial-gradient(circle at 35% 25%,#f0ba73,#a7653f 65%,#573630)}
+ #touch .action-disc.jump{width:56px;height:56px;right:0;bottom:54px;background:radial-gradient(circle at 35% 25%,#8dc4cc,#3d7788 65%,#204052)}
+ #touch .action-disc.block{width:52px;height:52px;right:56px;bottom:112px;background:radial-gradient(circle at 35% 25%,#a09acb,#5d5b8d 65%,#333453)}
+ #touch .action-disc.pickup{width:52px;height:52px;right:118px;bottom:58px;background:radial-gradient(circle at 35% 25%,#9dba94,#5c7c63 65%,#31483d)}
+ #touch .action-disc.pressed{transform:translateY(3px);box-shadow:0 2px 0 #080f1c,inset 0 2px 5px #0006}
+ .utility,.touch-game .utility{z-index:4;top:calc(var(--handheld-top) - 51px);right:20px;border-radius:20px;background:#0c1725;box-shadow:inset 0 1px 2px #000b,0 1px 0 #8195a45c}
+ #screen{z-index:10}.touch-onboarding{top:calc(var(--handheld-top) + var(--handheld-height) + 15px);font-size:10px;max-width:90%;padding:8px 12px}
+ .left-handed #stick-zone{left:auto;right:0}.left-handed .touch-cluster{right:auto;left:14px}.left-handed .handheld-deck-ring{left:auto;right:calc(min(46vw,310px) / 2 - 69px)}
+}

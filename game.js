@@ -166,7 +166,7 @@ function makeAudioRig(ctx) {
     }
     waves[name] = ctx.createPeriodicWave(real, imag);
   }
-  return { ctx, music, effects, noise, waves };
+  return { ctx, music, effects, noise, waves, mixBus };
 }
 
 function tone(rig, output, at, frequency, duration, volume, color = 'triangle', end = frequency) {
