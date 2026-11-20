@@ -58,7 +58,7 @@ damage=function(e,p,amount,hits,direction,source){const hp=e.hp;brawlDamage(e,p,
 const brawlHazard=hazard;
 hazard=function(e,move,data){brawlHazard(e,move,data);if(e.brawl){const h=game.hazards.at(-1);h.damage=game.difficulty==='hard'?7:6;if(e.brawl.id==='acorn')h.z=3}};
 const brawlHud=hud;
-hud=function(){brawlHud();if(game.mode==='play'&&brawlTip&&game.clock<brawlTip.until&&!townSpeech){pixel(8,38,WIDTH-16,15,'#101c2be8');label(brawlTip.text,WIDTH/2,48,6,'#ffe0a1','center')}};
+hud=function(){brawlHud();if(game.mode==='play'&&brawlTip&&game.clock<brawlTip.until&&!townSpeech&&!game.enemies.some(e=>e.boss&&e.hp)){pixel(8,38,WIDTH-16,15,'#101c2be8');label(brawlTip.text,WIDTH/2,48,6,'#ffe0a1','center')}};
 Object.assign(DragonCampaign,{profiles:BRAWL_PROFILES});
 // Signature projectiles have the material described by their tells.
 for(const p of BRAWL_PROFILES){const plan=FAIRY_KITS[p.type-12].moves.signature;if(p.id==='octopus')plan.art='ink';if(p.id==='fish')plan.art='water';if(p.id==='acorn')plan.art='seed'}

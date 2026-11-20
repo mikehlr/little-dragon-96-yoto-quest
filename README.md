@@ -1,3 +1,13 @@
+# Little Dragon 96 · Living Worlds 2.9
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.9
+
+Bosses now receive three phase-linked reinforcement waves with regional enemies, physical side entrances, difficulty/co-op scaling and a visible retreat when their leader falls. The first region progresses through morning, noon, afternoon, sunset and full night. Grounded streetlamps restore warm local light to the street and passing fighters while unlit areas darken. The forest has moving mist behind trees and low drifting fog across the path. Fog and calm-motion preferences remain available.
+
+The production Review Studio now includes all five day states and the forest fog. See [2.9 implementation and checks](RELEASE-2.9.md), [production review](motion-review.html) and [scoped QA](qa-results.json). Greek, English and Ukrainian, six stages, Story/Practice and one/two players remain.
+
+Previous release notes follow.
+
 # Little Dragon 96 · Arcade Brawler 2.8
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.8
