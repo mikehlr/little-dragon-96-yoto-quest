@@ -1,5 +1,4 @@
 const WORLD_ART={
-  "cage-components": "assets/cage-components.webp",
   "chapter-end-actors-0": "assets/chapter-end-actors-0.webp",
   "chapter-end-actors-1": "assets/chapter-end-actors-1.webp",
   "chapter-end-actors-2": "assets/chapter-end-actors-2.webp",

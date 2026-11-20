@@ -38,7 +38,7 @@ ARENA_RUNS.push(['patrol','pincer','duel','relay','rush','guard','cross','rival'
 DIRECTOR_PLAN.push(['door','work','cover','rope','door','vehicle','work','rival','door','cover','rope','work','door','vehicle','cover','boss']);DIRECTOR_TYPES.push(20);
 DIRECTOR_CAPTIONS.push({door:STAGES[5].subtitle,work:CHAPTERS[5][4].title,rope:CHAPTERS[5][10].title,cover:CHAPTERS[5][12].title,vehicle:CHAPTERS[5][13].title});
 // Keep the five actual arrival methods, now attached to story causes rather than repeated fights.
-CHAPTERS.forEach((beats,level)=>{let n=0;for(const beat of beats)DIRECTOR_PLAN[level][beat.section]=beat.kind==='fight'?['door','work','rope','cover','vehicle'][n++]:beat.kind==='rival'?'rival':beat.kind==='boss'?'boss':'quiet'});
+CHAPTERS.forEach((beats,level)=>{DIRECTOR_PLAN[level]=['door','work','side','quiet','door','rope','cover','rival','quiet','vehicle','work','side','door','cover','quiet','boss']});
 for(const f of Object.values(FORMATIONS)){while(f.slots.filter(s=>s[3]!=='help').length<3)f.slots.push(['left',227,.55])}
 const campaignSpecialEnemy=specialEnemy;
 specialEnemy=function(level,x,y,rival=false){const e=campaignSpecialEnemy(level,x,y,rival);if(level===5)e.frostBoss=true;return e};
@@ -46,3 +46,4 @@ const campaignFoeFrame=foeMotionFrame;
 foeMotionFrame=function(e){if(e.type<20&&!e.frostBoss)return campaignFoeFrame(e);if(e.act==='walk')return Math.floor((e.stride||0)/Math.max(3.5,e.size*.15))%8;return ({idle:8,tell:9,phase:9,attack:10,recover:11,block:12,hit:13,fall:14})[e.act]??15};
 const campaignDrawFoe=drawFoe;
 drawFoe=function(e){if(!e.frostBoss)return campaignDrawFoe(e);if(e.entry&&!e.entry.started)return;const im=images['frost-boss'];if(!READY(im))return;const m=DRAGON_CAMPAIGN_META.foes.boss,h=e.size*m.scale,sw=im.naturalWidth/4,sh=im.naturalHeight/4,f=foeMotionFrame(e),fall=e.act==='fall'?clamp(e.age*3.4,0,1):0;if(fall>=1)return;shadow(e.x-game.camera,e.y,h*.20,.4);ctx.save();ctx.translate(e.x-game.camera,e.y-e.z);ctx.scale(e.face,1);ctx.globalAlpha=1-fall;ctx.drawImage(im,f%4*sw,Math.floor(f/4)*sh,sw,sh,-h*sw/sh*m.center,-h*m.anchor,h*sw/sh,h);ctx.restore()};
+RIVAL_KITS[5].name=chapterText('Ο νεαρός αίγαγρος','The young ibex','Молодий козеріг');

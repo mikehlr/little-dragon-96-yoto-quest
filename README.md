@@ -1,3 +1,14 @@
+# Little Dragon 96 · Arcade Brawler 2.8
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.8
+
+Six regions built around fighting again: eleven ordinary encounters, a rival and a boss in each region, with automatic breathers and individual end scenes. All mandatory puzzles and errands are removed. Twenty new enemies have distinct approach/attack/counter profiles and child-friendly attack pacing. Jump attacks work with a held club; other carried objects can be thrown in the air.
+
+Three optional shops offer health, energy and a fresh club for collected coins. Themed supply pockets replace scattered objects. Region-specific people and wildlife react to nearby action. Facades are grounded against the actual floor; all six extra parallax layers remain.
+
+Greek is default; English and Ukrainian cover menus, story, shop and combat hints. Story/Practice, one/two players, unique hero selection and three difficulties remain. See [2.8 implementation and checks](RELEASE-2.8.md), [production review](motion-review.html) and [scoped QA](qa-results.json). Serve the directory as static files; GitHub Pages publishes main.
+
+Previous release notes follow.
 # Little Dragon 96 · Six Connected Chapters 2.7
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.7

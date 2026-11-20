@@ -812,7 +812,7 @@ function player(id) {
 }
 
 function start(two) {
-  Object.assign(game, { two, score: 0, level: 0, players: two ? [player(1), player(2)] : [player(1)] });
+  Object.assign(game, { two, score: 0, coins:0, level: 0, players: two ? [player(1), player(2)] : [player(1)] });
   beginStage();
 }
 
@@ -1652,7 +1652,7 @@ function drawHero(p) {
   if (p.act === 'idle' && !globalThis.DragonCarry?.uses(p)) ctx.translate(0, -Math.round((Math.sin(p.phase * 3.8) + 1) / 2));
   drawHeroFrame(p);
   if (game.fx) strikeTrail(p);
-  const held = p.carry || p.toss || (p.act === 'punch' && p.age < .25 ? p.swing : null);
+  const held = p.carry || p.toss || ((p.act === 'punch' && p.age < .25 || p.act==='airClub'&&p.age<.32) ? p.swing : null);
   if (held) drawCarried(p, held);
   ctx.restore();
   if (!p.hp) {

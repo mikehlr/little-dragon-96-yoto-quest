@@ -1,15 +1,6 @@
 {
-  "version": "2.7",
+  "version": "2.8",
   "assets": [
-    {
-      "key": "cage-components",
-      "alpha": true,
-      "refs": [
-        "C:/Codex/adventure-skill/work/github/little-dragon-96-yoto-quest/assets/title-duo.webp"
-      ],
-      "prompt": "Use case stylized concept. HD painted arcade production prop components. EXACT TWO columns ONE row, two equal square cells, true alpha-zero background. Cell0 COMPLETE portable iron rescue cage BODY, front doorway OPEN and empty, metal roof and back/sides, all four grounded feet at94percent floor line. NO front door drawn anywhere, no people. Dark empty interior back wall is allowed. Front opening should span x20..80percent, y22..88percent of cell. Cell1 ONLY the isolated matching front BARRED DOOR, straight frontal camera, same metal and latch, rigid rectangular perimeter, vertical iron bars and bottom rail, no surrounding cage body. All HOLES BETWEEN BARS must be true alpha ZERO, NOT dark painted fill. Matching panel fits x20..80percent/y22..88percent, complete hinges at left. Fixed camera, generous margins, no text, gridlines, floor plane, backdrop or shadows. Designed for native moving gate in front of a separately rendered person.",
-      "path": "C:\\Users\\mikeh\\.codex\\generated_images\\01a14b39-f539-7160-878b-7705d9b3a59e\\exec-8ba9367c-ceb4-46c5-af91-b02db023276f.png"
-    },
     {
       "key": "chapter-end-actors-0",
       "prompt": "Use case stylized concept. Detailed richly painted HD family arcade fantasy art, coherent warm/cool cinematic light, matching reference style, clean complete silhouettes, no text, UI or watermark. Production cinematic character animation atlas EXACT4 columns x2 rows EIGHT equal cells, TRUE ALPHA ZERO. Use reference identities: Giorgos curly blond hair white gi black belt brown sandals; Thodoris swept blond hair white gi blue belt red shoes. The two heroes stand close together studying a blue delivery manifest and little brass compass. Giorgos holds the paper, Thodoris gently points toward the ferry then lowers his hand. A quiet loop of reading, pointing, exchanging a glance, returning to reading. Each cell contains the COMPLETE SAME GROUP at SAME positions and anatomical/head scale, support line94percent,6percent margins. Eight actual neighboring poses across ONE continuous small gesture-and-return loop in row-major order, not eight unrelated illustrations. Fixed mild front three-quarter camera, hands/eyes and shoulders change subtly while planted bodies remain coherent. Every row exactly4 group poses. No scenery, floor, shadows, backdrop, labels, outlines or source grid. Full heads and feet visible, no duplicated extra figures.",
