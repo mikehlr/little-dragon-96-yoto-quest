@@ -1,8 +1,8 @@
 'use strict';
 const DIFFICULTIES=Object.freeze({
  easy:Object.freeze({name:'ΕΥΚΟΛΟ',mark:'I',tag:'Η ιστορία σε περιμένει',description:'Πιο ήπιες μάχες, περισσότερο περιθώριο αντίδρασης και περισσότερη ανάκτηση.',rules:Object.freeze({enemyHealth:.70,bossHealth:.78,incoming:.60,speed:.90,rest:1.25,tell:1.25,energy:10,stageHealth:100,gateHeal:16,appleHeal:44})}),
- normal:Object.freeze({name:'ΚΑΝΟΝΙΚΟ',mark:'II',tag:'Η αρχική περιπέτεια',description:'Η αρχική ισορροπία. Μάθε τις κινήσεις, συνδύασε επιθέσεις και παίξε έξυπνα.',rules:BASE_DIFFICULTY}),
- hard:Object.freeze({name:'ΔΥΣΚΟΛΟ',mark:'III',tag:'Απέδειξε την τέχνη σου',description:'Πιο ανθεκτικοί αντίπαλοι, πιο δυνατά χτυπήματα και λιγότερος χρόνος αντίδρασης.',rules:Object.freeze({enemyHealth:1.25,bossHealth:1.20,incoming:1.35,speed:1.08,rest:.88,tell:.88,energy:7,stageHealth:60,gateHeal:5,appleHeal:24})})
+ normal:Object.freeze({name:'ΚΑΝΟΝΙΚΟ',mark:'II',tag:'Η αρχική περιπέτεια',description:'Δυνατότερα χτυπήματα, ενισχύσεις και λιγότερη αυτόματη ανάκτηση. Συνδύασε επιθέσεις και άμυνα.',rules:BASE_DIFFICULTY}),
+ hard:Object.freeze({name:'ΔΥΣΚΟΛΟ',mark:'III',tag:'Απέδειξε την τέχνη σου',description:'Πιο ανθεκτικοί αντίπαλοι, πιο δυνατά χτυπήματα και λιγότερος χρόνος αντίδρασης.',rules:Object.freeze({enemyHealth:1.55,bossHealth:1.40,incoming:2.10,speed:1.12,rest:.72,tell:.82,energy:7,stageHealth:50,gateHeal:0,appleHeal:20,soloHelp:true,waveSize:3,attackBudget:3})})
 });
 let selectedDifficulty='normal';
 try{const saved=localStorage.getItem('little-dragon-difficulty');if(Object.hasOwn(DIFFICULTIES,saved))selectedDifficulty=saved}catch{}

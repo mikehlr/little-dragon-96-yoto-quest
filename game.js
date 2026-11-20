@@ -37,7 +37,7 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const mix = (a, b, t) => a + (b - a) * t;
 const between = (min, max) => mix(min, max, Math.random());
 const currentStage = () => STAGES[game.level];
-const BASE_DIFFICULTY=Object.freeze({enemyHealth:1,bossHealth:1,incoming:1,speed:1,rest:1,tell:1,energy:8,stageHealth:74,gateHeal:9,appleHeal:32});
+const BASE_DIFFICULTY=Object.freeze({enemyHealth:1.22,bossHealth:1.15,incoming:1.45,speed:1.03,rest:.90,tell:.95,energy:8,stageHealth:65,gateHeal:3,appleHeal:30,soloHelp:true,waveSize:2,attackBudget:2});
 const difficultyRules=()=>globalThis.DragonDifficulty?.rules()||BASE_DIFFICULTY;
 
 // Original stage themes. Melody events are [subdivision, scale degree, length].
@@ -754,7 +754,7 @@ function startEncounter() {
   const formation = FORMATIONS[kind];
   game.arenaName = formation.name;
   game.enemies = formation.slots.flatMap(([side, y, delay, role], i) => {
-    if (!game.two && role === 'help') return [];
+    if (!game.two && role === 'help' && !difficultyRules().soloHelp) return [];
     const x = gate - (side === 'left' ? 255 + i % 2 * 32 : 32 + i % 3 * 26);
     const e = enemy(roster[(game.section + i * 3 + district) % roster.length], x, y);
     if (role === 'runner') {
@@ -1649,7 +1649,7 @@ function drawHero(p) {
   }
   const walking = p.act === 'walk' && !p.running && !globalThis.DragonCarry?.uses(p);
   if (walking) ctx.translate(0, -Math.abs(Math.sin(p.stride / 30 * Math.PI)) * 1.45);
-  if (p.act === 'idle' && !globalThis.DragonCarry?.uses(p)) ctx.translate(0, -Math.round((Math.sin(p.phase * 3.8) + 1) / 2));
+  if (p.act === 'idle' && !p.carry) ctx.translate(0, -Math.round((Math.sin(p.phase * 3.8) + 1) / 2));
   drawHeroFrame(p);
   if (game.fx) strikeTrail(p);
   const held = p.carry || p.toss || ((p.act === 'punch' && p.age < .25 || p.act==='airClub'&&p.age<.32) ? p.swing : null);

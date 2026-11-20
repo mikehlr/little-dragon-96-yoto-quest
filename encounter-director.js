@@ -47,7 +47,7 @@ startEncounter=function(){
  if(!scene||['boss','rival'].includes(scene.kind)){encounterDirector=null;return}
  if(scene.actor){const source=game.enemies[0],e=scene.actor;e.entry={...source.entry};e.guard=source.guard;e.hp=e.maxHp=Math.max(e.maxHp,source.maxHp);game.enemies[0]=e;scene.promoted=true;if(scene.task)game.items=game.items.filter(i=>i!==scene.task)}
  const groups=[];
- for(const [i,e]of game.enemies.entries()){const group=Math.floor(i/2);(groups[group]||=[]).push(e);e.directorWave=group;e.entry.wait=false;e.entry.released=false;if(i===0&&scene.actor){Object.assign(e.entry,{mode:scene.kind,scene,delay:.32,exposed:false});delete e.entry.door;e.entry.goalX=scene.anchor}}
+ for(const [i,e]of game.enemies.entries()){const group=Math.floor(i/(difficultyRules().waveSize||2));(groups[group]||=[]).push(e);e.directorWave=group;e.entry.wait=false;e.entry.released=false;if(i===0&&scene.actor){Object.assign(e.entry,{mode:scene.kind,scene,delay:.32,exposed:false});delete e.entry.door;e.entry.goalX=scene.anchor}}
  encounterDirector={scene,groups,wave:0,waveAge:0,clearAge:0,aidUsed:false,pressure:0};scene.phase='alarmed';scene.clock=0;
  if(!directorSeen.has(scene.kind)){directorSeen.add(scene.kind);townSpeech={name:STAGES[game.level].name,text:DIRECTOR_CAPTIONS[game.level][scene.kind],until:game.clock+5.2}}
  releaseDirectorWave(encounterDirector,0);
@@ -139,7 +139,7 @@ update=function(dt){
 const directorEnemyUpdate=updateEnemy;
 updateEnemy=function(e,dt,living){
  if(!e.entry&&e.hp>0&&!e.boss&&!['tell','attack','recover','hit','fall','phase'].includes(e.act)){
-  const budget=(game.difficulty==='easy'?1:2)+(living.length>1?1:0),busy=game.enemies.filter(o=>o!==e&&o.hp>0&&!o.entry&&['tell','attack'].includes(o.act)).length;
+  const budget=(difficultyRules().attackBudget||(game.difficulty==='easy'?1:2))+(living.length>1?1:0),busy=game.enemies.filter(o=>o!==e&&o.hp>0&&!o.entry&&['tell','attack'].includes(o.act)).length;
   if(busy>=budget)e.cooldown=Math.max(e.cooldown,dt+.12);
  }
  directorEnemyUpdate(e,dt,living);

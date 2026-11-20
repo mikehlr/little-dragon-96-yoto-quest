@@ -35,9 +35,9 @@ globalThis.DRAGON_LOCALES={
     "Drag to move · beyond the ring to run · hold Attack for a special",
     "Рухай стік для руху · за коло для бігу · утримуй атаку для особливого прийому"
   ],
-  "Η αρχική ισορροπία. Μάθε τις κινήσεις, συνδύασε επιθέσεις και παίξε έξυπνα.": [
-    "The original balance. Learn the moves, combine attacks and play smart.",
-    "Початковий баланс. Вивчай прийоми, поєднуй атаки та грай розумно."
+  "Δυνατότερα χτυπήματα, ενισχύσεις και λιγότερη αυτόματη ανάκτηση. Συνδύασε επιθέσεις και άμυνα.": [
+    "Stronger hits, reinforcements and less automatic healing. Combine attacks with defence.",
+    "Сильніші удари, підкріплення й менше автоматичного лікування. Поєднуй атаки із захистом."
   ],
   "Πιο ήπιες μάχες, περισσότερο περιθώριο αντίδρασης και περισσότερη ανάκτηση.": [
     "Gentler battles, more time to react and more recovery.",

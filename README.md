@@ -1,3 +1,13 @@
+# Little Dragon 96 · Carry Idle & Difficulty 2.14
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.14
+
+Both heroes now stand in planted held-object poses instead of freezing a walking contact frame. Normal and Hard combine stronger incoming damage, faster enemy pressure, solo reinforcements and less automatic recovery; Hard releases larger ordinary waves. Easy retains its previous complete rule profile.
+
+See [difficulty formulas and validation](RELEASE-2.14.md) and [scoped QA](qa-results.json).
+
+Previous releases follow.
+
 # Little Dragon 96 · Arcade Reactions 2.13
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.13

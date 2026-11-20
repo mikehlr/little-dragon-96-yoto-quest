@@ -1,5 +1,6 @@
 'use strict';
-function usesCarryWalk(p){return !!p.carry&&['walk','idle'].includes(p.act)&&READY(images['carry-walk-'+(p.hero||p.id)])}
+// A contact frame is not a standing pose: idle belongs to the planted carry atlas.
+function usesCarryWalk(p){return !!p.carry&&p.act==='walk'&&READY(images['carry-walk-'+(p.hero||p.id)])}
 function carryWalkFrame(p){return (p.carry?.kind==='club'?0:8)+(p.act==='walk'?Math.floor(p.stride/7.5)%8:0)}
 function carryObjectUnderlay(p){
  const item=p.carry;if(item.kind==='club')return;const hero=p.hero||p.id,m=DRAGON_CARRY_META[hero],w=m.height*m.aspect,grip=[.70,.55],x=(grip[0]-m.center)*w,y=(grip[1]-m.anchor)*m.height,def=ITEM[item.kind];
