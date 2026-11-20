@@ -1,3 +1,13 @@
+# Little Dragon 96 · Regional Atmosphere 2.10
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.10
+
+Five regions change atmosphere as the adventure advances: harbor rain and distant lightning, deeper forest mist and glowing motes, dusty ruin winds, castle torch embers and violet smoke, gathering snow and a distant aurora. Background color changes happen before actors; foreground weather leaves clear space around fighters, including overlapping characters. Calm, reduced effects, fog, lighting and HD/pixel/CRT preferences remain available.
+
+See [2.10 details](RELEASE-2.10.md), [production atmosphere previews](motion-review.html) and [scoped QA](qa-results.json). Six regions, all three languages, Story/Practice, co-op and the city day/night cycle remain.
+
+Previous releases follow.
+
 # Little Dragon 96 · Living Worlds 2.9
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.9
