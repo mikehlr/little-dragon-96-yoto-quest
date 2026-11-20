@@ -2,7 +2,7 @@
 #handheld-hardware{display:none;pointer-events:none;user-select:none}
 @media(pointer:coarse){#game-shell{width:100vw;height:100dvh}}
 @media(pointer:coarse) and (orientation:portrait){
- :root{--handheld-top:clamp(64px,10dvh,110px);--handheld-height:73.125vw;--handheld-deck:calc(var(--handheld-top) + var(--handheld-height) + clamp(24px,calc((100dvh - var(--handheld-top) - var(--handheld-height) - 210px - var(--safe-bottom)) * .55),120px))}
+ :root{--handheld-top:max(clamp(64px,10dvh,110px),calc(var(--safe-top) + 54px));--handheld-height:73.125vw;--handheld-deck:calc(var(--handheld-top) + var(--handheld-height) + clamp(24px,calc((100dvh - var(--handheld-top) - var(--handheld-height) - 210px - var(--safe-bottom)) * .55),120px))}
  #game-shell{background:radial-gradient(ellipse at 14% 16%,#48616f55,transparent 48%),repeating-linear-gradient(96deg,#192a3c 0px,#192a3c 2px,#1b2c3e 3px,#1b2c3e 5px)!important;box-shadow:inset 3px 0 4px #8298ac45,inset -4px 0 6px #0009}
  #handheld-hardware{display:block;position:absolute;inset:0;z-index:0;border:2px solid #68809155;border-radius:23px 23px 46px 23px;overflow:hidden}
  .handheld-brand{position:absolute;top:calc(var(--handheld-top) - 43px);left:24px;font:italic 900 18px 'Trebuchet MS',sans-serif;letter-spacing:.10em;color:#dfc393;text-shadow:0 2px 1px #0008}

@@ -178,7 +178,7 @@
       "game-surface.js": "f85995246c6993c65f01d160bf60324ad38ffb887da53269dc3fcc908d2b4fde",
       "game.css": "a78845c93c231357fc6df111bf59d95d0a22a393d1827f840280f96316da6aca",
       "game.js": "b4195ef54b307e8f046e6a1e244073bf1ce9647a3e9a5bab5d33a2ae7f75ceff",
-      "handheld.css": "58ae8d7b5e2759b7ebb8a390732b22ab8a75dd1c3eece0d0db19c400ec5926ff",
+      "handheld.css": "4ca4337cabe54dc47175db15962df6054806213a38d5a02d954b363005ffeeeb",
       "index.html": "e8891d267bb473d5d384fae310cd7d6ce97c7d89d3d8748fb631ccb869875291",
       "living-world.js": "2dac416a126e991b2dad1936cbc289fb851fff146d7775299930f1a28bd40ee3",
       "locales.js": "c28af8f9104e98ce1d6dd2a9c6ef65eea632835ccec8b113a7e8403713989b58",
@@ -1036,6 +1036,142 @@
         "home": 0
       },
       "scope": "Real CDP multi-touch steering plus concurrent jump, immediate facing reversal and rotation cancellation; live Chrome AudioContext suspend/resume, music headroom and simulated visibility event."
+    },
+    "safe": {
+      "pass": true,
+      "rows": [
+        {
+          "engine": "chrome",
+          "pause": {
+            "x": 326,
+            "y": 50,
+            "width": 44,
+            "height": 44,
+            "top": 50,
+            "right": 370,
+            "bottom": 94,
+            "left": 326
+          },
+          "canvas": {
+            "x": 8,
+            "y": 101,
+            "width": 374,
+            "height": 285.1875,
+            "top": 101,
+            "right": 382,
+            "bottom": 386.1875,
+            "left": 8
+          },
+          "buttons": [
+            {
+              "x": 246,
+              "y": 616.78125,
+              "width": 72,
+              "height": 72,
+              "top": 616.78125,
+              "right": 318,
+              "bottom": 688.78125,
+              "left": 246
+            },
+            {
+              "x": 320,
+              "y": 578.78125,
+              "width": 56,
+              "height": 56,
+              "top": 578.78125,
+              "right": 376,
+              "bottom": 634.78125,
+              "left": 320
+            },
+            {
+              "x": 268,
+              "y": 524.78125,
+              "width": 52,
+              "height": 52,
+              "top": 524.78125,
+              "right": 320,
+              "bottom": 576.78125,
+              "left": 268
+            },
+            {
+              "x": 206,
+              "y": 578.78125,
+              "width": 52,
+              "height": 52,
+              "top": 578.78125,
+              "right": 258,
+              "bottom": 630.78125,
+              "left": 206
+            }
+          ]
+        },
+        {
+          "engine": "webkit",
+          "pause": {
+            "x": 326,
+            "y": 50,
+            "width": 44,
+            "height": 44,
+            "top": 50,
+            "right": 370,
+            "bottom": 94,
+            "left": 326
+          },
+          "canvas": {
+            "x": 8,
+            "y": 101,
+            "width": 374,
+            "height": 285.1875,
+            "top": 101,
+            "right": 382,
+            "bottom": 386.1875,
+            "left": 8
+          },
+          "buttons": [
+            {
+              "x": 246,
+              "y": 616.78125,
+              "width": 72,
+              "height": 72,
+              "top": 616.78125,
+              "right": 318,
+              "bottom": 688.78125,
+              "left": 246
+            },
+            {
+              "x": 320,
+              "y": 578.78125,
+              "width": 56,
+              "height": 56,
+              "top": 578.78125,
+              "right": 376,
+              "bottom": 634.78125,
+              "left": 320
+            },
+            {
+              "x": 268,
+              "y": 524.78125,
+              "width": 52,
+              "height": 52,
+              "top": 524.78125,
+              "right": 320,
+              "bottom": 576.78125,
+              "left": 268
+            },
+            {
+              "x": 206,
+              "y": 578.78125,
+              "width": 52,
+              "height": 52,
+              "top": 578.78125,
+              "right": 258,
+              "bottom": 630.78125,
+              "left": 206
+            }
+          ]
+        }
+      ],
+      "scope": "Final local handheld CSS applied over the published 2.11 runtime; Chrome/WebKit simulated 47px notch and 34px home indicator at 390x844. Actual device insets still require hardware checks."
     },
     "static": {
       "pass": true,

@@ -14,7 +14,7 @@ The ambience setting is accessible through the existing controller/touch setting
 
 Touch portrait mode has a dedicated Dragon Pocket shell: dark molded body, screen bezel, power light, speaker grille, recessed analog stick and four raised action buttons. Canvas display height is 73.125vw, exactly 130% of its former 56.25vw height. The image deliberately stretches vertically as requested. Internal game coordinates and resolution remain unchanged.
 
-The screen and controls have separate physical space on 320, 375, 390 and 430 px phone layouts. Left-handed layout mirrors both control groups. Landscape restores the original 16:9 presentation immediately, without a geometry transition. Pointer cancellation/reset on rotation and analog steering with simultaneous jump remain functional. Decorative hardware cannot receive input or text selection.
+The screen and controls have separate physical space on 320, 375, 390 and 430 px phone layouts. Left-handed layout mirrors both control groups. Landscape restores the original 16:9 presentation immediately, without a geometry transition. Pointer cancellation/reset on rotation and analog steering with simultaneous jump remain functional. Decorative hardware cannot receive input or text selection. The top bezel/pause area also reserves the real safe-area inset; a 47px notch and 34px home indicator are checked in browser emulation.
 
 ## Checks and limits
 
