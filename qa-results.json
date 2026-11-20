@@ -1,10 +1,12 @@
 {
-  "version": "2.11",
+  "version": "2.12",
   "runtime": {
-    "version": "2.11",
+    "version": "2.12",
     "title": "Little Dragon 96 Arcade Brawler",
     "files": {
       ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "arcade-bomber.js": "96b263100df554328c16c9f94b856841db1a62cab58eb144a41034d6f7c0aaae",
+      "arcade-destruction.js": "a576e906d14702eecf8c43f7f263c3fe09b8c76a6e1fec0eb7b9ab97febded10",
       "arcade-motion.js": "9c5c8fe495512202e076e719a4754d5de84f7dcb7b1e1f8f674f397e7503830d",
       "arcade24.css": "d72c4fdfd85f07bea51aa348e9b649e7e582a1f4524b346f19d54c30a9fc4872",
       "arcade24.js": "3bec312f8db37575a14e6c8efbd008093d0ace7954bb95e3849bac3eb21bbb62",
@@ -148,14 +150,14 @@
       "assets/vendor-motion.webp": "1595e4f32c715cf5cc5913eaa2806e40220ae6c2bbe49668ce90ab591b9459f6",
       "assets/world-entrances.webp": "72ceb17c661cc80694859114b5c351081ed04ed4dc4b549d84195bfd53ca2354",
       "boss-waves.js": "1dcf34923e568a113be287a132e6f738533fe2931425339e747f4877156d8f1a",
-      "brawler-air.js": "7aa04a5c735bee09224488c4ffcb261dda885a0e1040de4fa89882c7931ae6f1",
+      "brawler-air.js": "bac9f9880bb796859a8501958c9e5b5dca2e743eddb18745f0b90379150b02cf",
       "brawler-balance.js": "91fbabf90d919dafc8ae46d333155ff62f6a3dd2a140ac53313eb676bb73e2b5",
       "brawler-combat.js": "b719c0748ff4de7811ccdc63bb35660392859ede6fa430ad2265dae86e5a5284",
-      "brawler-grips.js": "08da34cd9f227619d9e73708ae9b54463c5bba1346f1a88d085456acf68695d7",
+      "brawler-grips.js": "3837eec888cd67b99963e1ba8a3482810e6e443c3f2e724d13f936c64cabfbf4",
       "brawler-shops.js": "b337ac0cba6dff057cb5921a7e29045f82a56b3225c01f461cb71d6f37e7bd0a",
       "campaign-config.js": "f2203905a649bb3fccebff8d732514adac66e8ff8e49c7fc47b47c2e224a8280",
       "campaign-data.js": "e8b85860256efce7df8e2d75c5f5a515e42395190a525087421bbc488c730ab7",
-      "campaign-flow.js": "4660b1d1fb8872987456369687cf17939b658a2f1154b6ad0c838e257e05e8ad",
+      "campaign-flow.js": "12f7cac9c21658b4f39dac402161b9264f4188157d9edef2de313d2bdef90fe0",
       "campaign-loader.js": "00ee51a8aa42f734eecc21c289daa72e7e7b807ad4547dacf3aec05838a09217",
       "campaign-locales.js": "8aec25e97d061c9d269952ffda0b64c6b481f580d3fa02428c38858d52e2d94c",
       "campaign-meta.js": "45a61bb2ad5d843fa6b8d331b1363eea49e4a3ccf2c297e17f9ccb56e3eb7e33",
@@ -168,7 +170,7 @@
       "character-select.js": "395ad26f4ddd65fc99f92a20b2f13c474ccc12dd9c206cbef92961db7a294e7c",
       "difficulty.js": "aec4b38912a1f29da6d5d909db6e3eef45f658350819c55ad8f9405b321ef43b",
       "director-meta.js": "af43ef519ef0690b415827bc328bedbff0b0a0b19eb6ad70f63d890ebd40cb52",
-      "dynamic-weather.js": "3f25d5c4249fc9c75675bd645a10308540d09833df3802c91e0ca64c383b36b5",
+      "dynamic-weather.js": "85523ca23a3cb5f8d0d421613ec4900785f5e61793330cf9df1aa78a45ab3c66",
       "encounter-director.js": "0d1d3fc4fe865b399c8cff117525afb26b689aacb8a03fcba11c03f357d628bb",
       "environment-audio.js": "569863afb1f42bccbb325d67f8e34a12b096e77872a55985c4f8e8c3b70597ce",
       "expansion-meta.js": "601d09314a0ead4d902b9bce650eceddc319731224eb84e51a1a31604bff13b9",
@@ -179,1027 +181,6586 @@
       "game.css": "a78845c93c231357fc6df111bf59d95d0a22a393d1827f840280f96316da6aca",
       "game.js": "b4195ef54b307e8f046e6a1e244073bf1ce9647a3e9a5bab5d33a2ae7f75ceff",
       "handheld.css": "4ca4337cabe54dc47175db15962df6054806213a38d5a02d954b363005ffeeeb",
-      "index.html": "e8891d267bb473d5d384fae310cd7d6ce97c7d89d3d8748fb631ccb869875291",
+      "index.html": "125eba755128ed6bc1946df55a743adbcc91d235a6a41cf04208cbad35878e83",
       "living-world.js": "2dac416a126e991b2dad1936cbc289fb851fff146d7775299930f1a28bd40ee3",
       "locales.js": "c28af8f9104e98ce1d6dd2a9c6ef65eea632835ccec8b113a7e8403713989b58",
       "localization.js": "a58d6f20dc0a8f2c05e6412086ef541b91beaf9d0f3c65942b169a7f59dc4160",
       "manifest-en.webmanifest": "a41e5d1b1781e092cba6ad1f4dc08c279220512f5352365b17239056e3d36c9d",
       "manifest-uk.webmanifest": "838ae58dea8fb3ade46c3e3a2aba62c9b27ea0306801786ff8342d7a6bdfb8bb",
       "manifest.webmanifest": "d062f7ea643fd3ea840f90d657bb58a158937401c9fc87823aed503ef7e4b049",
-      "motion-catalog.json": "0ef7a5133dca4f555fb7d6ea1aada1cd0546395e355df0779a7c3ef41f64840b",
+      "motion-catalog.json": "f2d26f4cc7d8c7b383a7b8a527770a49fe658750d5543c85b7d795e052312d21",
       "motion-meta.js": "972a502978acd65bad12dcbcce2a5f41f78b48a165a8984a28b9d63aa3ab7d55",
-      "motion-review.html": "7392513dfe6fcf6ae733e62c03fa117d20a034ff6dadab6b6508adec9af22e6c",
-      "motion-review.js": "57b52c040d78e15199346daa4899976beb6231033304f6fd5f2a1a508c3b3be9",
+      "motion-review.html": "c948d39131ea2905d1c04a683492fd0e2563104e9fb3846d5842ddde70db896a",
+      "motion-review.js": "0cbb975d94e26f99c3bc0649815b0ed841e17ba6e664ebc1303acde71f33cbe6",
       "play-modes.css": "90c31487aad4e55b56bab9a5156fd734bab8daf3982261aa30b7e7b22f92eaa9",
       "play-modes.js": "d2ae4e762e0eebd191e96026e797672f35258be81badd2d5875b0e727ac22952",
       "regional-weather.js": "8bbc1d10fba0f3b5b6760dcbc693adfe287bb4c3778d9f738b6edcdd8f48f2d5",
       "remaster.css": "d8aab53099ddd976f5695803268efa4c212c4b393d039a775aa2838c5d4f70b3",
-      "remaster.js": "feecaeb9829cb4777d88b809c728d4737717816bee5014ebd51f652dcb6206f3",
+      "remaster.js": "6d06ea7e3be7c0a553564bb85cefeb7d98047e9c19ad923f0383bf96a1d5e37f",
       "scene-layout.js": "5cfd792a9c326fd0c30566c8de3df53b6de4c3331d54c275e9da2c5b73970a70",
       "sprite-camera.js": "7438e0384247ce4e32220205fa1aecb183b685ec9ce807fa71522c72c8d2d54e",
       "touch-controls.js": "dcd7ca4b5723937c997e9783fbc7eb0531e1e056a98b71695487fe8568ad275d",
       "town-meta.js": "092a3c12383fb25a9f2ebc89d1239ef5ee8771b9a16b1eae77f5d650d8dd1a29",
-      "world-assets.js": "ee148c78f1d4e3913e90221ad1fdb8fd66bb569886d33a0966c4bde8b7068db6"
+      "world-assets.js": "c55ba996fd42c8bfa30775bf352f269c42a43a17ced014d16ba94767cabfb8f0"
     },
     "runtimeImageCount": 138
   },
   "reports": {
-    "audio": {
+    "effects": {
       "pass": true,
-      "results": [
+      "rows": [
         {
           "level": 0,
-          "early": {
-            "rms": 0.0017033375865608254,
-            "peak": 0.007154119201004505,
-            "brightness": 0.6535685664649826,
-            "stereo": 0.002389024627193611
-          },
-          "late": {
-            "rms": 0.002168518534782462,
-            "peak": 0.009213011711835861,
-            "brightness": 0.5182779947823453,
-            "stereo": 0.0030370769960354196
-          },
-          "music": {
-            "rms": 0.05667339437782637,
-            "peak": 0.35473525524139404,
-            "brightness": 0.10368361765426656,
-            "stereo": 0
-          },
-          "mix": {
-            "rms": 0.05670854147786384,
-            "peak": 0.3552477955818176,
-            "brightness": 0.10525746382164256,
-            "stereo": 0.0028824851881735524
-          },
-          "thunder": null,
-          "musicMarginDb": 28.344321728122797
+          "material": "wood",
+          "fragments": 12,
+          "loot": 1,
+          "lamps": 20,
+          "blockers": [],
+          "lifetime": {
+            "settled": true,
+            "remaining": 0,
+            "blink": true
+          }
         },
         {
           "level": 1,
-          "early": {
-            "rms": 0.0043589119509986046,
-            "peak": 0.017925433814525604,
-            "brightness": 0.200621992092437,
-            "stereo": 0.00610379860059307
-          },
-          "late": {
-            "rms": 0.012973159277436544,
-            "peak": 0.05766690894961357,
-            "brightness": 0.9771620253036846,
-            "stereo": 0.01824197398295269
-          },
-          "music": {
-            "rms": 0.058961875508381036,
-            "peak": 0.39357051253318787,
-            "brightness": 0.14652422083321287,
-            "stereo": 0
-          },
-          "mix": {
-            "rms": 0.06036629214342547,
-            "peak": 0.39569270610809326,
-            "brightness": 0.24547059013682862,
-            "stereo": 0.01764095401106788
-          },
-          "thunder": {
-            "rms": 0.013221534417229957,
-            "peak": 0.06505467742681503,
-            "brightness": 0.9588850738089161,
-            "stereo": 0.01854829996070888
-          },
-          "musicMarginDb": 13.150510786348192
+          "material": "wood",
+          "fragments": 12,
+          "loot": 1,
+          "lamps": 0,
+          "blockers": [],
+          "lifetime": {
+            "settled": true,
+            "remaining": 0,
+            "blink": true
+          }
         },
         {
           "level": 2,
-          "early": {
-            "rms": 0.0028120794424398303,
-            "peak": 0.01163130346685648,
-            "brightness": 0.8114218280737763,
-            "stereo": 0.003952468891041428
-          },
-          "late": {
-            "rms": 0.00531321581616913,
-            "peak": 0.02355004847049713,
-            "brightness": 0.7467359443632398,
-            "stereo": 0.007464384138177937
-          },
-          "music": {
-            "rms": 0.05399410199046095,
-            "peak": 0.3816280663013458,
-            "brightness": 0.081310115175848,
-            "stereo": 0
-          },
-          "mix": {
-            "rms": 0.05418742371189127,
-            "peak": 0.378930002450943,
-            "brightness": 0.10655563824419371,
-            "stereo": 0.007084339305999767
-          },
-          "thunder": null,
-          "musicMarginDb": 20.13977731562951
+          "material": "wood",
+          "fragments": 12,
+          "loot": 1,
+          "lamps": 0,
+          "blockers": [],
+          "lifetime": {
+            "settled": true,
+            "remaining": 0,
+            "blink": true
+          }
         },
         {
           "level": 3,
-          "early": {
-            "rms": 0.0019092513580860457,
-            "peak": 0.008490368723869324,
-            "brightness": 0.29870561803716716,
-            "stereo": 0.002669268527846158
-          },
-          "late": {
-            "rms": 0.008443843404384803,
-            "peak": 0.036355409771203995,
-            "brightness": 0.3021752318368894,
-            "stereo": 0.011860276592890974
-          },
-          "music": {
-            "rms": 0.056906440318367016,
-            "peak": 0.35430413484573364,
-            "brightness": 0.09798472301999032,
-            "stereo": 0
-          },
-          "mix": {
-            "rms": 0.05740462457701599,
-            "peak": 0.36182940006256104,
-            "brightness": 0.10573630366025966,
-            "stereo": 0.011253220693480219
-          },
-          "thunder": null,
-          "musicMarginDb": 16.57242498899626
+          "material": "stone",
+          "fragments": 12,
+          "loot": 1,
+          "lamps": 0,
+          "blockers": [],
+          "lifetime": {
+            "settled": true,
+            "remaining": 0,
+            "blink": true
+          }
         },
         {
           "level": 4,
-          "early": {
-            "rms": 0.003637251003631335,
-            "peak": 0.014351630583405495,
-            "brightness": 0.7562426196735428,
-            "stereo": 0.005128578721403855
-          },
-          "late": {
-            "rms": 0.00700418449015334,
-            "peak": 0.027825962752103806,
-            "brightness": 0.7631425215214446,
-            "stereo": 0.009877247768134428
-          },
-          "music": {
-            "rms": 0.06792344270430686,
-            "peak": 0.38027170300483704,
-            "brightness": 0.1429212074250781,
-            "stereo": 0
-          },
-          "mix": {
-            "rms": 0.06824958319453804,
-            "peak": 0.3838365077972412,
-            "brightness": 0.16034633869214315,
-            "stereo": 0.009394222618766344
-          },
-          "thunder": null,
-          "musicMarginDb": 19.733242263289085
+          "material": "wood",
+          "fragments": 12,
+          "loot": 1,
+          "lamps": 0,
+          "blockers": [],
+          "lifetime": {
+            "settled": true,
+            "remaining": 0,
+            "blink": true
+          }
         },
         {
           "level": 5,
-          "early": {
-            "rms": 0.003262645256931939,
-            "peak": 0.013465826399624348,
-            "brightness": 0.1945817978608465,
-            "stereo": 0.00455903539392351
-          },
-          "late": {
-            "rms": 0.00913314359219579,
-            "peak": 0.03776773065328598,
-            "brightness": 0.2759495576675139,
-            "stereo": 0.012794387666831747
-          },
-          "music": {
-            "rms": 0.05302754503062401,
-            "peak": 0.35493186116218567,
-            "brightness": 0.052041636374018256,
-            "stereo": 0
-          },
-          "mix": {
-            "rms": 0.05384348817129427,
-            "peak": 0.35477685928344727,
-            "brightness": 0.06781540744295213,
-            "stereo": 0.012143585109816923
-          },
-          "thunder": null,
-          "musicMarginDb": 15.27762471426893
+          "material": "ice",
+          "fragments": 12,
+          "loot": 1,
+          "lamps": 0,
+          "blockers": [],
+          "lifetime": {
+            "settled": true,
+            "remaining": 0,
+            "blink": true
+          }
         }
       ],
+      "bomb": {
+        "bomber": true,
+        "target": 250,
+        "grounded": true,
+        "fuse": 2.2
+      },
+      "reflect": {
+        "heroHp": 100,
+        "enemyHp": 68,
+        "remainingBombs": 0
+      },
       "errors": [],
-      "scope": "Offline production Web Audio renders, six regions at early/late weather and score/action mixes; measured RMS headroom, non-clipping peaks and stereo difference. Integration tests separately exercise actual duck/mute scheduling. Numeric checks are not a subjective listening review."
+      "scope": "Actual break/loot/physics/cleanup in six regions; native composed captures; bomber cast, fixed aim, fuse and reflected friendly damage. Lamp blockers reported for layout review, not silently ignored."
     },
-    "integration": {
+    "bomber": {
       "pass": true,
       "rows": [
         {
           "engine": "chrome",
-          "before": null,
-          "duck": null,
-          "sizes": [
+          "cases": [
             {
-              "width": 320,
-              "height": 568,
-              "canvas": {
-                "x": 8,
-                "y": 64,
-                "w": 304,
-                "h": 234
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 176,
-                  "y": 444,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 250,
-                  "y": 406,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 198,
-                  "y": 352,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 136,
-                  "y": 406,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "easy",
+              "two": false,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 331,
-                "w": 147.1875,
-                "h": 190
-              },
-              "scroll": 320,
-              "transition": "0s",
-              "reset": true
+              "damage": 3
             },
             {
-              "width": 375,
-              "height": 667,
-              "canvas": {
-                "x": 8,
-                "y": 66.6875,
-                "w": 359,
-                "h": 274.21875
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 231,
-                  "y": 517.75,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 305,
-                  "y": 479.75,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 253,
-                  "y": 425.75,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 191,
-                  "y": 479.75,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "easy",
+              "two": true,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 404.75,
-                "w": 172.5,
-                "h": 190
-              },
-              "scroll": 375,
-              "transition": "0s",
-              "reset": true
+              "damage": 3
             },
             {
-              "width": 390,
-              "height": 844,
-              "canvas": {
-                "x": 8,
-                "y": 84.390625,
-                "w": 374,
-                "h": 285.1875
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 246,
-                  "y": 602.578125,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 320,
-                  "y": 564.578125,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 268,
-                  "y": 510.578125,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 206,
-                  "y": 564.578125,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "normal",
+              "two": false,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 489.578125,
-                "w": 179.390625,
-                "h": 190
-              },
-              "scroll": 390,
-              "transition": "0s",
-              "reset": true
+              "damage": 7
             },
             {
-              "width": 430,
-              "height": 932,
-              "canvas": {
-                "x": 8,
-                "y": 93.1875,
-                "w": 414,
-                "h": 314.4375
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 286,
-                  "y": 640.625,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 360,
-                  "y": 602.625,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 308,
-                  "y": 548.625,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 246,
-                  "y": 602.625,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "normal",
+              "two": true,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 527.625,
-                "w": 197.796875,
-                "h": 190
-              },
-              "scroll": 430,
-              "transition": "0s",
-              "reset": true
+              "damage": 7
             },
             {
-              "width": 844,
-              "height": 390,
-              "canvas": {
-                "x": 75.328125,
-                "y": 0,
-                "w": 693.328125,
-                "h": 390
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 654.2000122070312,
-                  "y": 266,
-                  "w": 61.20001220703125,
-                  "h": 61.20001220703125
-                },
-                {
-                  "key": "jump",
-                  "x": 719,
-                  "y": 330.79998779296875,
-                  "w": 52.20001220703125,
-                  "h": 52.20001220703125
-                },
-                {
-                  "key": "block",
-                  "x": 774.7999877929688,
-                  "y": 275,
-                  "w": 52.20001220703125,
-                  "h": 52.20001220703125
-                },
-                {
-                  "key": "pickup",
-                  "x": 719,
-                  "y": 219.1999969482422,
-                  "w": 52.20001220703125,
-                  "h": 52.19999694824219
-                }
+              "difficulty": "hard",
+              "two": false,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 220,
-                "w": 270.078125,
-                "h": 170
-              },
-              "scroll": 844,
-              "transition": "0s",
-              "reset": true
+              "damage": 14
             },
             {
-              "width": 390,
-              "height": 844,
-              "canvas": {
-                "x": 8,
-                "y": 84.390625,
-                "w": 374,
-                "h": 285.1875
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 246,
-                  "y": 602.578125,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 320,
-                  "y": 564.578125,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 268,
-                  "y": 510.578125,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 206,
-                  "y": 564.578125,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "hard",
+              "two": true,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 489.578125,
-                "w": 179.390625,
-                "h": 190
-              },
-              "scroll": 390,
-              "transition": "0s",
-              "reset": true
+              "damage": 14
             }
           ],
-          "left": {
-            "stick": 210.609375,
-            "buttons": 14
-          },
-          "audioSupported": true,
-          "audioMutePauseAndSetting": true
+          "jumpAvoids": true,
+          "campaignFactory": true,
+          "profileCount": 21
+        },
+        {
+          "engine": "chrome",
+          "air": {
+            "hero": 1,
+            "kind": "glassJar",
+            "queued": true,
+            "thrown": true
+          }
+        },
+        {
+          "engine": "chrome",
+          "air": {
+            "hero": 1,
+            "kind": "powderBarrel",
+            "queued": true,
+            "thrown": true
+          }
+        },
+        {
+          "engine": "chrome",
+          "air": {
+            "hero": 2,
+            "kind": "glassJar",
+            "queued": true,
+            "thrown": true
+          }
+        },
+        {
+          "engine": "chrome",
+          "air": {
+            "hero": 2,
+            "kind": "powderBarrel",
+            "queued": true,
+            "thrown": true
+          }
         },
         {
           "engine": "webkit",
-          "before": null,
-          "duck": null,
-          "sizes": [
+          "cases": [
             {
-              "width": 320,
-              "height": 568,
-              "canvas": {
-                "x": 8,
-                "y": 64,
-                "w": 304,
-                "h": 234
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 176,
-                  "y": 444,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 250,
-                  "y": 406,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 198,
-                  "y": 352,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 136,
-                  "y": 406,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "easy",
+              "two": false,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 331,
-                "w": 147.1875,
-                "h": 190
-              },
-              "scroll": 320,
-              "transition": "0s",
-              "reset": true
+              "damage": 3
             },
             {
-              "width": 375,
-              "height": 667,
-              "canvas": {
-                "x": 8,
-                "y": 66.6875,
-                "w": 359,
-                "h": 274.21875
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 231,
-                  "y": 517.75,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 305,
-                  "y": 479.75,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 253,
-                  "y": 425.75,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 191,
-                  "y": 479.75,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "easy",
+              "two": true,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 404.75,
-                "w": 172.5,
-                "h": 190
-              },
-              "scroll": 375,
-              "transition": "0s",
-              "reset": true
+              "damage": 3
             },
             {
-              "width": 390,
-              "height": 844,
-              "canvas": {
-                "x": 8,
-                "y": 84.390625,
-                "w": 374,
-                "h": 285.1875
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 246,
-                  "y": 602.578125,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 320,
-                  "y": 564.578125,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 268,
-                  "y": 510.578125,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 206,
-                  "y": 564.578125,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "normal",
+              "two": false,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 489.578125,
-                "w": 179.390625,
-                "h": 190
-              },
-              "scroll": 390,
-              "transition": "0s",
-              "reset": true
+              "damage": 7
             },
             {
-              "width": 430,
-              "height": 932,
-              "canvas": {
-                "x": 8,
-                "y": 93.1875,
-                "w": 414,
-                "h": 314.4375
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 286,
-                  "y": 640.625,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 360,
-                  "y": 602.625,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 308,
-                  "y": 548.625,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 246,
-                  "y": 602.625,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "normal",
+              "two": true,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 527.625,
-                "w": 197.796875,
-                "h": 190
-              },
-              "scroll": 430,
-              "transition": "0s",
-              "reset": true
+              "damage": 7
             },
             {
-              "width": 844,
-              "height": 390,
-              "canvas": {
-                "x": 75.328125,
-                "y": 0,
-                "w": 693.328125,
-                "h": 390
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 654.1843872070312,
-                  "y": 266,
-                  "w": 61.20001220703125,
-                  "h": 61.20001220703125
-                },
-                {
-                  "key": "jump",
-                  "x": 718.984375,
-                  "y": 330.79998779296875,
-                  "w": 52.20001220703125,
-                  "h": 52.20001220703125
-                },
-                {
-                  "key": "block",
-                  "x": 774.7843627929688,
-                  "y": 275,
-                  "w": 52.20001220703125,
-                  "h": 52.20001220703125
-                },
-                {
-                  "key": "pickup",
-                  "x": 718.984375,
-                  "y": 219.1999969482422,
-                  "w": 52.20001220703125,
-                  "h": 52.19999694824219
-                }
+              "difficulty": "hard",
+              "two": false,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 220,
-                "w": 270.078125,
-                "h": 170
-              },
-              "scroll": 844,
-              "transition": "0s",
-              "reset": true
+              "damage": 14
             },
             {
-              "width": 390,
-              "height": 844,
-              "canvas": {
-                "x": 8,
-                "y": 84.390625,
-                "w": 374,
-                "h": 285.1875
-              },
-              "buttons": [
-                {
-                  "key": "attack",
-                  "x": 246,
-                  "y": 602.578125,
-                  "w": 72,
-                  "h": 72
-                },
-                {
-                  "key": "jump",
-                  "x": 320,
-                  "y": 564.578125,
-                  "w": 56,
-                  "h": 56
-                },
-                {
-                  "key": "block",
-                  "x": 268,
-                  "y": 510.578125,
-                  "w": 52,
-                  "h": 52
-                },
-                {
-                  "key": "pickup",
-                  "x": 206,
-                  "y": 564.578125,
-                  "w": 52,
-                  "h": 52
-                }
+              "difficulty": "hard",
+              "two": true,
+              "states": [
+                "walk",
+                "idle",
+                "tell",
+                "attack"
               ],
-              "zone": {
-                "x": 0,
-                "y": 489.578125,
-                "w": 179.390625,
-                "h": 190
-              },
-              "scroll": 390,
-              "transition": "0s",
-              "reset": true
+              "damage": 14
             }
           ],
-          "left": {
-            "stick": 210.609375,
-            "buttons": 14
-          },
-          "audioSupported": false,
-          "audioMutePauseAndSetting": false
+          "jumpAvoids": true,
+          "campaignFactory": true,
+          "profileCount": 21
+        },
+        {
+          "engine": "webkit",
+          "air": {
+            "hero": 1,
+            "kind": "glassJar",
+            "queued": true,
+            "thrown": true
+          }
+        },
+        {
+          "engine": "webkit",
+          "air": {
+            "hero": 1,
+            "kind": "powderBarrel",
+            "queued": true,
+            "thrown": true
+          }
+        },
+        {
+          "engine": "webkit",
+          "air": {
+            "hero": 2,
+            "kind": "glassJar",
+            "queued": true,
+            "thrown": true
+          }
+        },
+        {
+          "engine": "webkit",
+          "air": {
+            "hero": 2,
+            "kind": "powderBarrel",
+            "queued": true,
+            "thrown": true
+          }
         }
       ],
       "errors": [],
-      "scope": "Chrome/WebKit touch emulation; actual Chrome Web Audio activation (Windows WebKit has no AudioContext and is checked for graceful fallback), storm thunder delay, impact ducking, pause/mute, translated persisted ambience setting; six portrait/landscape layouts and left-handed controls. Physical iPhone audio/ergonomics require device testing."
+      "scope": "Production bomber AI/tell/release, all difficulties/player counts, one blast hit, jump avoidance, actual campaign factory; native hand poses; both heroes aerial release of new props; Chrome/WebKit desktop/portrait and real renderer destruction preview."
     },
-    "touch": {
+    "campaign": {
       "pass": true,
-      "pos": {
-        "sx": 89.6953125,
-        "sy": 584.578125,
-        "jx": 348,
-        "jy": 592.578125,
-        "start": 81
-      },
-      "moving": {
-        "x": 94.5228997885835,
-        "analog": 0.6300211416490487,
-        "face": 1
-      },
-      "jump": {
-        "z": 18.7975037,
-        "analog": 0.6300211416490487
-      },
-      "audio": {
-        "full": 0.32,
-        "low": 0.04923076923076924,
-        "hidden": 0,
-        "home": 0
-      },
-      "scope": "Real CDP multi-touch steering plus concurrent jump, immediate facing reversal and rotation cancellation; live Chrome AudioContext suspend/resume, music headroom and simulated visibility event."
-    },
-    "safe": {
-      "pass": true,
-      "rows": [
+      "beats": 576,
+      "bosses": 36,
+      "results": [
         {
-          "engine": "chrome",
-          "pause": {
-            "x": 326,
-            "y": 50,
-            "width": 44,
-            "height": 44,
-            "top": 50,
-            "right": 370,
-            "bottom": 94,
-            "left": 326
-          },
-          "canvas": {
-            "x": 8,
-            "y": 101,
-            "width": 374,
-            "height": 285.1875,
-            "top": 101,
-            "right": 382,
-            "bottom": 386.1875,
-            "left": 8
-          },
-          "buttons": [
-            {
-              "x": 246,
-              "y": 616.78125,
-              "width": 72,
-              "height": 72,
-              "top": 616.78125,
-              "right": 318,
-              "bottom": 688.78125,
-              "left": 246
-            },
-            {
-              "x": 320,
-              "y": 578.78125,
-              "width": 56,
-              "height": 56,
-              "top": 578.78125,
-              "right": 376,
-              "bottom": 634.78125,
-              "left": 320
-            },
-            {
-              "x": 268,
-              "y": 524.78125,
-              "width": 52,
-              "height": 52,
-              "top": 524.78125,
-              "right": 320,
-              "bottom": 576.78125,
-              "left": 268
-            },
-            {
-              "x": 206,
-              "y": 578.78125,
-              "width": 52,
-              "height": 52,
-              "top": 578.78125,
-              "right": 258,
-              "bottom": 630.78125,
-              "left": 206
-            }
+          "level": 0,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 0,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 0,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 97
+        },
+        {
+          "level": 0,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 0,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 118
+        },
+        {
+          "level": 0,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 0,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 279
+        },
+        {
+          "level": 0,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 0,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 0,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 97
+        },
+        {
+          "level": 0,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 0,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 118
+        },
+        {
+          "level": 0,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 0,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 279
+        },
+        {
+          "level": 0,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 0,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 0,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 97
+        },
+        {
+          "level": 0,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 0,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 118
+        },
+        {
+          "level": 0,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 0,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 246
+        },
+        {
+          "level": 0,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 0,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 0,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 97
+        },
+        {
+          "level": 0,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 0,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 118
+        },
+        {
+          "level": 0,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 0,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 246
+        },
+        {
+          "level": 0,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 0,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 0,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 97
+        },
+        {
+          "level": 0,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 0,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 118
+        },
+        {
+          "level": 0,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 0,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 231
+        },
+        {
+          "level": 0,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 0,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 0,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 97
+        },
+        {
+          "level": 0,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 0,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 118
+        },
+        {
+          "level": 0,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 0,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 0,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 0,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 0,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 0,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 231
+        },
+        {
+          "level": 1,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 1,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 51
+        },
+        {
+          "level": 1,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 95
+        },
+        {
+          "level": 1,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 61
+        },
+        {
+          "level": 1,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 1,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 119
+        },
+        {
+          "level": 1,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 1,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 52
+        },
+        {
+          "level": 1,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 1,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 286
+        },
+        {
+          "level": 1,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 1,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 51
+        },
+        {
+          "level": 1,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 95
+        },
+        {
+          "level": 1,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 61
+        },
+        {
+          "level": 1,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 1,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 119
+        },
+        {
+          "level": 1,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 1,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 52
+        },
+        {
+          "level": 1,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 1,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 286
+        },
+        {
+          "level": 1,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 1,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 51
+        },
+        {
+          "level": 1,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 95
+        },
+        {
+          "level": 1,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 61
+        },
+        {
+          "level": 1,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 1,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 119
+        },
+        {
+          "level": 1,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 1,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 52
+        },
+        {
+          "level": 1,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 1,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 253
+        },
+        {
+          "level": 1,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 1,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 51
+        },
+        {
+          "level": 1,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 95
+        },
+        {
+          "level": 1,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 61
+        },
+        {
+          "level": 1,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 1,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 119
+        },
+        {
+          "level": 1,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 1,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 52
+        },
+        {
+          "level": 1,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 1,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 253
+        },
+        {
+          "level": 1,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 1,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 51
+        },
+        {
+          "level": 1,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 95
+        },
+        {
+          "level": 1,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 61
+        },
+        {
+          "level": 1,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 1,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 119
+        },
+        {
+          "level": 1,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 1,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 52
+        },
+        {
+          "level": 1,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 1,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 239
+        },
+        {
+          "level": 1,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 1,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 51
+        },
+        {
+          "level": 1,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 95
+        },
+        {
+          "level": 1,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 61
+        },
+        {
+          "level": 1,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 1,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 119
+        },
+        {
+          "level": 1,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 1,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 52
+        },
+        {
+          "level": 1,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 1,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 1,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 1,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 239
+        },
+        {
+          "level": 2,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 2,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 69
+        },
+        {
+          "level": 2,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 71
+        },
+        {
+          "level": 2,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 95
+        },
+        {
+          "level": 2,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 2,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 2,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 111
+        },
+        {
+          "level": 2,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 50
+        },
+        {
+          "level": 2,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 2,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 2,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 309
+        },
+        {
+          "level": 2,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 2,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 69
+        },
+        {
+          "level": 2,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 71
+        },
+        {
+          "level": 2,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 95
+        },
+        {
+          "level": 2,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 2,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 2,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 111
+        },
+        {
+          "level": 2,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 50
+        },
+        {
+          "level": 2,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 2,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 2,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 309
+        },
+        {
+          "level": 2,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 2,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 69
+        },
+        {
+          "level": 2,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 71
+        },
+        {
+          "level": 2,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 95
+        },
+        {
+          "level": 2,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 2,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 2,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 111
+        },
+        {
+          "level": 2,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 50
+        },
+        {
+          "level": 2,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 2,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 2,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 274
+        },
+        {
+          "level": 2,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 2,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 69
+        },
+        {
+          "level": 2,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 71
+        },
+        {
+          "level": 2,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 95
+        },
+        {
+          "level": 2,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 2,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 2,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 111
+        },
+        {
+          "level": 2,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 50
+        },
+        {
+          "level": 2,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 2,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 2,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 274
+        },
+        {
+          "level": 2,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 2,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 69
+        },
+        {
+          "level": 2,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 71
+        },
+        {
+          "level": 2,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 95
+        },
+        {
+          "level": 2,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 2,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 2,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 111
+        },
+        {
+          "level": 2,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 50
+        },
+        {
+          "level": 2,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 2,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 2,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 257
+        },
+        {
+          "level": 2,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 2,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 69
+        },
+        {
+          "level": 2,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 71
+        },
+        {
+          "level": 2,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 95
+        },
+        {
+          "level": 2,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 2,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 2,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 111
+        },
+        {
+          "level": 2,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 2,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 50
+        },
+        {
+          "level": 2,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 2,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 2,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 2,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 257
+        },
+        {
+          "level": 3,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 78
+        },
+        {
+          "level": 3,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 62
+        },
+        {
+          "level": 3,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 80
+        },
+        {
+          "level": 3,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 3,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 3,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 117
+        },
+        {
+          "level": 3,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 3,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 3,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 61
+        },
+        {
+          "level": 3,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 316
+        },
+        {
+          "level": 3,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 78
+        },
+        {
+          "level": 3,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 62
+        },
+        {
+          "level": 3,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 80
+        },
+        {
+          "level": 3,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 3,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 3,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 117
+        },
+        {
+          "level": 3,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 3,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 3,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 61
+        },
+        {
+          "level": 3,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 316
+        },
+        {
+          "level": 3,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 78
+        },
+        {
+          "level": 3,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 62
+        },
+        {
+          "level": 3,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 80
+        },
+        {
+          "level": 3,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 3,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 3,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 117
+        },
+        {
+          "level": 3,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 3,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 3,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 61
+        },
+        {
+          "level": 3,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 279
+        },
+        {
+          "level": 3,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 78
+        },
+        {
+          "level": 3,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 62
+        },
+        {
+          "level": 3,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 80
+        },
+        {
+          "level": 3,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 3,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 3,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 117
+        },
+        {
+          "level": 3,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 3,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 3,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 61
+        },
+        {
+          "level": 3,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 279
+        },
+        {
+          "level": 3,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 78
+        },
+        {
+          "level": 3,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 62
+        },
+        {
+          "level": 3,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 80
+        },
+        {
+          "level": 3,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 3,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 3,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 117
+        },
+        {
+          "level": 3,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 3,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 3,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 61
+        },
+        {
+          "level": 3,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 259
+        },
+        {
+          "level": 3,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 78
+        },
+        {
+          "level": 3,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 62
+        },
+        {
+          "level": 3,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 80
+        },
+        {
+          "level": 3,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 3,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 3,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 117
+        },
+        {
+          "level": 3,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 3,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 3,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 3,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 61
+        },
+        {
+          "level": 3,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 3,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 259
+        },
+        {
+          "level": 5,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 5,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 5,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 90
+        },
+        {
+          "level": 5,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 5,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 117
+        },
+        {
+          "level": 5,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 5,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 332
+        },
+        {
+          "level": 5,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 5,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 5,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 90
+        },
+        {
+          "level": 5,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 5,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 117
+        },
+        {
+          "level": 5,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 5,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 332
+        },
+        {
+          "level": 5,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 5,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 5,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 90
+        },
+        {
+          "level": 5,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 5,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 117
+        },
+        {
+          "level": 5,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 5,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 288
+        },
+        {
+          "level": 5,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 5,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 5,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 90
+        },
+        {
+          "level": 5,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 5,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 117
+        },
+        {
+          "level": 5,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 5,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 288
+        },
+        {
+          "level": 5,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 5,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 82
+        },
+        {
+          "level": 5,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 90
+        },
+        {
+          "level": 5,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 5,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 117
+        },
+        {
+          "level": 5,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 5,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 269
+        },
+        {
+          "level": 5,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 5,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 82
+        },
+        {
+          "level": 5,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 90
+        },
+        {
+          "level": 5,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 5,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 117
+        },
+        {
+          "level": 5,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 63
+        },
+        {
+          "level": 5,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 74
+        },
+        {
+          "level": 5,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 5,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 5,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 5,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 269
+        },
+        {
+          "level": 4,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 53
+        },
+        {
+          "level": 4,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 89
+        },
+        {
+          "level": 4,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 4,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 119
+        },
+        {
+          "level": 4,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 71
+        },
+        {
+          "level": 4,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 4,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": false,
+          "ticks": 284
+        },
+        {
+          "level": 4,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 53
+        },
+        {
+          "level": 4,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 89
+        },
+        {
+          "level": 4,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 4,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 119
+        },
+        {
+          "level": 4,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 71
+        },
+        {
+          "level": 4,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 4,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "easy",
+          "two": true,
+          "ticks": 284
+        },
+        {
+          "level": 4,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 53
+        },
+        {
+          "level": 4,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 89
+        },
+        {
+          "level": 4,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 4,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 119
+        },
+        {
+          "level": 4,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 71
+        },
+        {
+          "level": 4,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 4,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": false,
+          "ticks": 252
+        },
+        {
+          "level": 4,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 53
+        },
+        {
+          "level": 4,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 89
+        },
+        {
+          "level": 4,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 4,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 119
+        },
+        {
+          "level": 4,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 71
+        },
+        {
+          "level": 4,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 4,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "normal",
+          "two": true,
+          "ticks": 252
+        },
+        {
+          "level": 4,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 53
+        },
+        {
+          "level": 4,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 89
+        },
+        {
+          "level": 4,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 20
+        },
+        {
+          "level": 4,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 119
+        },
+        {
+          "level": 4,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 71
+        },
+        {
+          "level": 4,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 72
+        },
+        {
+          "level": 4,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": false,
+          "ticks": 236
+        },
+        {
+          "level": 4,
+          "section": 0,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 1,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 53
+        },
+        {
+          "level": 4,
+          "section": 2,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 3,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 4,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 5,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 89
+        },
+        {
+          "level": 4,
+          "section": 6,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 75
+        },
+        {
+          "level": 4,
+          "section": 7,
+          "kind": "rival",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 20
+        },
+        {
+          "level": 4,
+          "section": 8,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 9,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 119
+        },
+        {
+          "level": 4,
+          "section": 10,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 77
+        },
+        {
+          "level": 4,
+          "section": 11,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 64
+        },
+        {
+          "level": 4,
+          "section": 12,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 71
+        },
+        {
+          "level": 4,
+          "section": 13,
+          "kind": "fight",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 72
+        },
+        {
+          "level": 4,
+          "section": 14,
+          "kind": "rest",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 0
+        },
+        {
+          "level": 4,
+          "section": 15,
+          "kind": "boss",
+          "difficulty": "hard",
+          "two": true,
+          "ticks": 236
+        }
+      ],
+      "errors": [],
+      "scope": "Diagnostic traversal using legal-entry injected damage; actual contextual use/pickup and objective timers; not a human full campaign playthrough"
+    },
+    "holds": {
+      "pass": true,
+      "captures": 94,
+      "checks": [
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "punch",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "punch",
+          "age": 0.2
+        },
+        {
+          "hero": 1,
+          "kind": "club",
+          "act": "punch",
+          "age": 0.29
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "throw",
+          "age": 0.07
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "act": "throw",
+          "age": 0.1
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "throw",
+          "age": 0.07
+        },
+        {
+          "hero": 1,
+          "kind": "glassJar",
+          "act": "throw",
+          "age": 0.1
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "throw",
+          "age": 0.07
+        },
+        {
+          "hero": 1,
+          "kind": "powderBarrel",
+          "act": "throw",
+          "age": 0.1
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "punch",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "punch",
+          "age": 0.2
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "act": "punch",
+          "age": 0.29
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "throw",
+          "age": 0.07
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "act": "throw",
+          "age": 0.1
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "throw",
+          "age": 0.07
+        },
+        {
+          "hero": 2,
+          "kind": "glassJar",
+          "act": "throw",
+          "age": 0.1
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "idle",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "walk",
+          "age": 0
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "lift",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "lift",
+          "age": 0.14
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "jump",
+          "age": 0.15
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "block",
+          "age": 0.2
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "hit",
+          "age": 0.1
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "land",
+          "age": 0.06
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "throw",
+          "age": 0.07
+        },
+        {
+          "hero": 2,
+          "kind": "powderBarrel",
+          "act": "throw",
+          "age": 0.1
+        },
+        {
+          "hero": 1,
+          "nativeLevel": 0,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 1,
+          "nativeLevel": 1,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 1,
+          "nativeLevel": 2,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 1,
+          "nativeLevel": 3,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 1,
+          "nativeLevel": 4,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 1,
+          "nativeLevel": 5,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 2,
+          "nativeLevel": 0,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 2,
+          "nativeLevel": 1,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 2,
+          "nativeLevel": 2,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 2,
+          "nativeLevel": 3,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 2,
+          "nativeLevel": 4,
+          "kind": "regionCrate",
+          "act": "walk"
+        },
+        {
+          "hero": 2,
+          "nativeLevel": 5,
+          "kind": "regionCrate",
+          "act": "walk"
+        }
+      ],
+      "rules": {
+        "heldAttackAlwaysUsesObject": true,
+        "weaponRenderOwners": 1
+      },
+      "errors": [],
+      "scope": "Native source hand registration with composed inspection for both heroes; each body uses its fixed source camera"
+    },
+    "lights": {
+      "pass": true,
+      "lamps": [
+        {
+          "x": 360,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 805,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 1190,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 1480,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 1780,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 2260,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 2675,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 3090,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 3425,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 3680,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 4160,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 4575,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 4990,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 5310,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 5580,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 6060,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 6505,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 6890,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 7180,
+          "y": 198,
+          "h": 96
+        },
+        {
+          "x": 7480,
+          "y": 198,
+          "h": 96
+        }
+      ],
+      "extras": {
+        "coverCleared": true,
+        "cap": 140,
+        "fragmentsCleared": true,
+        "pauseFrozen": true
+      },
+      "errors": [],
+      "scope": "Twenty grounded native lamp posts; five night camera compositions and bulb-to-light registration; actual stage front-occluder clearance is asserted in effects report. Residue cleanup, fragment cap and paused simulation checked."
+    },
+    "gameplay": {
+      "pass": true,
+      "worlds": [
+        {
+          "level": 0,
+          "fights": 11,
+          "shops": 1,
+          "containers": 15,
+          "doors": 4
+        },
+        {
+          "level": 1,
+          "fights": 11,
+          "shops": 1,
+          "containers": 15,
+          "doors": 4
+        },
+        {
+          "level": 2,
+          "fights": 11,
+          "shops": 0,
+          "containers": 10,
+          "doors": 4
+        },
+        {
+          "level": 3,
+          "fights": 11,
+          "shops": 0,
+          "containers": 10,
+          "doors": 4
+        },
+        {
+          "level": 5,
+          "fights": 11,
+          "shops": 0,
+          "containers": 10,
+          "doors": 4
+        },
+        {
+          "level": 4,
+          "fights": 11,
+          "shops": 1,
+          "containers": 15,
+          "doors": 4
+        }
+      ],
+      "profiles": [
+        {
+          "type": 20,
+          "id": "golem",
+          "approach": "close",
+          "form": "ring",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              332,
+              225,
+              "walk"
+            ],
+            [
+              314,
+              225,
+              "walk"
+            ],
+            [
+              296,
+              225,
+              "walk"
+            ],
+            [
+              285,
+              225,
+              "tell"
+            ],
+            [
+              285,
+              225,
+              "tell"
+            ],
+            [
+              285,
+              225,
+              "tell"
+            ]
           ]
         },
         {
-          "engine": "webkit",
-          "pause": {
-            "x": 326,
-            "y": 50,
-            "width": 44,
-            "height": 44,
-            "top": 50,
-            "right": 370,
-            "bottom": 94,
-            "left": 326
-          },
-          "canvas": {
-            "x": 8,
-            "y": 101,
-            "width": 374,
-            "height": 285.1875,
-            "top": 101,
-            "right": 382,
-            "bottom": 386.1875,
-            "left": 8
-          },
-          "buttons": [
-            {
-              "x": 246,
-              "y": 616.78125,
-              "width": 72,
-              "height": 72,
-              "top": 616.78125,
-              "right": 318,
-              "bottom": 688.78125,
-              "left": 246
-            },
-            {
-              "x": 320,
-              "y": 578.78125,
-              "width": 56,
-              "height": 56,
-              "top": 578.78125,
-              "right": 376,
-              "bottom": 634.78125,
-              "left": 320
-            },
-            {
-              "x": 268,
-              "y": 524.78125,
-              "width": 52,
-              "height": 52,
-              "top": 524.78125,
-              "right": 320,
-              "bottom": 576.78125,
-              "left": 268
-            },
-            {
-              "x": 206,
-              "y": 578.78125,
-              "width": 52,
-              "height": 52,
-              "top": 578.78125,
-              "right": 258,
-              "bottom": 630.78125,
-              "left": 206
-            }
+          "type": 21,
+          "id": "owl",
+          "approach": "orbit",
+          "form": "dash",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              346,
+              222,
+              "tell"
+            ],
+            [
+              346,
+              222,
+              "tell"
+            ],
+            [
+              295,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 22,
+          "id": "crab",
+          "approach": "strafe",
+          "form": "ring",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              224,
+              "walk"
+            ],
+            [
+              319,
+              211,
+              "walk"
+            ],
+            [
+              289,
+              211,
+              "walk"
+            ],
+            [
+              274,
+              213,
+              "tell"
+            ],
+            [
+              274,
+              213,
+              "tell"
+            ],
+            [
+              274,
+              213,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 23,
+          "id": "octopus",
+          "approach": "anchor",
+          "form": "fan",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 24,
+          "id": "gull",
+          "approach": "swoop",
+          "form": "leap",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              338,
+              225,
+              "tell"
+            ],
+            [
+              338,
+              225,
+              "tell"
+            ],
+            [
+              316,
+              225,
+              "attack"
+            ],
+            [
+              225,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 25,
+          "id": "fish",
+          "approach": "close",
+          "form": "fan",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              319,
+              225,
+              "walk"
+            ],
+            [
+              316,
+              225,
+              "tell"
+            ],
+            [
+              316,
+              225,
+              "tell"
+            ],
+            [
+              316,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 26,
+          "id": "fox",
+          "approach": "feint",
+          "form": "dash",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              340,
+              225,
+              "walk"
+            ],
+            [
+              330,
+              225,
+              "tell"
+            ],
+            [
+              330,
+              225,
+              "tell"
+            ],
+            [
+              330,
+              225,
+              "tell"
+            ]
+          ]
+        },
+        {
+          "type": 27,
+          "id": "hedgehog",
+          "approach": "shield",
+          "form": "ring",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              332,
+              225,
+              "walk"
+            ],
+            [
+              314,
+              225,
+              "walk"
+            ],
+            [
+              296,
+              225,
+              "walk"
+            ],
+            [
+              278,
+              225,
+              "walk"
+            ],
+            [
+              277,
+              225,
+              "tell"
+            ],
+            [
+              277,
+              225,
+              "tell"
+            ],
+            [
+              277,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 28,
+          "id": "acorn",
+          "approach": "anchor",
+          "form": "lanes",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 29,
+          "id": "tree",
+          "approach": "lumber",
+          "form": "ring",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              350,
+              225,
+              "walk"
+            ],
+            [
+              338,
+              225,
+              "walk"
+            ],
+            [
+              326,
+              225,
+              "walk"
+            ],
+            [
+              314,
+              225,
+              "walk"
+            ],
+            [
+              302,
+              225,
+              "walk"
+            ],
+            [
+              290,
+              225,
+              "walk"
+            ],
+            [
+              290,
+              225,
+              "tell"
+            ],
+            [
+              290,
+              225,
+              "tell"
+            ],
+            [
+              290,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 30,
+          "id": "beetle",
+          "approach": "circle",
+          "form": "dash",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              226,
+              "walk"
+            ],
+            [
+              319,
+              236,
+              "walk"
+            ],
+            [
+              297,
+              239,
+              "tell"
+            ],
+            [
+              297,
+              239,
+              "tell"
+            ],
+            [
+              281,
+              229,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 31,
+          "id": "gargoyle",
+          "approach": "statue",
+          "form": "leap",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              331,
+              225,
+              "attack"
+            ],
+            [
+              245,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 32,
+          "id": "bronze",
+          "approach": "shield",
+          "form": "ring",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              332,
+              225,
+              "walk"
+            ],
+            [
+              314,
+              225,
+              "walk"
+            ],
+            [
+              296,
+              225,
+              "walk"
+            ],
+            [
+              284,
+              225,
+              "tell"
+            ],
+            [
+              284,
+              225,
+              "tell"
+            ],
+            [
+              284,
+              225,
+              "tell"
+            ],
+            [
+              284,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 33,
+          "id": "harpy",
+          "approach": "orbit",
+          "form": "fan",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              346,
+              228,
+              "tell"
+            ],
+            [
+              346,
+              228,
+              "tell"
+            ],
+            [
+              346,
+              228,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 34,
+          "id": "scarab",
+          "approach": "roll",
+          "form": "dash",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              298,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 35,
+          "id": "book",
+          "approach": "reader",
+          "form": "lanes",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "tell"
+            ],
+            [
+              346,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 36,
+          "id": "wax",
+          "approach": "sneak",
+          "form": "drop",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              333,
+              222,
+              "tell"
+            ],
+            [
+              333,
+              222,
+              "tell"
+            ],
+            [
+              333,
+              222,
+              "tell"
+            ]
+          ]
+        },
+        {
+          "type": 37,
+          "id": "jester",
+          "approach": "bait",
+          "form": "leap",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              328,
+              225,
+              "walk"
+            ],
+            [
+              308,
+              225,
+              "tell"
+            ],
+            [
+              308,
+              225,
+              "tell"
+            ],
+            [
+              308,
+              225,
+              "tell"
+            ],
+            [
+              191,
+              225,
+              "attack"
+            ]
+          ]
+        },
+        {
+          "type": 38,
+          "id": "mouse",
+          "approach": "burst",
+          "form": "dash",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              319,
+              225,
+              "walk"
+            ],
+            [
+              307,
+              225,
+              "tell"
+            ],
+            [
+              307,
+              225,
+              "tell"
+            ]
+          ]
+        },
+        {
+          "type": 39,
+          "id": "hare",
+          "approach": "hop",
+          "form": "leap",
+          "states": [
+            "walk",
+            "tell",
+            "attack",
+            "recover"
+          ],
+          "trace": [
+            [
+              349,
+              225,
+              "walk"
+            ],
+            [
+              330,
+              225,
+              "tell"
+            ],
+            [
+              330,
+              225,
+              "tell"
+            ],
+            [
+              330,
+              225,
+              "tell"
+            ],
+            [
+              282,
+              225,
+              "attack"
+            ]
           ]
         }
       ],
-      "scope": "Final local handheld CSS applied over the published 2.11 runtime; Chrome/WebKit simulated 47px notch and 34px home indicator at 390x844. Actual device insets still require hardware checks."
+      "tactics": {
+        "shield": {
+          "guarded": 14,
+          "exposed": 20
+        },
+        "crabRearBonus": true,
+        "zeroHealthDeath": true
+      },
+      "air": [
+        {
+          "hero": 1,
+          "kind": "club",
+          "damage": 36,
+          "uses": 3,
+          "flight": false
+        },
+        {
+          "hero": 1,
+          "kind": "regionCrate",
+          "damage": 0,
+          "uses": 0,
+          "flight": true
+        },
+        {
+          "hero": 2,
+          "kind": "club",
+          "damage": 36,
+          "uses": 3,
+          "flight": false
+        },
+        {
+          "hero": 2,
+          "kind": "regionCrate",
+          "damage": 0,
+          "uses": 0,
+          "flight": true
+        }
+      ],
+      "errors": [],
+      "scope": "Deterministic combat signatures, tactical damage, air input/physics, curated world structure; campaign completion is checked separately"
     },
     "static": {
       "pass": true,
-      "parsedScripts": 43,
+      "parsedScripts": 45,
       "baseImages": 75,
-      "streamedImages": 49,
-      "reviewFoes": 40,
+      "streamedImages": 50,
+      "reviewFoes": 41,
       "reviewEndings": 6,
       "checks": [
         "All shipped JavaScript parses",
         "Both native image manifests resolve to local files",
-        "Review catalog covers forty enemies and six endings"
+        "Review catalog covers forty-one enemies and six endings"
       ]
     }
   },
   "baseline": {
-    "version": "2.10",
-    "commit": "70b98294d76c681265d1e52e255db5042b6897c4",
-    "scope": "Accepted six-region gameplay and evolving weather renderer. Current reports cover environmental audio synthesis/mixing, lifecycle, translated volume controls, portrait handheld layout and real multitouch/rotation."
+    "version": "2.11",
+    "commit": "ca79d9ec670f0e51acae5556a3be16fc4e36b782",
+    "scope": "Accepted six-region campaign, weather/audio and handheld portrait. Current evidence covers destruction, native carries, bomber behavior, lighting, full campaign traversal and core combat regressions."
   },
   "limits": [
-    "Physical iPhone audio and ergonomics are not certified by browser emulation.",
-    "Windows Playwright WebKit has no AudioContext; it is checked for graceful fallback and layout. Chrome exercises live Web Audio.",
-    "Offline RMS/peak checks are not a subjective listening review."
+    "Campaign traversal uses legal-entry injected damage and is not a full human playthrough.",
+    "Browser touch rendering does not certify physical iPhone/gamepad behavior.",
+    "Enemy 40 derives from the accepted wax-goblin atlas with new role/accessories/registered throw behavior; a newly generated atlas is not claimed."
   ],
   "visualReview": [
-    "Inspected portrait handheld captures at 320/375/390/430 px and restored landscape view.",
-    "Verified native game screen display is thirty percent taller in portrait and buttons remain separate from it.",
-    "Real multi-touch analog movement, jump, facing reversal and rotation cancellation were exercised."
+    "Inspected material fragments, glass shatter, fireworks burst and the bomb ground marker.",
+    "Inspected goblin windup/extended-palm release/recovery and new carried props in native body poses.",
+    "Inspected clear grounded lamps and night camera compositions."
   ]
 }

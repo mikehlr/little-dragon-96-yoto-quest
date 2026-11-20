@@ -31,6 +31,7 @@ const WORLD_ART={
   "foe-motion-34": "assets/foe-motion-34.webp",
   "foe-motion-35": "assets/foe-motion-35.webp",
   "foe-motion-36": "assets/foe-motion-36.webp",
+  "foe-motion-40": "assets/foe-motion-36.webp",
   "foe-motion-37": "assets/foe-motion-37.webp",
   "foe-motion-38": "assets/foe-motion-38.webp",
   "foe-motion-39": "assets/foe-motion-39.webp",

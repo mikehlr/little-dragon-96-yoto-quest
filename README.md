@@ -1,3 +1,13 @@
+# Little Dragon 96 · Arcade Destruction 2.12
+
+Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.12
+
+Material-specific fragments, glass breaks, fireworks bursts, bounce/settle and blinking cleanup give scenery hits more weight. Supplies retain their rewards and new vessels/barrels use the registered carry/air-throw poses. A bomb-throwing goblin has a fixed-target lob, visible fuse/ground warning and a simple attack-to-return counter. Twenty clear streetlamp pockets improve the first region's night lighting.
+
+See [2.12 behavior and checks](RELEASE-2.12.md), [reference/design notes](RESEARCH-2.12.md), [production effect previews](motion-review.html) and [scoped QA](qa-results.json). The accepted weather, audio, portrait handheld presentation and six-region campaign remain.
+
+Previous releases follow.
+
 # Little Dragon 96 · Dragon Pocket 2.11
 
 Play: https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.11
