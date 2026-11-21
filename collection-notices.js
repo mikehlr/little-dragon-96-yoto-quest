@@ -29,13 +29,16 @@ function positionCollectionNotice(){
  document.documentElement.classList.remove('collection-notice-portrait','collection-notice-header');
  if(mobile){
   const playing=game.mode==='play',header=!playing&&['shop','collection-store','collection','collection-detail'].includes(game.mode)?panel.querySelector('.collection-header'):null;
+  const landscape=playing&&innerWidth>innerHeight,r=canvas.getBoundingClientRect();
   if(!playing&&!header)return false;
   collectionNotice.style.right='auto';
-  if(header){const h=header.getBoundingClientRect();collectionNotice.style.left=h.left+4+'px';collectionNotice.style.top=h.top+2+'px';collectionNotice.style.width=h.width-8+'px'}
+  if(landscape){collectionNotice.dataset.dock='hud';const width=Math.min(320,r.width*.40);collectionNotice.style.left=r.left+(r.width-width)/2+'px';collectionNotice.style.top=r.top+2+'px';collectionNotice.style.width=width+'px'}
+  else if(header){const h=header.getBoundingClientRect();collectionNotice.style.left=h.left+4+'px';collectionNotice.style.top=h.top+2+'px';collectionNotice.style.width=h.width-8+'px'}
   else{collectionNotice.style.left='max(8px,calc(env(safe-area-inset-left,0px) + 8px))';collectionNotice.style.top='calc(var(--safe-top) + 4px)';collectionNotice.style.width='min(420px,calc(100vw - 92px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)))'}
-  const n=collectionNotice.getBoundingClientRect(),protectedElements=playing?[canvas,...document.querySelectorAll('#stick-zone,.action-disc,.utility')]:[...panel.querySelectorAll('button')];
+  const n=collectionNotice.getBoundingClientRect(),protectedElements=playing?[...(landscape?[]:[canvas]),...document.querySelectorAll('#stick-zone,.action-disc,.utility')]:[...panel.querySelectorAll('button')];
   const overlaps=protectedElements.some(e=>{const r=e.getBoundingClientRect();return r.width&&r.height&&getComputedStyle(e).visibility!=='hidden'&&n.left<r.right+3&&n.right>r.left-3&&n.top<r.bottom+3&&n.bottom>r.top-3});
   if(overlaps||n.left<0||n.right>innerWidth||n.top<0||n.bottom>innerHeight)return false;
+  if(landscape&&(n.bottom>r.top+r.height*.15||n.left<r.left+r.width*.28||n.right>r.left+r.width*.72))return false;
   document.documentElement.classList.toggle('collection-notice-portrait',playing&&innerHeight>innerWidth);
   document.documentElement.classList.toggle('collection-notice-header',!!header);
   return true;
@@ -69,4 +72,4 @@ renderEffect=function(rig,output,name,at,hero=1){
  }
  return collectionSoundBase(rig,output,name,at,hero);
 };
-globalThis.DragonCollectionNotices={version:'2.20',enqueue:queueCollectionNotice,state:()=>({active:collectionNoticeActive,queued:collectionNoticeQueue.length,elapsed:collectionNoticeElapsed})};
+globalThis.DragonCollectionNotices={version:'2.21',enqueue:queueCollectionNotice,state:()=>({active:collectionNoticeActive,queued:collectionNoticeQueue.length,elapsed:collectionNoticeElapsed})};
