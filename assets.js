@@ -75,5 +75,8 @@ const ART = {
   "carry-walk-1": "assets/carry-walk-1.webp",
   "carry-walk-2": "assets/carry-walk-2.webp",
   "carry-bridge-1": "assets/carry-bridge-1.webp",
-  "carry-bridge-2": "assets/carry-bridge-2.webp"
+  "carry-bridge-2": "assets/carry-bridge-2.webp",
+  "carry-actions-1": "assets/carry-actions-1.webp",
+  "carry-actions-2": "assets/carry-actions-2.webp",
+  "carry-air-load": "assets/carry-air-load.webp"
 };

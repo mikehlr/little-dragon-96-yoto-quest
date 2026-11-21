@@ -37,7 +37,7 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const mix = (a, b, t) => a + (b - a) * t;
 const between = (min, max) => mix(min, max, Math.random());
 const currentStage = () => STAGES[game.level];
-const BASE_DIFFICULTY=Object.freeze({enemyHealth:1.22,bossHealth:1.15,incoming:1.45,speed:1.03,rest:.90,tell:.95,energy:8,stageHealth:65,gateHeal:3,appleHeal:30,soloHelp:true,waveSize:2,attackBudget:2});
+const BASE_DIFFICULTY=Object.freeze({enemyHealth:1.22,bossHealth:1.15,incoming:2.10,speed:1.03,rest:.90,tell:.95,energy:8,stageHealth:65,gateHeal:3,appleHeal:30,soloHelp:true,waveSize:2,attackBudget:2});
 const difficultyRules=()=>globalThis.DragonDifficulty?.rules()||BASE_DIFFICULTY;
 
 // Original stage themes. Melody events are [subdivision, scale degree, length].
@@ -141,12 +141,12 @@ const audio = { rig: null, transport: null, position: null, pendingScene: null, 
 function makeAudioRig(ctx) {
   const music = ctx.createGain();
   const effects = ctx.createGain();
-  const mixBus = ctx.createDynamicsCompressor();
-  mixBus.threshold.value = -13;
-  mixBus.ratio.value = 3;
-  mixBus.attack.value = .008;
-  music.connect(mixBus);
-  effects.connect(mixBus);
+  // Compress transients before summing: an impact must never duck the score.
+  const effectsLimiter = ctx.createDynamicsCompressor();
+  effectsLimiter.threshold.value = -10;effectsLimiter.knee.value = 8;
+  effectsLimiter.ratio.value = 6;effectsLimiter.attack.value = .003;effectsLimiter.release.value = .08;
+  const mixBus = ctx.createGain();mixBus.gain.value = .72;
+  music.connect(mixBus);effects.connect(effectsLimiter);effectsLimiter.connect(mixBus);
   mixBus.connect(ctx.destination);
   const noise = ctx.createBuffer(1, Math.floor(ctx.sampleRate * .65), ctx.sampleRate);
   let seed = 721;
@@ -166,7 +166,7 @@ function makeAudioRig(ctx) {
     }
     waves[name] = ctx.createPeriodicWave(real, imag);
   }
-  return { ctx, music, effects, noise, waves, mixBus };
+  return { ctx, music, effects, noise, waves, mixBus, effectsLimiter };
 }
 
 function tone(rig, output, at, frequency, duration, volume, color = 'triangle', end = frequency) {
@@ -426,7 +426,7 @@ function tickAudio() {
   const transport = audio.transport;
   const score = SOUNDTRACK[level];
   if (transport.next < at - .20) transport.next = at + .025;
-  while (transport.next < at + .125) {
+  while (transport.next < at + .30) {
     playMusicStep(rig, transport.bus, score, transport.step, Math.max(transport.next, at + .005));
     transport.next += beatLength(score);
     transport.step = (transport.step + 1) % (score.steps * score.chords.length * 2);
@@ -1973,8 +1973,6 @@ function hud() {
     const note = boss.act === 'tell' ? boss.move.plan.label :
       boss.rival ? '' : boss.act === 'phase' ? 'ΑΛΛΑΓΗ ΦΑΣΗΣ' : boss.act === 'recover' ? 'ΕΥΚΑΙΡΙΑ!' : '';
     if (note) {
-      const width = note.length * 6 + 16;
-      pixel((WIDTH - width) / 2, 54, width, 15, '#191629d9');
       label(note, WIDTH / 2, 65, 10, boss.kit.color, 'center');
     }
   } else if (game.gate === 'open') {

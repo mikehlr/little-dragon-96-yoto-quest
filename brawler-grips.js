@@ -21,5 +21,5 @@ function drawRegisteredLoad(p,i,rig=null){const hero=p.hero||p.id,walk=DragonCar
  else{const m=DRAGON_SPRITE_CAMERA['carry-'+hero];size=HERO_SIZE*m.scale;anchor=m.anchor;center=.5;hand=AIR_HANDS[hero][frame];box=[Math.max(0,hand[0]-.13),hand[1]-.06,.26,.12]}
  if(!hand)return;const x=(hand[0]-center)*size,y=(hand[1]-anchor)*size,forward=frame===7&&!walk&&!rig?10:2,root=y+(walk&&!rig?7:9);
  ctx.save();ctx.translate(x+forward,root);if(i.kind==='regionCrate')directorProp(0,i.nativeLevel,0,0,29);else if(i.kind==='bonusBarrel')bonusSprite(0,0,0,29);else if(i.kind==='glassJar')drawGlassJar({x:game.camera,y:0,held:true});else if(i.kind==='powderBarrel')drawPowderBarrel({x:game.camera,y:0,held:true});else if(i.kind==='storyChest'||i.kind==='storyUrn')roadSprite(i.kind==='storyChest'?0:2,0,0,29,29);else stamp(images.items,ITEM[i.kind].sprite,5,29);ctx.restore();
- const sw=im.naturalWidth/4,sh=im.naturalHeight/4,[bx,by,bw,bh]=box;ctx.drawImage(im,(frame%4+bx)*sw,(Math.floor(frame/4)+by)*sh,bw*sw,bh*sh,(bx-center)*size,(by-anchor)*size,bw*size,bh*size);
+ const sw=im.naturalWidth/4,sh=im.naturalHeight/(rig?.rows||4),[bx,by,bw,bh]=box;ctx.drawImage(im,(frame%4+bx)*sw,(Math.floor(frame/4)+by)*sh,bw*sw,bh*sh,(bx-center)*size,(by-anchor)*size,bw*size,bh*size);
 }

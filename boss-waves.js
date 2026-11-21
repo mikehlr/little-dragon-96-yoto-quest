@@ -26,5 +26,5 @@ updateEnemy=function(e,dt,living){if(e.bossRetreat&&e.hp){e.age+=dt;e.phase+=dt;
 const waveStartSpecial=startSpecial;
 startSpecial=function(e,living,target){if(e.boss&&bossWaves?.boss===e){const cap=(game.difficulty==='easy'?1:game.difficulty==='normal'?2:3)+(living.length>1?1:0),busy=game.enemies.filter(o=>o!==e&&o.hp&&!o.entry&&['tell','attack'].includes(o.act)).length;if(busy>=cap){e.cooldown=.25;pose(e,'idle');return}}return waveStartSpecial(e,living,target)};
 const waveHud=hud;
-hud=function(){waveHud();if(game.mode==='play'&&bossWaves?.notice>0){pixel(WIDTH/2-106,74,212,14,'#142033ed');label(WAVE_NOTICE+' · '+bossWaves.next+' / 3',WIDTH/2,84,7,'#ffdda0','center')}};
+hud=function(){waveHud();if(game.mode==='play'&&bossWaves?.notice>0){label(WAVE_NOTICE+' · '+bossWaves.next+' / 3',WIDTH/2,84,7,'#ffdda0','center')}};
 Object.assign(DragonCampaign,{bossWaves:()=>bossWaves});

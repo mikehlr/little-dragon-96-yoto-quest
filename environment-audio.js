@@ -57,7 +57,7 @@ function updateEnvironmentAudio(force=false){
  if(!force&&at-env.lastTick<.08)return;env.lastTick=at;
  const c=regionalClimate(),p=environmentProfile(game.level,c,cityDay()),chapter=chapterState;
  if(env.level!==game.level||env.chapter!==chapter){silenceEnvironment(env);env.level=game.level;env.chapter=chapter;env.crackleNext=null;env.lastStrike=null}
- const duck=at<env.duckUntil?.24:1,musicRoom=game.music&&hdPrefs.musicVolume>0?Math.min(1,hdPrefs.musicVolume/65):1,target=hdPrefs.ambienceVolume/100*hdPrefs.sfxVolume/100*duck*musicRoom;env.target=target;env.profile=p;
+ const duck=1,musicRoom=game.music&&hdPrefs.musicVolume>0?Math.min(1,hdPrefs.musicVolume/65):1,target=hdPrefs.ambienceVolume/100*hdPrefs.sfxVolume/100*duck*musicRoom;env.target=target;env.profile=p;
  ambienceTarget(env.output.gain,target,at,duck<1?.018:.30);
  for(const [key,bed]of Object.entries(env.beds))ambienceTarget(bed.gain.gain,p[key],at,.6);
  ambienceTarget(env.beds.wind.low.frequency,p.cutoff,at,1.2);
@@ -72,8 +72,7 @@ const environmentTick=tickAudio;
 tickAudio=function(){environmentTick();updateEnvironmentAudio()};
 const environmentVolumes=applyAudioVolumes;
 applyAudioVolumes=function(){environmentVolumes();updateEnvironmentAudio(true)};
-const environmentEffect=effect;
-effect=function(name,hero=1){environmentEffect(name,hero);const env=audio.rig?.environment;if(env&&game.sound&&['punch','kick','club','hurt','block','release','energyHit','throwHit','break','slam','boss','phaseShift'].includes(name)){env.duckUntil=env.ctx.currentTime+.24;updateEnvironmentAudio(true)}};
+// Impacts use their own effects limiter; continuous ambience is no longer ducked.
 const environmentShow=show;
 show=function(page){environmentShow(page);updateEnvironmentAudio(true)};
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&audio.rig?.environment)silenceEnvironment(audio.rig.environment)});

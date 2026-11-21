@@ -25,7 +25,7 @@ update=function(dt){shopUpdate(dt);if(game.mode!=='play')return;for(const i of [
 const shopPickup=pickupAction;
 pickupAction=function(p){const v=nearestSpeaker(p);if(v&&game.gate!=='fight'&&p.z<12&&!MOVE_TIME[p.act]){shopVendor=v;shopHero=p;show('shop');return}const i=nearbyItem(p);if(i?.kind==='coinCache'&&!p.carry&&p.z<12){game.coins+=i.tokenValue||3;i.gone=true;game.items=game.items.filter(o=>o!==i);effect('pickup');return}shopPickup(p)};
 const shopHud=hud;
-hud=function(){shopHud();if(game.mode==='play'){pixel(WIDTH-72,55,64,12,'#142337dd');label('● '+game.coins,WIDTH-13,64,7,'#ffdf92','right')}};
+hud=function(){shopHud();if(game.mode==='play'){pixel(WIDTH-72,73,64,12,'#142337dd');label('● '+game.coins,WIDTH-13,82,7,'#ffdf92','right')}};
 
 const shopDamage=damage;
 damage=function(e,p,n,hits,direction,source){const hp=e.hp;shopDamage(e,p,n,hits,direction,source);if(hp>0&&e.hp===0&&!e.boss&&!e.coinDropped){e.coinDropped=true;game.items.push({...makeItem('coinCache',e.x,e.y),tokenValue:e.rival&&!e.storyFoe?2:1})}};

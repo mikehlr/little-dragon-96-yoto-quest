@@ -33,7 +33,7 @@ const chapterTown=updateTown;
 updateTown=function(dt){townObservedSection=game.section;const walkers=townWalkers;townWalkers=[];try{chapterTown(dt)}finally{townWalkers=walkers}updateRegionalWalkers(dt);if(game.level===1)for(const s of directorScenes)if(s?.vehicle){s.vehicle.x=s.anchor;s.vehicle.visible=true;s.vehicle.depart=false;s.vehicle.departAge=0}};
 const mooredChapterEnter=enterArena;
 enterArena=function(e,dt){const r=e.entry;mooredChapterEnter(e,dt);if(r?.mode==='vehicle'&&r.scene.level===1&&r.started){const v=r.scene.vehicle;v.from=v.target=r.scene.anchor;v.x=r.scene.anchor;if(r.time>=1.75)r.scene.boardLowered=true;if(e.entry&&r.vehiclePhase==='ride')e.x=v.x+17;v.depart=false;v.departAge=0}};
-globalThis.DragonCampaign={version:'2.15',order:CAMPAIGN_ORDER,chapters:CHAPTERS,state:()=>chapterState,loadForReview:loadChapterPack,startBeat:startEncounter};
+globalThis.DragonCampaign={version:'2.16',order:CAMPAIGN_ORDER,chapters:CHAPTERS,state:()=>chapterState,loadForReview:loadChapterPack,startBeat:startEncounter};
 // One-way, region-specific passers-by. Active routes are never repositioned on camera.
 const REGION_ANIMALS=[[],[24],[26,27],[30,34],[38],[39,21]];
 function updateRegionalWalkers(dt){if(game.mode!=='play')return;for(const w of townWalkers){const animals=REGION_ANIMALS[game.level];w.animalType=animals.length?animals[w.identity%animals.length]:null;if(!w.regional){w.regional=true;w.wait=4+(w.identity||0)*6+(w.crowdSheet||0)*4;w.active=false;w.direction=w.identity%2?-1:1;w.crowdSheet=0;w.identity=game.level===1?0:w.identity%2}
