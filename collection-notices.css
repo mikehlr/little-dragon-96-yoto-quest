@@ -3,3 +3,15 @@
 @keyframes collection-arrival{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:translateX(0)}}
 .collection-notice[data-calm="true"]{animation:none;transition:none}.collection-notice[data-calm="true"][data-leaving="true"]{transform:none}
 @media(max-width:500px){.collection-notice{gap:8px;min-height:94px;padding:9px 10px 12px 8px}.notice-medallion{width:60px;height:72px}.notice-copy strong{font-size:15px}.notice-copy small{font-size:9px;letter-spacing:.5px}.notice-copy b{font-size:10px}.notice-copy span{font-size:9px}}
+.collection-notice[data-dock="mobile"]{height:64px;min-height:0;max-width:none;gap:6px;padding:5px 7px 7px;box-shadow:0 0 0 2px #060d19,inset 0 0 15px #f6c65b20;animation:notice-dock-arrival .2s ease-out;transition:opacity .2s;transform:none!important;overflow:hidden}
+.collection-notice[data-dock="mobile"] .notice-medallion{width:38px;height:46px}
+.collection-notice[data-dock="mobile"] .notice-copy{gap:3px}
+.collection-notice[data-dock="mobile"] .notice-copy small,.collection-notice[data-dock="mobile"] .notice-copy span{display:none}
+.collection-notice[data-dock="mobile"] .notice-copy strong{font-size:12px;line-height:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.collection-notice[data-dock="mobile"] .notice-copy b{font-size:9px;line-height:10px}
+.collection-notice[data-dock="mobile"] .notice-timer{height:2px;bottom:3px}
+@keyframes notice-dock-arrival{from{opacity:0}to{opacity:1}}
+@media(pointer:coarse){.collection-console .collection-header{min-height:72px}.collection-notice-header .collection-header>*{visibility:hidden}.collection-notice-portrait .handheld-brand{visibility:hidden}}
+@media(pointer:coarse){#screen:is([data-page="collection"],[data-page="collection-detail"],[data-page="collection-store"],[data-page="shop"]){padding-top:max(8px,calc(var(--safe-top) + 8px));padding-bottom:max(8px,calc(var(--safe-bottom) + 8px))}.collection-console{height:min(760px,calc(100dvh - var(--safe-top) - var(--safe-bottom) - 24px))}}
+@media(pointer:coarse) and (orientation:landscape){#game{position:absolute;top:calc(var(--safe-top) + 72px);left:50%;width:min(100vw,calc((100dvh - var(--safe-top) - 72px)*1.777778));height:min(calc(100dvh - var(--safe-top) - 72px),56.25vw);transform:translateX(-50%);margin:0!important;transition:none!important;animation:none!important}.utility,.touch-game .utility{top:calc(var(--safe-top) + 8px)}}
+.collection-notice[data-dock="mobile"][data-calm="true"]{animation:none;transition:none}

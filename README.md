@@ -1,12 +1,12 @@
-# Little Dragon ’96 · Yoto Quest 2.19
+# Little Dragon ’96 · Yoto Quest 2.20
 
-[Play the current game](https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.19)
+[Play the current game](https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.20)
 
 A six-region arcade brawler for one or two players, with Story and Practice modes, unique hero selection, three difficulty settings and Greek (default), English and Ukrainian. Keyboard, standard controllers and mobile touch controls are supported. Portrait touch mode uses the handheld console presentation.
 
-2.19 adds distinct collection/unlock chimes, continuous music through shops, clearer shop buttons and a slightly lower portrait screen. Automatic arcade announcements continue with item art, names and set/music unlocks, without pausing play or taking control focus. The existing collection includes a persistent coin wallet, 24 buyable illustrated souvenirs, 18 Yoto story cards and a controller-friendly collection gallery. Every three collected Yoto cards grant team health/energy and coins; completing a regional set unlocks its soundtrack. Stages two through six each introduce a distinct short bonus round with the existing controls. Purchases and collection progress are stored locally in the browser.
+2.20 keeps mobile collection notices outside the canvas and controls, using a compact portrait band, a stable landscape rail and the shop header. Distinct collection/unlock chimes and continuous shop music remain. Automatic arcade announcements continue with item art, names and set/music unlocks, without pausing play or taking control focus. The existing collection includes a persistent coin wallet, 24 buyable illustrated souvenirs, 18 Yoto story cards and a controller-friendly collection gallery. Every three collected Yoto cards grant team health/energy and coins; completing a regional set unlocks its soundtrack. Stages two through six each introduce a distinct short bonus round with the existing controls. Purchases and collection progress are stored locally in the browser.
 
-See [release behavior and validation limits](RELEASE-2.19.md), [new artwork and exact prompts](collection-provenance.json), [animation previews](motion-review.html), and [QA results](qa-results.json). The accepted six-region campaign, authored held-object animations, weather, music and combat remain. The exact 2.16 release is preserved separately as RTM and Git tag rtm-2.16.
+See [release behavior and validation limits](RELEASE-2.20.md), [new artwork and exact prompts](collection-provenance.json), [animation previews](motion-review.html), and [QA results](qa-results.json). The accepted six-region campaign, authored held-object animations, weather, music and combat remain. The exact 2.16 release is preserved separately as RTM and Git tag rtm-2.16.
 
 ## Controls
 
