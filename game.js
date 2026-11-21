@@ -812,7 +812,7 @@ function player(id) {
 }
 
 function start(two) {
-  Object.assign(game, { two, score: 0, coins:0, level: 0, players: two ? [player(1), player(2)] : [player(1)] });
+  Object.assign(game, { two, score: 0, coins:globalThis.DragonCollection?.wallet()||0, level: 0, players: two ? [player(1), player(2)] : [player(1)] });
   beginStage();
 }
 
@@ -1956,7 +1956,7 @@ function hud() {
     }
   }
   label(currentStage().name, WIDTH / 2, 10, 8, '#ffda9d', 'center');
-  label((game.district + 1) + '/' + DISTRICTS + '   ·   ' + game.score + (game.cards ? '   ✦ ' + game.cards : ''),
+  label((game.district + 1) + '/' + DISTRICTS + '   ·   ' + game.score,
     WIDTH / 2, 21, 8, '#f3dce4', 'center');
   const boss = game.enemies.find(e => e.kit && e.hp && !e.storyFoe);
   if (boss) {
@@ -2395,3 +2395,6 @@ function frame(time) {
   requestAnimationFrame(frame);
 }
 requestAnimationFrame(frame);
+
+function grantCoins(amount){game.coins=Math.max(0,Math.min(999999,(game.coins||0)+Math.max(0,Math.floor(amount))));globalThis.DragonCollection?.syncWallet();return game.coins}
+function spendCoins(amount){if(!Number.isInteger(amount)||amount<0||game.coins<amount)return false;game.coins-=amount;globalThis.DragonCollection?.syncWallet();return true}

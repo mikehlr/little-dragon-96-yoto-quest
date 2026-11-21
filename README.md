@@ -1,12 +1,12 @@
-# Little Dragon ’96 · Yoto Quest 2.16
+# Little Dragon ’96 · Yoto Quest 2.17
 
-[Play the current game](https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.16)
+[Play the current game](https://mikehlr.github.io/little-dragon-96-yoto-quest/?v=2.17)
 
 A six-region arcade brawler for one or two players, with Story and Practice modes, unique hero selection, three difficulty settings and Greek (default), English and Ukrainian. Keyboard, standard controllers and mobile touch controls are supported. Portrait touch mode uses the handheld console presentation.
 
-2.16 adds authored held-object attack/jump/throw/landing transitions for both heroes, graphic arcade announcements, continuous music/ambience through impacts and stronger incoming damage on Normal/Hard. The accepted parallax, evolving weather/lighting, regional soundscape, enemy variety, shops, destructible props and six chapter endings remain.
+2.17 adds a persistent coin wallet, 24 buyable illustrated souvenirs, 18 Yoto story cards and a controller-friendly collection gallery. Every three collected Yoto cards grant team health/energy and coins; completing a regional set unlocks its soundtrack. Stages two through six each introduce a distinct short bonus round with the existing controls. Purchases and collection progress are stored locally in the browser.
 
-See [release behavior and scoped validation](RELEASE-2.16.md), [native animation previews](motion-review.html), [new artwork / prompts](carry-action-provenance.json), and [QA results](qa-results.json). Earlier artwork prompt records remain in the provenance JSON files included with the game.
+See [release behavior and validation limits](RELEASE-2.17.md), [new artwork and exact prompts](collection-provenance.json), [animation previews](motion-review.html), and [QA results](qa-results.json). The accepted six-region campaign, authored held-object animations, weather, music and combat remain. The exact 2.16 release is preserved separately as RTM and Git tag rtm-2.16.
 
 ## Controls
 

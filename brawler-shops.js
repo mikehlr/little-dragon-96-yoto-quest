@@ -17,13 +17,13 @@ show=function(page){shopShow(page);if(page==='shop'){panel.innerHTML=shopMarkup(
 const shopBack=hdBack;
 hdBack=function(){if(game.mode==='shop'){show('play');return}shopBack()};
 const shopGo=go;
-go=function(name){if(name==='shop-close'){show('play');return}if(name.startsWith('buy-')&&game.mode==='shop'){const g=SHOP_GOODS.find(g=>g.id===name.slice(4));if(g&&game.coins>=g.cost&&!g.full(shopHero)){game.coins-=g.cost;g.buy(shopHero);effect('pickup',shopHero.id);show('shop')}return}return shopGo(name)};
+go=function(name){if(name==='shop-close'){show('play');return}if(name.startsWith('buy-')&&game.mode==='shop'){const g=SHOP_GOODS.find(g=>g.id===name.slice(4));if(g&&game.coins>=g.cost&&!g.full(shopHero)){spendCoins(g.cost);g.buy(shopHero);effect('pickup',shopHero.id);show('shop')}return}return shopGo(name)};
 talkTown=function(v){if(game.gate==='fight')return;shopVendor=v;shopHero=game.players.filter(p=>p.hp).sort((a,b)=>Math.abs(a.x-v.x)-Math.abs(b.x-v.x))[0];if(shopHero)show('shop')};
 const shopUpdate=update;
-update=function(dt){shopUpdate(dt);if(game.mode!=='play')return;for(const i of [...game.items])if(i.kind==='coinCache'&&!i.gone&&!i.flight&&game.players.some(p=>p.hp&&p.z<16&&Math.hypot(p.x-i.x,(p.y-i.y)*1.3)<27)){game.coins+=i.tokenValue||3;i.gone=true;game.items=game.items.filter(o=>o!==i);effect('pickup')}
+update=function(dt){shopUpdate(dt);if(game.mode!=='play')return;for(const i of [...game.items])if(i.kind==='coinCache'&&!i.gone&&!i.flight&&game.players.some(p=>p.hp&&p.z<16&&Math.hypot(p.x-i.x,(p.y-i.y)*1.3)<27)){grantCoins(i.tokenValue||3);i.gone=true;game.items=game.items.filter(o=>o!==i);effect('pickup')}
  const v=nearestSpeaker(game.players[0]);if(v&&mobileMatch.matches){const b=touch.querySelector('.pickup');if(b){b.hidden=false;b.disabled=false;b.querySelector('small').textContent=SHOP_LABEL}}};
 const shopPickup=pickupAction;
-pickupAction=function(p){const v=nearestSpeaker(p);if(v&&game.gate!=='fight'&&p.z<12&&!MOVE_TIME[p.act]){shopVendor=v;shopHero=p;show('shop');return}const i=nearbyItem(p);if(i?.kind==='coinCache'&&!p.carry&&p.z<12){game.coins+=i.tokenValue||3;i.gone=true;game.items=game.items.filter(o=>o!==i);effect('pickup');return}shopPickup(p)};
+pickupAction=function(p){const v=nearestSpeaker(p);if(v&&game.gate!=='fight'&&p.z<12&&!MOVE_TIME[p.act]){shopVendor=v;shopHero=p;show('shop');return}const i=nearbyItem(p);if(i?.kind==='coinCache'&&!p.carry&&p.z<12){grantCoins(i.tokenValue||3);i.gone=true;game.items=game.items.filter(o=>o!==i);effect('pickup');return}shopPickup(p)};
 const shopHud=hud;
 hud=function(){shopHud();if(game.mode==='play'){pixel(WIDTH-72,73,64,12,'#142337dd');label('● '+game.coins,WIDTH-13,82,7,'#ffdf92','right')}};
 

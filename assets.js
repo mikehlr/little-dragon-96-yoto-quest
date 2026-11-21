@@ -78,5 +78,8 @@ const ART = {
   "carry-bridge-2": "assets/carry-bridge-2.webp",
   "carry-actions-1": "assets/carry-actions-1.webp",
   "carry-actions-2": "assets/carry-actions-2.webp",
-  "carry-air-load": "assets/carry-air-load.webp"
+  "carry-air-load": "assets/carry-air-load.webp",
+  "souvenirs": "assets/souvenirs.webp",
+  "story-cards": "assets/story-cards.webp",
+  "surprise-props": "assets/surprise-props.webp"
 };
