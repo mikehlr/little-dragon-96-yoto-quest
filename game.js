@@ -403,7 +403,7 @@ function tickAudio() {
       }, 2300);
     }
   }
-  const sceneMode = game.mode === 'play' || game.mode === 'stage';
+  const sceneMode = ['play', 'stage', 'shop', 'collection-store'].includes(game.mode);
   const pauseMode = ['pause', 'settings', 'how'].includes(game.mode);
   const level = game.music && (sceneMode || (pauseMode && audio.transport)) ? game.level : null;
   const prev = audio.transport;

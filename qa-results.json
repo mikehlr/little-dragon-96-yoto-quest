@@ -1,7 +1,7 @@
 {
-  "version": "2.18",
+  "version": "2.19",
   "runtime": {
-    "version": "2.18",
+    "version": "2.19",
     "title": "Little Dragon 96 Arcade Brawler",
     "files": {
       ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -167,7 +167,7 @@
       "brawler-shops.js": "40e153e5c160b1859faae5ad6e53ec5d4bd22292f31f28f1a8b933386d20977c",
       "campaign-config.js": "f2203905a649bb3fccebff8d732514adac66e8ff8e49c7fc47b47c2e224a8280",
       "campaign-data.js": "e8b85860256efce7df8e2d75c5f5a515e42395190a525087421bbc488c730ab7",
-      "campaign-flow.js": "ea7666774d17672c378128b1a1bf1670f54487c053246abb61e6ec685c5506e5",
+      "campaign-flow.js": "3164b34599f6445942403f00d736143e8abdf5a06af6fea90fcaf7701fd9bc1f",
       "campaign-loader.js": "00ee51a8aa42f734eecc21c289daa72e7e7b807ad4547dacf3aec05838a09217",
       "campaign-locales.js": "8aec25e97d061c9d269952ffda0b64c6b481f580d3fa02428c38858d52e2d94c",
       "campaign-meta.js": "45a61bb2ad5d843fa6b8d331b1363eea49e4a3ccf2c297e17f9ccb56e3eb7e33",
@@ -183,9 +183,9 @@
       "collection-catalog.js": "eb4b1d65123869a537555b3257bd66c8800bf8d39890885571ae5838b442cc39",
       "collection-meta.js": "d8b79aecf1d058395505c1ffc29756e4454923d743bd793f2fda72d24a42f1a5",
       "collection-notices.css": "8a4ff6ee9f5485b1527e9741b08adbfd28d0d8761f357a762b47c9c615797c13",
-      "collection-notices.js": "30d6d9d5885cc1bf4e9751cf7207c0dac1fb79d9e431b8fcdd93918388ca78d0",
-      "collection.css": "c5e3796b5adb5a6570b38f2b5e0d7ddc682e68b5c77208d8bf3f8bd43432f66c",
-      "collection.js": "9dddb2f66884b9343d4540d04610b942b93d9023da26d1e62ae945204874430e",
+      "collection-notices.js": "368e6cb2bd9f1f0d182a42e7f1d94a38994d1b1cbbb359a8ec9dc1abdd355e64",
+      "collection.css": "db8aaf850c71e96f406a4e1821a38d2ebd6b1567b6e6c333a5048c6d9ab150c9",
+      "collection.js": "fda158fefbd06b2b9848e78583b02a5f4b269ec9c66bdabadc08682428bf556e",
       "difficulty.js": "cb8f9afcf10013d333638df22d576b233032eb19e1f1888344eaf6e71f067ba5",
       "director-meta.js": "af43ef519ef0690b415827bc328bedbff0b0a0b19eb6ad70f63d890ebd40cb52",
       "dynamic-weather.js": "85523ca23a3cb5f8d0d421613ec4900785f5e61793330cf9df1aa78a45ab3c66",
@@ -198,27 +198,27 @@
       "family-arcade.js": "d6d98db03db48b42e8ef068fdd1baf1416a5e76fdc1f052defba6f09a4eef261",
       "game-surface.js": "f85995246c6993c65f01d160bf60324ad38ffb887da53269dc3fcc908d2b4fde",
       "game.css": "a78845c93c231357fc6df111bf59d95d0a22a393d1827f840280f96316da6aca",
-      "game.js": "be03122e28b50ffb3a45f4cc065b1b9cb43b40cdac1df035dab14cdc3f6fc808",
-      "handheld.css": "4ca4337cabe54dc47175db15962df6054806213a38d5a02d954b363005ffeeeb",
-      "index.html": "b711c9d0553541bf0acfad4d7933089970e4e76a048c16af4e2da122e9595b71",
+      "game.js": "0b21d59ab059a00e2dbf6bbd0d683d08bca886370acb2bb0f176e04e8dca70a0",
+      "handheld.css": "ad628fe67f39802da5a0adfaa081b3b6896d275adcb3287848e959264003a889",
+      "index.html": "64eb283ee5f7e9531ae5db21628be6c3aa698f82b96414272e8aba74f1c6a736",
       "living-world.js": "2dac416a126e991b2dad1936cbc289fb851fff146d7775299930f1a28bd40ee3",
       "locales.js": "852f16981d798a2174f0abfa888f6a884eb959976d34b7d5c75a04bc05086b0e",
       "localization.js": "a58d6f20dc0a8f2c05e6412086ef541b91beaf9d0f3c65942b169a7f59dc4160",
       "manifest-en.webmanifest": "a41e5d1b1781e092cba6ad1f4dc08c279220512f5352365b17239056e3d36c9d",
       "manifest-uk.webmanifest": "838ae58dea8fb3ade46c3e3a2aba62c9b27ea0306801786ff8342d7a6bdfb8bb",
       "manifest.webmanifest": "d062f7ea643fd3ea840f90d657bb58a158937401c9fc87823aed503ef7e4b049",
-      "motion-catalog.json": "47857ba73dc76305fe8bbd596575a9958f6390b8075c9841ab01527235bb29ef",
+      "motion-catalog.json": "45e13db51d481f55dac48c23db9d1037da8a53692da11c1488b2479b65acf1d3",
       "motion-meta.js": "972a502978acd65bad12dcbcce2a5f41f78b48a165a8984a28b9d63aa3ab7d55",
-      "motion-review.html": "06fde3851cb37ee5396445ebab174c24df6acd67e4eeb107a8464a90f1133d2d",
-      "motion-review.js": "ed14bf12e83d6c161cd8ab967dc6a18b68db440e5080009affe145e118ac76c8",
+      "motion-review.html": "555a3e12b6d287ac71d3761d11d8fbb43c3acc6a6b275ca554b478cee06e411b",
+      "motion-review.js": "acf58b253225f93a8cc1f29014eb5771edbb5a6a3844219c200706e59cb5ea61",
       "play-modes.css": "90c31487aad4e55b56bab9a5156fd734bab8daf3982261aa30b7e7b22f92eaa9",
       "play-modes.js": "d2ae4e762e0eebd191e96026e797672f35258be81badd2d5875b0e727ac22952",
       "regional-weather.js": "8bbc1d10fba0f3b5b6760dcbc693adfe287bb4c3778d9f738b6edcdd8f48f2d5",
       "remaster.css": "d8aab53099ddd976f5695803268efa4c212c4b393d039a775aa2838c5d4f70b3",
-      "remaster.js": "5e8deea74065eecefd465620041136de9c55908114420a014c4571bc37b019b7",
+      "remaster.js": "34827d20bf655768ce49eebae8f93dc5e4f7a8d5074191e6c76552c0b06d1e59",
       "scene-layout.js": "5cfd792a9c326fd0c30566c8de3df53b6de4c3331d54c275e9da2c5b73970a70",
       "sprite-camera.js": "7438e0384247ce4e32220205fa1aecb183b685ec9ce807fa71522c72c8d2d54e",
-      "surprise-events.js": "43ed4a357b7d3c5647c094dbdc4252b6703800b95abdff378f1085b1e5142509",
+      "surprise-events.js": "5a786a6d2af9ec9b8573b7fe9e480bf208e0b2b913ce12f53cf77d4ecffd4f0e",
       "touch-controls.js": "dcd7ca4b5723937c997e9783fbc7eb0531e1e056a98b71695487fe8568ad275d",
       "town-meta.js": "092a3c12383fb25a9f2ebc89d1239ef5ee8771b9a16b1eae77f5d650d8dd1a29",
       "world-assets.js": "c55ba996fd42c8bfa30775bf352f269c42a43a17ced014d16ba94767cabfb8f0"
@@ -226,127 +226,490 @@
     "runtimeImageCount": 146
   },
   "reports": {
-    "notices": {
+    "audio": {
+      "pass": true,
+      "offline": [
+        {
+          "name": "collection-found",
+          "residual": 4.656931234013888e-08,
+          "peak": 0.1303226351737976,
+          "last": 0.44414965986394556
+        },
+        {
+          "name": "collection-unlock",
+          "residual": 6.386910070136171e-08,
+          "peak": 0.11076154559850693,
+          "last": 0.9835600907029478
+        }
+      ],
+      "live": {
+        "first": [
+          "collection-found"
+        ],
+        "names": [
+          "collection-found",
+          "collection-unlock"
+        ],
+        "sameTransport": true,
+        "sameSceneBus": true,
+        "musicBefore": 0.6499999761581421,
+        "musicAfter": 0.6499999761581421,
+        "advanced": true,
+        "shopKeepsTransport": true,
+        "returnKeepsTransport": true,
+        "muteRespected": true
+      },
+      "scope": "Chrome OfflineAudioContext recordings of both authored chimes, distinct audible durations, no clipping and music/effects superposition; live production card acquisition dispatch, unchanged scene/transport and mute. Windows WebKit does not implement Web Audio."
+    },
+    "presentation": {
       "pass": true,
       "rows": [
         {
           "engine": "chrome",
-          "nonblockingClock": true,
-          "queuedInOrder": true,
-          "pausePreservesNotice": true,
-          "newOnly": true,
-          "musicUnlock": true,
-          "duplicatePurchaseRefused": true,
-          "autoDismiss": true,
-          "reducedMotion": true,
-          "sizes": [
+          "layouts": [
             {
-              "x": 16,
-              "y": 64,
-              "w": 296,
-              "h": 100.09375,
-              "vw": 320,
-              "vh": 568,
-              "pointer": "none",
-              "buttons": 0
-            },
-            {
-              "x": 22,
-              "y": 182.3125,
-              "w": 360,
-              "h": 97,
-              "vw": 390,
-              "vh": 844,
-              "pointer": "none",
-              "buttons": 0
-            },
-            {
-              "x": 400.65625,
-              "y": 113.09375,
-              "w": 360,
-              "h": 115,
-              "vw": 844,
-              "vh": 390,
-              "pointer": "none",
-              "buttons": 0
-            }
-          ],
-          "languages": [
-            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
               "lang": "el",
-              "text": "ΝΕΟ ΑΝΑΜΝΗΣΤΙΚΟ!\nΚαμπανάκι της γειτονιάς\nΣΤΗ ΣΥΛΛΟΓΗ ΜΟΥ\nΗ ΓΕΙΤΟΝΙΑ · 1/4"
+              "page": "shop",
+              "buttons": 9
             },
             {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
               "lang": "en",
-              "text": "NEW SOUVENIR!\nNeighborhood bell\nIN MY COLLECTION\nTHE NEIGHBOURHOOD · 1/4"
+              "page": "shop",
+              "buttons": 9
             },
             {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
               "lang": "uk",
-              "text": "НОВИЙ СУВЕНІР!\nДзвінок кварталу\nУ МОЇЙ КОЛЕКЦІЇ\nКВАРТАЛ · 1/4"
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "el",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "en",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "uk",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "el",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "en",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "uk",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "el",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "en",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "uk",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
             }
           ],
           "errors": []
         },
         {
           "engine": "webkit",
-          "nonblockingClock": true,
-          "queuedInOrder": true,
-          "pausePreservesNotice": true,
-          "newOnly": true,
-          "musicUnlock": true,
-          "duplicatePurchaseRefused": true,
-          "autoDismiss": true,
-          "reducedMotion": true,
-          "sizes": [
+          "layouts": [
             {
-              "x": 16,
-              "y": 248.796875,
-              "w": 296,
-              "h": 100.09375,
-              "vw": 320,
-              "vh": 568,
-              "pointer": "none",
-              "buttons": 0
-            },
-            {
-              "x": 22,
-              "y": 64,
-              "w": 360,
-              "h": 97,
-              "vw": 390,
-              "vh": 844,
-              "pointer": "none",
-              "buttons": 0
-            },
-            {
-              "x": 476,
-              "y": 182.3125,
-              "w": 360,
-              "h": 115,
-              "vw": 844,
-              "vh": 390,
-              "pointer": "none",
-              "buttons": 0
-            }
-          ],
-          "languages": [
-            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
               "lang": "el",
-              "text": "ΝΕΟ ΑΝΑΜΝΗΣΤΙΚΟ!\nΚαμπανάκι της γειτονιάς\nΣΤΗ ΣΥΛΛΟΓΗ ΜΟΥ\nΗ ΓΕΙΤΟΝΙΑ · 1/4"
+              "page": "shop",
+              "buttons": 9
             },
             {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
               "lang": "en",
-              "text": "NEW SOUVENIR!\nNeighborhood bell\nIN MY COLLECTION\nTHE NEIGHBOURHOOD · 1/4"
+              "page": "shop",
+              "buttons": 9
             },
             {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
               "lang": "uk",
-              "text": "НОВИЙ СУВЕНІР!\nДзвінок кварталу\nУ МОЇЙ КОЛЕКЦІЇ\nКВАРТАЛ · 1/4"
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 320,
+                "height": 568
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "el",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "en",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "uk",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 390,
+                "height": 844
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "el",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "en",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "uk",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 844,
+                "height": 390
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "el",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "el",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "en",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "en",
+              "page": "collection-store",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "uk",
+              "page": "shop",
+              "buttons": 9
+            },
+            {
+              "size": {
+                "width": 1280,
+                "height": 800
+              },
+              "lang": "uk",
+              "page": "collection-store",
+              "buttons": 9
             }
           ],
           "errors": []
         }
       ],
-      "scope": "Production collection/purchase hooks, actual non-paused play clock, ordered automatic dismissal, duplicate suppression, complete-set music/pulse text, pause preservation, languages, reduced motion and phone/orientation bounds. Browser emulation, not physical device certification."
+      "scope": "Actual shop/souvenir-store control and text bounds, 3 languages, 4 sizes in Chrome and touch WebKit, shifted portrait screen/controls and immediate geometry. Emulated hardware."
     },
     "static": {
       "pass": true,
@@ -404,16 +767,21 @@
     }
   },
   "baseline": {
-    "version": "2.17",
-    "commit": "375eadb1369e69f6fdfdaa06b4413db10871b7e0",
-    "scope": "Existing persistent wallet, collection, five bonus types and six-region campaign. Current validation focuses on acquisition announcements and source/RTM integrity."
+    "version": "2.18",
+    "commit": "b0b5826fb14da8e2f7d243d492ffc862512efc69",
+    "scope": "Accepted nonblocking acquisition queue and existing collection/campaign."
   },
   "limits": [
-    "Focused automated browser checks do not replace a human full campaign playtest.",
-    "Mobile sizes, touch and reduced-motion are browser emulations, not physical phone/controller certification."
+    "Focused checks do not replace a human campaign playtest.",
+    "Touch/mobile and orientation checks use emulated browsers, not physical hardware.",
+    "Windows WebKit lacks Web Audio; audio validation uses actual Chrome Web Audio."
   ],
   "visualReview": [
-    "Inspected actual artwork/name/progress and music-unlock announcements over the running game and shop.",
-    "Reviewed portrait/landscape bounds and space above the playfield where available."
+    "Inspected physical shop and catalogue with wrapped names, separate prices and bespoke arcade panels.",
+    "Inspected portrait handheld screen, bezel and control deck at short and tall phone sizes."
+  ],
+  "audioReview": [
+    "Rendered separate recorded acquisition and unlock chimes with unclipped peaks.",
+    "Verified music/effects superposition and unchanged live transport and gain through chimes and physical shop entry/return."
   ]
 }

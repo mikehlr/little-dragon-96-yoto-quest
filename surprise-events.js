@@ -105,4 +105,4 @@ const surpriseGo=go;
 go=function(name){if(name==='bonus-skip'&&game.mode==='pause'&&surpriseState){finishSurprise(true);show('play');return}return surpriseGo(name)};
 const surpriseSound=renderEffect;
 renderEffect=function(rig,out,name,at,hero=1){if(name==='waterJet'){noiseBurst(rig,out,at,.13,.10,2400);tone(rig,out,at,680,.08,.035,'sine',260);return}return surpriseSound(rig,out,name,at,hero)};
-globalThis.DragonSurprises={version:'2.18',state:()=>surpriseState,start:startSurprise,finish:finishSurprise,cancel:cancelSurprise,drawGunAtHand:drawWaterGun,art:bonusArt,types:SURPRISE_TYPES};
+globalThis.DragonSurprises={version:'2.19',state:()=>surpriseState,start:startSurprise,finish:finishSurprise,cancel:cancelSurprise,drawGunAtHand:drawWaterGun,art:bonusArt,types:SURPRISE_TYPES};

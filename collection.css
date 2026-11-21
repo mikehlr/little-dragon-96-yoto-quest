@@ -8,10 +8,22 @@
 .arcade-title .console-menu:has([data-go="album-open"]){gap:6px}.arcade-title [data-go="album-open"]{min-height:44px}
 @media(max-height:500px){#screen[data-page="home"] #panel .arcade-command{min-height:44px;padding-top:7px;padding-bottom:7px}.arcade-title .console-menu:has([data-go="album-open"]){gap:1px}.arcade-title .subtitle{margin-top:6px;margin-bottom:6px}}
 .yoto-help{font-size:.78em;line-height:1.35;color:#a9c9e2}
-#screen:is([data-page="collection"],[data-page="collection-detail"],[data-page="collection-store"]){padding:8px;align-items:center;justify-content:center}
-#screen:is([data-page="collection"],[data-page="collection-detail"],[data-page="collection-store"]) #panel{width:min(980px,100%);padding:0;overflow:visible;box-sizing:border-box}
+#screen:is([data-page="collection"],[data-page="collection-detail"],[data-page="collection-store"],[data-page="shop"]){padding:8px;align-items:center;justify-content:center}
+#screen:is([data-page="collection"],[data-page="collection-detail"],[data-page="collection-store"],[data-page="shop"]) #panel{width:min(980px,100%);padding:0;overflow:visible;box-sizing:border-box}
 .collection-console{width:100%;height:min(760px,calc(100dvh - 24px))}
 .collection-console .arcade-command{min-width:0;width:auto}.collection-tabs b{font-size:clamp(11px,1.5vw,15px);white-space:normal}.collection-tabs span{font-size:11px}.collection-console .collection-footer .arcade-command{min-width:44px}.collection-console .collection-detail-buttons b{white-space:normal}
 .collection-detail>*{min-width:0}.collection-header>div{min-width:0}.collection-header h2{white-space:normal;overflow-wrap:anywhere}.collection-wallet{flex:none}
 #panel .collection-console .arcade-command{min-width:0;min-height:44px;width:auto;padding:8px 12px;gap:8px}#panel .collection-console .arcade-command b{font-size:clamp(11px,1.4vw,16px);white-space:normal;overflow-wrap:anywhere}#panel .collection-console .command-icon{width:24px;height:24px;flex-basis:24px}#panel .collection-footer .arcade-command{min-width:44px}#panel .collection-footer .command-icon,#panel .collection-footer .command-chevron,#panel .collection-detail-buttons .command-icon,#panel .collection-detail-buttons .command-chevron{display:none}
 @media(max-width:500px) and (min-height:501px){.collection-detail{grid-template-columns:minmax(0,1fr)}#panel .collection-console .arcade-command{padding:8px 6px;gap:4px}}
+#panel .collection-shop .shop-goods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#panel .collection-shop .shop-goods .arcade-command{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:24px minmax(28px,auto) 18px;justify-items:center;align-content:center;gap:4px;min-height:100px;padding:12px 14px 14px;box-sizing:border-box}
+#panel .collection-shop .shop-goods svg{width:24px;height:24px;flex:none}
+#panel .collection-shop .shop-goods .supply-title{min-width:0;max-width:100%;font-size:13px;line-height:1.15;text-align:center;white-space:normal;overflow-wrap:anywhere}
+#panel .collection-shop .shop-goods .supply-price{font-size:13px;line-height:18px;white-space:nowrap;color:#ffe09a}
+#panel .collection-shop .shop-goods .arcade-command::before{inset:0;border:2px solid #c8a765;clip-path:polygon(8px 0,calc(100% - 8px) 0,100% 8px,100% calc(100% - 8px),calc(100% - 8px) 100%,8px 100%,0 calc(100% - 8px),0 8px);background:linear-gradient(145deg,#365471,#111d30 65%);box-shadow:inset 0 0 0 2px #07101d,inset 0 -5px 8px #0008}
+#panel .collection-shop .shop-goods .arcade-command::after{content:'';position:absolute;inset:6px;border:1px solid #d2af6345;pointer-events:none;z-index:-1}
+#panel .collection-shop .shop-goods .arcade-command:is(:focus,:hover):not(:disabled)::before{border-color:#fff0a5;background:linear-gradient(145deg,#496181,#253149);filter:drop-shadow(0 0 6px #ffd98866)}
+#panel .collection-shop .shop-goods .arcade-command:disabled::before{border-color:#7e8c98;background:linear-gradient(145deg,#29394a,#15202b)}
+.collection-shop .collection-slot b,.collection-shop .collection-slot span{flex:none}.collection-shop .collection-slot b{min-height:2.3em}
+@media(max-width:500px){#panel .collection-shop .shop-goods{gap:5px}#panel .collection-shop .shop-goods .arcade-command{padding-left:10px;padding-right:10px}#panel .collection-shop .shop-goods .supply-title{font-size:11px}}
+@media(max-height:500px){#panel .collection-shop .shop-goods .arcade-command{grid-template-columns:20px minmax(0,1fr);grid-template-rows:minmax(24px,auto) 15px;column-gap:5px;row-gap:1px;min-height:62px;padding:9px 13px 10px}#panel .collection-shop .shop-goods svg{grid-column:1;grid-row:1;width:19px;height:19px}#panel .collection-shop .shop-goods .supply-title{grid-column:2;grid-row:1;font-size:11px}#panel .collection-shop .shop-goods .supply-price{grid-column:1/-1;grid-row:2;font-size:11px;line-height:15px}}

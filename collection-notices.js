@@ -31,11 +31,22 @@ function tickCollectionNotice(now){
  const dt=collectionNoticeLast?Math.min(100,now-collectionNoticeLast):0;collectionNoticeLast=now;
  const suspended=document.hidden||game.mode==='pause';
  if(!suspended){
-  if(!collectionNoticeActive&&collectionNoticeQueue.length){collectionNoticeActive=collectionNoticeQueue.shift();collectionNoticeElapsed=0;paintCollectionNotice(collectionNoticeActive)}
+  if(!collectionNoticeActive&&collectionNoticeQueue.length){collectionNoticeActive=collectionNoticeQueue.shift();collectionNoticeElapsed=0;paintCollectionNotice(collectionNoticeActive);effect(collectionNoticeActive.complete?'collection-unlock':'collection-found')}
   if(collectionNoticeActive){collectionNoticeElapsed+=dt;const duration=collectionNoticeActive.complete?5600:4300;collectionNotice.style.setProperty('--notice-progress',String(Math.max(0,1-collectionNoticeElapsed/duration)));collectionNotice.dataset.leaving=String(collectionNoticeElapsed>duration-250);positionCollectionNotice();if(collectionNoticeElapsed>=duration){collectionNoticeActive=null;collectionNotice.innerHTML=''}}
  }
  collectionNotice.hidden=!collectionNoticeActive||suspended;
  requestAnimationFrame(tickCollectionNotice);
 }
 requestAnimationFrame(tickCollectionNotice);
-globalThis.DragonCollectionNotices={version:'2.18',enqueue:queueCollectionNotice,state:()=>({active:collectionNoticeActive,queued:collectionNoticeQueue.length,elapsed:collectionNoticeElapsed})};
+const collectionSoundBase=renderEffect;
+renderEffect=function(rig,output,name,at,hero=1){
+ if(name==='collection-found'){
+  [659.25,987.77,1318.51].forEach((f,n)=>{tone(rig,output,at+n*.075,f,.14,.075,'triangle');tone(rig,output,at+n*.075,f*2,.10,.018,'sine')});return;
+ }
+ if(name==='collection-unlock'){
+  [523.25,659.25,783.99,1046.50].forEach((f,n)=>tone(rig,output,at+n*.095,f,.19,.065,'triangle'));
+  [1046.50,1318.51,1567.98].forEach(f=>tone(rig,output,at+.42,f,.40,.032,'sine'));return;
+ }
+ return collectionSoundBase(rig,output,name,at,hero);
+};
+globalThis.DragonCollectionNotices={version:'2.19',enqueue:queueCollectionNotice,state:()=>({active:collectionNoticeActive,queued:collectionNoticeQueue.length,elapsed:collectionNoticeElapsed})};
